@@ -1,0 +1,1734 @@
+{
+  "paper_id": "2603.29846v1",
+  "filename": "2603.29846v1.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Summary of the SNEAK dataset",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 71.43916650000028,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.847471699999005,
+        "load_seconds": 3.3981378,
+        "prompt_eval_seconds": 0.325974,
+        "eval_seconds": 0.059466,
+        "total_server_seconds": 3.7880906,
+        "prompt_tokens": 323,
+        "generated_tokens": 5,
+        "tokens_per_second": 84.08,
+        "prompt_tokens_per_second": 990.88,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 18100944896,
+          "mean_system_ram_used_bytes": 16090682709.333334,
+          "max_system_ram_percent": 52.8,
+          "mean_system_ram_percent": 46.93333333333334,
+          "max_cpu_percent": 39.8,
+          "mean_cpu_percent": 25.433333333333334,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90790570.66666667,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222654464.0,
+          "max_gpu_mem_mb": 4382.0,
+          "mean_gpu_mem_mb": 2397.6666666666665,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 33.333333333333336,
+          "max_gpu_temperature_c": 55.0,
+          "mean_gpu_temperature_c": 54.53333333333333,
+          "max_gpu_power_w": 55.08,
+          "mean_gpu_power_w": 54.90333333333333,
+          "estimated_gpu_joules": 151.00659419775008
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток данных о том, как LLMы используют контекст для стратегического общения и утечки информации в многопользовательских сценариях",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.0318861000014294,
+        "load_seconds": 0.0182712,
+        "prompt_eval_seconds": 0.17721,
+        "eval_seconds": 0.763653,
+        "total_server_seconds": 0.963574,
+        "prompt_tokens": 278,
+        "generated_tokens": 55,
+        "tokens_per_second": 72.02,
+        "prompt_tokens_per_second": 1568.76,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15548940288,
+          "mean_system_ram_used_bytes": 15548940288.0,
+          "max_system_ram_percent": 45.4,
+          "mean_system_ram_percent": 45.4,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222670848.0,
+          "max_gpu_mem_mb": 5264.0,
+          "mean_gpu_mem_mb": 5264.0,
+          "max_gpu_util_percent": 39.0,
+          "mean_gpu_util_percent": 39.0,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 57.2,
+          "max_gpu_power_w": 86.04,
+          "mean_gpu_power_w": 86.04
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.6926469999998517,
+        "load_seconds": 0.0170015,
+        "prompt_eval_seconds": 0.458527,
+        "eval_seconds": 1.169767,
+        "total_server_seconds": 1.6536507,
+        "prompt_tokens": 843,
+        "generated_tokens": 83,
+        "tokens_per_second": 70.95,
+        "prompt_tokens_per_second": 1838.5,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15531565056,
+          "mean_system_ram_used_bytes": 15526486016.0,
+          "max_system_ram_percent": 45.3,
+          "mean_system_ram_percent": 45.3,
+          "max_cpu_percent": 18.3,
+          "mean_cpu_percent": 9.15,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222670848.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 86.0,
+          "max_gpu_temperature_c": 58.7,
+          "mean_gpu_temperature_c": 58.45,
+          "max_gpu_power_w": 101.55,
+          "mean_gpu_power_w": 99.52,
+          "estimated_gpu_joules": 120.67115813493729
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "abstract",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7033102999994298,
+        "load_seconds": 0.015848,
+        "prompt_eval_seconds": 0.513919999,
+        "eval_seconds": 1.069669,
+        "total_server_seconds": 1.6401057,
+        "prompt_tokens": 929,
+        "generated_tokens": 76,
+        "tokens_per_second": 71.05,
+        "prompt_tokens_per_second": 1807.67,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15661006848,
+          "mean_system_ram_used_bytes": 15591403520.0,
+          "max_system_ram_percent": 45.7,
+          "mean_system_ram_percent": 45.5,
+          "max_cpu_percent": 23.2,
+          "mean_cpu_percent": 20.75,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222679040,
+          "mean_ollama_process_rss_bytes": 222679040.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 58.8,
+          "mean_gpu_temperature_c": 58.3,
+          "max_gpu_power_w": 101.94,
+          "mean_gpu_power_w": 86.215,
+          "estimated_gpu_joules": 87.35034220218658
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "abstract",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.842037700000219,
+        "load_seconds": 0.018314,
+        "prompt_eval_seconds": 0.561639,
+        "eval_seconds": 1.173256,
+        "total_server_seconds": 1.7947375,
+        "prompt_tokens": 927,
+        "generated_tokens": 74,
+        "tokens_per_second": 63.07,
+        "prompt_tokens_per_second": 1650.53,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15798550528,
+          "mean_system_ram_used_bytes": 15734001664.0,
+          "max_system_ram_percent": 46.1,
+          "mean_system_ram_percent": 45.900000000000006,
+          "max_cpu_percent": 25.2,
+          "mean_cpu_percent": 22.7,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222679040,
+          "mean_ollama_process_rss_bytes": 222679040.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 86.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 58.1,
+          "max_gpu_power_w": 95.72,
+          "mean_gpu_power_w": 91.52,
+          "estimated_gpu_joules": 118.42537943840027
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "abstract",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.8202541999999085,
+        "load_seconds": 0.0181397,
+        "prompt_eval_seconds": 0.595156,
+        "eval_seconds": 1.111379,
+        "total_server_seconds": 1.7648091,
+        "prompt_tokens": 918,
+        "generated_tokens": 70,
+        "tokens_per_second": 62.98,
+        "prompt_tokens_per_second": 1542.45,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15941124096,
+          "mean_system_ram_used_bytes": 15868540928.0,
+          "max_system_ram_percent": 46.5,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 18.5,
+          "mean_cpu_percent": 9.25,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222777344,
+          "mean_ollama_process_rss_bytes": 222777344.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 85.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.55,
+          "max_gpu_power_w": 87.14,
+          "mean_gpu_power_w": 77.66,
+          "estimated_gpu_joules": 83.87507207393647
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "abstract",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Summary of the SNEAK dataset",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.176924000003055,
+        "load_seconds": 0.0178788,
+        "prompt_eval_seconds": 0.235525,
+        "eval_seconds": 0.816246,
+        "total_server_seconds": 1.1075176,
+        "prompt_tokens": 334,
+        "generated_tokens": 52,
+        "tokens_per_second": 63.71,
+        "prompt_tokens_per_second": 1418.11,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15935516672,
+          "mean_system_ram_used_bytes": 15935516672.0,
+          "max_system_ram_percent": 46.5,
+          "mean_system_ram_percent": 46.5,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222826496,
+          "mean_ollama_process_rss_bytes": 222826496.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 80.0,
+          "mean_gpu_util_percent": 80.0,
+          "max_gpu_temperature_c": 57.0,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 54.87,
+          "mean_gpu_power_w": 54.87
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "results",
+      "pages": [
+        5
+      ],
+      "generated": 3,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаток методов тестового масштабирования для улучшения баланса между полезностью сообщения и уровнем утечки информации.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "To study the effect of additional test-time computation, we apply two standard inference-time scaling methods to each base model: Chain-of-Thought (CoT)... and Self-Enhanced Test-Time Scaling (SETS)... Additionally, we introduce a simple two-step transformation method, Recursive Message Refinement (RMR)",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Ограниченность существующих базовых стратегий генерации сообщений в спектре полезности и утечки информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We compare model-generated messages to three simple baselines representing different points on the utility–leakage spectrum: Random word... Category-level message... and Secret-level message",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.2811206999977,
+        "load_seconds": 0.0189887,
+        "prompt_eval_seconds": 0.603019,
+        "eval_seconds": 4.586804,
+        "total_server_seconds": 5.2166997,
+        "prompt_tokens": 958,
+        "generated_tokens": 276,
+        "tokens_per_second": 60.17,
+        "prompt_tokens_per_second": 1588.67,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 16081973248,
+          "mean_system_ram_used_bytes": 16077920665.6,
+          "max_system_ram_percent": 46.9,
+          "mean_system_ram_percent": 46.9,
+          "max_cpu_percent": 47.8,
+          "mean_cpu_percent": 21.02,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90792755.2,
+          "max_ollama_process_rss_bytes": 222871552,
+          "mean_ollama_process_rss_bytes": 222871552.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.82000000000001,
+          "max_gpu_power_w": 87.23,
+          "mean_gpu_power_w": 83.756,
+          "estimated_gpu_joules": 403.98029124736786
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "results",
+      "pages": [
+        6
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5655734000029042,
+        "load_seconds": 0.0186597,
+        "prompt_eval_seconds": 0.198398,
+        "eval_seconds": 0.242917,
+        "total_server_seconds": 0.4999976,
+        "prompt_tokens": 268,
+        "generated_tokens": 16,
+        "tokens_per_second": 65.87,
+        "prompt_tokens_per_second": 1350.82,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16085831680,
+          "mean_system_ram_used_bytes": 16085831680.0,
+          "max_system_ram_percent": 46.9,
+          "mean_system_ram_percent": 46.9,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 23.7,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222896128,
+          "mean_ollama_process_rss_bytes": 222896128.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 88.0,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 58.0,
+          "max_gpu_power_w": 84.0,
+          "mean_gpu_power_w": 84.0
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "methods",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9816380999982357,
+        "load_seconds": 0.0175142,
+        "prompt_eval_seconds": 0.54288,
+        "eval_seconds": 1.351164,
+        "total_server_seconds": 1.9179709,
+        "prompt_tokens": 893,
+        "generated_tokens": 85,
+        "tokens_per_second": 62.91,
+        "prompt_tokens_per_second": 1644.93,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16239722496,
+          "mean_system_ram_used_bytes": 16234358784.0,
+          "max_system_ram_percent": 47.4,
+          "mean_system_ram_percent": 47.4,
+          "max_cpu_percent": 19.0,
+          "mean_cpu_percent": 9.5,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222896128,
+          "mean_ollama_process_rss_bytes": 222896128.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 81.5,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.65,
+          "max_gpu_power_w": 86.92,
+          "mean_gpu_power_w": 78.27000000000001,
+          "estimated_gpu_joules": 84.66751962661743
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "methods",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие методов, позволяющих одновременно достигать высокой полезности и низкой утечки информации в системах с асимметричной информацией.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Moving this frontier outward—toward the upper-left region—corresponds to achieving higher utility at lower levels of leakage. While some models approach this frontier, none consistently attain strong utility with low leakage, indicating that strategic communication under asymmetric information remains challenging for current systems.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.444092499998078,
+        "load_seconds": 0.0176391,
+        "prompt_eval_seconds": 0.609131,
+        "eval_seconds": 1.709982,
+        "total_server_seconds": 2.3804475,
+        "prompt_tokens": 971,
+        "generated_tokens": 107,
+        "tokens_per_second": 62.57,
+        "prompt_tokens_per_second": 1594.07,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16371240960,
+          "mean_system_ram_used_bytes": 16297519104.0,
+          "max_system_ram_percent": 47.8,
+          "mean_system_ram_percent": 47.55,
+          "max_cpu_percent": 19.5,
+          "mean_cpu_percent": 9.75,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222900224,
+          "mean_ollama_process_rss_bytes": 222900224.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.55,
+          "max_gpu_power_w": 87.03,
+          "mean_gpu_power_w": 78.22,
+          "estimated_gpu_joules": 85.98876863718033
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "methods",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость валидации симулированных агентов на основе языковых моделей с помощью человеческих экспертов для подтверждения соответствия оценок модели суждениям людей.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Because the SNEAK evaluation relies on simulated agents implemented using language models, we conduct a human study to validate both the task formulation and the alignment of model-based evaluators with human judgments.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.3609738999984984,
+        "load_seconds": 0.0189016,
+        "prompt_eval_seconds": 0.601827,
+        "eval_seconds": 1.634702,
+        "total_server_seconds": 2.2972264,
+        "prompt_tokens": 960,
+        "generated_tokens": 102,
+        "tokens_per_second": 62.4,
+        "prompt_tokens_per_second": 1595.14,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16488300544,
+          "mean_system_ram_used_bytes": 16420898816.0,
+          "max_system_ram_percent": 48.1,
+          "mean_system_ram_percent": 47.900000000000006,
+          "max_cpu_percent": 20.2,
+          "mean_cpu_percent": 10.1,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222928896,
+          "mean_ollama_process_rss_bytes": 222928896.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.65,
+          "max_gpu_power_w": 87.15,
+          "mean_gpu_power_w": 71.4,
+          "estimated_gpu_joules": 69.55674169063568
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "methods",
+      "pages": [
+        8
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.3859091000012995,
+        "load_seconds": 0.0172923,
+        "prompt_eval_seconds": 0.201942,
+        "eval_seconds": 0.066001,
+        "total_server_seconds": 0.3237448,
+        "prompt_tokens": 292,
+        "generated_tokens": 5,
+        "tokens_per_second": 75.76,
+        "prompt_tokens_per_second": 1445.96,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16490278912,
+          "mean_system_ram_used_bytes": 16490278912.0,
+          "max_system_ram_percent": 48.1,
+          "mean_system_ram_percent": 48.1,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222928896,
+          "mean_ollama_process_rss_bytes": 222928896.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.4,
+          "max_gpu_power_w": 83.52,
+          "mean_gpu_power_w": 83.52
+        }
+      }
+    },
+    {
+      "chunk": "C0013",
+      "section": "related_work",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие понимания того, как семантическая структура пространства кандидатов влияет на эффективность коммуникации в разных доменах (абстрактных и конкретных).",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "This suggests that abstract domains often permit more indirect associative messages, allowing models to signal knowledge of the secret without making it uniquely identifiable.",
+              "verified": true
+            },
+            {
+              "page": 8,
+              "quote": "indicating that densely clustered candidate sets are harder for selective communication.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0013",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.447979500000656,
+        "load_seconds": 0.0162229,
+        "prompt_eval_seconds": 0.598896,
+        "eval_seconds": 1.75946,
+        "total_server_seconds": 2.3832295,
+        "prompt_tokens": 937,
+        "generated_tokens": 105,
+        "tokens_per_second": 59.68,
+        "prompt_tokens_per_second": 1564.55,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16632754176,
+          "mean_system_ram_used_bytes": 16628246528.0,
+          "max_system_ram_percent": 48.5,
+          "mean_system_ram_percent": 48.5,
+          "max_cpu_percent": 23.5,
+          "mean_cpu_percent": 20.2,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222928896,
+          "mean_ollama_process_rss_bytes": 222928896.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 57.75,
+          "max_gpu_power_w": 98.63,
+          "mean_gpu_power_w": 83.185,
+          "estimated_gpu_joules": 83.1452109003067
+        }
+      }
+    },
+    {
+      "chunk": "C0014",
+      "section": "related_work",
+      "pages": [
+        9
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие бенчмарка, который одновременно оценивает асимметричное многоагентное взаимодействие и способность к стратегическому планированию в условиях неопределенности.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Benchmark Multi-Agent? Asymmetric MMLU-Pro (Wang et al., 2024b) ✗ ✗ ✗ ✓ ✗",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0014",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9361800000006042,
+        "load_seconds": 0.0193007,
+        "prompt_eval_seconds": 0.289124,
+        "eval_seconds": 1.523979,
+        "total_server_seconds": 1.8705163,
+        "prompt_tokens": 423,
+        "generated_tokens": 96,
+        "tokens_per_second": 62.99,
+        "prompt_tokens_per_second": 1463.04,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16772780032,
+          "mean_system_ram_used_bytes": 16703852544.0,
+          "max_system_ram_percent": 48.9,
+          "mean_system_ram_percent": 48.7,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 20.85,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90787840.0,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222670848.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 80.0,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 57.5,
+          "max_gpu_power_w": 87.1,
+          "mean_gpu_power_w": 78.77,
+          "estimated_gpu_joules": 86.28560085296631
+        }
+      }
+    },
+    {
+      "chunk": "C0015",
+      "section": "limitations",
+      "pages": [
+        9
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0015",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5394512999992003,
+        "load_seconds": 0.0184598,
+        "prompt_eval_seconds": 0.199889,
+        "eval_seconds": 0.263914,
+        "total_server_seconds": 0.5174366,
+        "prompt_tokens": 263,
+        "generated_tokens": 17,
+        "tokens_per_second": 64.41,
+        "prompt_tokens_per_second": 1315.73,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16782872576,
+          "mean_system_ram_used_bytes": 16782872576.0,
+          "max_system_ram_percent": 49.0,
+          "mean_system_ram_percent": 49.0,
+          "max_cpu_percent": 24.0,
+          "mean_cpu_percent": 24.0,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222670848.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.7,
+          "max_gpu_power_w": 83.46,
+          "mean_gpu_power_w": 83.46
+        }
+      }
+    },
+    {
+      "chunk": "C0016",
+      "section": "conclusion",
+      "pages": [
+        9
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Существующие бенчмарки стратегического взаимодействия (например, SocialMaze, Mini-Mafia) оценивают поведение через многооборотные игровые результаты, а не напрямую через оценку отдельных высказываний.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "typically evaluate behavior through multi-turn game outcomes rather than directly scoring individual utterances",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Исследования в области прагматики и теории разума фокусируются на выводе убеждений, но не оценивают способность моделей генерировать высказывания, которые избирательно раскрывают информацию разным слушателям.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "they do not directly evaluate whether models can produce utterances that selectively reveal information to different listeners",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Бенчмарк SNEAK использует симулированных агентов на основе LLM для оценки, что может не отражать то, как люди интерпретируют сообщения.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "model-based judges may not perfectly reflect how humans interpret messages",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0016",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.791906800001016,
+        "load_seconds": 0.0027038,
+        "prompt_eval_seconds": 0.553834,
+        "eval_seconds": 4.022552,
+        "total_server_seconds": 4.6342934,
+        "prompt_tokens": 888,
+        "generated_tokens": 250,
+        "tokens_per_second": 62.15,
+        "prompt_tokens_per_second": 1603.37,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 16905134080,
+          "mean_system_ram_used_bytes": 16902104064.0,
+          "max_system_ram_percent": 49.3,
+          "mean_system_ram_percent": 49.3,
+          "max_cpu_percent": 46.1,
+          "mean_cpu_percent": 26.4,
+          "max_python_process_rss_bytes": 90796032,
+          "mean_python_process_rss_bytes": 90791936.0,
+          "max_ollama_process_rss_bytes": 222670848,
+          "mean_ollama_process_rss_bytes": 222670848.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 57.5,
+          "max_gpu_power_w": 99.03,
+          "mean_gpu_power_w": 84.7175,
+          "estimated_gpu_joules": 308.56629770994186
+        }
+      }
+    },
+    {
+      "chunk": "C0017",
+      "section": "conclusion",
+      "pages": [
+        10
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29846v1__rep1:C0017",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.45702450000317185,
+        "load_seconds": 0.0194188,
+        "prompt_eval_seconds": 0.231532,
+        "eval_seconds": 0.066116,
+        "total_server_seconds": 0.3836023,
+        "prompt_tokens": 298,
+        "generated_tokens": 5,
+        "tokens_per_second": 75.62,
+        "prompt_tokens_per_second": 1287.08,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16907665408,
+          "mean_system_ram_used_bytes": 16907665408.0,
+          "max_system_ram_percent": 49.3,
+          "mean_system_ram_percent": 49.3,
+          "max_cpu_percent": 23.5,
+          "mean_cpu_percent": 23.5,
+          "max_python_process_rss_bytes": 90779648,
+          "mean_python_process_rss_bytes": 90779648.0,
+          "max_ollama_process_rss_bytes": 222679040,
+          "mean_ollama_process_rss_bytes": 222679040.0,
+          "max_gpu_mem_mb": 5272.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 56.7,
+          "mean_gpu_temperature_c": 56.7,
+          "max_gpu_power_w": 54.65,
+          "mean_gpu_power_w": 54.65
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "2603.29846v1__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.883712000002561,
+      "load_seconds": 0.0169762,
+      "prompt_eval_seconds": 0.402274,
+      "eval_seconds": 5.373774,
+      "total_server_seconds": 5.8269529,
+      "prompt_tokens": 632,
+      "generated_tokens": 335,
+      "tokens_per_second": 62.34,
+      "prompt_tokens_per_second": 1571.07,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17039568896,
+        "mean_system_ram_used_bytes": 17013892710.4,
+        "max_system_ram_percent": 49.7,
+        "mean_system_ram_percent": 49.64,
+        "max_cpu_percent": 23.7,
+        "mean_cpu_percent": 19.880000000000003,
+        "max_python_process_rss_bytes": 90796032,
+        "mean_python_process_rss_bytes": 90792755.2,
+        "max_ollama_process_rss_bytes": 222679040,
+        "mean_ollama_process_rss_bytes": 222679040.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 83.8,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 57.96,
+        "max_gpu_power_w": 87.16,
+        "mean_gpu_power_w": 86.35,
+        "estimated_gpu_joules": 422.5463216018677
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.290110800000548,
+      "load_seconds": 0.0178314,
+      "prompt_eval_seconds": 0.4752,
+      "eval_seconds": 2.687154,
+      "total_server_seconds": 3.221105,
+      "prompt_tokens": 764,
+      "generated_tokens": 168,
+      "tokens_per_second": 62.52,
+      "prompt_tokens_per_second": 1607.74,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17178112000,
+        "mean_system_ram_used_bytes": 17131496789.333334,
+        "max_system_ram_percent": 50.1,
+        "mean_system_ram_percent": 49.96666666666667,
+        "max_cpu_percent": 18.8,
+        "mean_cpu_percent": 11.800000000000002,
+        "max_python_process_rss_bytes": 90796032,
+        "mean_python_process_rss_bytes": 90790570.66666667,
+        "max_ollama_process_rss_bytes": 222842880,
+        "mean_ollama_process_rss_bytes": 222842880.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 85.33333333333333,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 57.86666666666667,
+        "max_gpu_power_w": 87.22,
+        "mean_gpu_power_w": 76.73666666666666,
+        "estimated_gpu_joules": 174.8476280212402
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 6.03478449999966,
+      "load_seconds": 0.0177897,
+      "prompt_eval_seconds": 0.404423,
+      "eval_seconds": 5.494611,
+      "total_server_seconds": 5.9575587,
+      "prompt_tokens": 631,
+      "generated_tokens": 342,
+      "tokens_per_second": 62.24,
+      "prompt_tokens_per_second": 1560.25,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17312985088,
+        "mean_system_ram_used_bytes": 17284457267.2,
+        "max_system_ram_percent": 50.5,
+        "mean_system_ram_percent": 50.42,
+        "max_cpu_percent": 37.2,
+        "mean_cpu_percent": 18.42,
+        "max_python_process_rss_bytes": 90796032,
+        "mean_python_process_rss_bytes": 90792755.2,
+        "max_ollama_process_rss_bytes": 222949376,
+        "mean_ollama_process_rss_bytes": 222949376.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 85.4,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 58.0,
+        "max_gpu_power_w": 87.21,
+        "mean_gpu_power_w": 83.404,
+        "estimated_gpu_joules": 402.31974703788757
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.563657999999123,
+      "load_seconds": 0.0181209,
+      "prompt_eval_seconds": 0.053785,
+      "eval_seconds": 5.371691,
+      "total_server_seconds": 5.5048273,
+      "prompt_tokens": 632,
+      "generated_tokens": 335,
+      "tokens_per_second": 62.36,
+      "prompt_tokens_per_second": 11750.49,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17314226176,
+        "mean_system_ram_used_bytes": 17312896614.4,
+        "max_system_ram_percent": 50.5,
+        "mean_system_ram_percent": 50.5,
+        "max_cpu_percent": 21.3,
+        "mean_cpu_percent": 14.540000000000001,
+        "max_python_process_rss_bytes": 90804224,
+        "mean_python_process_rss_bytes": 90800947.2,
+        "max_ollama_process_rss_bytes": 222961664,
+        "mean_ollama_process_rss_bytes": 222702796.8,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 84.8,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 58.04,
+        "max_gpu_power_w": 98.67,
+        "mean_gpu_power_w": 85.734,
+        "estimated_gpu_joules": 415.49125127792354
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.4339395000024524,
+      "load_seconds": 0.0167298,
+      "prompt_eval_seconds": 0.469442,
+      "eval_seconds": 2.809466,
+      "total_server_seconds": 3.3557956,
+      "prompt_tokens": 731,
+      "generated_tokens": 170,
+      "tokens_per_second": 60.51,
+      "prompt_tokens_per_second": 1557.17,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17342648320,
+        "mean_system_ram_used_bytes": 17330636117.333332,
+        "max_system_ram_percent": 50.6,
+        "mean_system_ram_percent": 50.56666666666666,
+        "max_cpu_percent": 26.2,
+        "mean_cpu_percent": 17.3,
+        "max_python_process_rss_bytes": 90804224,
+        "mean_python_process_rss_bytes": 90798762.66666667,
+        "max_ollama_process_rss_bytes": 222638080,
+        "mean_ollama_process_rss_bytes": 222638080.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 92.0,
+        "mean_gpu_util_percent": 84.66666666666667,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 57.86666666666667,
+        "max_gpu_power_w": 87.08,
+        "mean_gpu_power_w": 76.24666666666667,
+        "estimated_gpu_joules": 179.36998633861543
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:1:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.76291990000027,
+      "load_seconds": 0.0349108,
+      "prompt_eval_seconds": 0.240388,
+      "eval_seconds": 1.337497,
+      "total_server_seconds": 1.6512692,
+      "prompt_tokens": 340,
+      "generated_tokens": 75,
+      "tokens_per_second": 56.07,
+      "prompt_tokens_per_second": 1414.38,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17467875328,
+        "mean_system_ram_used_bytes": 17403746304.0,
+        "max_system_ram_percent": 51.0,
+        "mean_system_ram_percent": 50.8,
+        "max_cpu_percent": 47.2,
+        "mean_cpu_percent": 23.6,
+        "max_python_process_rss_bytes": 90804224,
+        "mean_python_process_rss_bytes": 90796032.0,
+        "max_ollama_process_rss_bytes": 222638080,
+        "mean_ollama_process_rss_bytes": 222638080.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 75.5,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.25,
+        "max_gpu_power_w": 86.94,
+        "mean_gpu_power_w": 70.71,
+        "estimated_gpu_joules": 67.3789262008667
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:2:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.8736716999992495,
+      "load_seconds": 0.0184166,
+      "prompt_eval_seconds": 0.398749,
+      "eval_seconds": 5.379508,
+      "total_server_seconds": 5.8045909,
+      "prompt_tokens": 632,
+      "generated_tokens": 335,
+      "tokens_per_second": 62.27,
+      "prompt_tokens_per_second": 1584.96,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17482133504,
+        "mean_system_ram_used_bytes": 17461641216.0,
+        "max_system_ram_percent": 51.0,
+        "mean_system_ram_percent": 50.94,
+        "max_cpu_percent": 24.0,
+        "mean_cpu_percent": 20.3,
+        "max_python_process_rss_bytes": 90804224,
+        "mean_python_process_rss_bytes": 90800947.2,
+        "max_ollama_process_rss_bytes": 222638080,
+        "mean_ollama_process_rss_bytes": 222638080.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 84.4,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 58.1,
+        "max_gpu_power_w": 87.23,
+        "mean_gpu_power_w": 86.17,
+        "estimated_gpu_joules": 420.7451546740532
+      }
+    },
+    {
+      "request_id": "2603.29846v1__rep1:merge:2:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.252768599999399,
+      "load_seconds": 0.0187931,
+      "prompt_eval_seconds": 0.355972,
+      "eval_seconds": 2.794178,
+      "total_server_seconds": 3.1943137,
+      "prompt_tokens": 519,
+      "generated_tokens": 170,
+      "tokens_per_second": 60.84,
+      "prompt_tokens_per_second": 1457.98,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17449336832,
+        "mean_system_ram_used_bytes": 17358581760.0,
+        "max_system_ram_percent": 50.9,
+        "mean_system_ram_percent": 50.63333333333333,
+        "max_cpu_percent": 21.2,
+        "mean_cpu_percent": 13.066666666666668,
+        "max_python_process_rss_bytes": 90804224,
+        "mean_python_process_rss_bytes": 90798762.66666667,
+        "max_ollama_process_rss_bytes": 222638080,
+        "mean_ollama_process_rss_bytes": 222638080.0,
+        "max_gpu_mem_mb": 5272.0,
+        "mean_gpu_mem_mb": 5272.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 85.66666666666667,
+        "max_gpu_temperature_c": 58.4,
+        "mean_gpu_temperature_c": 58.06666666666666,
+        "max_gpu_power_w": 98.83,
+        "mean_gpu_power_w": 84.71333333333332,
+        "estimated_gpu_joules": 188.32402100801468
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "16ae32f100aa4720cae3acbc04ba2e87ea42bbde017f8a6ee2808537675b3507"
+}

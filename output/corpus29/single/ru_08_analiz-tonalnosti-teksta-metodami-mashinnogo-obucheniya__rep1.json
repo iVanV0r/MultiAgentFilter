@@ -1,0 +1,1260 @@
+{
+  "paper_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya",
+  "filename": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток данных о наиболее эффективных методах анализа тональности текста в естественном языке",
+      "type": "data",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Based on the results of this article, the most effective methods of sentiment analysis have been identified.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Сложность подготовки словарей для лингвистического подхода и плохая масштабируемость при работе с разными предметными областями",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Основной недостаток данного подхода в большой сложности подготовки словарей, надо хорошо знать предметную область, для которой составляется словарь. Второй недостаток — это плохая масштабируемость, нельзя использовать один и тот же словарь для разных предметных областей",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Наивный байесовский классификатор часто неэффективен из-за предположения о независимости признаков, которое редко подтверждается в текстовых документах.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "предположение о независимости не подтверждается, что делает его слабоэффективным",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Метод максимума энтропии не требует предположения о независимости признаков и позволяет добиться лучших результатов по сравнению с наивным байесовским классификатором.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "в отличии от наивного байесовского классификатора метод максимума энтропии не делает предположения о независимости признаков, что позволяет добиться лучших результатов",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Ансамбли решающих деревьев (случайный лес) могут работать неэффективно при большом количестве признаков из-за чрезмерной глубины деревьев и больших затрат времени на построение.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "если признаков очень много, то этот подход работает не очень хорошо: деревья будут очень глубокими, на их построение будет уходить слишком много времени",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Градиентный бустинг может давать неприемлемое качество при работе с текстовыми данными, так как каждое дерево учитывает лишь небольшое подмножество признаков, а ответ зависит от комбинации большого количества слов.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "каждое дерево может учесть лишь небольшое подмножество признаков, в то время как зачастую ответ зависит от комбинации большого количества слов в тексте",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Логическая регрессия требует качественной предобработки признаков и их отбора для достижения хороших результатов.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Из недостатков можно выделить, что необходима качественная предобработка признаков и их отбор",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 100.45976859999791,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.041160000000673,
+        "load_seconds": 3.4222477,
+        "prompt_eval_seconds": 0.443899,
+        "eval_seconds": 0.06096,
+        "total_server_seconds": 3.9350668,
+        "prompt_tokens": 526,
+        "generated_tokens": 5,
+        "tokens_per_second": 82.02,
+        "prompt_tokens_per_second": 1184.95,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18103558144,
+          "mean_system_ram_used_bytes": 15920225280.0,
+          "max_system_ram_percent": 52.8,
+          "mean_system_ram_percent": 46.475,
+          "max_cpu_percent": 58.8,
+          "mean_cpu_percent": 30.05,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94679040.0,
+          "max_ollama_process_rss_bytes": 223551488,
+          "mean_ollama_process_rss_bytes": 223328256.0,
+          "max_gpu_mem_mb": 5294.0,
+          "mean_gpu_mem_mb": 3146.5,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 36.25,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 54.925,
+          "max_gpu_power_w": 85.19,
+          "mean_gpu_power_w": 62.385,
+          "estimated_gpu_joules": 208.6047576546669
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.4963260000004084,
+        "load_seconds": 0.0201409,
+        "prompt_eval_seconds": 0.339249,
+        "eval_seconds": 0.058358,
+        "total_server_seconds": 0.4549561,
+        "prompt_tokens": 569,
+        "generated_tokens": 5,
+        "tokens_per_second": 85.68,
+        "prompt_tokens_per_second": 1677.23,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15534456832,
+          "mean_system_ram_used_bytes": 15534456832.0,
+          "max_system_ram_percent": 45.3,
+          "mean_system_ram_percent": 45.3,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94666752,
+          "mean_python_process_rss_bytes": 94666752.0,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5296.0,
+          "mean_gpu_mem_mb": 5296.0,
+          "max_gpu_util_percent": 22.0,
+          "mean_gpu_util_percent": 22.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 70.16,
+          "mean_gpu_power_w": 70.16
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "methods",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.3502660999984073,
+        "load_seconds": 0.0149706,
+        "prompt_eval_seconds": 0.20333,
+        "eval_seconds": 0.058514,
+        "total_server_seconds": 0.3114369,
+        "prompt_tokens": 325,
+        "generated_tokens": 5,
+        "tokens_per_second": 85.45,
+        "prompt_tokens_per_second": 1598.39,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15664996352,
+          "mean_system_ram_used_bytes": 15664996352.0,
+          "max_system_ram_percent": 45.7,
+          "mean_system_ram_percent": 45.7,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94666752,
+          "mean_python_process_rss_bytes": 94666752.0,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5296.0,
+          "mean_gpu_mem_mb": 5296.0,
+          "max_gpu_util_percent": 58.0,
+          "mean_gpu_util_percent": 58.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.4,
+          "max_gpu_power_w": 84.16,
+          "mean_gpu_power_w": 84.16
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток данных о наиболее эффективных методах анализа тональности текста в естественном языке",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Based on the results of this article, the most effective methods of sentiment analysis have been identified.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.4685841999998956,
+        "load_seconds": 0.0154997,
+        "prompt_eval_seconds": 0.24805,
+        "eval_seconds": 1.063996,
+        "total_server_seconds": 1.3332546,
+        "prompt_tokens": 406,
+        "generated_tokens": 69,
+        "tokens_per_second": 64.85,
+        "prompt_tokens_per_second": 1636.77,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15794970624,
+          "mean_system_ram_used_bytes": 15782105088.0,
+          "max_system_ram_percent": 46.1,
+          "mean_system_ram_percent": 46.05,
+          "max_cpu_percent": 19.7,
+          "mean_cpu_percent": 9.85,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94674944.0,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5296.0,
+          "mean_gpu_mem_mb": 5296.0,
+          "max_gpu_util_percent": 78.0,
+          "mean_gpu_util_percent": 68.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 110.86,
+          "mean_gpu_power_w": 90.095,
+          "estimated_gpu_joules": 138.2025331687927
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "abstract",
+      "pages": [
+        2
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.38944749999791384,
+        "load_seconds": 0.0159598,
+        "prompt_eval_seconds": 0.258522,
+        "eval_seconds": 0.065058,
+        "total_server_seconds": 0.3452161,
+        "prompt_tokens": 407,
+        "generated_tokens": 5,
+        "tokens_per_second": 76.85,
+        "prompt_tokens_per_second": 1574.33,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15786688512,
+          "mean_system_ram_used_bytes": 15786688512.0,
+          "max_system_ram_percent": 46.1,
+          "mean_system_ram_percent": 46.1,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94666752,
+          "mean_python_process_rss_bytes": 94666752.0,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5295.0,
+          "mean_gpu_mem_mb": 5295.0,
+          "max_gpu_util_percent": 72.0,
+          "mean_gpu_util_percent": 72.0,
+          "max_gpu_temperature_c": 55.6,
+          "mean_gpu_temperature_c": 55.6,
+          "max_gpu_power_w": 83.91,
+          "mean_gpu_power_w": 83.91
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 2,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Сложность подготовки словарей для лингвистического подхода и плохая масштабируемость при работе с разными предметными областями",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Основной недостаток данного подхода в большой сложности подготовки словарей, надо хорошо знать предметную область, для которой составляется словарь. Второй недостаток — это плохая масштабируемость, нельзя использовать один и тот же словарь для разных предметных областей",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаточность существующих методов глубокого обучения для задачи анализа тональности текста",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "В настоящее время в основном используются следующие подходы для выявления эмоциональной окраски текста: 1) Лингвистический подход... 2) Подход, основанный на использовании методов машинного обучения... 3) Гибридный подход...",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.054837799998495,
+        "load_seconds": 0.034643,
+        "prompt_eval_seconds": 0.567846,
+        "eval_seconds": 3.383751,
+        "total_server_seconds": 4.0028054,
+        "prompt_tokens": 1025,
+        "generated_tokens": 202,
+        "tokens_per_second": 59.7,
+        "prompt_tokens_per_second": 1805.07,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 15828733952,
+          "mean_system_ram_used_bytes": 15810477056.0,
+          "max_system_ram_percent": 46.2,
+          "mean_system_ram_percent": 46.150000000000006,
+          "max_cpu_percent": 23.1,
+          "mean_cpu_percent": 16.575,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94679040.0,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.575,
+          "max_gpu_power_w": 98.19,
+          "mean_gpu_power_w": 85.32499999999999,
+          "estimated_gpu_joules": 314.1769726300239
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 6,
+      "grounded": 6,
+      "raw": [
+        {
+          "statement": "Наивный байесовский классификатор часто неэффективен из-за предположения о независимости признаков, которое редко подтверждается в текстовых документах.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "предположение о независимости не подтверждается, что делает его слабоэффективным",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Метод максимума энтропии не требует предположения о независимости признаков и позволяет добиться лучших результатов по сравнению с наивным байесовским классификатором.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "в отличии от наивного байесовского классификатора метод максимума энтропии не делает предположения о независимости признаков, что позволяет добиться лучших результатов",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Ансамбли решающих деревьев (случайный лес) могут работать неэффективно при большом количестве признаков из-за чрезмерной глубины деревьев и больших затрат времени на построение.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "если признаков очень много, то этот подход работает не очень хорошо: деревья будут очень глубокими, на их построение будет уходить слишком много времени",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Градиентный бустинг может давать неприемлемое качество при работе с текстовыми данными, так как каждое дерево учитывает лишь небольшое подмножество признаков, а ответ зависит от комбинации большого количества слов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "каждое дерево может учесть лишь небольшое подмножество признаков, в то время как зачастую ответ зависит от комбинации большого количества слов в тексте",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Логическая регрессия требует качественной предобработки признаков и их отбора для достижения хороших результатов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Из недостатков можно выделить, что необходима качественная предобработка признаков и их отбор",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Метод опорных векторов (SVM) направлен на поиск гиперплоскости, отделяющей два класса обучающих примеров друг от друга.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Цель метода заключается в нахождении среди всех возможных гиперплоскостей пространства, отделяющих два класса обучающих примеров друг от друга",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 11.532783700000437,
+        "load_seconds": 0.0186662,
+        "prompt_eval_seconds": 0.94172,
+        "eval_seconds": 10.407523,
+        "total_server_seconds": 11.4339867,
+        "prompt_tokens": 1276,
+        "generated_tokens": 525,
+        "tokens_per_second": 50.44,
+        "prompt_tokens_per_second": 1354.97,
+        "hardware": {
+          "samples": 9,
+          "max_system_ram_used_bytes": 16161378304,
+          "mean_system_ram_used_bytes": 16085716992.0,
+          "max_system_ram_percent": 47.2,
+          "mean_system_ram_percent": 46.94444444444444,
+          "max_cpu_percent": 56.2,
+          "mean_cpu_percent": 31.27777777777778,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94681315.55555555,
+          "max_ollama_process_rss_bytes": 222961664,
+          "mean_ollama_process_rss_bytes": 222961664.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 87.88888888888889,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.42222222222222,
+          "max_gpu_power_w": 98.35,
+          "mean_gpu_power_w": 87.17,
+          "estimated_gpu_joules": 894.2801247358323
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "introduction",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Традиционные методы машинного обучения показывают низкую эффективность на данных с нарушениями грамматики и правил языка (например, сообщения в соцсетях), что требует тщательной предобработки и отбора признаков.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Качество анализа тональности текста, в которых не соблюдаются правила и грамматика языка, например сообщения в социальных сетях, зачастую оказывается довольно низким.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.1039163999994344,
+        "load_seconds": 0.0327387,
+        "prompt_eval_seconds": 0.946223,
+        "eval_seconds": 1.989442,
+        "total_server_seconds": 3.0456603,
+        "prompt_tokens": 1229,
+        "generated_tokens": 102,
+        "tokens_per_second": 51.27,
+        "prompt_tokens_per_second": 1298.85,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16429436928,
+          "mean_system_ram_used_bytes": 16333901824.0,
+          "max_system_ram_percent": 47.9,
+          "mean_system_ram_percent": 47.63333333333333,
+          "max_cpu_percent": 35.9,
+          "mean_cpu_percent": 28.233333333333334,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94677674.66666667,
+          "max_ollama_process_rss_bytes": 222986240,
+          "mean_ollama_process_rss_bytes": 222986240.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 88.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 86.82,
+          "mean_gpu_power_w": 76.17,
+          "estimated_gpu_joules": 181.99742084741592
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "introduction",
+      "pages": [
+        5
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Сравнение эффективности сверточных нейронных сетей и линейных моделей (логической регрессии) в задачах анализа тональности текстов с учетом времени обучения.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "В этом исследовании проводят сравнение сверточных нейронных сетей и логической регрессии по определению тональности в сообщениях из твитера",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Анализ влияния количества обучающих данных на выбор между традиционными методами машинного обучения и искусственными нейронными сетями.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Если время обучения не приоритет и в распоряжении есть большое количество обучающих данных, то лучше отдать предпочтение искусственным нейронным сетям",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Исследование способности рекуррентных нейронных сетей (GRU, LSTM) превосходить линейные модели по точности классификации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Рекуррентные нейронные сети показывают наилучшие результаты во многих задачах",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.57659699999931,
+        "load_seconds": 0.0343032,
+        "prompt_eval_seconds": 0.6871,
+        "eval_seconds": 4.699558,
+        "total_server_seconds": 5.4991215,
+        "prompt_tokens": 1212,
+        "generated_tokens": 246,
+        "tokens_per_second": 52.35,
+        "prompt_tokens_per_second": 1763.94,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 16680329216,
+          "mean_system_ram_used_bytes": 16620931481.6,
+          "max_system_ram_percent": 48.7,
+          "mean_system_ram_percent": 48.5,
+          "max_cpu_percent": 29.7,
+          "mean_cpu_percent": 21.86,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94679859.2,
+          "max_ollama_process_rss_bytes": 222986240,
+          "mean_ollama_process_rss_bytes": 222986240.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 85.6,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.220000000000006,
+          "max_gpu_power_w": 98.28,
+          "mean_gpu_power_w": 87.76599999999999,
+          "estimated_gpu_joules": 440.31246038675306
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "introduction",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Влияние длины текста на эффективность сверточных и рекуррентных сетей в анализе тональности",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Допустим исследование, где производится анализ тональности в коротких сообщениях",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7530802999972366,
+        "load_seconds": 0.0205703,
+        "prompt_eval_seconds": 0.327363,
+        "eval_seconds": 1.279869,
+        "total_server_seconds": 1.6938188,
+        "prompt_tokens": 542,
+        "generated_tokens": 65,
+        "tokens_per_second": 50.79,
+        "prompt_tokens_per_second": 1655.65,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16902545408,
+          "mean_system_ram_used_bytes": 16776839168.0,
+          "max_system_ram_percent": 49.3,
+          "mean_system_ram_percent": 48.95,
+          "max_cpu_percent": 30.9,
+          "mean_cpu_percent": 27.85,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94674944.0,
+          "max_ollama_process_rss_bytes": 223019008,
+          "mean_ollama_process_rss_bytes": 223019008.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 90.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 86.09,
+          "mean_gpu_power_w": 77.88,
+          "estimated_gpu_joules": 89.95794843673707
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "conclusion",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость проверки эффективности методов глубокого обучения и подбора оптимальной архитектуры для задачи определения тональности текста",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Следующей задачей стоит проверить на экспериментальных данных эффективность методов глубокого обучения и подобрать оптимальную архитектуру для задачи определения тональности текста.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.101345900002343,
+        "load_seconds": 0.0337878,
+        "prompt_eval_seconds": 0.236474,
+        "eval_seconds": 1.688886,
+        "total_server_seconds": 2.0147605,
+        "prompt_tokens": 403,
+        "generated_tokens": 84,
+        "tokens_per_second": 49.74,
+        "prompt_tokens_per_second": 1704.2,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17080430592,
+          "mean_system_ram_used_bytes": 16993851392.0,
+          "max_system_ram_percent": 49.8,
+          "mean_system_ram_percent": 49.55,
+          "max_cpu_percent": 28.6,
+          "mean_cpu_percent": 14.3,
+          "max_python_process_rss_bytes": 94683136,
+          "mean_python_process_rss_bytes": 94674944.0,
+          "max_ollama_process_rss_bytes": 223019008,
+          "mean_ollama_process_rss_bytes": 223019008.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 57.3,
+          "max_gpu_power_w": 86.3,
+          "mean_gpu_power_w": 70.595,
+          "estimated_gpu_joules": 69.77151898384095
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 9.49892280000131,
+      "load_seconds": 0.0173404,
+      "prompt_eval_seconds": 0.611459,
+      "eval_seconds": 8.74138,
+      "total_server_seconds": 9.4297394,
+      "prompt_tokens": 736,
+      "generated_tokens": 441,
+      "tokens_per_second": 50.45,
+      "prompt_tokens_per_second": 1203.68,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 17278263296,
+        "mean_system_ram_used_bytes": 17233244160.0,
+        "max_system_ram_percent": 50.4,
+        "mean_system_ram_percent": 50.275,
+        "max_cpu_percent": 53.7,
+        "mean_cpu_percent": 25.2875,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94681088.0,
+        "max_ollama_process_rss_bytes": 223019008,
+        "mean_ollama_process_rss_bytes": 223019008.0,
+        "max_gpu_mem_mb": 5301.0,
+        "mean_gpu_mem_mb": 5298.375,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 88.125,
+        "max_gpu_temperature_c": 57.5,
+        "mean_gpu_temperature_c": 57.2375,
+        "max_gpu_power_w": 98.43,
+        "mean_gpu_power_w": 91.39875,
+        "estimated_gpu_joules": 790.765697414875
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.472625100002915,
+      "load_seconds": 0.019257,
+      "prompt_eval_seconds": 0.598231,
+      "eval_seconds": 6.740898,
+      "total_server_seconds": 7.4157871,
+      "prompt_tokens": 738,
+      "generated_tokens": 352,
+      "tokens_per_second": 52.22,
+      "prompt_tokens_per_second": 1233.64,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 17476325376,
+        "mean_system_ram_used_bytes": 17436189354.666668,
+        "max_system_ram_percent": 51.0,
+        "mean_system_ram_percent": 50.88333333333333,
+        "max_cpu_percent": 32.9,
+        "mean_cpu_percent": 26.566666666666666,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94680405.33333333,
+        "max_ollama_process_rss_bytes": 223019008,
+        "mean_ollama_process_rss_bytes": 223019008.0,
+        "max_gpu_mem_mb": 5374.0,
+        "mean_gpu_mem_mb": 5310.666666666667,
+        "max_gpu_util_percent": 95.0,
+        "mean_gpu_util_percent": 87.66666666666667,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.26666666666667,
+        "max_gpu_power_w": 98.5,
+        "mean_gpu_power_w": 89.82,
+        "estimated_gpu_joules": 562.6769430780411
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.49597680000079,
+      "load_seconds": 0.0160147,
+      "prompt_eval_seconds": 0.458211,
+      "eval_seconds": 4.907855,
+      "total_server_seconds": 5.431842,
+      "prompt_tokens": 581,
+      "generated_tokens": 295,
+      "tokens_per_second": 60.11,
+      "prompt_tokens_per_second": 1267.97,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17728020480,
+        "mean_system_ram_used_bytes": 17684445593.6,
+        "max_system_ram_percent": 51.7,
+        "mean_system_ram_percent": 51.6,
+        "max_cpu_percent": 25.1,
+        "mean_cpu_percent": 17.98,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94679859.2,
+        "max_ollama_process_rss_bytes": 223072256,
+        "mean_ollama_process_rss_bytes": 223058329.6,
+        "max_gpu_mem_mb": 5374.0,
+        "mean_gpu_mem_mb": 5373.2,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 84.4,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.67999999999999,
+        "max_gpu_power_w": 99.06,
+        "mean_gpu_power_w": 88.46600000000001,
+        "estimated_gpu_joules": 437.41437972545623
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.197346700002527,
+      "load_seconds": 0.0153524,
+      "prompt_eval_seconds": 0.05332,
+      "eval_seconds": 7.975666,
+      "total_server_seconds": 8.1150897,
+      "prompt_tokens": 736,
+      "generated_tokens": 441,
+      "tokens_per_second": 55.29,
+      "prompt_tokens_per_second": 13803.45,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 17737179136,
+        "mean_system_ram_used_bytes": 17720795721.142857,
+        "max_system_ram_percent": 51.8,
+        "mean_system_ram_percent": 51.714285714285715,
+        "max_cpu_percent": 48.9,
+        "mean_cpu_percent": 25.957142857142856,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94680795.42857143,
+        "max_ollama_process_rss_bytes": 223346688,
+        "mean_ollama_process_rss_bytes": 223346688.0,
+        "max_gpu_mem_mb": 5373.0,
+        "mean_gpu_mem_mb": 5373.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 88.0,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.628571428571426,
+        "max_gpu_power_w": 98.81,
+        "mean_gpu_power_w": 88.75571428571428,
+        "estimated_gpu_joules": 652.3423405051232
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 9.60720620000211,
+      "load_seconds": 0.0169357,
+      "prompt_eval_seconds": 0.614955,
+      "eval_seconds": 8.80233,
+      "total_server_seconds": 9.5139936,
+      "prompt_tokens": 724,
+      "generated_tokens": 429,
+      "tokens_per_second": 48.74,
+      "prompt_tokens_per_second": 1177.32,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 17736744960,
+        "mean_system_ram_used_bytes": 17724810240.0,
+        "max_system_ram_percent": 51.8,
+        "mean_system_ram_percent": 51.712500000000006,
+        "max_cpu_percent": 39.0,
+        "mean_cpu_percent": 28.25,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94681088.0,
+        "max_ollama_process_rss_bytes": 223371264,
+        "mean_ollama_process_rss_bytes": 223116288.0,
+        "max_gpu_mem_mb": 5373.0,
+        "mean_gpu_mem_mb": 5362.375,
+        "max_gpu_util_percent": 92.0,
+        "mean_gpu_util_percent": 88.25,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.3125,
+        "max_gpu_power_w": 98.34,
+        "mean_gpu_power_w": 86.43,
+        "estimated_gpu_joules": 746.6680704450607
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:merge:1:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 4.797262899999623,
+      "load_seconds": 0.017015,
+      "prompt_eval_seconds": 0.442741,
+      "eval_seconds": 4.178335,
+      "total_server_seconds": 4.6912828,
+      "prompt_tokens": 495,
+      "generated_tokens": 217,
+      "tokens_per_second": 51.93,
+      "prompt_tokens_per_second": 1118.04,
+      "hardware": {
+        "samples": 4,
+        "max_system_ram_used_bytes": 17930629120,
+        "mean_system_ram_used_bytes": 17873377280.0,
+        "max_system_ram_percent": 52.3,
+        "mean_system_ram_percent": 52.15,
+        "max_cpu_percent": 31.4,
+        "mean_cpu_percent": 28.875,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94679040.0,
+        "max_ollama_process_rss_bytes": 223031296,
+        "mean_ollama_process_rss_bytes": 223031296.0,
+        "max_gpu_mem_mb": 5356.0,
+        "mean_gpu_mem_mb": 5331.5,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 85.5,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.275,
+        "max_gpu_power_w": 97.74,
+        "mean_gpu_power_w": 85.32249999999999,
+        "estimated_gpu_joules": 317.94853081226347
+      }
+    },
+    {
+      "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:final",
+      "role": "proposer_final",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 20.48859210000228,
+      "load_seconds": 0.017495,
+      "prompt_eval_seconds": 0.940184,
+      "eval_seconds": 19.40402,
+      "total_server_seconds": 20.4213735,
+      "prompt_tokens": 1442,
+      "generated_tokens": 990,
+      "tokens_per_second": 51.02,
+      "prompt_tokens_per_second": 1533.74,
+      "hardware": {
+        "samples": 17,
+        "max_system_ram_used_bytes": 18176577536,
+        "mean_system_ram_used_bytes": 18139508254.117645,
+        "max_system_ram_percent": 53.0,
+        "mean_system_ram_percent": 52.92352941176471,
+        "max_cpu_percent": 41.7,
+        "mean_cpu_percent": 25.599999999999998,
+        "max_python_process_rss_bytes": 94683136,
+        "mean_python_process_rss_bytes": 94682172.23529412,
+        "max_ollama_process_rss_bytes": 223031296,
+        "mean_ollama_process_rss_bytes": 223031296.0,
+        "max_gpu_mem_mb": 5308.0,
+        "mean_gpu_mem_mb": 5307.176470588235,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 89.17647058823529,
+        "max_gpu_temperature_c": 57.8,
+        "mean_gpu_temperature_c": 57.635294117647064,
+        "max_gpu_power_w": 98.82,
+        "mean_gpu_power_w": 90.18764705882353,
+        "estimated_gpu_joules": 1787.4652878332138
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "60d6405e9b2f3440b2a7174e4f29e6a75386c91fcf1bf150f4c4536bc5ee4f6f"
+}

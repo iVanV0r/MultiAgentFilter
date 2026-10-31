@@ -1,0 +1,714 @@
+{
+  "paper_id": "2603.29801v1",
+  "filename": "2603.29801v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation (Ehrmann et al., 2023) when applied to historical documents.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+      "status": "accepted",
+      "reason": "Обозначает явный пробел в знаниях: снижение производительности SoTA систем NERL на исторических документах, что является контекстом для разработки нового ресурса.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation (Ehrmann et al., 2023) when applied to historical documents.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+      "status": "rejected",
+      "reason": "Утверждение о нехватке стандартов является общим заявлением о проблеме в поле, но не обязательно решается или систематизируется данной публикацией, а скорее констатирует недостаток.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+      "status": "rejected",
+      "reason": "Это описание проблемы (bottleneck аннотирования), но оно не описывает конкретный пробел, который эта работа устраняет или систематизирует, а скорее описывает общую трудность в области.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+      "status": "accepted",
+      "reason": "Описывает открытую методологическую проблему (извлечение и трансформация аннотаций SDE в переиспользуемые наборы данных), что является пробелом, который, вероятно, затрагивается работой.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+      "status": "rejected",
+      "reason": "Это утверждение о вкладе (что это первый корпус), а не о научном пробеле, который он решает. Это описание результата.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+      "status": "rejected",
+      "reason": "Это описание ограничений *данного* набора данных, а не научного пробела, который работа устраняет. Это оговорка о недостатках, а не о пробеле, который она закрывает.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "P1_7",
+      "statement": "Future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+      "status": "rejected",
+      "reason": "Это указание на будущую работу, а не на текущий научный пробел, который решается данной публикацией.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Nonetheless, ENEIDE is an actively maintained resource, and future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "неверный пробел",
+            "source_page": 1,
+            "support_quote": "фрагмент или пусто"
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+            "type": "suggested improvement",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 9,
+                "quote": "Nonetheless, ENEIDE is an actively maintained resource, and future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability."
+              }
+            ]
+          },
+          {
+            "statement": "however, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes.",
+            "type": "method",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "however, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes."
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+            "reason": "Цитата верна, но формулировка не является научной проблемой (это констатация факта о деградации), а описание существующего состояния. Проблема должна быть направлена на устранение этого недостатка или указывать на пробел в знаниях/методах."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects.",
+            "reason": "Это классическая научная проблема: отсутствие стандартов ограничивает интероперабельность и воспроизводимость исследований."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced.",
+            "reason": "Описывает конкретный методологический пробел (нехватка ресурсов для аннотации), на который направлена работа."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "remove",
+            "statement": "However, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes",
+            "reason": "Это описание ограничений конкретного ресурса (MHERCL), а не научная проблема статьи. Статья фокусируется на создании нового набора данных ENEIDE, а не на критике MHERCL."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "keep",
+            "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+            "reason": "Явно обозначенный пробел в знаниях/методах (открытая методологическая проблема), на который направлена работа по автоматизации."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "keep",
+            "statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+            "reason": "Утверждение о новизне (first) является обоснованием работы, а не проблемой. Однако в контексте заявленных целей статьи (создание первого набора данных) это может считаться описанием решенной проблемы или достижением. Но строго по определению: это не проблема. Пересмотрим. Это утверждение о факте. Проблема - отсутствие таких наборов. Фраза сама по себе не формулирует проблему, а констатирует факт наличия решения (в контексте статьи). Однако часто такие фразы используются для обозначения решенной проблемы. Но в задании сказано: "
+          }
+        ]
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цитата верна, но формулировка не является научной проблемой (это констатация факта о деградации), а описание существующего состояния. Проблема должна быть направлена на устранение этого недостатка или указывать на пробел в знаниях/методах.",
+          "old_statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents",
+          "new_statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Это классическая научная проблема: отсутствие стандартов ограничивает интероперабельность и воспроизводимость исследований.",
+          "old_statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+          "new_statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Описывает конкретный методологический пробел (нехватка ресурсов для аннотации), на который направлена работа.",
+          "old_statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+          "new_statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced"
+        },
+        {
+          "candidate_id": "M4",
+          "action": "remove",
+          "reason": "Это описание ограничений конкретного ресурса (MHERCL), а не научная проблема статьи. Статья фокусируется на создании нового набора данных ENEIDE, а не на критике MHERCL.",
+          "old_statement": "However, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "keep",
+          "reason": "Явно обозначенный пробел в знаниях/методах (открытая методологическая проблема), на который направлена работа по автоматизации.",
+          "old_statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "new_statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "keep",
+          "reason": "Утверждение о новизне (first) является обоснованием работы, а не проблемой. Однако в контексте заявленных целей статьи (создание первого набора данных) это может считаться описанием решенной проблемы или достижением. Но строго по определению: это не проблема. Пересмотрим. Это утверждение о факте. Проблема - отсутствие таких наборов. Фраза сама по себе не формулирует проблему, а констатирует факт наличия решения (в контексте статьи). Однако часто такие фразы используются для обозначения решенной проблемы. Но в задании сказано:",
+          "old_statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+          "new_statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits"
+        },
+        {
+          "candidate_id": "M7",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+          "new_statement": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata"
+        },
+        {
+          "candidate_id": "P1_7",
+          "action": "critic_addition",
+          "reason": "Новая проблема Phi с подтверждённой цитатой"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 описывает проблему (снижение производительности SoTA систем на исторических документах), которая является пробелом в знаниях, и это напрямую связано с целью работы (представление ресурса для NERL в историческом итальянском).",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Обозначает явный пробел в знаниях: снижение производительности SoTA систем NERL на исторических документах, что является контекстом для разработки нового ресурса."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": false,
+            "reason": "Утверждение о нехватке стандартов является общим заявлением о проблеме в поле, но не обязательно решается или систематизируется данной публикацией, а скорее констатирует недостаток."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Это описание проблемы (bottleneck аннотирования), но оно не описывает конкретный пробел, который эта работа устраняет или систематизирует, а скорее описывает общую трудность в области."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": true,
+            "reason": "Описывает открытую методологическую проблему (извлечение и трансформация аннотаций SDE в переиспользуемые наборы данных), что является пробелом, который, вероятно, затрагивается работой."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": false,
+            "reason": "Это утверждение о вкладе (что это первый корпус), а не о научном пробеле, который он решает. Это описание результата."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": false,
+            "reason": "Это описание ограничений *данного* набора данных, а не научного пробела, который работа устраняет. Это оговорка о недостатках, а не о пробеле, который она закрывает."
+          },
+          {
+            "candidate_id": "P1_7",
+            "accept": false,
+            "reason": "Это указание на будущую работу, а не на текущий научный пробел, который решается данной публикацией."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation (Ehrmann et al., 2023) when applied to historical documents.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        },
+        {
+          "statement": "Future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+          "type": "suggested improvement",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Nonetheless, ENEIDE is an actively maintained resource, and future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "P1_7"
+        }
+      ],
+      "invalid_evidence_candidates": [
+        {
+          "statement": "however, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "however, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+          "status": "accepted",
+          "reason": "Обозначает явный пробел в знаниях: снижение производительности SoTA систем NERL на исторических документах, что является контекстом для разработки нового ресурса.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation (Ehrmann et al., 2023) when applied to historical documents.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+          "status": "rejected",
+          "reason": "Утверждение о нехватке стандартов является общим заявлением о проблеме в поле, но не обязательно решается или систематизируется данной публикацией, а скорее констатирует недостаток.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+          "status": "rejected",
+          "reason": "Это описание проблемы (bottleneck аннотирования), но оно не описывает конкретный пробел, который эта работа устраняет или систематизирует, а скорее описывает общую трудность в области.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "status": "accepted",
+          "reason": "Описывает открытую методологическую проблему (извлечение и трансформация аннотаций SDE в переиспользуемые наборы данных), что является пробелом, который, вероятно, затрагивается работой.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+          "status": "rejected",
+          "reason": "Это утверждение о вкладе (что это первый корпус), а не о научном пробеле, который он решает. Это описание результата.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "it is the first multi-domain corpus for NERL in historical Italian with training, development, and test splits",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+          "status": "rejected",
+          "reason": "Это описание ограничений *данного* набора данных, а не научного пробела, который работа устраняет. Это оговорка о недостатках, а не о пробеле, который она закрывает.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "the annotations do not consider nested entities, and the dataset does not support entity disambiguation through Wikidata",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "P1_7",
+          "statement": "Future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+          "status": "rejected",
+          "reason": "Это указание на будущую работу, а не на текущий научный пробел, который решается данной публикацией.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Nonetheless, ENEIDE is an actively maintained resource, and future work may address these limitations by extending the dataset with additional authors, genres, and time periods to broaden its scope and enhance its reusability.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "State-of-The-Art systems for Named Entity Recognition and Entity Linking demonstrate significant performance degradation when applied to historical documents.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation (Ehrmann et al., 2023) when applied to historical documents.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29801v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 1,
+          "success": true,
+          "retried": true,
+          "num_predict": 2600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": "invalid_json",
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 3.980798100001266,
+          "load_seconds": 0.0335577,
+          "prompt_eval_seconds": 0.579374,
+          "eval_seconds": 3.177328,
+          "total_server_seconds": 3.9143606,
+          "prompt_tokens": 1299,
+          "generated_tokens": 229,
+          "tokens_per_second": 72.07,
+          "prompt_tokens_per_second": 2242.08,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 15744180224,
+            "mean_system_ram_used_bytes": 15646360576.0,
+            "max_system_ram_percent": 45.9,
+            "mean_system_ram_percent": 45.625,
+            "max_cpu_percent": 23.6,
+            "mean_cpu_percent": 20.65,
+            "max_python_process_rss_bytes": 90796032,
+            "mean_python_process_rss_bytes": 90791936.0,
+            "max_ollama_process_rss_bytes": 222220288,
+            "mean_ollama_process_rss_bytes": 222220288.0,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 4770.0,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 54.75,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 58.05,
+            "max_gpu_power_w": 113.22,
+            "mean_gpu_power_w": 96.11500000000001,
+            "estimated_gpu_joules": 333.8462589430809
+          }
+        },
+        {
+          "request_id": "2603.29801v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 15.634119099999225,
+          "load_seconds": 3.5603473,
+          "prompt_eval_seconds": 1.203023,
+          "eval_seconds": 10.799624,
+          "total_server_seconds": 15.5822168,
+          "prompt_tokens": 1758,
+          "generated_tokens": 570,
+          "tokens_per_second": 52.78,
+          "prompt_tokens_per_second": 1461.32,
+          "hardware": {
+            "samples": 13,
+            "max_system_ram_used_bytes": 15739125760,
+            "mean_system_ram_used_bytes": 15476538446.76923,
+            "max_system_ram_percent": 45.9,
+            "mean_system_ram_percent": 45.16923076923077,
+            "max_cpu_percent": 100.0,
+            "mean_cpu_percent": 37.37692307692308,
+            "max_python_process_rss_bytes": 90796032,
+            "mean_python_process_rss_bytes": 90794771.6923077,
+            "max_ollama_process_rss_bytes": 223490048,
+            "mean_ollama_process_rss_bytes": 222495350.15384614,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 4658.076923076923,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 75.76923076923077,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 57.57692307692308,
+            "max_gpu_power_w": 112.56,
+            "mean_gpu_power_w": 82.96692307692307,
+            "estimated_gpu_joules": 1246.0616586661338
+          }
+        },
+        {
+          "request_id": "2603.29801v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 16.07771000000139,
+          "load_seconds": 6.2358941,
+          "prompt_eval_seconds": 1.089605,
+          "eval_seconds": 8.674302,
+          "total_server_seconds": 16.0183305,
+          "prompt_tokens": 1285,
+          "generated_tokens": 596,
+          "tokens_per_second": 68.71,
+          "prompt_tokens_per_second": 1179.33,
+          "hardware": {
+            "samples": 13,
+            "max_system_ram_used_bytes": 18122481664,
+            "mean_system_ram_used_bytes": 17342298584.615383,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 50.599999999999994,
+            "max_cpu_percent": 53.7,
+            "mean_cpu_percent": 35.46153846153846,
+            "max_python_process_rss_bytes": 90796032,
+            "mean_python_process_rss_bytes": 90794771.6923077,
+            "max_ollama_process_rss_bytes": 223408128,
+            "mean_ollama_process_rss_bytes": 223320851.69230768,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 5042.538461538462,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 62.38461538461539,
+            "max_gpu_temperature_c": 57.9,
+            "mean_gpu_temperature_c": 56.353846153846156,
+            "max_gpu_power_w": 98.86,
+            "mean_gpu_power_w": 77.73230769230769,
+            "estimated_gpu_joules": 1146.9252470684053
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 62.855922500002634,
+  "seconds_end_to_end": 174.70926730000429,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "679e5764cbe4146953613a41094eade19349ea6d19ef93f43b2efa914c1f5b20"
+}

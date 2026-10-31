@@ -1,0 +1,1374 @@
+{
+  "paper_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey",
+  "filename": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Генерация текста с помощью нейронных сетей является самым малоизученным направлением во всей линейке инструментов генерации текста.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Именно генерация текста с помощью нейронных сетей имеет преимущество перед другими способами генерации. В ней заложена самостоятельная реакция на нестандартные запросы. Это перспективное направление является самым малоизученным во всей линейке инструментов генерации текста.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Внутреннее внимание рекомендуется использовать не как единственное выразительное средство в нейросети, так как оно теряет информацию.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Механизм внутреннего внимания не рекомендуется использовать как единственное выразительное средство в нейросети, поскольку он теряет информацию",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Механизм внутреннего внимания использует одни и те же данные в качестве запросов и ключей, что создает специфические ограничения на обработку контекста.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Особенность алгоритма работы внутреннего внимания заключается в том, что одни и те же данные используются в качестве запросов и в качестве ключей",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие универсальных методов выбора оптимальных гиперпараметров (температуры и сглаживания) для генерации текста нейросетями.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "их оптимальную величину для каждой конкретной модели следует определять путём перебора",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточный размер обучающей выборки для генеративно-состязательной сети.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "малым количеством данных, на которых обучалась эта сеть",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Ограниченный объем параметров текущей модели (3.15 млн) по сравнению с современными большими языковыми моделями.",
+      "type": "tool",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Текущая модель обладает лишь 3.15 млн. параметров, тогда как современные большие языковые модели используют сотни миллиардов",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость увеличения количества параметров и слоев модели для обнаружения большего числа зависимостей в тексте.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Увеличение количества параметров модели, её слоёв позволяет находить большее число зависимостей в тексте",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 61.93508440000005,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Проблема генерации текста с использованием трансформерных нейронных сетей и GAN",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "TEXT GENERATION USING NEURAL NETWORK",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.860265600000275,
+        "load_seconds": 3.6090038,
+        "prompt_eval_seconds": 0.401309,
+        "eval_seconds": 0.785035,
+        "total_server_seconds": 4.8012129,
+        "prompt_tokens": 515,
+        "generated_tokens": 56,
+        "tokens_per_second": 71.33,
+        "prompt_tokens_per_second": 1283.3,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18164854784,
+          "mean_system_ram_used_bytes": 15957596160.0,
+          "max_system_ram_percent": 53.0,
+          "mean_system_ram_percent": 46.55,
+          "max_cpu_percent": 48.3,
+          "mean_cpu_percent": 29.475,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93536256.0,
+          "max_ollama_process_rss_bytes": 223502336,
+          "mean_ollama_process_rss_bytes": 223240192.0,
+          "max_gpu_mem_mb": 5293.0,
+          "mean_gpu_mem_mb": 3098.25,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 35.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 54.6,
+          "max_gpu_power_w": 85.02,
+          "mean_gpu_power_w": 62.277499999999996,
+          "estimated_gpu_joules": 212.95737999677658
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5749695000013162,
+        "load_seconds": 0.0344823,
+        "prompt_eval_seconds": 0.357772,
+        "eval_seconds": 0.064047,
+        "total_server_seconds": 0.4924336,
+        "prompt_tokens": 601,
+        "generated_tokens": 5,
+        "tokens_per_second": 78.07,
+        "prompt_tokens_per_second": 1679.84,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15584378880,
+          "mean_system_ram_used_bytes": 15584378880.0,
+          "max_system_ram_percent": 45.5,
+          "mean_system_ram_percent": 45.5,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 93523968,
+          "mean_python_process_rss_bytes": 93523968.0,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5293.0,
+          "mean_gpu_mem_mb": 5293.0,
+          "max_gpu_util_percent": 70.0,
+          "mean_gpu_util_percent": 70.0,
+          "max_gpu_temperature_c": 56.6,
+          "mean_gpu_temperature_c": 56.6,
+          "max_gpu_power_w": 71.1,
+          "mean_gpu_power_w": 71.1
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Генерация текста с помощью нейронных сетей является самым малоизученным направлением во всей линейке инструментов генерации текста.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Именно генерация текста с помощью нейронных сетей имеет преимущество перед другими способами генерации. В ней заложена самостоятельная реакция на нестандартные запросы. Это перспективное направление является самым малоизученным во всей линейке инструментов генерации текста.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.131750999997166,
+        "load_seconds": 0.0148221,
+        "prompt_eval_seconds": 0.278555,
+        "eval_seconds": 1.73654,
+        "total_server_seconds": 2.0689822,
+        "prompt_tokens": 463,
+        "generated_tokens": 115,
+        "tokens_per_second": 66.22,
+        "prompt_tokens_per_second": 1662.15,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15837855744,
+          "mean_system_ram_used_bytes": 15771590656.0,
+          "max_system_ram_percent": 46.2,
+          "mean_system_ram_percent": 46.0,
+          "max_cpu_percent": 25.2,
+          "mean_cpu_percent": 12.6,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93532160.0,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5293.0,
+          "mean_gpu_mem_mb": 5293.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 78.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.7,
+          "max_gpu_power_w": 110.71,
+          "mean_gpu_power_w": 106.245,
+          "estimated_gpu_joules": 140.40323147058487
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Минимальное изучение области генерации текста с использованием нейронных сетей-трансформеров и генеративно-состязательных сетей для улучшения качества финальной генерации.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "This promising direction is the least studied in the entire line of text generation tools.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7363430000004882,
+        "load_seconds": 0.0161531,
+        "prompt_eval_seconds": 0.277605,
+        "eval_seconds": 1.341982,
+        "total_server_seconds": 1.6729597,
+        "prompt_tokens": 475,
+        "generated_tokens": 85,
+        "tokens_per_second": 63.34,
+        "prompt_tokens_per_second": 1711.06,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15976644608,
+          "mean_system_ram_used_bytes": 15909677056.0,
+          "max_system_ram_percent": 46.6,
+          "mean_system_ram_percent": 46.400000000000006,
+          "max_cpu_percent": 22.8,
+          "mean_cpu_percent": 11.4,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93532160.0,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5293.0,
+          "mean_gpu_mem_mb": 5293.0,
+          "max_gpu_util_percent": 83.0,
+          "mean_gpu_util_percent": 80.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 109.06,
+          "mean_gpu_power_w": 98.08500000000001,
+          "estimated_gpu_joules": 137.24809452533722
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "abstract",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие строго детерминированного процесса анализа текста машинными алгоритмами из-за влияния контекста и правил естественного языка.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "отличие естественного языка от формального (формулы, язык программирования и т.д.) заключается в том, что ошибки не сильно влияют на понимание. Поэтому строго детерминированный процесс анализа текста машинными алгоритмами отсутствует.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.7085255999991205,
+        "load_seconds": 0.0158951,
+        "prompt_eval_seconds": 0.68133,
+        "eval_seconds": 1.809601,
+        "total_server_seconds": 2.5555309,
+        "prompt_tokens": 1089,
+        "generated_tokens": 108,
+        "tokens_per_second": 59.68,
+        "prompt_tokens_per_second": 1598.34,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16159174656,
+          "mean_system_ram_used_bytes": 16100816213.333334,
+          "max_system_ram_percent": 47.2,
+          "mean_system_ram_percent": 46.96666666666667,
+          "max_cpu_percent": 19.4,
+          "mean_cpu_percent": 12.4,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93534890.66666667,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 87.66666666666667,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.23333333333333,
+          "max_gpu_power_w": 98.71,
+          "mean_gpu_power_w": 79.00333333333333,
+          "estimated_gpu_joules": 207.85255027532577
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "abstract",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость обеспечения независимости весов модели от конкретного слова и его позиции в тексте для расчета релевантности токенов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Необходимо рассчитывать релевантность с помощью одной и той же модели, поскольку её веса не зависят от конкретного слова и его позиции в тексте.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9962267000009888,
+        "load_seconds": 0.0161344,
+        "prompt_eval_seconds": 0.437037,
+        "eval_seconds": 1.38917,
+        "total_server_seconds": 1.8952595,
+        "prompt_tokens": 631,
+        "generated_tokens": 85,
+        "tokens_per_second": 61.19,
+        "prompt_tokens_per_second": 1443.81,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16353898496,
+          "mean_system_ram_used_bytes": 16252968960.0,
+          "max_system_ram_percent": 47.7,
+          "mean_system_ram_percent": 47.400000000000006,
+          "max_cpu_percent": 17.9,
+          "mean_cpu_percent": 8.95,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93532160.0,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 74.0,
+          "max_gpu_temperature_c": 57.1,
+          "mean_gpu_temperature_c": 56.1,
+          "max_gpu_power_w": 86.99,
+          "mean_gpu_power_w": 70.955,
+          "estimated_gpu_joules": 68.70365900039673
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "abstract",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Механизм внутреннего внимания использует одни и те же данные в качестве запросов и ключей, что создает специфические ограничения на обработку контекста.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Особенность алгоритма работы внутреннего внимания заключается в том, что одни и те же данные используются в качестве запросов и в качестве ключей.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.06447979999939,
+        "load_seconds": 0.0202246,
+        "prompt_eval_seconds": 0.496217,
+        "eval_seconds": 1.438189,
+        "total_server_seconds": 2.0037942,
+        "prompt_tokens": 825,
+        "generated_tokens": 87,
+        "tokens_per_second": 60.49,
+        "prompt_tokens_per_second": 1662.58,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16523132928,
+          "mean_system_ram_used_bytes": 16429078528.0,
+          "max_system_ram_percent": 48.2,
+          "mean_system_ram_percent": 47.95,
+          "max_cpu_percent": 24.6,
+          "mean_cpu_percent": 22.15,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93532160.0,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5302.5,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 86.48,
+          "mean_gpu_power_w": 78.09,
+          "estimated_gpu_joules": 87.0635640859604
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "abstract",
+      "pages": [
+        5
+      ],
+      "generated": 7,
+      "grounded": 6,
+      "raw": [
+        {
+          "statement": "Операция усреднения в механизме внимания теряет много информации при наличии токенов с большим весом.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "операция усреднения остаётся грубой, когда в процессе теряется много информации",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Механизм внимания учитывает лишь один аспект и сравнивает токены один раз, игнорируя их различия по множеству характеристик.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Механизм внимания учитывает лишь один аспект и сравнивает токены один раз, хотя они могут различаться множеством характеристик",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие механизмы внимания не учитывают позицию слова во фразе, что несёт смысловую информацию.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "и для других языков позиция слов во фразе также несёт смысловую информацию",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Внутреннее внимание рекомендуется использовать не как единственное выразительное средство в нейросети, так как оно теряет информацию.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Механизм внутреннего внимания не рекомендуется использовать как единственное выразительное средство в нейросети, поскольку он теряет информацию",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Для строго детерминированных языков очень важен порядок слов в предложении, а для других языков позиция слов также несёт смысловую информацию.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Для строго детерминированных языков (например, для английского языка) очень важен порядок слов в предложении",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Механизм внимания ничего не знает о занимаемой токеном позиции относительно других токенов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "и в том, что он ничего не знает о занимаемой токеном позиции относительной друг друга",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Механизм внимания решает задачу управления зависимостью при генерации текста, позволяя модели учитывать только предыдущие позиции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "при генерации текста он даёт возможность управления зависимостью",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 9.016682199999195,
+        "load_seconds": 0.0166753,
+        "prompt_eval_seconds": 0.696315,
+        "eval_seconds": 8.166037,
+        "total_server_seconds": 8.9398943,
+        "prompt_tokens": 1125,
+        "generated_tokens": 494,
+        "tokens_per_second": 60.49,
+        "prompt_tokens_per_second": 1615.65,
+        "hardware": {
+          "samples": 8,
+          "max_system_ram_used_bytes": 16775798784,
+          "mean_system_ram_used_bytes": 16738893824.0,
+          "max_system_ram_percent": 49.0,
+          "mean_system_ram_percent": 48.825,
+          "max_cpu_percent": 22.9,
+          "mean_cpu_percent": 16.5375,
+          "max_python_process_rss_bytes": 93540352,
+          "mean_python_process_rss_bytes": 93538304.0,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5302.5,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 86.625,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.2875,
+          "max_gpu_power_w": 98.93,
+          "mean_gpu_power_w": 90.93875,
+          "estimated_gpu_joules": 775.7654345655442
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "abstract",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Создание более реалистичных предложений генеративной сетью за счёт адаптации дискриминатора в реальном времени",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Сеть-генератор учится обманывать сетьдискриминатор, за счёт чего создаёт более реалистичные предложения. В свою очередь сетьдискриминатор адаптируется в реальном времени к увеличивающейся способности сети-генератора создавать реалистичные предложения.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.754788099999132,
+        "load_seconds": 0.0180144,
+        "prompt_eval_seconds": 0.694834,
+        "eval_seconds": 1.913924,
+        "total_server_seconds": 2.698723,
+        "prompt_tokens": 1212,
+        "generated_tokens": 119,
+        "tokens_per_second": 62.18,
+        "prompt_tokens_per_second": 1744.3,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17093353472,
+          "mean_system_ram_used_bytes": 16982530730.666666,
+          "max_system_ram_percent": 49.9,
+          "mean_system_ram_percent": 49.56666666666666,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 21.3,
+          "max_python_process_rss_bytes": 93556736,
+          "mean_python_process_rss_bytes": 93545813.33333333,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.46666666666667,
+          "max_gpu_power_w": 98.89,
+          "mean_gpu_power_w": 88.88666666666666,
+          "estimated_gpu_joules": 206.79116319179536
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "abstract",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Отсутствие методов для предотвращения зацикливания генерации текста при чрезмерной уверенности модели",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Чрезмерная «уверенность» модели приводит к зацикливанию, что снижает качество генерируемого текста.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7903311000009126,
+        "load_seconds": 0.0158372,
+        "prompt_eval_seconds": 0.419881,
+        "eval_seconds": 1.224951,
+        "total_server_seconds": 1.7340684,
+        "prompt_tokens": 785,
+        "generated_tokens": 74,
+        "tokens_per_second": 60.41,
+        "prompt_tokens_per_second": 1869.58,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17380515840,
+          "mean_system_ram_used_bytes": 17234427904.0,
+          "max_system_ram_percent": 50.7,
+          "mean_system_ram_percent": 50.3,
+          "max_cpu_percent": 21.1,
+          "mean_cpu_percent": 10.55,
+          "max_python_process_rss_bytes": 93556736,
+          "mean_python_process_rss_bytes": 93548544.0,
+          "max_ollama_process_rss_bytes": 222715904,
+          "mean_ollama_process_rss_bytes": 222715904.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.4,
+          "max_gpu_power_w": 86.63,
+          "mean_gpu_power_w": 70.74,
+          "estimated_gpu_joules": 69.09911224842072
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "abstract",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие универсальных методов выбора оптимальных гиперпараметров (температуры и сглаживания) для генерации текста нейросетями.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "их оптимальную величину для каждой конкретной модели следует определять путём перебора",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.0695207999997365,
+        "load_seconds": 0.019991,
+        "prompt_eval_seconds": 0.558311,
+        "eval_seconds": 1.315968,
+        "total_server_seconds": 1.9636663,
+        "prompt_tokens": 1005,
+        "generated_tokens": 78,
+        "tokens_per_second": 59.27,
+        "prompt_tokens_per_second": 1800.07,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17675853824,
+          "mean_system_ram_used_bytes": 17533237248.0,
+          "max_system_ram_percent": 51.6,
+          "mean_system_ram_percent": 51.150000000000006,
+          "max_cpu_percent": 40.4,
+          "mean_cpu_percent": 20.2,
+          "max_python_process_rss_bytes": 93556736,
+          "mean_python_process_rss_bytes": 93548544.0,
+          "max_ollama_process_rss_bytes": 222715904,
+          "mean_ollama_process_rss_bytes": 222715904.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5302.5,
+          "max_gpu_util_percent": 83.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.15,
+          "max_gpu_power_w": 97.97,
+          "mean_gpu_power_w": 76.38,
+          "estimated_gpu_joules": 68.07066113948822
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "conclusion",
+      "pages": [
+        8
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Недостаточный размер обучающей выборки для генеративно-состязательной сети.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "малым количеством данных, на которых обучалась эта сеть",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Ограниченный объем параметров текущей модели (3.15 млн) по сравнению с современными большими языковыми моделями.",
+          "type": "tool",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Текущая модель обладает лишь 3.15 млн. параметров, тогда как современные большие языковые модели используют сотни миллиардов",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Необходимость увеличения количества параметров и слоев модели для обнаружения большего числа зависимостей в тексте.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Увеличение количества параметров модели, её слоёв позволяет находить большее число зависимостей в тексте",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.903427000001102,
+        "load_seconds": 0.0189267,
+        "prompt_eval_seconds": 0.3143,
+        "eval_seconds": 3.259911,
+        "total_server_seconds": 3.6610336,
+        "prompt_tokens": 608,
+        "generated_tokens": 201,
+        "tokens_per_second": 61.66,
+        "prompt_tokens_per_second": 1934.46,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 17971642368,
+          "mean_system_ram_used_bytes": 17896926208.0,
+          "max_system_ram_percent": 52.4,
+          "mean_system_ram_percent": 52.2,
+          "max_cpu_percent": 21.1,
+          "mean_cpu_percent": 14.15,
+          "max_python_process_rss_bytes": 93556736,
+          "mean_python_process_rss_bytes": 93552640.0,
+          "max_ollama_process_rss_bytes": 222715904,
+          "mean_ollama_process_rss_bytes": 222715904.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 84.75,
+          "max_gpu_temperature_c": 57.6,
+          "mean_gpu_temperature_c": 56.65,
+          "max_gpu_power_w": 98.95,
+          "mean_gpu_power_w": 77.59,
+          "estimated_gpu_joules": 313.90013510227203
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.339792300001136,
+      "load_seconds": 0.0165825,
+      "prompt_eval_seconds": 0.424912,
+      "eval_seconds": 2.772506,
+      "total_server_seconds": 3.2814251,
+      "prompt_tokens": 722,
+      "generated_tokens": 167,
+      "tokens_per_second": 60.23,
+      "prompt_tokens_per_second": 1699.18,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18199490560,
+        "mean_system_ram_used_bytes": 18119895722.666668,
+        "max_system_ram_percent": 53.1,
+        "mean_system_ram_percent": 52.86666666666667,
+        "max_cpu_percent": 21.2,
+        "mean_cpu_percent": 13.199999999999998,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93551274.66666667,
+        "max_ollama_process_rss_bytes": 222519296,
+        "mean_ollama_process_rss_bytes": 222519296.0,
+        "max_gpu_mem_mb": 5301.0,
+        "mean_gpu_mem_mb": 5301.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 79.33333333333333,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 56.86666666666667,
+        "max_gpu_power_w": 87.19,
+        "mean_gpu_power_w": 76.12666666666667,
+        "estimated_gpu_joules": 174.01873550891878
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 6.5718775000023015,
+      "load_seconds": 0.0271509,
+      "prompt_eval_seconds": 0.423104,
+      "eval_seconds": 5.987054,
+      "total_server_seconds": 6.4960957,
+      "prompt_tokens": 669,
+      "generated_tokens": 372,
+      "tokens_per_second": 62.13,
+      "prompt_tokens_per_second": 1581.17,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 18448695296,
+        "mean_system_ram_used_bytes": 18404969130.666668,
+        "max_system_ram_percent": 53.8,
+        "mean_system_ram_percent": 53.68333333333333,
+        "max_cpu_percent": 24.9,
+        "mean_cpu_percent": 18.833333333333332,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93554005.33333333,
+        "max_ollama_process_rss_bytes": 222519296,
+        "mean_ollama_process_rss_bytes": 222519296.0,
+        "max_gpu_mem_mb": 5298.0,
+        "mean_gpu_mem_mb": 5298.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 84.33333333333333,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.416666666666664,
+        "max_gpu_power_w": 98.93,
+        "mean_gpu_power_w": 83.83166666666666,
+        "estimated_gpu_joules": 510.5569281816483
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.910317000001669,
+      "load_seconds": 0.0038655,
+      "prompt_eval_seconds": 0.418595,
+      "eval_seconds": 2.221023,
+      "total_server_seconds": 2.7082615,
+      "prompt_tokens": 687,
+      "generated_tokens": 137,
+      "tokens_per_second": 61.68,
+      "prompt_tokens_per_second": 1641.2,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18693869568,
+        "mean_system_ram_used_bytes": 18611303765.333332,
+        "max_system_ram_percent": 54.5,
+        "mean_system_ram_percent": 54.26666666666667,
+        "max_cpu_percent": 35.9,
+        "mean_cpu_percent": 18.766666666666666,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93551274.66666667,
+        "max_ollama_process_rss_bytes": 222519296,
+        "mean_ollama_process_rss_bytes": 222519296.0,
+        "max_gpu_mem_mb": 5298.0,
+        "mean_gpu_mem_mb": 5298.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 86.33333333333333,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 56.9,
+        "max_gpu_power_w": 87.13,
+        "mean_gpu_power_w": 75.32333333333334,
+        "estimated_gpu_joules": 229.77677888870238
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:0:3",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.7134666000019934,
+      "load_seconds": 0.0159389,
+      "prompt_eval_seconds": 0.278002,
+      "eval_seconds": 2.285375,
+      "total_server_seconds": 2.6350874,
+      "prompt_tokens": 415,
+      "generated_tokens": 142,
+      "tokens_per_second": 62.13,
+      "prompt_tokens_per_second": 1492.8,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18932858880,
+        "mean_system_ram_used_bytes": 18849977685.333332,
+        "max_system_ram_percent": 55.2,
+        "mean_system_ram_percent": 54.96666666666667,
+        "max_cpu_percent": 21.7,
+        "mean_cpu_percent": 14.466666666666667,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93551274.66666667,
+        "max_ollama_process_rss_bytes": 222617600,
+        "mean_ollama_process_rss_bytes": 222584832.0,
+        "max_gpu_mem_mb": 5300.0,
+        "mean_gpu_mem_mb": 5299.333333333333,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 87.33333333333333,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.0,
+        "max_gpu_power_w": 87.09,
+        "mean_gpu_power_w": 80.60000000000001,
+        "estimated_gpu_joules": 194.11825539588926
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.4672465000003285,
+      "load_seconds": 0.0181237,
+      "prompt_eval_seconds": 0.419732,
+      "eval_seconds": 1.905734,
+      "total_server_seconds": 2.4200344,
+      "prompt_tokens": 671,
+      "generated_tokens": 115,
+      "tokens_per_second": 60.34,
+      "prompt_tokens_per_second": 1598.64,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 18926784512,
+        "mean_system_ram_used_bytes": 18923380736.0,
+        "max_system_ram_percent": 55.2,
+        "mean_system_ram_percent": 55.2,
+        "max_cpu_percent": 23.8,
+        "mean_cpu_percent": 22.55,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93548544.0,
+        "max_ollama_process_rss_bytes": 222617600,
+        "mean_ollama_process_rss_bytes": 222617600.0,
+        "max_gpu_mem_mb": 5300.0,
+        "mean_gpu_mem_mb": 5300.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 81.5,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.7,
+        "max_gpu_power_w": 87.18,
+        "mean_gpu_power_w": 71.28,
+        "estimated_gpu_joules": 69.4745616388321
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 6.757112600000255,
+      "load_seconds": 0.0160803,
+      "prompt_eval_seconds": 0.411995,
+      "eval_seconds": 6.198282,
+      "total_server_seconds": 6.6831422,
+      "prompt_tokens": 667,
+      "generated_tokens": 372,
+      "tokens_per_second": 60.02,
+      "prompt_tokens_per_second": 1618.95,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 19165933568,
+        "mean_system_ram_used_bytes": 19111404202.666668,
+        "max_system_ram_percent": 55.9,
+        "mean_system_ram_percent": 55.78333333333333,
+        "max_cpu_percent": 22.5,
+        "mean_cpu_percent": 15.399999999999999,
+        "max_python_process_rss_bytes": 93556736,
+        "mean_python_process_rss_bytes": 93554005.33333333,
+        "max_ollama_process_rss_bytes": 222617600,
+        "mean_ollama_process_rss_bytes": 222617600.0,
+        "max_gpu_mem_mb": 5304.0,
+        "mean_gpu_mem_mb": 5301.333333333333,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 88.16666666666667,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.61666666666667,
+        "max_gpu_power_w": 87.18,
+        "mean_gpu_power_w": 81.455,
+        "estimated_gpu_joules": 492.5312918686867
+      }
+    },
+    {
+      "request_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey__rep1:merge:1:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.5392964999991818,
+      "load_seconds": 0.0175433,
+      "prompt_eval_seconds": 0.222913,
+      "eval_seconds": 1.128628,
+      "total_server_seconds": 1.4261963,
+      "prompt_tokens": 332,
+      "generated_tokens": 67,
+      "tokens_per_second": 59.36,
+      "prompt_tokens_per_second": 1489.37,
+      "hardware": {
+        "samples": 1,
+        "max_system_ram_used_bytes": 19143897088,
+        "mean_system_ram_used_bytes": 19143897088.0,
+        "max_system_ram_percent": 55.9,
+        "mean_system_ram_percent": 55.9,
+        "max_cpu_percent": 0.0,
+        "mean_cpu_percent": 0.0,
+        "max_python_process_rss_bytes": 93540352,
+        "mean_python_process_rss_bytes": 93540352.0,
+        "max_ollama_process_rss_bytes": 222617600,
+        "mean_ollama_process_rss_bytes": 222617600.0,
+        "max_gpu_mem_mb": 5304.0,
+        "mean_gpu_mem_mb": 5304.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 89.0,
+        "max_gpu_temperature_c": 57.4,
+        "mean_gpu_temperature_c": 57.4,
+        "max_gpu_power_w": 86.52,
+        "mean_gpu_power_w": 86.52
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "934dda157dea82370ab515a5d6269dd19d3f61a06fb944b9a7604d44f0da61ff"
+}

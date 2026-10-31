@@ -1,0 +1,1385 @@
+{
+  "paper_id": "2603.29541v1",
+  "filename": "2603.29541v1.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Performance of Large Language Models (LLMs) in low-resource and linguistically grounded tasks such as spoken dialect identification remains underexplored.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "However, when the additional vowel & consonant and specialized features nodes are added to the setup, accuracy improves to 58% on average and 62.5% for the best run.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "it would need more supervision to show human-level capabilities",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "one could also increase the number of annotated test samples to perform a more comprehensive analysis of our system",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие методов для оценки способности языковых моделей к мультимодальному анализу и связыванию контекста.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 10,
+          "quote": "highly capable multimodal models",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 45.27867400000105,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Отсутствие достаточных данных для обучения моделей на малых наборах диалектных данных",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.356410400003369,
+        "load_seconds": 3.4061962,
+        "prompt_eval_seconds": 0.323614,
+        "eval_seconds": 0.565137,
+        "total_server_seconds": 4.2994158,
+        "prompt_tokens": 310,
+        "generated_tokens": 41,
+        "tokens_per_second": 72.55,
+        "prompt_tokens_per_second": 957.93,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18133327872,
+          "mean_system_ram_used_bytes": 15986363392.0,
+          "max_system_ram_percent": 52.9,
+          "mean_system_ram_percent": 46.65,
+          "max_cpu_percent": 32.6,
+          "mean_cpu_percent": 20.175,
+          "max_python_process_rss_bytes": 89833472,
+          "mean_python_process_rss_bytes": 89827328.0,
+          "max_ollama_process_rss_bytes": 223666176,
+          "mean_ollama_process_rss_bytes": 223486976.0,
+          "max_gpu_mem_mb": 5264.0,
+          "mean_gpu_mem_mb": 3114.25,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 43.25,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 55.425,
+          "max_gpu_power_w": 113.84,
+          "mean_gpu_power_w": 69.445,
+          "estimated_gpu_joules": 210.13533403396605
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Performance of Large Language Models (LLMs) in low-resource and linguistically grounded tasks such as spoken dialect identification remains underexplored.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.593787699999666,
+        "load_seconds": 0.0198582,
+        "prompt_eval_seconds": 0.405716,
+        "eval_seconds": 1.094398,
+        "total_server_seconds": 1.527538,
+        "prompt_tokens": 745,
+        "generated_tokens": 78,
+        "tokens_per_second": 71.27,
+        "prompt_tokens_per_second": 1836.26,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15567208448,
+          "mean_system_ram_used_bytes": 15565340672.0,
+          "max_system_ram_percent": 45.4,
+          "mean_system_ram_percent": 45.4,
+          "max_cpu_percent": 19.2,
+          "mean_cpu_percent": 9.6,
+          "max_python_process_rss_bytes": 89833472,
+          "mean_python_process_rss_bytes": 89825280.0,
+          "max_ollama_process_rss_bytes": 223272960,
+          "mean_ollama_process_rss_bytes": 223272960.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 57.5,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.55,
+          "max_gpu_power_w": 102.02,
+          "mean_gpu_power_w": 99.65,
+          "estimated_gpu_joules": 121.27805297851563
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток размеченных данных для аудиоклассификации диалектов.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Due to the scarcity of labeled dialectal speech, audio dialect classification is a challenging task for most languages, including Swiss German.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.4598646000013105,
+        "load_seconds": 0.0167894,
+        "prompt_eval_seconds": 0.342121,
+        "eval_seconds": 1.005769,
+        "total_server_seconds": 1.4028909,
+        "prompt_tokens": 615,
+        "generated_tokens": 72,
+        "tokens_per_second": 71.59,
+        "prompt_tokens_per_second": 1797.61,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15694450688,
+          "mean_system_ram_used_bytes": 15630811136.0,
+          "max_system_ram_percent": 45.8,
+          "mean_system_ram_percent": 45.599999999999994,
+          "max_cpu_percent": 23.6,
+          "mean_cpu_percent": 21.4,
+          "max_python_process_rss_bytes": 89833472,
+          "mean_python_process_rss_bytes": 89825280.0,
+          "max_ollama_process_rss_bytes": 223272960,
+          "mean_ollama_process_rss_bytes": 223272960.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 58.1,
+          "max_gpu_power_w": 101.79,
+          "mean_gpu_power_w": 99.26,
+          "estimated_gpu_joules": 119.78989987134933
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "abstract",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Определение пределов возможностей больших языковых моделей в идентификации диалектов и степени их приближения к экспертам при использовании фонетических представлений",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "These contributions shed light on the limits of LLMs in dialect identification and how far current models approximate human experts when grounded in phonetic representations.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.0559372999996413,
+        "load_seconds": 0.0173374,
+        "prompt_eval_seconds": 0.200438,
+        "eval_seconds": 1.761571,
+        "total_server_seconds": 2.0146727,
+        "prompt_tokens": 302,
+        "generated_tokens": 91,
+        "tokens_per_second": 51.66,
+        "prompt_tokens_per_second": 1506.7,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15831257088,
+          "mean_system_ram_used_bytes": 15766024192.0,
+          "max_system_ram_percent": 46.2,
+          "mean_system_ram_percent": 46.0,
+          "max_cpu_percent": 45.2,
+          "mean_cpu_percent": 22.6,
+          "max_python_process_rss_bytes": 89833472,
+          "mean_python_process_rss_bytes": 89825280.0,
+          "max_ollama_process_rss_bytes": 223272960,
+          "mean_ollama_process_rss_bytes": 223272960.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 81.0,
+          "mean_gpu_util_percent": 74.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.55,
+          "max_gpu_power_w": 87.16,
+          "mean_gpu_power_w": 79.21000000000001,
+          "estimated_gpu_joules": 89.2807113838196
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "related_work",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие систематического исследования возможностей больших языковых моделей (LLM) в контексте идентификации разговорных диалектов.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Despite these advances, the capabilities of LLMs have not been systematically examined in the context of spoken dialect identification.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.1611400000001595,
+        "load_seconds": 0.0177799,
+        "prompt_eval_seconds": 0.825712,
+        "eval_seconds": 1.227894,
+        "total_server_seconds": 2.1041725,
+        "prompt_tokens": 1357,
+        "generated_tokens": 77,
+        "tokens_per_second": 62.71,
+        "prompt_tokens_per_second": 1643.43,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15908765696,
+          "mean_system_ram_used_bytes": 15873964032.0,
+          "max_system_ram_percent": 46.4,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 20.4,
+          "max_python_process_rss_bytes": 89849856,
+          "mean_python_process_rss_bytes": 89839616.0,
+          "max_ollama_process_rss_bytes": 223252480,
+          "mean_ollama_process_rss_bytes": 223252480.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5272.0,
+          "max_gpu_util_percent": 94.0,
+          "mean_gpu_util_percent": 80.5,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 56.75,
+          "max_gpu_power_w": 98.8,
+          "mean_gpu_power_w": 91.155,
+          "estimated_gpu_joules": 104.14678404331208
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "related_work",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие методы классификации диалектов часто исключают переходные зоны или используют устаревшие карты для предсказания традиционных регионов, что может не отражать реальную лингвистическую картину.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Previous work such as Fischbach et al. (2025b) excluded dialect transition areas and predicted the traditional German dialect regions using a Wiesinger-based map (Besch et al., 2008) as a reference.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.906888599998638,
+        "load_seconds": 0.0188124,
+        "prompt_eval_seconds": 0.793421,
+        "eval_seconds": 1.986002,
+        "total_server_seconds": 2.8525509,
+        "prompt_tokens": 1294,
+        "generated_tokens": 124,
+        "tokens_per_second": 62.44,
+        "prompt_tokens_per_second": 1630.91,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16096182272,
+          "mean_system_ram_used_bytes": 16027186517.333334,
+          "max_system_ram_percent": 47.0,
+          "mean_system_ram_percent": 46.800000000000004,
+          "max_cpu_percent": 23.6,
+          "mean_cpu_percent": 19.7,
+          "max_python_process_rss_bytes": 89849856,
+          "mean_python_process_rss_bytes": 89844394.66666667,
+          "max_ollama_process_rss_bytes": 223514624,
+          "mean_ollama_process_rss_bytes": 223509162.66666666,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 95.0,
+          "mean_gpu_util_percent": 86.33333333333333,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 98.71,
+          "mean_gpu_power_w": 84.72333333333334,
+          "estimated_gpu_joules": 192.2609757447243
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "related_work",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток данных для решения задачи классификации диалектов Швейцарии в 8 классов из-за сложной географии переходных зон и перекрытий.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.4883512999986124,
+        "load_seconds": 0.0154263,
+        "prompt_eval_seconds": 0.400568,
+        "eval_seconds": 0.932524,
+        "total_server_seconds": 1.4023952,
+        "prompt_tokens": 625,
+        "generated_tokens": 59,
+        "tokens_per_second": 63.27,
+        "prompt_tokens_per_second": 1560.28,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16244510720,
+          "mean_system_ram_used_bytes": 16171216896.0,
+          "max_system_ram_percent": 47.4,
+          "mean_system_ram_percent": 47.2,
+          "max_cpu_percent": 23.6,
+          "mean_cpu_percent": 21.9,
+          "max_python_process_rss_bytes": 89849856,
+          "mean_python_process_rss_bytes": 89841664.0,
+          "max_ollama_process_rss_bytes": 222781440,
+          "mean_ollama_process_rss_bytes": 222781440.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 88.5,
+          "max_gpu_temperature_c": 56.8,
+          "mean_gpu_temperature_c": 56.349999999999994,
+          "max_gpu_power_w": 71.23,
+          "mean_gpu_power_w": 70.58000000000001,
+          "estimated_gpu_joules": 88.71778206110001
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "methods",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.066694199998892,
+        "load_seconds": 0.0172135,
+        "prompt_eval_seconds": 0.469192,
+        "eval_seconds": 1.512741,
+        "total_server_seconds": 2.036125,
+        "prompt_tokens": 730,
+        "generated_tokens": 95,
+        "tokens_per_second": 62.8,
+        "prompt_tokens_per_second": 1555.87,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16357101568,
+          "mean_system_ram_used_bytes": 16305047552.0,
+          "max_system_ram_percent": 47.7,
+          "mean_system_ram_percent": 47.55,
+          "max_cpu_percent": 18.5,
+          "mean_cpu_percent": 9.25,
+          "max_python_process_rss_bytes": 89849856,
+          "mean_python_process_rss_bytes": 89841664.0,
+          "max_ollama_process_rss_bytes": 222781440,
+          "mean_ollama_process_rss_bytes": 222781440.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 84.5,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 56.7,
+          "max_gpu_power_w": 86.98,
+          "mean_gpu_power_w": 85.285,
+          "estimated_gpu_joules": 103.7061276602745
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "methods",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток методов для классификации диалектов на основе только акустических признаков без лингвистического контекста",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.6231933000017307,
+        "load_seconds": 0.0174408,
+        "prompt_eval_seconds": 0.706144,
+        "eval_seconds": 0.794356,
+        "total_server_seconds": 1.5586081,
+        "prompt_tokens": 1142,
+        "generated_tokens": 50,
+        "tokens_per_second": 62.94,
+        "prompt_tokens_per_second": 1617.23,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16538730496,
+          "mean_system_ram_used_bytes": 16448407552.0,
+          "max_system_ram_percent": 48.3,
+          "mean_system_ram_percent": 48.0,
+          "max_cpu_percent": 21.4,
+          "mean_cpu_percent": 10.7,
+          "max_python_process_rss_bytes": 89862144,
+          "mean_python_process_rss_bytes": 89853952.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 85.5,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 87.07,
+          "mean_gpu_power_w": 84.985,
+          "estimated_gpu_joules": 103.87510504722596
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "methods",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "However, when the additional vowel & consonant and specialized features nodes are added to the setup, accuracy improves to 58% on average and 62.5% for the best run.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.666800700000749,
+        "load_seconds": 0.0182438,
+        "prompt_eval_seconds": 0.636914,
+        "eval_seconds": 1.702454,
+        "total_server_seconds": 2.4095996,
+        "prompt_tokens": 1105,
+        "generated_tokens": 107,
+        "tokens_per_second": 62.85,
+        "prompt_tokens_per_second": 1734.93,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16738000896,
+          "mean_system_ram_used_bytes": 16668650154.666666,
+          "max_system_ram_percent": 48.8,
+          "mean_system_ram_percent": 48.633333333333326,
+          "max_cpu_percent": 21.3,
+          "mean_cpu_percent": 12.800000000000002,
+          "max_python_process_rss_bytes": 89862144,
+          "mean_python_process_rss_bytes": 89856682.66666667,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 56.666666666666664,
+          "max_gpu_power_w": 87.32,
+          "mean_gpu_power_w": 70.3,
+          "estimated_gpu_joules": 192.08469362497328
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "methods",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаточность знаний о предыдущем контексте для выполнения лингвистических задач",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "The LLM baseline shows results around 50%, suggesting it does not have adequate previous knowledge for this task.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.0150620999993407,
+        "load_seconds": 0.0190723,
+        "prompt_eval_seconds": 0.62213,
+        "eval_seconds": 1.260105,
+        "total_server_seconds": 1.9525169,
+        "prompt_tokens": 1021,
+        "generated_tokens": 72,
+        "tokens_per_second": 57.14,
+        "prompt_tokens_per_second": 1641.14,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16945549312,
+          "mean_system_ram_used_bytes": 16839546880.0,
+          "max_system_ram_percent": 49.4,
+          "mean_system_ram_percent": 49.099999999999994,
+          "max_cpu_percent": 35.5,
+          "mean_cpu_percent": 17.75,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89858048.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 76.0,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.2,
+          "max_gpu_power_w": 86.83,
+          "mean_gpu_power_w": 70.945,
+          "estimated_gpu_joules": 67.91037974834443
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "methods",
+      "pages": [
+        8
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Human experts struggle to conceive certain linguistic patterns that are challenging for ASR systems but manageable by advanced LLMs like GPT-5.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "that are difficult to conceive for a human, even in normal cases, while ChatGPT showed surprising skill even in challenging situations",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Standard German loan words into Swiss German complicate dialect classification as they do not fit the dialect's sound changes.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Standard German loan words into Swiss German made the classification more difficult since they don't fit the dialect's sound changes",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Some sentences lack unambiguous words capable of identifying a specific dialect.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "some sentences may not contain any words with the potential to identify a dialect without ambiguity",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.5565495999981067,
+        "load_seconds": 0.034441,
+        "prompt_eval_seconds": 0.25573,
+        "eval_seconds": 3.170944,
+        "total_server_seconds": 3.509675,
+        "prompt_tokens": 423,
+        "generated_tokens": 199,
+        "tokens_per_second": 62.76,
+        "prompt_tokens_per_second": 1654.09,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17162960896,
+          "mean_system_ram_used_bytes": 17088550229.333334,
+          "max_system_ram_percent": 50.1,
+          "mean_system_ram_percent": 49.86666666666667,
+          "max_cpu_percent": 18.7,
+          "mean_cpu_percent": 12.233333333333334,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89860778.66666667,
+          "max_ollama_process_rss_bytes": 222081024,
+          "mean_ollama_process_rss_bytes": 222081024.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.6,
+          "mean_gpu_temperature_c": 57.166666666666664,
+          "max_gpu_power_w": 87.08,
+          "mean_gpu_power_w": 76.33666666666666,
+          "estimated_gpu_joules": 177.0725198984146
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "conclusion",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "it would need more supervision to show human-level capabilities",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5779389000017545,
+        "load_seconds": 0.0176631,
+        "prompt_eval_seconds": 0.281571,
+        "eval_seconds": 1.177675,
+        "total_server_seconds": 1.5216594,
+        "prompt_tokens": 480,
+        "generated_tokens": 74,
+        "tokens_per_second": 62.84,
+        "prompt_tokens_per_second": 1704.72,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17326534656,
+          "mean_system_ram_used_bytes": 17236625408.0,
+          "max_system_ram_percent": 50.6,
+          "mean_system_ram_percent": 50.3,
+          "max_cpu_percent": 20.5,
+          "mean_cpu_percent": 10.25,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89858048.0,
+          "max_ollama_process_rss_bytes": 222081024,
+          "mean_ollama_process_rss_bytes": 222081024.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 83.0,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.05,
+          "max_gpu_power_w": 98.82,
+          "mean_gpu_power_w": 90.82,
+          "estimated_gpu_joules": 103.45091365814208
+        }
+      }
+    },
+    {
+      "chunk": "C0013",
+      "section": "limitations",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "one could also increase the number of annotated test samples to perform a more comprehensive analysis of our system",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0013",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7550197999989905,
+        "load_seconds": 0.0173882,
+        "prompt_eval_seconds": 0.502656,
+        "eval_seconds": 1.128362,
+        "total_server_seconds": 1.6946707,
+        "prompt_tokens": 881,
+        "generated_tokens": 71,
+        "tokens_per_second": 62.92,
+        "prompt_tokens_per_second": 1752.69,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17498140672,
+          "mean_system_ram_used_bytes": 17419032576.0,
+          "max_system_ram_percent": 51.1,
+          "mean_system_ram_percent": 50.85,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 22.75,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89858048.0,
+          "max_ollama_process_rss_bytes": 221818880,
+          "mean_ollama_process_rss_bytes": 221818880.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.6,
+          "max_gpu_power_w": 87.03,
+          "mean_gpu_power_w": 71.025,
+          "estimated_gpu_joules": 68.1986961221695
+        }
+      }
+    },
+    {
+      "chunk": "C0014",
+      "section": "limitations",
+      "pages": [
+        9
+      ],
+      "generated": 3,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Разработка методов для классификации диалектов с малым объемом данных и шумными данными.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "Необходимость анализа влияния предобработки на эффективность глубокого обучения в задачах распознавания диалектов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "Проблема понимания языковыми моделями (например, Whisper) диалектных вариаций речи.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0014",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.945031699997344,
+        "load_seconds": 0.017456,
+        "prompt_eval_seconds": 0.898085,
+        "eval_seconds": 1.92189,
+        "total_server_seconds": 2.8941118,
+        "prompt_tokens": 1568,
+        "generated_tokens": 120,
+        "tokens_per_second": 62.44,
+        "prompt_tokens_per_second": 1745.94,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17747501056,
+          "mean_system_ram_used_bytes": 17665856853.333332,
+          "max_system_ram_percent": 51.8,
+          "mean_system_ram_percent": 51.56666666666666,
+          "max_cpu_percent": 19.6,
+          "mean_cpu_percent": 12.966666666666669,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89860778.66666667,
+          "max_ollama_process_rss_bytes": 221917184,
+          "mean_ollama_process_rss_bytes": 221917184.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 86.33333333333333,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.46666666666667,
+          "max_gpu_power_w": 87.33,
+          "mean_gpu_power_w": 86.01333333333332,
+          "estimated_gpu_joules": 213.13409741163252
+        }
+      }
+    },
+    {
+      "chunk": "C0015",
+      "section": "limitations",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие методов для оценки способности языковых моделей к мультимодальному анализу и связыванию контекста.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "highly capable multimodal models",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29541v1__rep1:C0015",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.547996899997088,
+        "load_seconds": 0.0331427,
+        "prompt_eval_seconds": 0.472803,
+        "eval_seconds": 0.935935,
+        "total_server_seconds": 1.5256699,
+        "prompt_tokens": 738,
+        "generated_tokens": 59,
+        "tokens_per_second": 63.04,
+        "prompt_tokens_per_second": 1560.9,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17775419392,
+          "mean_system_ram_used_bytes": 17755125760.0,
+          "max_system_ram_percent": 51.9,
+          "mean_system_ram_percent": 51.8,
+          "max_cpu_percent": 18.5,
+          "mean_cpu_percent": 9.25,
+          "max_python_process_rss_bytes": 89866240,
+          "mean_python_process_rss_bytes": 89858048.0,
+          "max_ollama_process_rss_bytes": 221917184,
+          "mean_ollama_process_rss_bytes": 221917184.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.25,
+          "max_gpu_power_w": 86.97,
+          "mean_gpu_power_w": 78.235,
+          "estimated_gpu_joules": 87.77647924423218
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "2603.29541v1__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.81587589999981,
+      "load_seconds": 0.0167184,
+      "prompt_eval_seconds": 0.466215,
+      "eval_seconds": 1.237536,
+      "total_server_seconds": 1.7596335,
+      "prompt_tokens": 718,
+      "generated_tokens": 78,
+      "tokens_per_second": 63.03,
+      "prompt_tokens_per_second": 1540.06,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17899753472,
+        "mean_system_ram_used_bytes": 17833127936.0,
+        "max_system_ram_percent": 52.2,
+        "mean_system_ram_percent": 52.0,
+        "max_cpu_percent": 23.9,
+        "mean_cpu_percent": 22.95,
+        "max_python_process_rss_bytes": 89878528,
+        "mean_python_process_rss_bytes": 89870336.0,
+        "max_ollama_process_rss_bytes": 221917184,
+        "mean_ollama_process_rss_bytes": 221917184.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 92.0,
+        "mean_gpu_util_percent": 85.0,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.650000000000006,
+        "max_gpu_power_w": 87.26,
+        "mean_gpu_power_w": 78.035,
+        "estimated_gpu_joules": 85.81514084339142
+      }
+    },
+    {
+      "request_id": "2603.29541v1__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 4.0868850000006205,
+      "load_seconds": 0.0178381,
+      "prompt_eval_seconds": 0.466212,
+      "eval_seconds": 3.51888,
+      "total_server_seconds": 4.041551,
+      "prompt_tokens": 689,
+      "generated_tokens": 200,
+      "tokens_per_second": 56.84,
+      "prompt_tokens_per_second": 1477.87,
+      "hardware": {
+        "samples": 4,
+        "max_system_ram_used_bytes": 18036588544,
+        "mean_system_ram_used_bytes": 18003347456.0,
+        "max_system_ram_percent": 52.6,
+        "mean_system_ram_percent": 52.525,
+        "max_cpu_percent": 46.0,
+        "mean_cpu_percent": 20.925,
+        "max_python_process_rss_bytes": 89878528,
+        "mean_python_process_rss_bytes": 89874432.0,
+        "max_ollama_process_rss_bytes": 221941760,
+        "mean_ollama_process_rss_bytes": 221923328.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 92.0,
+        "mean_gpu_util_percent": 84.0,
+        "max_gpu_temperature_c": 57.8,
+        "mean_gpu_temperature_c": 57.525,
+        "max_gpu_power_w": 98.7,
+        "mean_gpu_power_w": 85.5325,
+        "estimated_gpu_joules": 315.5234547162056
+      }
+    },
+    {
+      "request_id": "2603.29541v1__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.5754453999979887,
+      "load_seconds": 0.0187402,
+      "prompt_eval_seconds": 0.321049,
+      "eval_seconds": 3.142038,
+      "total_server_seconds": 3.5201015,
+      "prompt_tokens": 477,
+      "generated_tokens": 196,
+      "tokens_per_second": 62.38,
+      "prompt_tokens_per_second": 1485.75,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18165952512,
+        "mean_system_ram_used_bytes": 18122227712.0,
+        "max_system_ram_percent": 53.0,
+        "mean_system_ram_percent": 52.86666666666667,
+        "max_cpu_percent": 19.4,
+        "mean_cpu_percent": 12.833333333333334,
+        "max_python_process_rss_bytes": 89878528,
+        "mean_python_process_rss_bytes": 89873066.66666667,
+        "max_ollama_process_rss_bytes": 221941760,
+        "mean_ollama_process_rss_bytes": 221941760.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 87.33333333333333,
+        "max_gpu_temperature_c": 57.8,
+        "mean_gpu_temperature_c": 57.76666666666667,
+        "max_gpu_power_w": 87.22,
+        "mean_gpu_power_w": 85.68333333333334,
+        "estimated_gpu_joules": 209.97705687284468
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "929f80ec6a8f491750b280ccd780239adc327080de8cb9dc3534036f86b1e62a"
+}

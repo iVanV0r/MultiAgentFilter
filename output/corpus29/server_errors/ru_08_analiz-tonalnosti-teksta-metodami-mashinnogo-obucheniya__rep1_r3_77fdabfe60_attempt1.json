@@ -1,0 +1,6 @@
+{
+  "request_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya__rep1:r3:defense",
+  "attempt": 1,
+  "http_status": 500,
+  "response_body": "{\"error\":\"prediction aborted, token repeat limit reached\"}"
+}

@@ -1,0 +1,1600 @@
+{
+  "paper_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley",
+  "filename": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток существующих методов извлечения информации без трудоемкой процедуры разметки текстового корпуса и подходов, основанных на правилах.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "без трудоемкой процедуры разметки текстового корпуса и без применения подходов, основанных на правилах",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость учета различий в лексике профессиональных стандартов и описаний вакансий при сопоставлении семантики типов сущностей",
+      "type": "knowledge",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "необходимо учесть разницу между лексикой профстандартов и вакансий",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Ограниченность алгоритмов seq2seq необходимостью задания точного количества типов отношений заранее, что снижает гибкость при смене домена.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Данный метод ограничен необходимостью задания точного количества типов отношений заранее, что уменьшает его гибкость при смене домена",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаток данных или методов для автоматизированного выявления шаблонов определенных видов отношений без ручного задания.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Другая группа подходов основывается на использовании ядер функций (kernels) для автоматизированного выявления шаблонов определенных видов отношений",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость автоматического поиска слов «взаимодействия», участвующих в шаблонах отношений.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "В другом примере [18] авторы предлагают метод на основе полиномиального ядра для автоматического поиска слов «взаимодействия», участвующих в шаблонах отношений",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточный размер учебных корпусов для качественного обучения seq2seq моделей в задачах преобразования предложений в отношения",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Основной недостаток данного подхода – потребность в достаточном размере учебного корпуса, необходимого для качественного обучения seq2seq.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 91.56289130000005,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток существующих методов извлечения информации без трудоемкой процедуры разметки текстового корпуса и подходов, основанных на правилах.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "без трудоемкой процедуры разметки текстового корпуса и без применения подходов, основанных на правилах",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.37220299999899,
+        "load_seconds": 3.4058825,
+        "prompt_eval_seconds": 0.700505,
+        "eval_seconds": 1.172618,
+        "total_server_seconds": 5.2926384,
+        "prompt_tokens": 1032,
+        "generated_tokens": 83,
+        "tokens_per_second": 70.78,
+        "prompt_tokens_per_second": 1473.22,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 18071216128,
+          "mean_system_ram_used_bytes": 15851850137.6,
+          "max_system_ram_percent": 52.7,
+          "mean_system_ram_percent": 46.260000000000005,
+          "max_cpu_percent": 30.3,
+          "mean_cpu_percent": 20.7,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93647667.2,
+          "max_ollama_process_rss_bytes": 223744000,
+          "mean_ollama_process_rss_bytes": 223435980.8,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 3591.6,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 42.0,
+          "max_gpu_temperature_c": 58.3,
+          "mean_gpu_temperature_c": 55.839999999999996,
+          "max_gpu_power_w": 110.9,
+          "mean_gpu_power_w": 75.62,
+          "estimated_gpu_joules": 343.8466109609604
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "front_matter",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Не до конца исследованы возможности качественного решения задач извлечения информации в отдельных предметных областях с применением нейросетевых моделей, таких как word2vec, fasttext, paragraph2vec, а также других вариантов распределенных представлений слов, например, GloVe, обучаемых без учителя на больших текстовых корпусах.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Не до конца исследованы возможности качественного решения задач извлечения информации в отдельных предметных областях с применением нейросетевых моделей, таких как word2vec, fasttext, paragraph2vec, а также других вариантов распределенных представлений слов, например, GloVe, обучаемых без учителя на больших текстовых корпусах.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.8711113999997906,
+        "load_seconds": 0.0161542,
+        "prompt_eval_seconds": 0.338114,
+        "eval_seconds": 2.413099,
+        "total_server_seconds": 2.8176979,
+        "prompt_tokens": 560,
+        "generated_tokens": 167,
+        "tokens_per_second": 69.21,
+        "prompt_tokens_per_second": 1656.25,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 15784103936,
+          "mean_system_ram_used_bytes": 15708793514.666666,
+          "max_system_ram_percent": 46.1,
+          "mean_system_ram_percent": 45.833333333333336,
+          "max_cpu_percent": 36.8,
+          "mean_cpu_percent": 20.133333333333333,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93645482.66666667,
+          "max_ollama_process_rss_bytes": 223358976,
+          "mean_ollama_process_rss_bytes": 223358976.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 82.66666666666667,
+          "max_gpu_temperature_c": 58.6,
+          "mean_gpu_temperature_c": 58.46666666666667,
+          "max_gpu_power_w": 113.62,
+          "mean_gpu_power_w": 94.7,
+          "estimated_gpu_joules": 232.73502019882204
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость учета различий в лексике профессиональных стандартов и описаний вакансий при сопоставлении семантики типов сущностей",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "необходимо учесть разницу между лексикой профстандартов и вакансий",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.933602000000974,
+        "load_seconds": 0.0163548,
+        "prompt_eval_seconds": 0.520477,
+        "eval_seconds": 1.266348,
+        "total_server_seconds": 1.8580951,
+        "prompt_tokens": 746,
+        "generated_tokens": 79,
+        "tokens_per_second": 62.38,
+        "prompt_tokens_per_second": 1433.3,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15968235520,
+          "mean_system_ram_used_bytes": 15868004352.0,
+          "max_system_ram_percent": 46.6,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 26.6,
+          "mean_cpu_percent": 25.25,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 223358976,
+          "mean_ollama_process_rss_bytes": 223358976.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 58.6,
+          "mean_gpu_temperature_c": 58.1,
+          "max_gpu_power_w": 87.14,
+          "mean_gpu_power_w": 78.11500000000001,
+          "estimated_gpu_joules": 87.91791714191437
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 6,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Существующие методы извлечения сущностей (CRF, FFNN) показывают ограниченный результат по сравнению с базовым показателем в 32%",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "в сравнении с базовым показателем в 32 % участникам удалось добиться лишь результата в 56,4 %, что свидетельствует о наличии на сегодняшний день определенных трудностей в процессе извлечения сущностей",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Алгоритмы автоматического построения газетиров на основе WordNet и Wikipedia не получили дальнейшего развития",
+          "type": "tool",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Насколько нам известно, данный метод развития не получил",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Системы на основе правил требуют значительных человеческих ресурсов для разработки фондов правил под каждую предметную область",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "для каждого нового раздела знаний требуется разработка своего фонда правил, способных учесть специфику текстов этой области, что требует привлечения большого количества человеческих ресурсов",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Алгоритмы машинного обучения с учителем требуют трудоемкий процесс подготовки обучающих данных",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Алгоритмы с учителем имеют недостаток сродни системам на основе правил: для их обучения требуется достаточно трудоемкий процесс подготовки обучающих данных",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Классические алгоритмы (CRF, марковские модели) не учитывают историю пропущенных последовательностей так эффективно, как нейросетевые модели",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "CRF является одной из наиболее популярных моделей поиска именованных сущностей, определяя тэги на основе атрибутов, но с учетом как текущего слова, так и предыдущих, и последующих слов в тексте",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Нейросетевые модели (LSTM) способны учитывать историю пропущенных через них последовательностей",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "такие как LSTM, получившей популярность в работе с текстовыми данными ввиду способности к учету истории пропущенных через нее последовательностей",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 9.13944790000096,
+        "load_seconds": 0.0204823,
+        "prompt_eval_seconds": 0.730987,
+        "eval_seconds": 8.293508,
+        "total_server_seconds": 9.104689,
+        "prompt_tokens": 1172,
+        "generated_tokens": 510,
+        "tokens_per_second": 61.49,
+        "prompt_tokens_per_second": 1603.31,
+        "hardware": {
+          "samples": 8,
+          "max_system_ram_used_bytes": 16178593792,
+          "mean_system_ram_used_bytes": 16144461824.0,
+          "max_system_ram_percent": 47.2,
+          "mean_system_ram_percent": 47.112500000000004,
+          "max_cpu_percent": 21.8,
+          "mean_cpu_percent": 16.225,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93648896.0,
+          "max_ollama_process_rss_bytes": 223358976,
+          "mean_ollama_process_rss_bytes": 223211520.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 87.375,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.6625,
+          "max_gpu_power_w": 99.06,
+          "mean_gpu_power_w": 88.0025,
+          "estimated_gpu_joules": 740.9003980231284
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "introduction",
+      "pages": [
+        4
+      ],
+      "generated": 5,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Необходимость учета контекста соседних слов при назначении тэга сущности для повышения качества извлечения.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "в [14], где авторы сравнивают производительность однонаправленных и двунаправленных LSTM с применением CRF на выходе сети для учета полученных тэгов соседних слов и повышения качества",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Ограниченность алгоритмов seq2seq необходимостью задания точного количества типов отношений заранее, что снижает гибкость при смене домена.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Данный метод ограничен необходимостью задания точного количества типов отношений заранее, что уменьшает его гибкость при смене домена",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаток данных или методов для автоматизированного выявления шаблонов определенных видов отношений без ручного задания.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Другая группа подходов основывается на использовании ядер функций (kernels) для автоматизированного выявления шаблонов определенных видов отношений",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема применения алгоритмов с учителем и без учителя в тандеме для улучшения качества извлечения.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Однако зачастую алгоритмы с учителем и без учителя используются в тандеме",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Необходимость автоматического поиска слов «взаимодействия», участвующих в шаблонах отношений.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "В другом примере [18] авторы предлагают метод на основе полиномиального ядра для автоматического поиска слов «взаимодействия», участвующих в шаблонах отношений",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 7.209191500001907,
+        "load_seconds": 0.0158842,
+        "prompt_eval_seconds": 0.638518,
+        "eval_seconds": 6.424394,
+        "total_server_seconds": 7.1549454,
+        "prompt_tokens": 1149,
+        "generated_tokens": 392,
+        "tokens_per_second": 61.02,
+        "prompt_tokens_per_second": 1799.48,
+        "hardware": {
+          "samples": 6,
+          "max_system_ram_used_bytes": 16452706304,
+          "mean_system_ram_used_bytes": 16401196373.333334,
+          "max_system_ram_percent": 48.0,
+          "mean_system_ram_percent": 47.86666666666667,
+          "max_cpu_percent": 35.7,
+          "mean_cpu_percent": 22.766666666666666,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93648213.33333333,
+          "max_ollama_process_rss_bytes": 223162368,
+          "mean_ollama_process_rss_bytes": 223162368.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.5,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.699999999999996,
+          "max_gpu_power_w": 98.76,
+          "mean_gpu_power_w": 85.89,
+          "estimated_gpu_joules": 511.1299907541275
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "introduction",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточный размер учебных корпусов для качественного обучения seq2seq моделей в задачах преобразования предложений в отношения",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Основной недостаток данного подхода – потребность в достаточном размере учебного корпуса, необходимого для качественного обучения seq2seq.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.774490900003002,
+        "load_seconds": 0.0193059,
+        "prompt_eval_seconds": 0.311491,
+        "eval_seconds": 1.328915,
+        "total_server_seconds": 1.723556,
+        "prompt_tokens": 541,
+        "generated_tokens": 78,
+        "tokens_per_second": 58.69,
+        "prompt_tokens_per_second": 1736.81,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16719527936,
+          "mean_system_ram_used_bytes": 16582860800.0,
+          "max_system_ram_percent": 48.8,
+          "mean_system_ram_percent": 48.4,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 21.25,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 222900224,
+          "mean_ollama_process_rss_bytes": 222900224.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.4,
+          "max_gpu_power_w": 87.02,
+          "mean_gpu_power_w": 84.88,
+          "estimated_gpu_joules": 103.2763589143753
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "introduction",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие эффективных методов автоматического определения типа сущности в текстах вакансий без участия человека",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Алгоритм определения типа сущности",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.4732629999998608,
+        "load_seconds": 0.0111765,
+        "prompt_eval_seconds": 0.285497,
+        "eval_seconds": 0.903019,
+        "total_server_seconds": 1.2544758,
+        "prompt_tokens": 514,
+        "generated_tokens": 57,
+        "tokens_per_second": 63.12,
+        "prompt_tokens_per_second": 1800.37,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16939630592,
+          "mean_system_ram_used_bytes": 16827385856.0,
+          "max_system_ram_percent": 49.4,
+          "mean_system_ram_percent": 49.099999999999994,
+          "max_cpu_percent": 20.5,
+          "mean_cpu_percent": 10.25,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 222900224,
+          "mean_ollama_process_rss_bytes": 222900224.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.1,
+          "mean_gpu_temperature_c": 56.25,
+          "max_gpu_power_w": 69.72,
+          "mean_gpu_power_w": 62.254999999999995,
+          "estimated_gpu_joules": 87.93106006622314
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "introduction",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток интерпретируемости векторных представлений нейросетевых моделей для анализа текстов",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Основным недостатком же является невозможность интерпретации значений координат некоторого вектора.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9916572000001906,
+        "load_seconds": 0.0163904,
+        "prompt_eval_seconds": 0.641169,
+        "eval_seconds": 1.179109,
+        "total_server_seconds": 1.9016936,
+        "prompt_tokens": 1166,
+        "generated_tokens": 74,
+        "tokens_per_second": 62.76,
+        "prompt_tokens_per_second": 1818.55,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17168924672,
+          "mean_system_ram_used_bytes": 17054468096.0,
+          "max_system_ram_percent": 50.1,
+          "mean_system_ram_percent": 49.75,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 20.799999999999997,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 222900224,
+          "mean_ollama_process_rss_bytes": 222900224.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 78.0,
+          "mean_gpu_util_percent": 67.5,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 56.599999999999994,
+          "max_gpu_power_w": 87.26,
+          "mean_gpu_power_w": 71.09,
+          "estimated_gpu_joules": 68.20377133369446
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "introduction",
+      "pages": [
+        8
+      ],
+      "generated": 5,
+      "grounded": 5,
+      "raw": [
+        {
+          "statement": "Существующие методы векторизации слов, такие как TF-IDF, создают чрезмерно разреженные представления из-за большого словаря и небольшого количества слов в документе.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Главным недостатком таких векторов является их чрезвычайная разреженность",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Метод SIF (Smoothed Inverse Frequency) предлагает решение проблемы аномалий в векторах документов за счет удаления проекции на первую главную компоненту.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Для борьбы с этим влиянием авторы предлагают произвести удаление проекции вектора документа на первую главную компоненту",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаточно исследовано применение TF-IDF весов как модификаторов для улучшения качества усредненных word2vec векторов документов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "В таком случае TF-IDF вес того или иного слова является некоторым лексическим фильтром, определяющим влияние этого слова на итоговый вектор текста",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существенно мало данных для обучения нейросетевых моделей по сравнению с размером словаря языка.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "в коллекции документов могут использоваться все слова того или иного языка (свыше 1 миллиона), в то время как в каждом из документов может употребляться лишь небольшая их часть",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствуют данные о качестве предложенного подхода на репрезентативном текстовом корпусе.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Далее рассматриваются отдельные аспекты эксперимента с оценкой качества реализуемого подхода на представительном текстовом корпусе",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 7.387670699998125,
+        "load_seconds": 0.0170836,
+        "prompt_eval_seconds": 0.627436,
+        "eval_seconds": 6.587529,
+        "total_server_seconds": 7.300364,
+        "prompt_tokens": 1082,
+        "generated_tokens": 395,
+        "tokens_per_second": 59.96,
+        "prompt_tokens_per_second": 1724.48,
+        "hardware": {
+          "samples": 6,
+          "max_system_ram_used_bytes": 17430437888,
+          "mean_system_ram_used_bytes": 17381152085.333332,
+          "max_system_ram_percent": 50.9,
+          "mean_system_ram_percent": 50.71666666666667,
+          "max_cpu_percent": 38.2,
+          "mean_cpu_percent": 24.366666666666664,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93648213.33333333,
+          "max_ollama_process_rss_bytes": 222900224,
+          "mean_ollama_process_rss_bytes": 222900224.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 86.33333333333333,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.5,
+          "max_gpu_power_w": 98.92,
+          "mean_gpu_power_w": 87.58166666666666,
+          "estimated_gpu_joules": 526.9017330050468
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "introduction",
+      "pages": [
+        9
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток данных о влиянии различных модификаций взвешивания на качество решения задачи определения типа сущности в моделях word2vec",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "применение различных модификаций взвешивания к усредненному вектору word2vec не привело к повышению качества решения задачи определения типа сущности",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.293854499999725,
+        "load_seconds": 0.0168637,
+        "prompt_eval_seconds": 0.524133,
+        "eval_seconds": 1.629236,
+        "total_server_seconds": 2.234755,
+        "prompt_tokens": 855,
+        "generated_tokens": 99,
+        "tokens_per_second": 60.76,
+        "prompt_tokens_per_second": 1631.27,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17673928704,
+          "mean_system_ram_used_bytes": 17544030208.0,
+          "max_system_ram_percent": 51.6,
+          "mean_system_ram_percent": 51.2,
+          "max_cpu_percent": 24.0,
+          "mean_cpu_percent": 22.3,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 222945280,
+          "mean_ollama_process_rss_bytes": 222945280.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.3,
+          "max_gpu_power_w": 98.48,
+          "mean_gpu_power_w": 76.6,
+          "estimated_gpu_joules": 68.69903343200683
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "introduction",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточная способность классических схем взвешивания адаптироваться к различиям лексики между корпусами профессиональных стандартов и вакансий при расчете инверсных частот.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "Классические схемы взвешивания (TF-IDF, SIF) оказались не способны адаптироваться и качественно рассчитать инверсные частоты для терминов из словаря при отображении элементов вакансий на пространство элементов профессиональных стандартов.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.6931008999999904,
+        "load_seconds": 0.0156644,
+        "prompt_eval_seconds": 0.503939,
+        "eval_seconds": 1.974871,
+        "total_server_seconds": 2.5532242,
+        "prompt_tokens": 885,
+        "generated_tokens": 123,
+        "tokens_per_second": 62.28,
+        "prompt_tokens_per_second": 1756.16,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17918177280,
+          "mean_system_ram_used_bytes": 17832020650.666668,
+          "max_system_ram_percent": 52.3,
+          "mean_system_ram_percent": 52.03333333333333,
+          "max_cpu_percent": 21.0,
+          "mean_cpu_percent": 13.333333333333334,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93645482.66666667,
+          "max_ollama_process_rss_bytes": 222969856,
+          "mean_ollama_process_rss_bytes": 222969856.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.03333333333333,
+          "max_gpu_power_w": 87.18,
+          "mean_gpu_power_w": 80.85666666666667,
+          "estimated_gpu_joules": 193.13694727897644
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "conclusion",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток методов для автоматического определения типа сущности в текстах вакансий и профессиональных стандартов",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.0913923999978579,
+        "load_seconds": 0.015744,
+        "prompt_eval_seconds": 0.212895,
+        "eval_seconds": 0.725406,
+        "total_server_seconds": 1.0114729,
+        "prompt_tokens": 390,
+        "generated_tokens": 44,
+        "tokens_per_second": 60.66,
+        "prompt_tokens_per_second": 1831.89,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 17909796864,
+          "mean_system_ram_used_bytes": 17909796864.0,
+          "max_system_ram_percent": 52.3,
+          "mean_system_ram_percent": 52.3,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 93634560,
+          "mean_python_process_rss_bytes": 93634560.0,
+          "max_ollama_process_rss_bytes": 222982144,
+          "mean_ollama_process_rss_bytes": 222982144.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 66.0,
+          "mean_gpu_util_percent": 66.0,
+          "max_gpu_temperature_c": 56.3,
+          "mean_gpu_temperature_c": 56.3,
+          "max_gpu_power_w": 69.28,
+          "mean_gpu_power_w": 69.28
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "conclusion",
+      "pages": [
+        11
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточное понимание влияния смешения описания трудовых действий и требований к навыкам на качество классификации вакансий",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 11,
+              "quote": "Основная доля ошибок связана со спецификой формулировок обязанностей и требований в вакансиях, когда работодатели смешивают описание трудовых действий с требованиями к практическому опыту применения трудовых действий (навыков)",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9751298000010138,
+        "load_seconds": 0.0188697,
+        "prompt_eval_seconds": 0.260177,
+        "eval_seconds": 1.616157,
+        "total_server_seconds": 1.8999453,
+        "prompt_tokens": 458,
+        "generated_tokens": 101,
+        "tokens_per_second": 62.49,
+        "prompt_tokens_per_second": 1760.34,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 18160619520,
+          "mean_system_ram_used_bytes": 18157225984.0,
+          "max_system_ram_percent": 53.0,
+          "mean_system_ram_percent": 53.0,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 21.8,
+          "max_python_process_rss_bytes": 93650944,
+          "mean_python_process_rss_bytes": 93642752.0,
+          "max_ollama_process_rss_bytes": 222982144,
+          "mean_ollama_process_rss_bytes": 222982144.0,
+          "max_gpu_mem_mb": 5303.0,
+          "mean_gpu_mem_mb": 5303.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.45,
+          "max_gpu_power_w": 98.86,
+          "mean_gpu_power_w": 91.19,
+          "estimated_gpu_joules": 103.95254127502442
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.098542499999894,
+      "load_seconds": 0.0170767,
+      "prompt_eval_seconds": 0.486987,
+      "eval_seconds": 6.473919,
+      "total_server_seconds": 7.034071,
+      "prompt_tokens": 689,
+      "generated_tokens": 394,
+      "tokens_per_second": 60.86,
+      "prompt_tokens_per_second": 1414.82,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 18340556800,
+        "mean_system_ram_used_bytes": 18306782549.333332,
+        "max_system_ram_percent": 53.5,
+        "mean_system_ram_percent": 53.416666666666664,
+        "max_cpu_percent": 42.9,
+        "mean_cpu_percent": 19.2,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93648213.33333333,
+        "max_ollama_process_rss_bytes": 222982144,
+        "mean_ollama_process_rss_bytes": 222982144.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 85.83333333333333,
+        "max_gpu_temperature_c": 58.2,
+        "mean_gpu_temperature_c": 57.88333333333333,
+        "max_gpu_power_w": 98.79,
+        "mean_gpu_power_w": 85.565,
+        "estimated_gpu_joules": 522.477483112812
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.8737997999996878,
+      "load_seconds": 0.0201321,
+      "prompt_eval_seconds": 0.433473,
+      "eval_seconds": 1.32081,
+      "total_server_seconds": 1.8254976,
+      "prompt_tokens": 649,
+      "generated_tokens": 78,
+      "tokens_per_second": 59.05,
+      "prompt_tokens_per_second": 1497.21,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 18530103296,
+        "mean_system_ram_used_bytes": 18437939200.0,
+        "max_system_ram_percent": 54.1,
+        "mean_system_ram_percent": 53.8,
+        "max_cpu_percent": 19.1,
+        "mean_cpu_percent": 9.55,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93642752.0,
+        "max_ollama_process_rss_bytes": 222867456,
+        "mean_ollama_process_rss_bytes": 222867456.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 86.0,
+        "mean_gpu_util_percent": 79.5,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.5,
+        "max_gpu_power_w": 98.87,
+        "mean_gpu_power_w": 84.36,
+        "estimated_gpu_joules": 87.15730568170547
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.834604600000603,
+      "load_seconds": 0.0185017,
+      "prompt_eval_seconds": 0.60922,
+      "eval_seconds": 7.980263,
+      "total_server_seconds": 8.6565652,
+      "prompt_tokens": 750,
+      "generated_tokens": 456,
+      "tokens_per_second": 57.14,
+      "prompt_tokens_per_second": 1231.08,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 18738647040,
+        "mean_system_ram_used_bytes": 18712529920.0,
+        "max_system_ram_percent": 54.7,
+        "mean_system_ram_percent": 54.625,
+        "max_cpu_percent": 28.9,
+        "mean_cpu_percent": 19.6,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93648896.0,
+        "max_ollama_process_rss_bytes": 222867456,
+        "mean_ollama_process_rss_bytes": 222867456.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 95.0,
+        "mean_gpu_util_percent": 86.875,
+        "max_gpu_temperature_c": 58.2,
+        "mean_gpu_temperature_c": 57.4375,
+        "max_gpu_power_w": 98.79,
+        "mean_gpu_power_w": 83.50125,
+        "estimated_gpu_joules": 751.8660997056961
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:0:3",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.7220496000009007,
+      "load_seconds": 0.0171672,
+      "prompt_eval_seconds": 0.316726,
+      "eval_seconds": 2.040628,
+      "total_server_seconds": 2.4459984,
+      "prompt_tokens": 365,
+      "generated_tokens": 106,
+      "tokens_per_second": 51.94,
+      "prompt_tokens_per_second": 1152.42,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18751205376,
+        "mean_system_ram_used_bytes": 18740701866.666668,
+        "max_system_ram_percent": 54.7,
+        "mean_system_ram_percent": 54.666666666666664,
+        "max_cpu_percent": 23.3,
+        "mean_cpu_percent": 15.1,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93645482.66666667,
+        "max_ollama_process_rss_bytes": 222908416,
+        "mean_ollama_process_rss_bytes": 222904320.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 88.0,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 56.20000000000001,
+        "max_gpu_power_w": 86.26,
+        "mean_gpu_power_w": 65.44,
+        "estimated_gpu_joules": 175.9297841835022
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.949770899998839,
+      "load_seconds": 0.0388645,
+      "prompt_eval_seconds": 0.572359,
+      "eval_seconds": 7.168415,
+      "total_server_seconds": 7.7899783,
+      "prompt_tokens": 689,
+      "generated_tokens": 394,
+      "tokens_per_second": 54.96,
+      "prompt_tokens_per_second": 1203.79,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 18757963776,
+        "mean_system_ram_used_bytes": 18742623670.857143,
+        "max_system_ram_percent": 54.7,
+        "mean_system_ram_percent": 54.7,
+        "max_cpu_percent": 43.8,
+        "mean_cpu_percent": 21.47142857142857,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93648603.42857143,
+        "max_ollama_process_rss_bytes": 222908416,
+        "mean_ollama_process_rss_bytes": 222908416.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 83.71428571428571,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.471428571428575,
+        "max_gpu_power_w": 98.66,
+        "mean_gpu_power_w": 92.2957142857143,
+        "estimated_gpu_joules": 679.4279232645034
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.1910164000000805,
+      "load_seconds": 0.0333164,
+      "prompt_eval_seconds": 0.570178,
+      "eval_seconds": 1.520839,
+      "total_server_seconds": 2.1330693,
+      "prompt_tokens": 703,
+      "generated_tokens": 78,
+      "tokens_per_second": 51.29,
+      "prompt_tokens_per_second": 1232.95,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 18767306752,
+        "mean_system_ram_used_bytes": 18763626496.0,
+        "max_system_ram_percent": 54.8,
+        "mean_system_ram_percent": 54.75,
+        "max_cpu_percent": 20.1,
+        "mean_cpu_percent": 10.05,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93642752.0,
+        "max_ollama_process_rss_bytes": 222584832,
+        "mean_ollama_process_rss_bytes": 222584832.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 84.0,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.4,
+        "max_gpu_power_w": 86.29,
+        "mean_gpu_power_w": 77.37,
+        "estimated_gpu_joules": 86.89681922197342
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:1:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 4.769872300003044,
+      "load_seconds": 0.0182224,
+      "prompt_eval_seconds": 0.411726,
+      "eval_seconds": 4.225108,
+      "total_server_seconds": 4.7042279,
+      "prompt_tokens": 491,
+      "generated_tokens": 230,
+      "tokens_per_second": 54.44,
+      "prompt_tokens_per_second": 1192.54,
+      "hardware": {
+        "samples": 4,
+        "max_system_ram_used_bytes": 18961031168,
+        "mean_system_ram_used_bytes": 18904304640.0,
+        "max_system_ram_percent": 55.3,
+        "mean_system_ram_percent": 55.175,
+        "max_cpu_percent": 22.1,
+        "mean_cpu_percent": 15.025,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93646848.0,
+        "max_ollama_process_rss_bytes": 222584832,
+        "mean_ollama_process_rss_bytes": 222584832.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 86.0,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.625,
+        "max_gpu_power_w": 98.07,
+        "mean_gpu_power_w": 81.94,
+        "estimated_gpu_joules": 295.2977830672264
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:2:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 6.890501600002608,
+      "load_seconds": 0.0477357,
+      "prompt_eval_seconds": 0.05937,
+      "eval_seconds": 6.559388,
+      "total_server_seconds": 6.8198792,
+      "prompt_tokens": 689,
+      "generated_tokens": 394,
+      "tokens_per_second": 60.07,
+      "prompt_tokens_per_second": 11605.19,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 18967003136,
+        "mean_system_ram_used_bytes": 18957432832.0,
+        "max_system_ram_percent": 55.3,
+        "mean_system_ram_percent": 55.29999999999999,
+        "max_cpu_percent": 41.1,
+        "mean_cpu_percent": 20.166666666666668,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93648213.33333333,
+        "max_ollama_process_rss_bytes": 222584832,
+        "mean_ollama_process_rss_bytes": 222584832.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 82.33333333333333,
+        "max_gpu_temperature_c": 58.4,
+        "mean_gpu_temperature_c": 58.11666666666667,
+        "max_gpu_power_w": 99.23,
+        "mean_gpu_power_w": 93.13833333333334,
+        "estimated_gpu_joules": 604.6175156760215
+      }
+    },
+    {
+      "request_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley__rep1:merge:2:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.9905246000016632,
+      "load_seconds": 0.0200759,
+      "prompt_eval_seconds": 0.455122,
+      "eval_seconds": 1.370551,
+      "total_server_seconds": 1.9261593,
+      "prompt_tokens": 570,
+      "generated_tokens": 78,
+      "tokens_per_second": 56.91,
+      "prompt_tokens_per_second": 1252.41,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 18967793664,
+        "mean_system_ram_used_bytes": 18962817024.0,
+        "max_system_ram_percent": 55.3,
+        "mean_system_ram_percent": 55.3,
+        "max_cpu_percent": 28.5,
+        "mean_cpu_percent": 14.25,
+        "max_python_process_rss_bytes": 93650944,
+        "mean_python_process_rss_bytes": 93642752.0,
+        "max_ollama_process_rss_bytes": 222584832,
+        "mean_ollama_process_rss_bytes": 222584832.0,
+        "max_gpu_mem_mb": 5303.0,
+        "mean_gpu_mem_mb": 5303.0,
+        "max_gpu_util_percent": 82.0,
+        "mean_gpu_util_percent": 78.5,
+        "max_gpu_temperature_c": 58.2,
+        "mean_gpu_temperature_c": 57.45,
+        "max_gpu_power_w": 87.21,
+        "mean_gpu_power_w": 71.0,
+        "estimated_gpu_joules": 70.01523859024047
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "7589f214ae9f8f61339559482671477250e082f7a390fe9119def18997ae25f6"
+}

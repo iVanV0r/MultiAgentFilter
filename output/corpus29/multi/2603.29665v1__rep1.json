@@ -1,0 +1,362 @@
+{
+  "paper_id": "2603.29665v1",
+  "filename": "2603.29665v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+      "status": "accepted",
+      "reason": "Формулирует пробел, который статья решает: существующие методы игнорируют случаи обхода проверок, при которых результат верен (latent failures), что подтверждается цитатой с Page 1.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "P1_2",
+      "statement": "Автори пропустили возможность предложить улучшения или альтернативные методы для оценки соблюдения политик, которые учитывают случаи, когда агенты обходят проверки, но все же достигают правильного результата.",
+      "status": "rejected",
+      "reason": "Это скорее вывод о том, что авторы добавили, а не четкое обозначение нерешенного пробела в знаниях, как в M1.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Our findings reveal a blind spot in current evaluation methodologies and highlight the need for benchmarks assessing not only final policyadherence outcomes but also the decision process leading to these outcomes.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Неверный пробел, так как статья обсуждает проблемы в оценке соблюдения политик, а не конкретные случаи обхода проверок без достижения правильного результата. Пробел касается обхода проверок, но не обхода проверок без достижения правильного результата.",
+            "source_page": 2
+          },
+          {
+            "target": "M1",
+            "criticism": "Недоказанность, так как кандидат предполагает, что текущие методы игнорируют случаи обхода проверок, но не предоставляет доказательств того, что это действительно так в большинстве случаев.",
+            "source_page": 2
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Автори пропустили возможность предложить улучшения или альтернативные методы для оценки соблюдения политик, которые учитывают случаи, когда агенты обходят проверки, но все же достигают правильного результата.",
+            "type": "suggestion",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 8,
+                "quote": "Our findings reveal a blind spot in current evaluation methodologies and highlight the need for benchmarks assessing not only final policyadherence outcomes but also the decision process leading to these outcomes."
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+            "reason": "Исправлено на основе цитаты из источника (страница 1), которая подтверждает наличие таких случаев и называет их near-misses или latent failures."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты из источника (страница 1), которая подтверждает наличие таких случаев и называет их near-misses или latent failures.",
+          "old_statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+          "new_statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам."
+        },
+        {
+          "candidate_id": "P1_2",
+          "action": "critic_addition",
+          "reason": "Новая проблема Phi с подтверждённой цитатой"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко формулирует научный пробел, который статья направлена устранить (игнорирование тонких случаев обхода политик, достигающих правильного результата). P1_2 является скорее описанием того, что авторы сделали, а не формулировкой пробела, и менее точен.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Формулирует пробел, который статья решает: существующие методы игнорируют случаи обхода проверок, при которых результат верен (latent failures), что подтверждается цитатой с Page 1."
+          },
+          {
+            "candidate_id": "P1_2",
+            "accept": false,
+            "reason": "Это скорее вывод о том, что авторы добавили, а не четкое обозначение нерешенного пробела в знаниях, как в M1."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Автори пропустили возможность предложить улучшения или альтернативные методы для оценки соблюдения политик, которые учитывают случаи, когда агенты обходят проверки, но все же достигают правильного результата.",
+          "type": "suggestion",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Our findings reveal a blind spot in current evaluation methodologies and highlight the need for benchmarks assessing not only final policyadherence outcomes but also the decision process leading to these outcomes.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "P1_2"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+          "status": "accepted",
+          "reason": "Формулирует пробел, который статья решает: существующие методы игнорируют случаи обхода проверок, при которых результат верен (latent failures), что подтверждается цитатой с Page 1.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "P1_2",
+          "statement": "Автори пропустили возможность предложить улучшения или альтернативные методы для оценки соблюдения политик, которые учитывают случаи, когда агенты обходят проверки, но все же достигают правильного результата.",
+          "status": "rejected",
+          "reason": "Это скорее вывод о том, что авторы добавили, а не четкое обозначение нерешенного пробела в знаниях, как в M1.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Our findings reveal a blind spot in current evaluation methodologies and highlight the need for benchmarks assessing not only final policyadherence outcomes but also the decision process leading to these outcomes.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие методы оценки соблюдения политик в агентных системах часто игнорируют случаи, когда агенты обходят необходимые проверки, но достигают правильного результата благодаря благоприятным обстоятельствам.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29665v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.897513199997775,
+          "load_seconds": 2.6373687,
+          "prompt_eval_seconds": 0.391101,
+          "eval_seconds": 2.800991,
+          "total_server_seconds": 5.8415661,
+          "prompt_tokens": 663,
+          "generated_tokens": 242,
+          "tokens_per_second": 86.4,
+          "prompt_tokens_per_second": 1695.21,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 18492137472,
+            "mean_system_ram_used_bytes": 15885067878.4,
+            "max_system_ram_percent": 54.0,
+            "mean_system_ram_percent": 46.36,
+            "max_cpu_percent": 43.3,
+            "mean_cpu_percent": 23.080000000000002,
+            "max_python_process_rss_bytes": 90558464,
+            "mean_python_process_rss_bytes": 90555187.2,
+            "max_ollama_process_rss_bytes": 223064064,
+            "mean_ollama_process_rss_bytes": 222934630.4,
+            "max_gpu_mem_mb": 4764.0,
+            "mean_gpu_mem_mb": 3420.6,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 61.2,
+            "max_gpu_temperature_c": 59.7,
+            "mean_gpu_temperature_c": 56.82000000000001,
+            "max_gpu_power_w": 126.12,
+            "mean_gpu_power_w": 81.066,
+            "estimated_gpu_joules": 367.47191949844364
+          }
+        },
+        {
+          "request_id": "2603.29665v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.636048899999878,
+          "load_seconds": 3.2514752,
+          "prompt_eval_seconds": 0.852696,
+          "eval_seconds": 1.386035,
+          "total_server_seconds": 5.5060027,
+          "prompt_tokens": 1369,
+          "generated_tokens": 98,
+          "tokens_per_second": 70.71,
+          "prompt_tokens_per_second": 1605.5,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 15559249920,
+            "mean_system_ram_used_bytes": 15302338969.6,
+            "max_system_ram_percent": 45.4,
+            "mean_system_ram_percent": 44.64,
+            "max_cpu_percent": 28.1,
+            "mean_cpu_percent": 18.14,
+            "max_python_process_rss_bytes": 90558464,
+            "mean_python_process_rss_bytes": 90555187.2,
+            "max_ollama_process_rss_bytes": 223064064,
+            "mean_ollama_process_rss_bytes": 222733107.2,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 3547.4,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 50.4,
+            "max_gpu_temperature_c": 58.7,
+            "mean_gpu_temperature_c": 56.4,
+            "max_gpu_power_w": 113.35,
+            "mean_gpu_power_w": 77.958,
+            "estimated_gpu_joules": 342.9957894444466
+          }
+        },
+        {
+          "request_id": "2603.29665v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 10.438089999999647,
+          "load_seconds": 5.6558046,
+          "prompt_eval_seconds": 1.026006,
+          "eval_seconds": 3.485489,
+          "total_server_seconds": 10.1811843,
+          "prompt_tokens": 1042,
+          "generated_tokens": 275,
+          "tokens_per_second": 78.9,
+          "prompt_tokens_per_second": 1015.59,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 18130034688,
+            "mean_system_ram_used_bytes": 17002290744.88889,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 49.599999999999994,
+            "max_cpu_percent": 44.0,
+            "mean_cpu_percent": 24.633333333333333,
+            "max_python_process_rss_bytes": 90558464,
+            "mean_python_process_rss_bytes": 90556643.55555555,
+            "max_ollama_process_rss_bytes": 492118016,
+            "mean_ollama_process_rss_bytes": 253295729.7777778,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4680.555555555556,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 43.77777777777778,
+            "max_gpu_temperature_c": 57.7,
+            "mean_gpu_temperature_c": 55.355555555555554,
+            "max_gpu_power_w": 98.7,
+            "mean_gpu_power_w": 66.03,
+            "estimated_gpu_joules": 687.9148760223388
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 21.992919299998903,
+  "seconds_end_to_end": 92.86527769999884,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "a5a91ddd46ab4329be1e35ffde75471648c150cb56bc4d20ca2c71ed7a40efe3"
+}

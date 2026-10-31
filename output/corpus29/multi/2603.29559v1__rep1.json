@@ -1,0 +1,534 @@
+{
+  "paper_id": "2603.29559v1",
+  "filename": "2603.29559v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+      "status": "accepted",
+      "reason": "Формулирует пробел в знаниях (необходимость калибровки уверенности) и подкрепляет это цитатой, указывающей на решение этой проблемы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+      "status": "accepted",
+      "reason": "Обозначает отсутствие единого универсального метода, что является явным научным пробелом, подкрепленным сравнением метрик.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+      "status": "accepted",
+      "reason": "Описывает проблему практических ограничений интерпретации, вызванных характеристиками данных (концентрация и дискретность), что является научным/методологическим пробелом.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+      "status": "rejected",
+      "reason": "Это скорее методологическое требование, вытекающее из анализа, а не фундаментальный пробел в знаниях, который решается публикацией.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 10,
+          "quote": "thresholds should be set relative to each model/method's observed scores rather than an intuitive midpoint",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цитата не является научной проблемой, а скорее направлением исследования.",
+            "source_page": 1,
+            "support_quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct."
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+            "reason": "Исходная формулировка описывает направление исследования, а не проблему. В источнике указано: 'Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.'"
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений"
+          },
+          {
+            "candidate_id": "M5",
+            "action": "remove",
+            "reason": "Фраза 'Разработка методов калибровки уверенности больших языковых моделей для автоматической оценки' является описанием цели или названия работы, а не научной проблемой в контексте данной статьи. В источнике это указано как заголовок таблицы: 'Calibrating LLM Confidence for Automated Assessment'."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Исходная формулировка описывает направление исследования, а не проблему. В источнике указано: 'Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.'",
+          "old_statement": "Проблема недоверия к выводам LLM-оценщиков и некорректности автоматизации без калибровки уверенности",
+          "new_statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "",
+          "old_statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+          "new_statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "",
+          "old_statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+          "new_statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "",
+          "old_statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+          "new_statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "remove",
+          "reason": "Фраза 'Разработка методов калибровки уверенности больших языковых моделей для автоматической оценки' является описанием цели или названия работы, а не научной проблемой в контексте данной статьи. В источнике это указано как заголовок таблицы: 'Calibrating LLM Confidence for Automated Assessment'.",
+          "old_statement": "Разработка методов калибровки уверенности больших языковых моделей для автоматической оценки."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко формулирует пробел в знаниях (необходимость калибровки уверенности) и подкрепляет это цитатой, которая описывает, что работа направлена на решение этой проблемы. M2 описывает отсутствие универсального метода, что является классической научной проблемой, и подкреплено данными о различиях в метриках. M3 описывает практические ограничения, связанные с распределением данных, что является проблемой интерпретации. M4 указывает на методологическое требование, которое является следствием анализа, а не фундаментальным пробелом.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Формулирует пробел в знаниях (необходимость калибровки уверенности) и подкрепляет это цитатой, указывающей на решение этой проблемы."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначает отсутствие единого универсального метода, что является явным научным пробелом, подкрепленным сравнением метрик."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Описывает проблему практических ограничений интерпретации, вызванных характеристиками данных (концентрация и дискретность), что является научным/методологическим пробелом."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Это скорее методологическое требование, вытекающее из анализа, а не фундаментальный пробел в знаниях, который решается публикацией."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "thresholds should be set relative to each model/method's observed scores rather than an intuitive midpoint",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+          "status": "accepted",
+          "reason": "Формулирует пробел в знаниях (необходимость калибровки уверенности) и подкрепляет это цитатой, указывающей на решение этой проблемы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+          "status": "accepted",
+          "reason": "Обозначает отсутствие единого универсального метода, что является явным научным пробелом, подкрепленным сравнением метрик.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+          "status": "accepted",
+          "reason": "Описывает проблему практических ограничений интерпретации, вызванных характеристиками данных (концентрация и дискретность), что является научным/методологическим пробелом.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+          "status": "rejected",
+          "reason": "Это скорее методологическое требование, вытекающее из анализа, а не фундаментальный пробел в знаниях, который решается публикацией.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "thresholds should be set relative to each model/method's observed scores rather than an intuitive midpoint",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Проблема заключается в том, что методы автоматизированной оценки требуют калибровки уверенности для повышения точности классификации.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29559v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.209886299999198,
+          "load_seconds": 2.6377756,
+          "prompt_eval_seconds": 0.584534,
+          "eval_seconds": 0.92889,
+          "total_server_seconds": 4.1666216,
+          "prompt_tokens": 1146,
+          "generated_tokens": 72,
+          "tokens_per_second": 77.51,
+          "prompt_tokens_per_second": 1960.54,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 17942036480,
+            "mean_system_ram_used_bytes": 15870258176.0,
+            "max_system_ram_percent": 52.4,
+            "mean_system_ram_percent": 46.325,
+            "max_cpu_percent": 34.1,
+            "mean_cpu_percent": 19.075,
+            "max_python_process_rss_bytes": 90402816,
+            "mean_python_process_rss_bytes": 90397696.0,
+            "max_ollama_process_rss_bytes": 223727616,
+            "mean_ollama_process_rss_bytes": 222844928.0,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3085.75,
+            "max_gpu_util_percent": 88.0,
+            "mean_gpu_util_percent": 57.5,
+            "max_gpu_temperature_c": 58.7,
+            "mean_gpu_temperature_c": 56.425,
+            "max_gpu_power_w": 114.54,
+            "mean_gpu_power_w": 69.81,
+            "estimated_gpu_joules": 209.71825135707854
+          }
+        },
+        {
+          "request_id": "2603.29559v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.364603999998508,
+          "load_seconds": 3.015399,
+          "prompt_eval_seconds": 1.183727,
+          "eval_seconds": 5.055402,
+          "total_server_seconds": 9.2707851,
+          "prompt_tokens": 2090,
+          "generated_tokens": 338,
+          "tokens_per_second": 66.86,
+          "prompt_tokens_per_second": 1765.61,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 15611535360,
+            "mean_system_ram_used_bytes": 15432863744.0,
+            "max_system_ram_percent": 45.6,
+            "mean_system_ram_percent": 45.0375,
+            "max_cpu_percent": 41.6,
+            "mean_cpu_percent": 21.65,
+            "max_python_process_rss_bytes": 90402816,
+            "mean_python_process_rss_bytes": 90400768.0,
+            "max_ollama_process_rss_bytes": 273739776,
+            "mean_ollama_process_rss_bytes": 229315584.0,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 4251.375,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 62.5,
+            "max_gpu_temperature_c": 58.8,
+            "mean_gpu_temperature_c": 57.4125,
+            "max_gpu_power_w": 112.71,
+            "mean_gpu_power_w": 83.3675,
+            "estimated_gpu_joules": 715.3125890088081
+          }
+        },
+        {
+          "request_id": "2603.29559v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.094914200002677,
+          "load_seconds": 5.6619964,
+          "prompt_eval_seconds": 1.10147,
+          "eval_seconds": 5.260435,
+          "total_server_seconds": 12.0371649,
+          "prompt_tokens": 1597,
+          "generated_tokens": 438,
+          "tokens_per_second": 83.26,
+          "prompt_tokens_per_second": 1449.88,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 18113814528,
+            "mean_system_ram_used_bytes": 17134215577.6,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 50.0,
+            "max_cpu_percent": 40.6,
+            "mean_cpu_percent": 21.39,
+            "max_python_process_rss_bytes": 90402816,
+            "mean_python_process_rss_bytes": 90401177.6,
+            "max_ollama_process_rss_bytes": 223772672,
+            "mean_ollama_process_rss_bytes": 222863360.0,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4824.7,
+            "max_gpu_util_percent": 91.0,
+            "mean_gpu_util_percent": 49.0,
+            "max_gpu_temperature_c": 58.2,
+            "mean_gpu_temperature_c": 55.879999999999995,
+            "max_gpu_power_w": 113.1,
+            "mean_gpu_power_w": 77.975,
+            "estimated_gpu_joules": 844.959482858181
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 25.69010999999955,
+  "seconds_end_to_end": 86.79961980000007,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "fd1e7fbd641c287ee36c1c76675ca2f85269dab2245de4af21adf6cf971b457d"
+}

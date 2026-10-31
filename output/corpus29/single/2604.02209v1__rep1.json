@@ -1,0 +1,1079 @@
+{
+  "paper_id": "2604.02209v1",
+  "filename": "2604.02209v1.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток аннотированных данных и ресурсов для задач распознавания названий сущностей в арабском языке из-за морфологической сложности и отсутствия коротких гласных.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке, особенно в режиме zero-shot, и требуют дальнейшего исследования их поведения (например, генерации переводов вместо транскрипции).",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие методы ASR и NER не всегда обеспечивают оптимальную производительность в пайплайнах, так как низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) из-за крайне малого количества обучающих примеров и отсутствия стабильных акусто-семантических карт.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие аннотированного датасета для задачи распознавания названий сущностей в речи на арабском языке.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "we introduced CV-18 NER, the first annotated Arabic dataset for Speech Named Entity Recognition",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие системы распознавания сущностей (NER) из речи демонстрируют высокую ошибку в определении дат и событий, что указывает на пробел в знаниях о семантическом понимании временных контекстов.",
+      "type": "knowledge",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 10,
+          "quote": "B-DATE 34 31 41 29.0 I-DATE 17 43 38 42.6",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 47.225386099999014,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "abstract",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток аннотированных данных и ресурсов для задач распознавания названий сущностей в арабском языке из-за морфологической сложности и отсутствия коротких гласных.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.350356300001295,
+        "load_seconds": 3.4828912,
+        "prompt_eval_seconds": 0.458704,
+        "eval_seconds": 1.341112,
+        "total_server_seconds": 5.2903015,
+        "prompt_tokens": 601,
+        "generated_tokens": 95,
+        "tokens_per_second": 70.84,
+        "prompt_tokens_per_second": 1310.21,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 18123010048,
+          "mean_system_ram_used_bytes": 15895448780.8,
+          "max_system_ram_percent": 52.9,
+          "mean_system_ram_percent": 46.379999999999995,
+          "max_cpu_percent": 49.5,
+          "mean_cpu_percent": 30.18,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92431155.2,
+          "max_ollama_process_rss_bytes": 223027200,
+          "mean_ollama_process_rss_bytes": 222951014.4,
+          "max_gpu_mem_mb": 5289.0,
+          "mean_gpu_mem_mb": 3569.2,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 50.8,
+          "max_gpu_temperature_c": 58.3,
+          "mean_gpu_temperature_c": 55.7,
+          "max_gpu_power_w": 101.67,
+          "mean_gpu_power_w": 70.364,
+          "estimated_gpu_joules": 315.0333646583557
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие публично доступных датасетов для обучения моделей NER напрямую из речи на арабском языке.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "...due to the limited availability of annotated datasets and standardized benchmarks.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5428345000000263,
+        "load_seconds": 0.0153687,
+        "prompt_eval_seconds": 0.519445,
+        "eval_seconds": 0.918065,
+        "total_server_seconds": 1.4912715,
+        "prompt_tokens": 947,
+        "generated_tokens": 65,
+        "tokens_per_second": 70.8,
+        "prompt_tokens_per_second": 1823.1,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15685431296,
+          "mean_system_ram_used_bytes": 15628847104.0,
+          "max_system_ram_percent": 45.8,
+          "mean_system_ram_percent": 45.599999999999994,
+          "max_cpu_percent": 15.4,
+          "mean_cpu_percent": 7.7,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92426240.0,
+          "max_ollama_process_rss_bytes": 222773248,
+          "mean_ollama_process_rss_bytes": 222773248.0,
+          "max_gpu_mem_mb": 5295.0,
+          "mean_gpu_mem_mb": 5295.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 88.0,
+          "max_gpu_temperature_c": 58.4,
+          "mean_gpu_temperature_c": 58.349999999999994,
+          "max_gpu_power_w": 101.37,
+          "mean_gpu_power_w": 85.435,
+          "estimated_gpu_joules": 84.82128632068634
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие открытых, широко используемых бенчмарков для оценки систем распознавания речи на арабском языке.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "unlike task-specific speech corpora, the diversity and general-domain nature of Common Voice make it particularly suitable for building realistic speech understanding benchmarks.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.0204095000008238,
+        "load_seconds": 0.0192958,
+        "prompt_eval_seconds": 0.659417,
+        "eval_seconds": 1.243064,
+        "total_server_seconds": 1.9700757,
+        "prompt_tokens": 1236,
+        "generated_tokens": 78,
+        "tokens_per_second": 62.75,
+        "prompt_tokens_per_second": 1874.38,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15877582848,
+          "mean_system_ram_used_bytes": 15779311616.0,
+          "max_system_ram_percent": 46.3,
+          "mean_system_ram_percent": 46.05,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 20.95,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92426240.0,
+          "max_ollama_process_rss_bytes": 222773248,
+          "mean_ollama_process_rss_bytes": 222773248.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5298.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 58.4,
+          "mean_gpu_temperature_c": 58.099999999999994,
+          "max_gpu_power_w": 96.65,
+          "mean_gpu_power_w": 91.95500000000001,
+          "estimated_gpu_joules": 119.0544915676117
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 2,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Разработка и оценка методов распознавания названных сущностей (NER) на арабском языке в условиях ограниченных ресурсов и репрезентативных данных.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "Создание датасета CV-18 NER для оценки систем NER, учитывающего реалистичное распределение частоты сущностей (long-tailed distribution).",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "The resulting dataset therefore provides a challenging and representative benchmark for evaluating end-to-end speech NER systems under realistic and limited-resource conditions.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.030170199999702,
+        "load_seconds": 0.0193703,
+        "prompt_eval_seconds": 0.565556,
+        "eval_seconds": 2.341149,
+        "total_server_seconds": 2.9792532,
+        "prompt_tokens": 1065,
+        "generated_tokens": 145,
+        "tokens_per_second": 61.94,
+        "prompt_tokens_per_second": 1883.1,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16082722816,
+          "mean_system_ram_used_bytes": 16013986474.666666,
+          "max_system_ram_percent": 46.9,
+          "mean_system_ram_percent": 46.699999999999996,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 20.133333333333333,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222789632,
+          "mean_ollama_process_rss_bytes": 222789632.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5299.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.36666666666667,
+          "max_gpu_power_w": 87.28,
+          "mean_gpu_power_w": 81.31666666666666,
+          "estimated_gpu_joules": 192.0339062666893
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "introduction",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Оценка эффективности языко-специфичных самообучающихся моделей (AraBEST-RQ) по сравнению с общими слабо надзорными моделями (Whisper) для задач распознавания речи и NER в арабском языке.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Comparing Whisper and AraBEST-RQ allows us to evaluate NER-from-speech performance across different representation paradigms: large-scale weakly supervised multilingual models on the one hand, and language-specific self-supervised representations on the other.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.927015499997651,
+        "load_seconds": 0.0155181,
+        "prompt_eval_seconds": 0.694861,
+        "eval_seconds": 2.093895,
+        "total_server_seconds": 2.862804,
+        "prompt_tokens": 1272,
+        "generated_tokens": 129,
+        "tokens_per_second": 61.61,
+        "prompt_tokens_per_second": 1830.58,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16335835136,
+          "mean_system_ram_used_bytes": 16245131946.666666,
+          "max_system_ram_percent": 47.7,
+          "mean_system_ram_percent": 47.4,
+          "max_cpu_percent": 20.5,
+          "mean_cpu_percent": 12.566666666666668,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222838784,
+          "mean_ollama_process_rss_bytes": 222827861.33333334,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5299.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.33333333333333,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.06666666666666,
+          "max_gpu_power_w": 87.33,
+          "mean_gpu_power_w": 76.81,
+          "estimated_gpu_joules": 174.61070176601407
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "introduction",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке, особенно в режиме zero-shot, и требуют дальнейшего исследования их поведения (например, генерации переводов вместо транскрипции).",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.6620414999997593,
+        "load_seconds": 0.0136551,
+        "prompt_eval_seconds": 0.69854,
+        "eval_seconds": 1.826946,
+        "total_server_seconds": 2.6080934,
+        "prompt_tokens": 1308,
+        "generated_tokens": 108,
+        "tokens_per_second": 59.12,
+        "prompt_tokens_per_second": 1872.48,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16593301504,
+          "mean_system_ram_used_bytes": 16500237653.333334,
+          "max_system_ram_percent": 48.4,
+          "mean_system_ram_percent": 48.13333333333333,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 20.2,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222842880,
+          "mean_ollama_process_rss_bytes": 222842880.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5299.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 85.66666666666667,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 56.833333333333336,
+          "max_gpu_power_w": 87.16,
+          "mean_gpu_power_w": 75.83,
+          "estimated_gpu_joules": 190.75659267425536
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "introduction",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие методы ASR и NER не всегда обеспечивают оптимальную производительность в пайплайнах, так как низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.679810899997392,
+        "load_seconds": 0.0179154,
+        "prompt_eval_seconds": 0.913635,
+        "eval_seconds": 1.626912,
+        "total_server_seconds": 2.6239479,
+        "prompt_tokens": 1682,
+        "generated_tokens": 100,
+        "tokens_per_second": 61.47,
+        "prompt_tokens_per_second": 1841.0,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16849072128,
+          "mean_system_ram_used_bytes": 16756674560.0,
+          "max_system_ram_percent": 49.2,
+          "mean_system_ram_percent": 48.9,
+          "max_cpu_percent": 38.7,
+          "mean_cpu_percent": 18.6,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222842880,
+          "mean_ollama_process_rss_bytes": 222842880.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5299.0,
+          "max_gpu_util_percent": 96.0,
+          "mean_gpu_util_percent": 83.66666666666667,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.300000000000004,
+          "max_gpu_power_w": 99.04,
+          "mean_gpu_power_w": 89.66333333333334,
+          "estimated_gpu_joules": 208.9987086725235
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "introduction",
+      "pages": [
+        7
+      ],
+      "generated": 3,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Существующие методы классических пайплайнов крайне чувствительны к ошибкам транскрибации, что приводит к высокой ошибке в извлечении сущностей (CVER), даже при хорошем качестве ASR.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "classical pipeline systems remain highly sensitive to transcription errors",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Модели самообучения (SSL) больших размеров испытывают трудности с сходимостью в совместном обучении транскрибации и семантической разметки, тогда как хорошо настроенные модели меньшего масштаба обеспечивают сильное выравнивание акустических и лексико-семантических представлений.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "larger SSL-based models struggle to converge in joint transcription and semantic tagging",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Семантическое обучение в рамках end-to-end архитектуры действует как форма регуляризации, улучшая семантическую робастность модели, позволяя частично восстанавливать информацию о типах сущностей на основе акустических признаков даже при imperfect lexical realization.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "E2E training appears to act as a form of task-aware regularization",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.460523099998682,
+        "load_seconds": 0.0162464,
+        "prompt_eval_seconds": 0.636162,
+        "eval_seconds": 4.678382,
+        "total_server_seconds": 5.3984197,
+        "prompt_tokens": 1167,
+        "generated_tokens": 282,
+        "tokens_per_second": 60.28,
+        "prompt_tokens_per_second": 1834.44,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 17071169536,
+          "mean_system_ram_used_bytes": 17021394944.0,
+          "max_system_ram_percent": 49.8,
+          "mean_system_ram_percent": 49.67999999999999,
+          "max_cpu_percent": 26.5,
+          "mean_cpu_percent": 17.84,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92431155.2,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5300.0,
+          "mean_gpu_mem_mb": 5299.4,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.2,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.82000000000001,
+          "max_gpu_power_w": 99.12,
+          "mean_gpu_power_w": 83.136,
+          "estimated_gpu_joules": 403.5695950508118
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "introduction",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) из-за крайне малого количества обучающих примеров и отсутствия стабильных акусто-семантических карт.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.178595800000039,
+        "load_seconds": 0.0333086,
+        "prompt_eval_seconds": 0.312025,
+        "eval_seconds": 1.726471,
+        "total_server_seconds": 2.1297022,
+        "prompt_tokens": 614,
+        "generated_tokens": 106,
+        "tokens_per_second": 61.4,
+        "prompt_tokens_per_second": 1967.79,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17255550976,
+          "mean_system_ram_used_bytes": 17153808384.0,
+          "max_system_ram_percent": 50.4,
+          "mean_system_ram_percent": 50.099999999999994,
+          "max_cpu_percent": 17.1,
+          "mean_cpu_percent": 8.55,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92426240.0,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5300.0,
+          "mean_gpu_mem_mb": 5300.0,
+          "max_gpu_util_percent": 83.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 98.25,
+          "mean_gpu_power_w": 84.625,
+          "estimated_gpu_joules": 88.91430044174194
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "conclusion",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие аннотированного датасета для задачи распознавания названий сущностей в речи на арабском языке.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "we introduced CV-18 NER, the first annotated Arabic dataset for Speech Named Entity Recognition",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7150504999990517,
+        "load_seconds": 0.015626,
+        "prompt_eval_seconds": 0.416005,
+        "eval_seconds": 1.174012,
+        "total_server_seconds": 1.6527458,
+        "prompt_tokens": 778,
+        "generated_tokens": 74,
+        "tokens_per_second": 63.03,
+        "prompt_tokens_per_second": 1870.17,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17440718848,
+          "mean_system_ram_used_bytes": 17350205440.0,
+          "max_system_ram_percent": 50.9,
+          "mean_system_ram_percent": 50.65,
+          "max_cpu_percent": 24.7,
+          "mean_cpu_percent": 22.0,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92426240.0,
+          "max_ollama_process_rss_bytes": 222846976,
+          "mean_ollama_process_rss_bytes": 222846976.0,
+          "max_gpu_mem_mb": 5300.0,
+          "mean_gpu_mem_mb": 5300.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 87.44,
+          "mean_gpu_power_w": 71.595,
+          "estimated_gpu_joules": 69.6147271990776
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "conclusion",
+      "pages": [
+        9
+      ],
+      "generated": 3,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Отсутствие достаточных данных для обучения моделей распознавания речи на арабском языке с учетом диалектного кодовосключения.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "Недостаток методов, позволяющих эффективно обучать модели на малых или дисбалансированных наборах данных для задач NER в арабском языке.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "Отсутствие инструментов и фреймворков для создания открытых моделей распознавания речи, поддерживающих многодиалектный арабский язык.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.480312400002731,
+        "load_seconds": 0.0191719,
+        "prompt_eval_seconds": 0.899274,
+        "eval_seconds": 2.451115,
+        "total_server_seconds": 3.4252716,
+        "prompt_tokens": 1638,
+        "generated_tokens": 147,
+        "tokens_per_second": 59.97,
+        "prompt_tokens_per_second": 1821.47,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17685929984,
+          "mean_system_ram_used_bytes": 17603011925.333332,
+          "max_system_ram_percent": 51.6,
+          "mean_system_ram_percent": 51.36666666666667,
+          "max_cpu_percent": 23.6,
+          "mean_cpu_percent": 18.933333333333334,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222908416,
+          "mean_ollama_process_rss_bytes": 222908416.0,
+          "max_gpu_mem_mb": 5300.0,
+          "mean_gpu_mem_mb": 5300.0,
+          "max_gpu_util_percent": 96.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.63333333333333,
+          "max_gpu_power_w": 99.23,
+          "mean_gpu_power_w": 88.89999999999999,
+          "estimated_gpu_joules": 205.45826228141783
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "appendix",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие системы распознавания сущностей (NER) из речи демонстрируют высокую ошибку в определении дат и событий, что указывает на пробел в знаниях о семантическом понимании временных контекстов.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "B-DATE 34 31 41 29.0 I-DATE 17 43 38 42.6",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2604.02209v1__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.9494188999997277,
+        "load_seconds": 0.0084533,
+        "prompt_eval_seconds": 0.989632,
+        "eval_seconds": 1.726047,
+        "total_server_seconds": 2.8212546,
+        "prompt_tokens": 1586,
+        "generated_tokens": 108,
+        "tokens_per_second": 62.57,
+        "prompt_tokens_per_second": 1602.62,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17782112256,
+          "mean_system_ram_used_bytes": 17748881408.0,
+          "max_system_ram_percent": 51.9,
+          "mean_system_ram_percent": 51.800000000000004,
+          "max_cpu_percent": 42.4,
+          "mean_cpu_percent": 20.7,
+          "max_python_process_rss_bytes": 92434432,
+          "mean_python_process_rss_bytes": 92428970.66666667,
+          "max_ollama_process_rss_bytes": 222912512,
+          "mean_ollama_process_rss_bytes": 222912512.0,
+          "max_gpu_mem_mb": 5300.0,
+          "mean_gpu_mem_mb": 5300.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 82.33333333333333,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.43333333333334,
+          "max_gpu_power_w": 96.19,
+          "mean_gpu_power_w": 89.51333333333334,
+          "estimated_gpu_joules": 253.49872933626176
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "2604.02209v1__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 2.1138953999980004,
+      "load_seconds": 0.0153616,
+      "prompt_eval_seconds": 0.479418,
+      "eval_seconds": 1.523374,
+      "total_server_seconds": 2.0737814,
+      "prompt_tokens": 737,
+      "generated_tokens": 95,
+      "tokens_per_second": 62.36,
+      "prompt_tokens_per_second": 1537.28,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17938571264,
+        "mean_system_ram_used_bytes": 17856225280.0,
+        "max_system_ram_percent": 52.3,
+        "mean_system_ram_percent": 52.099999999999994,
+        "max_cpu_percent": 26.2,
+        "mean_cpu_percent": 21.65,
+        "max_python_process_rss_bytes": 92434432,
+        "mean_python_process_rss_bytes": 92426240.0,
+        "max_ollama_process_rss_bytes": 222973952,
+        "mean_ollama_process_rss_bytes": 222973952.0,
+        "max_gpu_mem_mb": 5300.0,
+        "mean_gpu_mem_mb": 5300.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 83.0,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.4,
+        "max_gpu_power_w": 87.22,
+        "mean_gpu_power_w": 78.525,
+        "estimated_gpu_joules": 85.81115372657776
+      }
+    },
+    {
+      "request_id": "2604.02209v1__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 9.094716499999777,
+      "load_seconds": 0.0188922,
+      "prompt_eval_seconds": 0.474741,
+      "eval_seconds": 8.515892,
+      "total_server_seconds": 9.0491619,
+      "prompt_tokens": 772,
+      "generated_tokens": 517,
+      "tokens_per_second": 60.71,
+      "prompt_tokens_per_second": 1626.15,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 18081177600,
+        "mean_system_ram_used_bytes": 18060088832.0,
+        "max_system_ram_percent": 52.8,
+        "mean_system_ram_percent": 52.7,
+        "max_cpu_percent": 20.2,
+        "mean_cpu_percent": 15.8875,
+        "max_python_process_rss_bytes": 92434432,
+        "mean_python_process_rss_bytes": 92432384.0,
+        "max_ollama_process_rss_bytes": 223113216,
+        "mean_ollama_process_rss_bytes": 223069696.0,
+        "max_gpu_mem_mb": 5300.0,
+        "mean_gpu_mem_mb": 5300.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 87.0,
+        "max_gpu_temperature_c": 58.2,
+        "mean_gpu_temperature_c": 57.987500000000004,
+        "max_gpu_power_w": 99.22,
+        "mean_gpu_power_w": 88.16375000000001,
+        "estimated_gpu_joules": 748.7061186647416
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "8921704fc771d8c8edafd1c167c23d3aa2c0a15373ad5fcb56d749f21d3f4d64"
+}

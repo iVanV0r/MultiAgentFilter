@@ -1,0 +1,392 @@
+{
+  "paper_id": "2603.28537v2",
+  "filename": "2603.28537v2.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Training data generation for context-dependent rubric-based short arXiv:2603.28537v2 [cs.CL] 31 Mar 2026",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+      "status": "accepted",
+      "reason": "Проблема генерации обучающих данных для контекстно-зависимых систем оценки коротких ответов напрямую связана с недостатком подходящих данных, упомянутым в тексте (например, 'Most openly available datasets fail to meet our criteria').",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Training data generation for context-dependent rubric-based short arXiv:2603.28537v2 [cs.CL] 31 Mar 2026",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "P1_2",
+      "statement": "Разработка методов для преодоления ограничений на доступ к высококачественным данным, вызванным конфиденциальностью и интеллектуальной собственностью.",
+      "status": "rejected",
+      "reason": "Хотя текст упоминает ограничения из-за конфиденциальности и IP, кандидат слишком узко фокусируется на этих аспектах, тогда как основная проблема, которую пытается решить работа, шире и касается недостатка качественных, разнообразных данных.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "However, certain potentially highly scientifically valuable tasks and domains are heavily restricted due to privacy regulations and intellectual property protections.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Вопрос о научной проблеме слишком широкая и не конкретна для статьи. Статья обсуждает проблемы с подвыборкой данных и ограничениями, но кандидат сосредоточился на генерации обучающих данных для контекстно-зависимых систем.",
+            "source_page": 1
+          },
+          {
+            "target": "M2",
+            "criticism": "Неправильный пробел. Кандидат обсуждает доступ к данным, но статья не касается конфиденциальности и интеллектуальной собственности, а ограничений на доступ к данным.",
+            "source_page": 1
+          },
+          {
+            "target": "M3",
+            "criticism": "Недоказанность. Кандидат предполагает, что недостаточный охват предметной области является проблемой, но статья не обсуждает недостаток охвата предметной области, а скорее проблему с подвыборкой данных.",
+            "source_page": 4
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Разработка методов для преодоления ограничений на доступ к высококачественным данным, вызванным конфиденциальностью и интеллектуальной собственностью.",
+            "type": "method",
+            "explicitness": "implied",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "However, certain potentially highly scientifically valuable tasks and domains are heavily restricted due to privacy regulations and intellectual property protections.",
+                "verified": true
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+            "reason": "Проблема соответствует цели статьи (создание датасета) и не является слишком широкой, так как статья фокусируется на создании тренировочных данных для подзадачи Sensemaking 2026."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "remove",
+            "statement": "Отсутствие доступа к высококачественным данным для оценки коротких открытых ответов из-за ограничений на конфиденциальность и интеллектуальную собственность.",
+            "reason": "Проблема не соответствует определению научной проблемы в контексте статьи, так как статья не обсуждает ограничения на доступ к данным из-за конфиденциальности или интеллектуальной собственности, а фокусируется на создании тренировочных данных для оценки."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "remove",
+            "statement": "Отсутствие достаточного охвата предметной области при подвыборке данных.",
+            "reason": "Проблема не соответствует определению научной проблемы в контексте статьи, так как статья не обсуждает недостаток охвата предметной области, а фокусируется на создании тренировочных данных для оценки."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Проблема соответствует цели статьи (создание датасета) и не является слишком широкой, так как статья фокусируется на создании тренировочных данных для подзадачи Sensemaking 2026.",
+          "old_statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+          "new_statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "remove",
+          "reason": "Проблема не соответствует определению научной проблемы в контексте статьи, так как статья не обсуждает ограничения на доступ к данным из-за конфиденциальности или интеллектуальной собственности, а фокусируется на создании тренировочных данных для оценки.",
+          "old_statement": "Отсутствие доступа к высококачественным данным для оценки коротких открытых ответов из-за ограничений на конфиденциальность и интеллектуальную собственность."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "remove",
+          "reason": "Проблема не соответствует определению научной проблемы в контексте статьи, так как статья не обсуждает недостаток охвата предметной области, а фокусируется на создании тренировочных данных для оценки.",
+          "old_statement": "Отсутствие достаточного охвата предметной области при подвыборке данных."
+        },
+        {
+          "candidate_id": "P1_2",
+          "action": "critic_addition",
+          "reason": "Новая проблема Phi с подтверждённой цитатой"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 фокусируется на генерации данных для контекстно-зависимых систем, что соответствует проблеме нехватки данных для оценки коротких ответов, упомянутой в тексте. P1_2 слишком узко фокусируется на конфиденциальности/IP, тогда как текст говорит о более широких ограничениях доступа и недостатках существующих наборов данных.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Проблема генерации обучающих данных для контекстно-зависимых систем оценки коротких ответов напрямую связана с недостатком подходящих данных, упомянутым в тексте (например, 'Most openly available datasets fail to meet our criteria')."
+          },
+          {
+            "candidate_id": "P1_2",
+            "accept": false,
+            "reason": "Хотя текст упоминает ограничения из-за конфиденциальности и IP, кандидат слишком узко фокусируется на этих аспектах, тогда как основная проблема, которую пытается решить работа, шире и касается недостатка качественных, разнообразных данных."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Training data generation for context-dependent rubric-based short arXiv:2603.28537v2 [cs.CL] 31 Mar 2026",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Разработка методов для преодоления ограничений на доступ к высококачественным данным, вызванным конфиденциальностью и интеллектуальной собственностью.",
+          "type": "method",
+          "explicitness": "implied",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, certain potentially highly scientifically valuable tasks and domains are heavily restricted due to privacy regulations and intellectual property protections.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "P1_2"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+          "status": "accepted",
+          "reason": "Проблема генерации обучающих данных для контекстно-зависимых систем оценки коротких ответов напрямую связана с недостатком подходящих данных, упомянутым в тексте (например, 'Most openly available datasets fail to meet our criteria').",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Training data generation for context-dependent rubric-based short arXiv:2603.28537v2 [cs.CL] 31 Mar 2026",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "P1_2",
+          "statement": "Разработка методов для преодоления ограничений на доступ к высококачественным данным, вызванным конфиденциальностью и интеллектуальной собственностью.",
+          "status": "rejected",
+          "reason": "Хотя текст упоминает ограничения из-за конфиденциальности и IP, кандидат слишком узко фокусируется на этих аспектах, тогда как основная проблема, которую пытается решить работа, шире и касается недостатка качественных, разнообразных данных.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, certain potentially highly scientifically valuable tasks and domains are heavily restricted due to privacy regulations and intellectual property protections.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Разработка методов генерации обучающих данных для контекстно-зависимых рубричных систем оценки коротких ответов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Training data generation for context-dependent rubric-based short arXiv:2603.28537v2 [cs.CL] 31 Mar 2026",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.28537v2__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 6.5213057000000845,
+          "load_seconds": 2.8607064,
+          "prompt_eval_seconds": 0.416502,
+          "eval_seconds": 3.140101,
+          "total_server_seconds": 6.4294271,
+          "prompt_tokens": 767,
+          "generated_tokens": 270,
+          "tokens_per_second": 85.98,
+          "prompt_tokens_per_second": 1841.53,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 18362998784,
+            "mean_system_ram_used_bytes": 15861453619.2,
+            "max_system_ram_percent": 53.6,
+            "mean_system_ram_percent": 46.3,
+            "max_cpu_percent": 42.8,
+            "mean_cpu_percent": 27.360000000000003,
+            "max_python_process_rss_bytes": 94650368,
+            "mean_python_process_rss_bytes": 94647091.2,
+            "max_ollama_process_rss_bytes": 223211520,
+            "mean_ollama_process_rss_bytes": 223049318.4,
+            "max_gpu_mem_mb": 4838.0,
+            "mean_gpu_mem_mb": 3493.8,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 55.6,
+            "max_gpu_temperature_c": 58.8,
+            "mean_gpu_temperature_c": 55.879999999999995,
+            "max_gpu_power_w": 126.12,
+            "mean_gpu_power_w": 80.96000000000001,
+            "estimated_gpu_joules": 364.0789702510834
+          }
+        },
+        {
+          "request_id": "2603.28537v2__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 8.396942499999568,
+          "load_seconds": 3.2952011,
+          "prompt_eval_seconds": 0.963184,
+          "eval_seconds": 4.02306,
+          "total_server_seconds": 8.2988306,
+          "prompt_tokens": 1589,
+          "generated_tokens": 277,
+          "tokens_per_second": 68.85,
+          "prompt_tokens_per_second": 1649.74,
+          "hardware": {
+            "samples": 7,
+            "max_system_ram_used_bytes": 15586820096,
+            "mean_system_ram_used_bytes": 15373917037.714285,
+            "max_system_ram_percent": 45.5,
+            "mean_system_ram_percent": 44.871428571428574,
+            "max_cpu_percent": 28.4,
+            "mean_cpu_percent": 18.485714285714288,
+            "max_python_process_rss_bytes": 94650368,
+            "mean_python_process_rss_bytes": 94648027.42857143,
+            "max_ollama_process_rss_bytes": 460066816,
+            "mean_ollama_process_rss_bytes": 256517266.2857143,
+            "max_gpu_mem_mb": 5344.0,
+            "mean_gpu_mem_mb": 4112.142857142857,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 63.714285714285715,
+            "max_gpu_temperature_c": 58.0,
+            "mean_gpu_temperature_c": 56.17142857142857,
+            "max_gpu_power_w": 101.97,
+            "mean_gpu_power_w": 81.36428571428571,
+            "estimated_gpu_joules": 579.0366407036781
+          }
+        },
+        {
+          "request_id": "2603.28537v2__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 10.71378790000017,
+          "load_seconds": 6.0318086,
+          "prompt_eval_seconds": 0.802348,
+          "eval_seconds": 3.812959,
+          "total_server_seconds": 10.6608899,
+          "prompt_tokens": 1038,
+          "generated_tokens": 312,
+          "tokens_per_second": 81.83,
+          "prompt_tokens_per_second": 1293.7,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 18194513920,
+            "mean_system_ram_used_bytes": 17057268622.222221,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 49.766666666666666,
+            "max_cpu_percent": 50.8,
+            "mean_cpu_percent": 23.22222222222222,
+            "max_python_process_rss_bytes": 94650368,
+            "mean_python_process_rss_bytes": 94648547.55555555,
+            "max_ollama_process_rss_bytes": 222855168,
+            "mean_ollama_process_rss_bytes": 222833777.7777778,
+            "max_gpu_mem_mb": 6200.0,
+            "mean_gpu_mem_mb": 4751.888888888889,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 43.55555555555556,
+            "max_gpu_temperature_c": 57.1,
+            "mean_gpu_temperature_c": 55.01111111111111,
+            "max_gpu_power_w": 98.56,
+            "mean_gpu_power_w": 74.14,
+            "estimated_gpu_joules": 724.4912124729157
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 25.649961899998743,
+  "seconds_end_to_end": 74.40852569999697,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "2aad3ae17459089ff4610de39510374ae6a3c17951aeffe38fa1137e07c1e8f0"
+}

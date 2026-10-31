@@ -1,0 +1,395 @@
+{
+  "paper_id": "2603.29403v1",
+  "filename": "2603.29403v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "LLM-based judges can become both targets of adversarial manipulation and instruments through which attacks are conducted, potentially compromising the trustworthiness of evaluation pipelines.",
+          "verified": true
+        },
+        {
+          "page": 5,
+          "quote": "dedicated studies examining security risks, adversarial vulnerabilities, and the robustness of LLM-based evaluation systems remain scarce",
+          "verified": true
+        },
+        {
+          "page": 5,
+          "quote": "security-focused surveys covering adversarial robustness, attack vectors, and defensive strategies are largely missing",
+          "verified": true
+        },
+        {
+          "page": 8,
+          "quote": "As LLM-as-a-Judge systems are increasingly deployed in high-stakes settings, from model benchmarking and safety filtering to reinforcement learning pipelines, understanding their security vulnerabilities becomes essential.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+      "status": "accepted",
+      "reason": "The paper explicitly states it presents the 'first Systematization of Knowledge (SoK) focusing on the security aspects of LLM-as-a-Judge systems,' directly addressing the identified gap.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "LLM-based judges can become both targets of adversarial manipulation and instruments through which attacks are conducted, potentially compromising the trustworthiness of evaluation pipelines.",
+          "verified": true
+        },
+        {
+          "page": 5,
+          "quote": "dedicated studies examining security risks, adversarial vulnerabilities, and the robustness of LLM-based evaluation systems remain scarce",
+          "verified": true
+        },
+        {
+          "page": 5,
+          "quote": "security-focused surveys covering adversarial robustness, attack vectors, and defensive strategies are largely missing",
+          "verified": true
+        },
+        {
+          "page": 8,
+          "quote": "As LLM-as-a-Judge systems are increasingly deployed in high-stakes settings, from model benchmarking and safety filtering to reinforcement learning pipelines, understanding their security vulnerabilities becomes essential.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Недоказанность",
+            "source_page": 1,
+            "support_quote": "фрагмент или пусто"
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Недостаток систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+            "type": "scientific_problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "фрагмент или пусто"
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+            "reason": "Исходная формулировка верна, но требует уточнения контекста: статья предлагает первую систематизацию именно по аспектам безопасности, а не просто констатирует отсутствие знаний."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Исходная формулировка верна, но требует уточнения контекста: статья предлагает первую систематизацию именно по аспектам безопасности, а не просто констатирует отсутствие знаний.",
+          "old_statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+          "new_statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "The candidate correctly identifies the lack of systematic knowledge regarding the security and vulnerabilities of LLM-as-a-Judge systems, which is the core focus of the paper (SoK). The evidence directly supports this claim.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "The paper explicitly states it presents the 'first Systematization of Knowledge (SoK) focusing on the security aspects of LLM-as-a-Judge systems,' directly addressing the identified gap."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based judges can become both targets of adversarial manipulation and instruments through which attacks are conducted, potentially compromising the trustworthiness of evaluation pipelines.",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "dedicated studies examining security risks, adversarial vulnerabilities, and the robustness of LLM-based evaluation systems remain scarce",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "security-focused surveys covering adversarial robustness, attack vectors, and defensive strategies are largely missing",
+              "verified": true
+            },
+            {
+              "page": 8,
+              "quote": "As LLM-as-a-Judge systems are increasingly deployed in high-stakes settings, from model benchmarking and safety filtering to reinforcement learning pipelines, understanding their security vulnerabilities becomes essential.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        }
+      ],
+      "invalid_evidence_candidates": [
+        {
+          "statement": "Недостаток систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+          "type": "scientific_problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "фрагмент или пусто",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+          "status": "accepted",
+          "reason": "The paper explicitly states it presents the 'first Systematization of Knowledge (SoK) focusing on the security aspects of LLM-as-a-Judge systems,' directly addressing the identified gap.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based judges can become both targets of adversarial manipulation and instruments through which attacks are conducted, potentially compromising the trustworthiness of evaluation pipelines.",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "dedicated studies examining security risks, adversarial vulnerabilities, and the robustness of LLM-based evaluation systems remain scarce",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "security-focused surveys covering adversarial robustness, attack vectors, and defensive strategies are largely missing",
+              "verified": true
+            },
+            {
+              "page": 8,
+              "quote": "As LLM-as-a-Judge systems are increasingly deployed in high-stakes settings, from model benchmarking and safety filtering to reinforcement learning pipelines, understanding their security vulnerabilities becomes essential.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Отсутствие систематизированных знаний о безопасности LLM-as-a-Judge систем и их уязвимостях.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based judges can become both targets of adversarial manipulation and instruments through which attacks are conducted, potentially compromising the trustworthiness of evaluation pipelines.",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "dedicated studies examining security risks, adversarial vulnerabilities, and the robustness of LLM-based evaluation systems remain scarce",
+              "verified": true
+            },
+            {
+              "page": 5,
+              "quote": "security-focused surveys covering adversarial robustness, attack vectors, and defensive strategies are largely missing",
+              "verified": true
+            },
+            {
+              "page": 8,
+              "quote": "As LLM-as-a-Judge systems are increasingly deployed in high-stakes settings, from model benchmarking and safety filtering to reinforcement learning pipelines, understanding their security vulnerabilities becomes essential.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29403v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 20.90646299999935,
+          "load_seconds": 18.9194064,
+          "prompt_eval_seconds": 0.605455,
+          "eval_seconds": 1.321846,
+          "total_server_seconds": 20.8606495,
+          "prompt_tokens": 918,
+          "generated_tokens": 99,
+          "tokens_per_second": 74.9,
+          "prompt_tokens_per_second": 1516.22,
+          "hardware": {
+            "samples": 17,
+            "max_system_ram_used_bytes": 24367718400,
+            "mean_system_ram_used_bytes": 16051054953.411764,
+            "max_system_ram_percent": 71.1,
+            "mean_system_ram_percent": 46.82941176470588,
+            "max_cpu_percent": 42.6,
+            "mean_cpu_percent": 12.535294117647059,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95267900.23529412,
+            "max_ollama_process_rss_bytes": 455430144,
+            "mean_ollama_process_rss_bytes": 236519183.05882353,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3500.9411764705883,
+            "max_gpu_util_percent": 88.0,
+            "mean_gpu_util_percent": 11.823529411764707,
+            "max_gpu_temperature_c": 57.4,
+            "mean_gpu_temperature_c": 54.43529411764706,
+            "max_gpu_power_w": 102.04,
+            "mean_gpu_power_w": 57.67941176470588,
+            "estimated_gpu_joules": 1083.561243083477
+          }
+        },
+        {
+          "request_id": "2603.29403v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.440921100002015,
+          "load_seconds": 3.3034048,
+          "prompt_eval_seconds": 0.817282,
+          "eval_seconds": 1.253505,
+          "total_server_seconds": 5.3881762,
+          "prompt_tokens": 1305,
+          "generated_tokens": 88,
+          "tokens_per_second": 70.2,
+          "prompt_tokens_per_second": 1596.76,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 15840804864,
+            "mean_system_ram_used_bytes": 15601967104.0,
+            "max_system_ram_percent": 46.2,
+            "mean_system_ram_percent": 45.540000000000006,
+            "max_cpu_percent": 38.1,
+            "mean_cpu_percent": 23.2,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95265587.2,
+            "max_ollama_process_rss_bytes": 404889600,
+            "mean_ollama_process_rss_bytes": 258953216.0,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 3548.2,
+            "max_gpu_util_percent": 94.0,
+            "mean_gpu_util_percent": 51.8,
+            "max_gpu_temperature_c": 58.1,
+            "mean_gpu_temperature_c": 55.46,
+            "max_gpu_power_w": 111.71,
+            "mean_gpu_power_w": 75.664,
+            "estimated_gpu_joules": 343.6311032152176
+          }
+        },
+        {
+          "request_id": "2603.29403v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.760101500000019,
+          "load_seconds": 8.8824831,
+          "prompt_eval_seconds": 0.817336,
+          "eval_seconds": 1.976468,
+          "total_server_seconds": 11.6884773,
+          "prompt_tokens": 919,
+          "generated_tokens": 185,
+          "tokens_per_second": 93.6,
+          "prompt_tokens_per_second": 1124.38,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 18478473216,
+            "mean_system_ram_used_bytes": 17263797862.4,
+            "max_system_ram_percent": 53.9,
+            "mean_system_ram_percent": 50.38,
+            "max_cpu_percent": 49.8,
+            "mean_cpu_percent": 24.18,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95267225.6,
+            "max_ollama_process_rss_bytes": 223006720,
+            "mean_ollama_process_rss_bytes": 222948147.2,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4199.2,
+            "max_gpu_util_percent": 88.0,
+            "mean_gpu_util_percent": 27.1,
+            "max_gpu_temperature_c": 56.7,
+            "mean_gpu_temperature_c": 54.11,
+            "max_gpu_power_w": 98.88,
+            "mean_gpu_power_w": 63.665,
+            "estimated_gpu_joules": 671.8244558095932
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 38.15199840000059,
+  "seconds_end_to_end": 367.96978950000266,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "1b7a09a721ba1bf46d2ee266251b66ac5b507345781fe4f8f70ba678c5e975af"
+}

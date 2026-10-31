@@ -1,0 +1,611 @@
+{
+  "paper_id": "2603.30025v1(1)",
+  "filename": "2603.30025v1(1).pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing approaches to claim detection, whether based on check-worthiness or verifiability, rely solely on the claim text itself",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing approaches share a common limitation in that they rely solely on the claim text itself",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "However, these approaches often rely on subjective judgments, which vary by domain, audience, and context.",
+          "verified": true
+        },
+        {
+          "page": 2,
+          "quote": "AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+      "status": "accepted",
+      "reason": "Явно обозначен пробел: существующие подходы полагаются только на текст утверждения, игнорируя сущности, события и подтверждающую информацию.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing approaches to claim detection, whether based on check-worthiness or verifiability, rely solely on the claim text itself",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+      "status": "accepted",
+      "reason": "Схожа с M1, обозначает пробел в игнорировании контекстуальной информации о сущностях и событиях.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing approaches share a common limitation in that they rely solely on the claim text itself",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели",
+      "status": "rejected",
+      "reason": "Это исследовательский вопрос (central question), а не обозначенный пробел в знаниях, который работа устраняет. Это цель исследования.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "whether and under what conditions such context augmentation improves verifiable claim detection, as its effectiveness may vary depending on factors such as domain characteristics, model architecture, and the quality of retrieved information",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+      "status": "accepted",
+      "reason": "Обозначает пробел: методы полагаются на субъективные суждения или внутренние знания без доступа к внешним данным, что является недостатком существующих методов.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "However, these approaches often rely on subjective judgments, which vary by domain, audience, and context.",
+          "verified": true
+        },
+        {
+          "page": 2,
+          "quote": "AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable.",
+      "status": "rejected",
+      "reason": "Это описание риска/ограничения конкретной архитектуры (decoder-only models) при использовании контекста, а не общее научное пробел, который устраняется всей работой.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "For decoder-only models, the primary risk is that retrieved context, even when relevant, can inflate false positives if it does not clearly indicate whether the claim is verifiable.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цитата не является научной проблемой, а скорее утверждением о существующих подходах к обнаружению проверяемых утверждений.",
+            "source_page": 1,
+            "support_quote": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+            "verified": true
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+            "reason": "Цитата подтверждает проблему: 'existing approaches share a common limitation in that they rely solely on the claim text itself' (стр. 1). Критика некорректна, так как описание ограничения существующих методов является научной проблемой."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+            "reason": "Цитата подтверждает проблему: 'existing approaches share a common limitation in that they rely solely on the claim text itself' (стр. 1). Критика некорректна."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели",
+            "reason": "Это описание цели исследования, которое соответствует определению научной проблемы (пробел в знаниях/методах). Цитата подтверждает: 'whether and under what conditions such context augmentation improves verifiable claim detection' (стр. 2)."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+            "reason": "Цитаты подтверждают проблему: 'these approaches often rely on subjective judgments' и 'AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information' (стр. 2). Критика некорректна."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable.",
+            "reason": "Цитата подтверждает проблему: 'For decoder-only models, the primary risk is that retrieved context... can inflate false positives' (стр. 9). Критика некорректна."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цитата подтверждает проблему: 'existing approaches share a common limitation in that they rely solely on the claim text itself' (стр. 1). Критика некорректна, так как описание ограничения существующих методов является научной проблемой.",
+          "old_statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+          "new_statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Цитата подтверждает проблему: 'existing approaches share a common limitation in that they rely solely on the claim text itself' (стр. 1). Критика некорректна.",
+          "old_statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+          "new_statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Это описание цели исследования, которое соответствует определению научной проблемы (пробел в знаниях/методах). Цитата подтверждает: 'whether and under what conditions such context augmentation improves verifiable claim detection' (стр. 2).",
+          "old_statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели",
+          "new_statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели"
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Цитаты подтверждают проблему: 'these approaches often rely on subjective judgments' и 'AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information' (стр. 2). Критика некорректна.",
+          "old_statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+          "new_statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Цитата подтверждает проблему: 'For decoder-only models, the primary risk is that retrieved context... can inflate false positives' (стр. 9). Критика некорректна.",
+          "old_statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable.",
+          "new_statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко обозначает пробел: существующие подходы игнорируют сущности и события, на которые ссылается утверждение, и наличие подтверждающей информации. Это прямо соответствует определению научной проблемы.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Явно обозначен пробел: существующие подходы полагаются только на текст утверждения, игнорируя сущности, события и подтверждающую информацию."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Схожа с M1, обозначает пробел в игнорировании контекстуальной информации о сущностях и событиях."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Это исследовательский вопрос (central question), а не обозначенный пробел в знаниях, который работа устраняет. Это цель исследования."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Обозначает пробел: методы полагаются на субъективные суждения или внутренние знания без доступа к внешним данным, что является недостатком существующих методов."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это описание риска/ограничения конкретной архитектуры (decoder-only models) при использовании контекста, а не общее научное пробел, который устраняется всей работой."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches to claim detection, whether based on check-worthiness or verifiability, rely solely on the claim text itself",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches share a common limitation in that they rely solely on the claim text itself",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "whether and under what conditions such context augmentation improves verifiable claim detection, as its effectiveness may vary depending on factors such as domain characteristics, model architecture, and the quality of retrieved information",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, these approaches often rely on subjective judgments, which vary by domain, audience, and context.",
+              "verified": true
+            },
+            {
+              "page": 2,
+              "quote": "AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "For decoder-only models, the primary risk is that retrieved context, even when relevant, can inflate false positives if it does not clearly indicate whether the claim is verifiable.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+          "status": "accepted",
+          "reason": "Явно обозначен пробел: существующие подходы полагаются только на текст утверждения, игнорируя сущности, события и подтверждающую информацию.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches to claim detection, whether based on check-worthiness or verifiability, rely solely on the claim text itself",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+          "status": "accepted",
+          "reason": "Схожа с M1, обозначает пробел в игнорировании контекстуальной информации о сущностях и событиях.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches share a common limitation in that they rely solely on the claim text itself",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Оценка влияния контекстной аугментации на обнаружение верифицируемых заявлений в зависимости от характеристик домена и архитектуры модели",
+          "status": "rejected",
+          "reason": "Это исследовательский вопрос (central question), а не обозначенный пробел в знаниях, который работа устраняет. Это цель исследования.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "whether and under what conditions such context augmentation improves verifiable claim detection, as its effectiveness may vary depending on factors such as domain characteristics, model architecture, and the quality of retrieved information",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+          "status": "accepted",
+          "reason": "Обозначает пробел: методы полагаются на субъективные суждения или внутренние знания без доступа к внешним данным, что является недостатком существующих методов.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, these approaches often rely on subjective judgments, which vary by domain, audience, and context.",
+              "verified": true
+            },
+            {
+              "page": 2,
+              "quote": "AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Retrieved context can inflate false positives in decoder-only models if it does not clearly indicate whether a claim is verifiable.",
+          "status": "rejected",
+          "reason": "Это описание риска/ограничения конкретной архитектуры (decoder-only models) при использовании контекста, а не общее научное пробел, который устраняется всей работой.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "For decoder-only models, the primary risk is that retrieved context, even when relevant, can inflate false positives if it does not clearly indicate whether the claim is verifiable.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие подходы к обнаружению проверяемых утверждений полагаются исключительно на текст самого утверждения, игнорируя сущности и события, на которые оно ссылается, а также наличие подтверждающей информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches to claim detection, whether based on check-worthiness or verifiability, rely solely on the claim text itself",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие методы обнаружения проверяемости заявлений (верификабельной) опираются исключительно на текст самой заявления, игнорируя контекстуальную информацию о сущностях и событиях, что ограничивает их способность распознавать ложные или непереводимые утверждения.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing approaches share a common limitation in that they rely solely on the claim text itself",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие методы детекции утверждений часто полагаются на субъективные суждения или ограничиваются внутренними знаниями модели без доступа к внешним данным.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "However, these approaches often rely on subjective judgments, which vary by domain, audience, and context.",
+              "verified": true
+            },
+            {
+              "page": 2,
+              "quote": "AFaCTA operates entirely within the LLM's parametric knowledge, relying on model-internal reasoning to judge verifiability without access to external information.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.30025v1(1)__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.924470500001917,
+          "load_seconds": 9.6904044,
+          "prompt_eval_seconds": 0.660339,
+          "eval_seconds": 1.433405,
+          "total_server_seconds": 11.8619345,
+          "prompt_tokens": 1082,
+          "generated_tokens": 102,
+          "tokens_per_second": 71.16,
+          "prompt_tokens_per_second": 1638.55,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 22687805440,
+            "mean_system_ram_used_bytes": 16029406822.4,
+            "max_system_ram_percent": 66.2,
+            "mean_system_ram_percent": 46.769999999999996,
+            "max_cpu_percent": 35.1,
+            "mean_cpu_percent": 15.37,
+            "max_python_process_rss_bytes": 92397568,
+            "mean_python_process_rss_bytes": 92395929.6,
+            "max_ollama_process_rss_bytes": 223559680,
+            "mean_ollama_process_rss_bytes": 222934630.4,
+            "max_gpu_mem_mb": 4772.0,
+            "mean_gpu_mem_mb": 3523.3,
+            "max_gpu_util_percent": 87.0,
+            "mean_gpu_util_percent": 21.4,
+            "max_gpu_temperature_c": 57.9,
+            "mean_gpu_temperature_c": 54.85,
+            "max_gpu_power_w": 101.77,
+            "mean_gpu_power_w": 62.39399999999999,
+            "estimated_gpu_joules": 647.6489272284508
+          }
+        },
+        {
+          "request_id": "2603.30025v1(1)__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.54964530000143,
+          "load_seconds": 3.2697577,
+          "prompt_eval_seconds": 0.964817,
+          "eval_seconds": 8.155687,
+          "total_server_seconds": 12.4084037,
+          "prompt_tokens": 1617,
+          "generated_tokens": 532,
+          "tokens_per_second": 65.23,
+          "prompt_tokens_per_second": 1675.97,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 15639506944,
+            "mean_system_ram_used_bytes": 15529495086.545454,
+            "max_system_ram_percent": 45.6,
+            "mean_system_ram_percent": 45.300000000000004,
+            "max_cpu_percent": 39.6,
+            "mean_cpu_percent": 18.80909090909091,
+            "max_python_process_rss_bytes": 92397568,
+            "mean_python_process_rss_bytes": 92396078.54545455,
+            "max_ollama_process_rss_bytes": 222904320,
+            "mean_ollama_process_rss_bytes": 222457483.63636363,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 4546.818181818182,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 72.36363636363636,
+            "max_gpu_temperature_c": 58.5,
+            "mean_gpu_temperature_c": 56.74545454545455,
+            "max_gpu_power_w": 111.62,
+            "mean_gpu_power_w": 83.07727272727273,
+            "estimated_gpu_joules": 1038.2260792398454
+          }
+        },
+        {
+          "request_id": "2603.30025v1(1)__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 13.159171300001617,
+          "load_seconds": 6.7871517,
+          "prompt_eval_seconds": 0.909171,
+          "eval_seconds": 5.325593,
+          "total_server_seconds": 13.0396701,
+          "prompt_tokens": 1249,
+          "generated_tokens": 426,
+          "tokens_per_second": 79.99,
+          "prompt_tokens_per_second": 1373.78,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 18161639424,
+            "mean_system_ram_used_bytes": 17208705396.363636,
+            "max_system_ram_percent": 53.0,
+            "mean_system_ram_percent": 50.21818181818182,
+            "max_cpu_percent": 45.1,
+            "mean_cpu_percent": 25.263636363636362,
+            "max_python_process_rss_bytes": 92397568,
+            "mean_python_process_rss_bytes": 92396078.54545455,
+            "max_ollama_process_rss_bytes": 418709504,
+            "mean_ollama_process_rss_bytes": 240379717.8181818,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4544.727272727273,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 48.54545454545455,
+            "max_gpu_temperature_c": 57.3,
+            "mean_gpu_temperature_c": 55.38181818181818,
+            "max_gpu_power_w": 100.07,
+            "mean_gpu_power_w": 74.85636363636364,
+            "estimated_gpu_joules": 921.5605594325066
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 37.68576530000064,
+  "seconds_end_to_end": 156.99315120000028,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "fad672b474dd77d73c8e178ff188fc113b348587242f301f5ed6aea66e093a7a"
+}

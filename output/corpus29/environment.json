@@ -1,0 +1,187 @@
+{
+  "gpu_devices": [
+    "NVIDIA GeForce RTX 2070, 8192, 621.01"
+  ],
+  "ollama_version": {
+    "version": "0.40.13"
+  },
+  "run_at_utc": "2026-10-30T12:43:27.572560+00:00",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "ram_total_gb": 31.92,
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_models": {
+    "qwen3.5:4b": {
+      "name": "qwen3.5:4b",
+      "model": "qwen3.5:4b",
+      "modified_at": "2026-10-30T12:25:28.786595+03:00",
+      "size": 3324173934,
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "details": {
+        "parent_model": "model.gguf",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "4.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "tools",
+        "thinking"
+      ]
+    },
+    "phi4-mini:3.8b-q4_K_M": {
+      "name": "phi4-mini:3.8b-q4_K_M",
+      "model": "phi4-mini:3.8b-q4_K_M",
+      "modified_at": "2026-10-30T12:25:29.8543841+03:00",
+      "size": 2491876774,
+      "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "phi3",
+        "families": [
+          "phi3"
+        ],
+        "parameter_size": "3.8B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 3072,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    "gemma4:e4b-it-q4_K_M": {
+      "name": "gemma4:e4b-it-q4_K_M",
+      "model": "gemma4:e4b-it-q4_K_M",
+      "modified_at": "2026-10-30T12:25:30.7198804+03:00",
+      "size": 6583656505,
+      "digest": "dc35e8d9c6061baa6f0fa870975ab6932e2542b579b13ea0f199fa4bb7300c9c",
+      "details": {
+        "parent_model": "gemma4-validation-20260929:e4b-imatrix-attention-q6-q8-draft2",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "7.5B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 2560,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    }
+  },
+  "models_by_role": {
+    "proposer": "qwen3.5:4b",
+    "critic": "phi4-mini:3.8b-q4_K_M",
+    "referee": "gemma4:e4b-it-q4_K_M"
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "think": false,
+    "num_ctx": 4096,
+    "role_num_ctx": {
+      "proposer_chunk": 6144,
+      "proposer_merge": 6144,
+      "proposer_final": 6144,
+      "proposer_defense": 6144,
+      "critic": 6144,
+      "referee": 4096
+    },
+    "role_num_predict": {
+      "proposer_chunk": 1100,
+      "proposer_merge": 1800,
+      "proposer_final": 1800,
+      "proposer_defense": 2200,
+      "critic": 1600,
+      "referee": 1700
+    },
+    "repeat_recovery_temperature": 0.2,
+    "repeat_recovery_penalty": 1.16,
+    "repeat_recovery_last_n": 128,
+    "debate_context_chars": 3300,
+    "global_context_chars": 3100,
+    "judge_context_chars": 1800,
+    "num_predict": 2048,
+    "retry_num_predict": 2600,
+    "chunk_chars": 5500,
+    "overlap_chars": 350,
+    "include_references": false,
+    "max_rounds": 3,
+    "stop_score": 8,
+    "max_candidates_per_chunk": 3,
+    "max_problems_per_paper": 7,
+    "sample_interval_seconds": 1.0,
+    "keep_alive": "5m",
+    "reset_between_papers": true,
+    "retries": 3,
+    "timeout_seconds": 600
+  },
+  "repeats": 3,
+  "packages": {
+    "PyMuPDF": "1.28.2",
+    "requests": "2.34.2",
+    "psutil": "7.2.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": null
+  },
+  "pdf_hashes": {
+    "2603.28304v1.pdf": "377d2331bb2949538e66c1b933ba43656d0ac407db97289f353d219002272f49",
+    "2603.28351v1.pdf": "ebf4a8c960ef8613c1a2b1a3d4fac6e9930351c6692720a7db4ec574d58372d3",
+    "2603.28537v2.pdf": "2aad3ae17459089ff4610de39510374ae6a3c17951aeffe38fa1137e07c1e8f0",
+    "2603.28643v1.pdf": "92fa862e5ceb9ffe80b69c0646502e1c082e66bc706995009ee795a31068994a",
+    "2603.29025v1.pdf": "09a840fd750819b799a7ef81cfa15d5ccfe9f77d56e83da73fed60ca1f8b4a7c",
+    "2603.29112v1.pdf": "f25b8f5523c8ba381a28bd6f9a367a847aa6244a1ba3715d7f97709c07e3d0e5",
+    "2603.29244v1.pdf": "cb7395d6581149cf1dcf7ce2cd3aa2409903a63dcd1f9982c673cfecc6fbd0c9",
+    "2603.29346v1.pdf": "41962f642e239027578db8da5890bbafeba0f86fb15cdbe3ada148b34cce7c04",
+    "2603.29399v1.pdf": "ee3349b651bf0467af0b6e587d2e421c26b794711223b8b3189512007a08c532",
+    "2603.29403v1.pdf": "1b7a09a721ba1bf46d2ee266251b66ac5b507345781fe4f8f70ba678c5e975af",
+    "2603.29497v1.pdf": "88ee699b08da6e6eb8c690c9ac6449cb5f4678bdf3fc412f01d2c1e2b7c2b6d2",
+    "2603.29541v1.pdf": "929f80ec6a8f491750b280ccd780239adc327080de8cb9dc3534036f86b1e62a",
+    "2603.29559v1.pdf": "fd1e7fbd641c287ee36c1c76675ca2f85269dab2245de4af21adf6cf971b457d",
+    "2603.29665v1.pdf": "a5a91ddd46ab4329be1e35ffde75471648c150cb56bc4d20ca2c71ed7a40efe3",
+    "2603.29801v1.pdf": "679e5764cbe4146953613a41094eade19349ea6d19ef93f43b2efa914c1f5b20",
+    "2603.29846v1.pdf": "16ae32f100aa4720cae3acbc04ba2e87ea42bbde017f8a6ee2808537675b3507",
+    "2603.29997v1(2).pdf": "85f0bf8bfc83d0973f55d2a987443a6d037850f463bff29a0e3d56d179e3aa33",
+    "2603.30025v1(1).pdf": "fad672b474dd77d73c8e178ff188fc113b348587242f301f5ed6aea66e093a7a",
+    "2604.02171v1.pdf": "5b534e50a45f152c9a5c9db5d0dd85268fff642950ec6983e0e1600ed868b8b6",
+    "2604.02209v1.pdf": "8921704fc771d8c8edafd1c167c23d3aa2c0a15373ad5fcb56d749f21d3f4d64",
+    "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1).pdf": "a194beb7c53bb3689bf04926db342f2a3af992b92f4a6cb86be51ab5ae87199f",
+    "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey.pdf": "934dda157dea82370ab515a5d6269dd19d3f61a06fb944b9a7604d44f0da61ff",
+    "ru_05_metody-izvlecheniya-informatsii-iz-teksta.pdf": "47d59c27d7ac3ccd697ee78ef69bb03b15e25059aad9d49cc796c957695a574f",
+    "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley.pdf": "7589f214ae9f8f61339559482671477250e082f7a390fe9119def18997ae25f6",
+    "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya.pdf": "60d6405e9b2f3440b2a7174e4f29e6a75386c91fcf1bf150f4c4536bc5ee4f6f",
+    "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy.pdf": "637e9e80b812b6be081eee0ec5e124dc43276df3791f6bf652623828d6d6f000",
+    "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov.pdf": "6a5d743a14fe4e7a4ce6b59808acc1462b70691791b6f7bc9e97532d3799c7dc",
+    "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-.pdf": "69f67b00972f0d04964aadef309a998c34902eadae56f8899affaf9595ca2be9",
+    "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen.pdf": "2c296a56e08a6c39b7b7472fba997a8f391da50b625a58c93c2185f6c500ae62"
+  },
+  "human_gold_sha256": "3786a062119c9465b55d688c38cccafa93430d7a7e3ef9669e0da9bf8e683174",
+  "prompts_sha256": "c94c72817548d2d168e21baeaab00a088451983872ad96bbe7afe16506553601",
+  "pipeline_sha256": {
+    "agents.py": "7e99e6c73de50304444fd16eb318a86c3d13ca127b88d40dd9a1d2763d45e7f9",
+    "ollama_api.py": "14931deda3dcd5429a467f44eabc18f7567bdb9f424d5c13b17b22c03e4cabe6",
+    "prepare.py": "d87b263b51f31c998c95503adca147778e9cc633ad6c9cf318fd687c25169c01"
+  }
+}

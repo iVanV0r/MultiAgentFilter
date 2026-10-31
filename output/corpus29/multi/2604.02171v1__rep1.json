@@ -1,0 +1,605 @@
+{
+  "paper_id": "2604.02171v1",
+  "filename": "2604.02171v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+      "status": "accepted",
+      "reason": "Обозначает явный пробел: существующие методы не справляются с типом упоминаний, специфичным для SOMD 2026 (высокая поверхностная схожесть), что подтверждается цитатой.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения",
+      "status": "rejected",
+      "reason": "Описывает ограничение существующих альтернатив, а не фундаментальный пробел в знаниях, который эта работа устраняет.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "While lighter alternatives such as FastCoref (Otmazgin et al., 2022) reduce computational overhead, they remain expensive for large-scale literature mining pipelines and are designed for general coreference rather than this specific mention type.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных",
+      "status": "rejected",
+      "reason": "Это утверждение о том, что в оригинальной оценке не было количественной оценки шума, но работа, по-видимому, вводит такую оценку, что это скорее описание вклада, а не пробела, который они обнаружили.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "noise introduced by the upstream detector in Subtasks 2 and 3 is inherently mild and unquantified",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах",
+      "status": "rejected",
+      "reason": "Это скорее констатация факта о данных (высокая лексическая регулярность), а не обозначение пробела в методологии, который они решают.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Most consequentially for our system design choices, both training sets exhibit a high degree of lexical regularity within coreference chains",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных",
+      "status": "rejected",
+      "reason": "Это описание того, что авторы *дополняют* оценку, чтобы заполнить пробел, а не сам пробел, который они обнаружили в литературе.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "we complement the official evaluation with a controlled noise injection study that systematically explores a wider range of noise levels, allowing us to characterise how each system degrades as input quality decreases",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума",
+      "status": "rejected",
+      "reason": "Это ограничение их собственного эксперимента, а не научная проблема, которую они решают.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "First, FM's threshold θ was re-tuned at each noise level, so robustness results represent an optimistic upper bound.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цитата не является научной проблемой, а заявлением о намерениях автора",
+            "source_page": 1,
+            "support_quote": "we release our code to support future work on this underexplored task."
+          }
+        ],
+        "{\"statement\":\"Отсутствие специализированных методов для разрешения упоминаний программного обеспечения в кросс-документальных задач\",\"type\":\"method\",\"explicitness\":\"explicit\",\"evidence\":[]}}, {": "}]}}.</p> {"
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "remove",
+            "reason": "Цитата не является научной проблемой, а заявлением о намерениях автора (source page 1: 'we release our code to support future work on this underexplored task.')"
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+            "reason": "Исправлено на основе цитаты source page 3: 'Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).'"
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения",
+            "reason": "Исправлено на основе цитаты source page 3: 'While lighter alternatives such as FastCoref (Otmazgin et al., 2022) reduce computational overhead, they remain expensive for large-scale literature mining pipelines and are designed for general coreference rather than this specific mention type.'"
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных",
+            "reason": "Исправлено на основе цитаты source page 4: 'noise introduced by the upstream detector in Subtasks 2 and 3 is inherently mild and unquantified'"
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах",
+            "reason": "Исправлено на основе цитаты source page 4: 'Most consequentially for our system design choices, both training sets exhibit a high degree of lexical regularity within coreference chains'"
+          },
+          {
+            "candidate_id": "M6",
+            "action": "rewrite",
+            "statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных",
+            "reason": "Исправлено на основе цитаты source page 4: 'we complement the official evaluation with a controlled noise injection study that systematically explores a wider range of noise levels, allowing us to characterise how each system degrades as input quality decreases'"
+          },
+          {
+            "candidate_id": "M7",
+            "action": "rewrite",
+            "statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума",
+            "reason": "Исправлено на основе цитаты source page 8: 'First, FM's threshold θ was re-tuned at each noise level, so robustness results represent an optimistic upper bound.'"
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "remove",
+          "reason": "Цитата не является научной проблемой, а заявлением о намерениях автора (source page 1: 'we release our code to support future work on this underexplored task.')",
+          "old_statement": "Отсутствие специализированных методов для разрешения упоминаний программного обеспечения в кросс-документальных задачах"
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 3: 'Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).'",
+          "old_statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+          "new_statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 3: 'While lighter alternatives such as FastCoref (Otmazgin et al., 2022) reduce computational overhead, they remain expensive for large-scale literature mining pipelines and are designed for general coreference rather than this specific mention type.'",
+          "old_statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения",
+          "new_statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения"
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 4: 'noise introduced by the upstream detector in Subtasks 2 and 3 is inherently mild and unquantified'",
+          "old_statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных",
+          "new_statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 4: 'Most consequentially for our system design choices, both training sets exhibit a high degree of lexical regularity within coreference chains'",
+          "old_statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах",
+          "new_statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах"
+        },
+        {
+          "candidate_id": "M6",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 4: 'we complement the official evaluation with a controlled noise injection study that systematically explores a wider range of noise levels, allowing us to characterise how each system degrades as input quality decreases'",
+          "old_statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных",
+          "new_statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных"
+        },
+        {
+          "candidate_id": "M7",
+          "action": "rewrite",
+          "reason": "Исправлено на основе цитаты source page 8: 'First, FM's threshold θ was re-tuned at each noise level, so robustness results represent an optimistic upper bound.'",
+          "old_statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума",
+          "new_statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M2 четко определяет пробел: существующие методы не подходят для специфического типа упоминаний (программное обеспечение с высокой поверхностной схожестью), что подтверждается цитатой. M3 также описывает пробел, но он более узкий (ограничения FastCoref). M4 и M6 описывают проблему, которую авторы решают, а не пробел, который они обнаружили, но M2 является наиболее сильным заявлением о пробеле в области.",
+        "decisions": [
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначает явный пробел: существующие методы не справляются с типом упоминаний, специфичным для SOMD 2026 (высокая поверхностная схожесть), что подтверждается цитатой."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Описывает ограничение существующих альтернатив, а не фундаментальный пробел в знаниях, который эта работа устраняет."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Это утверждение о том, что в оригинальной оценке не было количественной оценки шума, но работа, по-видимому, вводит такую оценку, что это скорее описание вклада, а не пробела, который они обнаружили."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это скорее констатация факта о данных (высокая лексическая регулярность), а не обозначение пробела в методологии, который они решают."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": false,
+            "reason": "Это описание того, что авторы *дополняют* оценку, чтобы заполнить пробел, а не сам пробел, который они обнаружили в литературе."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": false,
+            "reason": "Это ограничение их собственного эксперимента, а не научная проблема, которую они решают."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "While lighter alternatives such as FastCoref (Otmazgin et al., 2022) reduce computational overhead, they remain expensive for large-scale literature mining pipelines and are designed for general coreference rather than this specific mention type.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "noise introduced by the upstream detector in Subtasks 2 and 3 is inherently mild and unquantified",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Most consequentially for our system design choices, both training sets exhibit a high degree of lexical regularity within coreference chains",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "we complement the official evaluation with a controlled noise injection study that systematically explores a wider range of noise levels, allowing us to characterise how each system degrades as input quality decreases",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "First, FM's threshold θ was re-tuned at each noise level, so robustness results represent an optimistic upper bound.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+          "status": "accepted",
+          "reason": "Обозначает явный пробел: существующие методы не справляются с типом упоминаний, специфичным для SOMD 2026 (высокая поверхностная схожесть), что подтверждается цитатой.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Легковесные альтернативы, такие как FastCoref, остаются дорогими для больших масштабов и предназначены для общего разрешения референции, а не для конкретного типа упоминаний программного обеспечения",
+          "status": "rejected",
+          "reason": "Описывает ограничение существующих альтернатив, а не фундаментальный пробел в знаниях, который эта работа устраняет.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "While lighter alternatives such as FastCoref (Otmazgin et al., 2022) reduce computational overhead, they remain expensive for large-scale literature mining pipelines and are designed for general coreference rather than this specific mention type.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Отсутствие количественной оценки уровня шума, вносимого детектором вышеповерхностных задач (Subtasks 2 и 3), что ограничивает понимание деградации систем при снижении качества входных данных",
+          "status": "rejected",
+          "reason": "Это утверждение о том, что в оригинальной оценке не было количественной оценки шума, но работа, по-видимому, вводит такую оценку, что это скорее описание вклада, а не пробела, который они обнаружили.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "noise introduced by the upstream detector in Subtasks 2 and 3 is inherently mild and unquantified",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Недостаток методов, учитывающих лексическую регулярность и контекстуальную информацию для решения задачи разрешения упоминаний в программных корпустах",
+          "status": "rejected",
+          "reason": "Это скорее констатация факта о данных (высокая лексическая регулярность), а не обозначение пробела в методологии, который они решают.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Most consequentially for our system design choices, both training sets exhibit a high degree of lexical regularity within coreference chains",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "Отсутствие данных о том, как различные системы деградируют при систематическом снижении качества входных данных",
+          "status": "rejected",
+          "reason": "Это описание того, что авторы *дополняют* оценку, чтобы заполнить пробел, а не сам пробел, который они обнаружили в литературе.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "we complement the official evaluation with a controlled noise injection study that systematically explores a wider range of noise levels, allowing us to characterise how each system degrades as input quality decreases",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "Результаты робастности системы FM являются оптимистичной верхней границей из-за перенастройки порога θ на каждом уровне шума",
+          "status": "rejected",
+          "reason": "Это ограничение их собственного эксперимента, а не научная проблема, которую они решают.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "First, FM's threshold θ was re-tuned at each noise level, so robustness results represent an optimistic upper bound.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие методы предобученных языковых моделей (BERT, SciBERT) и LLM не подходят для задачи разделения упоминаний программного обеспечения в SOMD 2026 из-за отсутствия лексического разнообразия и высокой поверхностной схожести референцирующих выражений",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Existing systems typically target pronominal anaphora and nominal expressions with high lexical diversity, whereas the annotation scheme adopted by the SOMD 2026 organisers focuses exclusively on explicit software name mentions (a mention type characterised by a high degree of surface form similarity between corefering expressions).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2604.02171v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.314669499999582,
+          "load_seconds": 2.6861309,
+          "prompt_eval_seconds": 0.621799,
+          "eval_seconds": 1.828072,
+          "total_server_seconds": 5.1639514,
+          "prompt_tokens": 1210,
+          "generated_tokens": 111,
+          "tokens_per_second": 60.72,
+          "prompt_tokens_per_second": 1945.97,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 19847364608,
+            "mean_system_ram_used_bytes": 16181568307.2,
+            "max_system_ram_percent": 57.9,
+            "mean_system_ram_percent": 47.22,
+            "max_cpu_percent": 31.1,
+            "mean_cpu_percent": 21.080000000000002,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92431155.2,
+            "max_ollama_process_rss_bytes": 222822400,
+            "mean_ollama_process_rss_bytes": 222697881.6,
+            "max_gpu_mem_mb": 4800.0,
+            "mean_gpu_mem_mb": 3450.4,
+            "max_gpu_util_percent": 60.0,
+            "mean_gpu_util_percent": 35.2,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 55.839999999999996,
+            "max_gpu_power_w": 114.39,
+            "mean_gpu_power_w": 72.916,
+            "estimated_gpu_joules": 372.9045820879936
+          }
+        },
+        {
+          "request_id": "2604.02171v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 16.061922799999593,
+          "load_seconds": 3.3508809,
+          "prompt_eval_seconds": 1.18589,
+          "eval_seconds": 11.440891,
+          "total_server_seconds": 15.9974705,
+          "prompt_tokens": 2030,
+          "generated_tokens": 712,
+          "tokens_per_second": 62.23,
+          "prompt_tokens_per_second": 1711.79,
+          "hardware": {
+            "samples": 13,
+            "max_system_ram_used_bytes": 15652253696,
+            "mean_system_ram_used_bytes": 15526063497.846153,
+            "max_system_ram_percent": 45.7,
+            "mean_system_ram_percent": 45.29230769230769,
+            "max_cpu_percent": 45.3,
+            "mean_cpu_percent": 26.83076923076923,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92433171.6923077,
+            "max_ollama_process_rss_bytes": 223735808,
+            "mean_ollama_process_rss_bytes": 222910936.6153846,
+            "max_gpu_mem_mb": 5302.0,
+            "mean_gpu_mem_mb": 4640.153846153846,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 70.0,
+            "max_gpu_temperature_c": 58.8,
+            "mean_gpu_temperature_c": 57.323076923076925,
+            "max_gpu_power_w": 102.04,
+            "mean_gpu_power_w": 86.54923076923077,
+            "estimated_gpu_joules": 1294.748508913517
+          }
+        },
+        {
+          "request_id": "2604.02171v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 14.378800200000114,
+          "load_seconds": 5.9130309,
+          "prompt_eval_seconds": 1.090587,
+          "eval_seconds": 7.25054,
+          "total_server_seconds": 14.2718651,
+          "prompt_tokens": 1470,
+          "generated_tokens": 565,
+          "tokens_per_second": 77.93,
+          "prompt_tokens_per_second": 1347.9,
+          "hardware": {
+            "samples": 12,
+            "max_system_ram_used_bytes": 18201399296,
+            "mean_system_ram_used_bytes": 17340405418.666668,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 50.59166666666667,
+            "max_cpu_percent": 42.3,
+            "mean_cpu_percent": 26.741666666666664,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92433066.66666667,
+            "max_ollama_process_rss_bytes": 223981568,
+            "mean_ollama_process_rss_bytes": 223092394.66666666,
+            "max_gpu_mem_mb": 6153.0,
+            "mean_gpu_mem_mb": 5013.666666666667,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 58.583333333333336,
+            "max_gpu_temperature_c": 58.2,
+            "mean_gpu_temperature_c": 56.31666666666666,
+            "max_gpu_power_w": 112.0,
+            "mean_gpu_power_w": 81.53083333333333,
+            "estimated_gpu_joules": 1087.9810197973252
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 35.780987499998446,
+  "seconds_end_to_end": 142.29563789999884,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "5b534e50a45f152c9a5c9db5d0dd85268fff642950ec6983e0e1600ed868b8b6"
+}

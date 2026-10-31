@@ -1,0 +1,6 @@
+{
+  "request_id": "2603.28351v1__rep1:r1:referee",
+  "attempt": 1,
+  "http_status": 500,
+  "response_body": "{\"error\":\"prediction aborted, token repeat limit reached\"}"
+}

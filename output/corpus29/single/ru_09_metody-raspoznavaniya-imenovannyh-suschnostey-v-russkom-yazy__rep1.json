@@ -1,0 +1,1186 @@
+{
+  "paper_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy",
+  "filename": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток эффективности рекуррентных нейронных сетей при учете предыдущей информации из последовательности",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Данного вида сети очень неэффективны в ситуациях, когда необходимо учитывать предыдущую информацию из последовательности для расчёта",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Сеть экспоненциально затухает из-за влияния скрытого состояния или входа с шага t на последующие состояния рекуррентной сети.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Это происходит из-за влияния скрытого состояния или входа с шага t на последующие состояния рекуррентной сети. Сеть экспоненциально затухает.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость тонкой настройки двунаправленной языковой модели перед использованием в ELMo",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "Для Инженерный вестник Дона, No7 (2021) ivdon.ru/ru/magazine/archive/n7y2021/7066 абсолютно независимых параметров. работе [6]. настройку. выглядит следующим образом [8]",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие эффективных методов выбора скорости обучения для предотвращения катастрофического забывания при обучении последовательных слоев",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "Вместо тонкой настройки всех слоев сразу, что чревато катастрофическим забыванием, мы будем постепенно размораживать модель",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Разработка метода тонкой настройки двунаправленной рекуррентной нейронной сети (Bi-RNN) для задач промежуточного представления, аналогичного ELMo, но с итеративным размораживанием слоев по мере их добавления в набор оттаявших слоев.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "размороженные слои на одну эпоху. Затем мы размораживаем следующий нижний замороженный слой и повторяем, пока не настроим все слои до сходимости на последней итерации.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Модели обработки естественного языка с использованием ELMo часто имеют общую архитектуру на нижних уровнях, что позволяет добавлять ELMo последовательным образом к существующим моделям.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Большинство контролируемых моделей обработки естественного языка имеют общую архитектуру на самых нижних уровнях, что позволяет нам добавлять ELMo последовательным, унифицированным образом.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 42.036396600000444,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.075765199999296,
+        "load_seconds": 3.3979567,
+        "prompt_eval_seconds": 0.419827,
+        "eval_seconds": 0.061016,
+        "total_server_seconds": 3.8856414,
+        "prompt_tokens": 525,
+        "generated_tokens": 5,
+        "tokens_per_second": 81.95,
+        "prompt_tokens_per_second": 1250.52,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18444197888,
+          "mean_system_ram_used_bytes": 16298975232.0,
+          "max_system_ram_percent": 53.8,
+          "mean_system_ram_percent": 47.55,
+          "max_cpu_percent": 31.4,
+          "mean_cpu_percent": 25.65,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94781440.0,
+          "max_ollama_process_rss_bytes": 223186944,
+          "mean_ollama_process_rss_bytes": 222787584.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 3149.5,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 43.25,
+          "max_gpu_temperature_c": 55.0,
+          "mean_gpu_temperature_c": 54.275,
+          "max_gpu_power_w": 55.57,
+          "mean_gpu_power_w": 54.8875,
+          "estimated_gpu_joules": 210.59369405031202
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток эффективности рекуррентных нейронных сетей при учете предыдущей информации из последовательности",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Данного вида сети очень неэффективны в ситуациях, когда необходимо учитывать предыдущую информацию из последовательности для расчёта",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.599192599998787,
+        "load_seconds": 0.0196903,
+        "prompt_eval_seconds": 0.307449,
+        "eval_seconds": 1.193597,
+        "total_server_seconds": 1.5574631,
+        "prompt_tokens": 529,
+        "generated_tokens": 83,
+        "tokens_per_second": 69.54,
+        "prompt_tokens_per_second": 1720.61,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15993237504,
+          "mean_system_ram_used_bytes": 15937708032.0,
+          "max_system_ram_percent": 46.7,
+          "mean_system_ram_percent": 46.5,
+          "max_cpu_percent": 28.1,
+          "mean_cpu_percent": 24.05,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5299.0,
+          "mean_gpu_mem_mb": 5299.0,
+          "max_gpu_util_percent": 73.0,
+          "mean_gpu_util_percent": 47.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 56.45,
+          "max_gpu_power_w": 101.76,
+          "mean_gpu_power_w": 92.845,
+          "estimated_gpu_joules": 104.47719220638275
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Сеть экспоненциально затухает из-за влияния скрытого состояния или входа с шага t на последующие состояния рекуррентной сети.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Это происходит из-за влияния скрытого состояния или входа с шага t на последующие состояния рекуррентной сети. Сеть экспоненциально затухает.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.089244199996756,
+        "load_seconds": 0.0281947,
+        "prompt_eval_seconds": 0.411326,
+        "eval_seconds": 1.503615,
+        "total_server_seconds": 1.9820881,
+        "prompt_tokens": 608,
+        "generated_tokens": 100,
+        "tokens_per_second": 66.51,
+        "prompt_tokens_per_second": 1478.15,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16143077376,
+          "mean_system_ram_used_bytes": 16073734144.0,
+          "max_system_ram_percent": 47.1,
+          "mean_system_ram_percent": 46.900000000000006,
+          "max_cpu_percent": 29.5,
+          "mean_cpu_percent": 26.8,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 85.0,
+          "mean_gpu_util_percent": 83.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.849999999999994,
+          "max_gpu_power_w": 100.88,
+          "mean_gpu_power_w": 84.63499999999999,
+          "estimated_gpu_joules": 86.90609016180038
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточность существующих методов для точного распознавания именованных сущностей в богатом морфологически языке",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Условные случайные поля Русский язык весьма богат как грамматически, так и морфологически. Исходя из этого, для более точного распознавания именованных сущностей, добавим к двунаправленной рекуррентной нейронной сети CRF-модель",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.7075277999974787,
+        "load_seconds": 0.0151663,
+        "prompt_eval_seconds": 0.511576,
+        "eval_seconds": 2.01168,
+        "total_server_seconds": 2.5775234,
+        "prompt_tokens": 662,
+        "generated_tokens": 120,
+        "tokens_per_second": 59.65,
+        "prompt_tokens_per_second": 1294.04,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16294113280,
+          "mean_system_ram_used_bytes": 16238714880.0,
+          "max_system_ram_percent": 47.5,
+          "mean_system_ram_percent": 47.36666666666667,
+          "max_cpu_percent": 66.2,
+          "mean_cpu_percent": 29.0,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94780074.66666667,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5305.0,
+          "mean_gpu_mem_mb": 5305.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 86.0,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 109.81,
+          "mean_gpu_power_w": 94.44666666666667,
+          "estimated_gpu_joules": 245.17980456113816
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "introduction",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для эффективной обработки естественного языка и задачи распознавания именованных сущностей",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Для решения задачи обработки естественного языка, в которую входит и задача распознавания именованных сущностей, обязательным компонентом нейронной сети является векторное представление слов.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9589177000016207,
+        "load_seconds": 0.0159812,
+        "prompt_eval_seconds": 0.392322,
+        "eval_seconds": 1.455733,
+        "total_server_seconds": 1.9033276,
+        "prompt_tokens": 584,
+        "generated_tokens": 89,
+        "tokens_per_second": 61.14,
+        "prompt_tokens_per_second": 1488.57,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16417619968,
+          "mean_system_ram_used_bytes": 16350461952.0,
+          "max_system_ram_percent": 47.9,
+          "mean_system_ram_percent": 47.7,
+          "max_cpu_percent": 19.1,
+          "mean_cpu_percent": 9.55,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5305.0,
+          "mean_gpu_mem_mb": 5305.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 88.5,
+          "max_gpu_temperature_c": 57.0,
+          "mean_gpu_temperature_c": 56.45,
+          "max_gpu_power_w": 98.08,
+          "mean_gpu_power_w": 76.705,
+          "estimated_gpu_joules": 68.54127646446227
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "introduction",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаточность существующих методов для обработки контекстно-зависимых представлений токенов в нейронных языковых моделях",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Современные нейронные языковые модели [3] рассчитывают контекстно-независимое представление токена (с помощью вложений токенов или свёрточной нейронной сети), затем его пропускают через L слоев прямой рекуррентной нейронной сети LSTM.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.6691759999994247,
+        "load_seconds": 0.0192569,
+        "prompt_eval_seconds": 0.401743,
+        "eval_seconds": 1.963393,
+        "total_server_seconds": 2.422415,
+        "prompt_tokens": 643,
+        "generated_tokens": 123,
+        "tokens_per_second": 62.65,
+        "prompt_tokens_per_second": 1600.53,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16537915392,
+          "mean_system_ram_used_bytes": 16502336170.666666,
+          "max_system_ram_percent": 48.3,
+          "mean_system_ram_percent": 48.166666666666664,
+          "max_cpu_percent": 20.1,
+          "mean_cpu_percent": 12.766666666666666,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94780074.66666667,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5305.0,
+          "mean_gpu_mem_mb": 5305.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 88.66666666666667,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.300000000000004,
+          "max_gpu_power_w": 86.83,
+          "mean_gpu_power_w": 70.44666666666667,
+          "estimated_gpu_joules": 192.68827650547027
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "introduction",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость тонкой настройки двунаправленной языковой модели перед использованием в ELMo",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Для Инженерный вестник Дона, No7 (2021) ivdon.ru/ru/magazine/archive/n7y2021/7066 абсолютно независимых параметров. работе [6]. настройку. выглядит следующим образом [8]",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.37589559999833,
+        "load_seconds": 0.0298949,
+        "prompt_eval_seconds": 0.421638,
+        "eval_seconds": 1.808529,
+        "total_server_seconds": 2.2987501,
+        "prompt_tokens": 660,
+        "generated_tokens": 108,
+        "tokens_per_second": 59.72,
+        "prompt_tokens_per_second": 1565.32,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16667947008,
+          "mean_system_ram_used_bytes": 16599283712.0,
+          "max_system_ram_percent": 48.6,
+          "mean_system_ram_percent": 48.400000000000006,
+          "max_cpu_percent": 18.5,
+          "mean_cpu_percent": 9.25,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5305.0,
+          "mean_gpu_mem_mb": 5305.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 75.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.2,
+          "max_gpu_power_w": 87.1,
+          "mean_gpu_power_w": 85.065,
+          "estimated_gpu_joules": 104.07081884384155
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "introduction",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие эффективных методов выбора скорости обучения для предотвращения катастрофического забывания при обучении последовательных слоев",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Вместо тонкой настройки всех слоев сразу, что чревато катастрофическим забыванием, мы будем постепенно размораживать модель",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7153943000012077,
+        "load_seconds": 0.0153472,
+        "prompt_eval_seconds": 0.36192,
+        "eval_seconds": 1.243622,
+        "total_server_seconds": 1.6568643,
+        "prompt_tokens": 553,
+        "generated_tokens": 78,
+        "tokens_per_second": 62.72,
+        "prompt_tokens_per_second": 1527.96,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16815607808,
+          "mean_system_ram_used_bytes": 16746446848.0,
+          "max_system_ram_percent": 49.1,
+          "mean_system_ram_percent": 48.900000000000006,
+          "max_cpu_percent": 22.4,
+          "mean_cpu_percent": 11.2,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222666752,
+          "mean_ollama_process_rss_bytes": 222666752.0,
+          "max_gpu_mem_mb": 5305.0,
+          "mean_gpu_mem_mb": 5305.0,
+          "max_gpu_util_percent": 89.0,
+          "mean_gpu_util_percent": 88.5,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.95,
+          "max_gpu_power_w": 87.18,
+          "mean_gpu_power_w": 78.215,
+          "estimated_gpu_joules": 85.54781502485275
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "introduction",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Разработка метода тонкой настройки двунаправленной рекуррентной нейронной сети (Bi-RNN) для задач промежуточного представления, аналогичного ELMo, но с итеративным размораживанием слоев по мере их добавления в набор оттаявших слоев.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "размороженные слои на одну эпоху. Затем мы размораживаем следующий нижний замороженный слой и повторяем, пока не настроим все слои до сходимости на последней итерации.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.896577100000286,
+        "load_seconds": 0.015099,
+        "prompt_eval_seconds": 0.488926,
+        "eval_seconds": 2.298113,
+        "total_server_seconds": 2.8418462,
+        "prompt_tokens": 679,
+        "generated_tokens": 136,
+        "tokens_per_second": 59.18,
+        "prompt_tokens_per_second": 1388.76,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16951369728,
+          "mean_system_ram_used_bytes": 16905235114.666666,
+          "max_system_ram_percent": 49.5,
+          "mean_system_ram_percent": 49.36666666666667,
+          "max_cpu_percent": 20.1,
+          "mean_cpu_percent": 13.066666666666668,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94780074.66666667,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5306.0,
+          "mean_gpu_mem_mb": 5306.0,
+          "max_gpu_util_percent": 89.0,
+          "mean_gpu_util_percent": 86.66666666666667,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.13333333333333,
+          "max_gpu_power_w": 98.59,
+          "mean_gpu_power_w": 84.53666666666668,
+          "estimated_gpu_joules": 206.44001437425615
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "introduction",
+      "pages": [
+        9
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Модели обработки естественного языка с использованием ELMo часто имеют общую архитектуру на нижних уровнях, что позволяет добавлять ELMo последовательным образом к существующим моделям.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Большинство контролируемых моделей обработки естественного языка имеют общую архитектуру на самых нижних уровнях, что позволяет нам добавлять ELMo последовательным, унифицированным образом.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.371417599999404,
+        "load_seconds": 0.0185794,
+        "prompt_eval_seconds": 0.396764,
+        "eval_seconds": 1.856917,
+        "total_server_seconds": 2.3117294,
+        "prompt_tokens": 589,
+        "generated_tokens": 109,
+        "tokens_per_second": 58.7,
+        "prompt_tokens_per_second": 1484.51,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17073254400,
+          "mean_system_ram_used_bytes": 17010550784.0,
+          "max_system_ram_percent": 49.8,
+          "mean_system_ram_percent": 49.65,
+          "max_cpu_percent": 28.1,
+          "mean_cpu_percent": 24.15,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5306.0,
+          "mean_gpu_mem_mb": 5306.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 86.5,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 86.14,
+          "mean_gpu_power_w": 77.705,
+          "estimated_gpu_joules": 85.71309982538223
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "introduction",
+      "pages": [
+        10
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5308441000015591,
+        "load_seconds": 0.0163524,
+        "prompt_eval_seconds": 0.348493,
+        "eval_seconds": 0.075283,
+        "total_server_seconds": 0.493028,
+        "prompt_tokens": 409,
+        "generated_tokens": 5,
+        "tokens_per_second": 66.42,
+        "prompt_tokens_per_second": 1173.62,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 17080037376,
+          "mean_system_ram_used_bytes": 17080037376.0,
+          "max_system_ram_percent": 49.8,
+          "mean_system_ram_percent": 49.8,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94769152,
+          "mean_python_process_rss_bytes": 94769152.0,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5306.0,
+          "mean_gpu_mem_mb": 5306.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 86.0,
+          "max_gpu_temperature_c": 56.9,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 84.13,
+          "mean_gpu_power_w": 84.13
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "results",
+      "pages": [
+        10
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.48820509999859496,
+        "load_seconds": 0.0158007,
+        "prompt_eval_seconds": 0.351114,
+        "eval_seconds": 0.072473,
+        "total_server_seconds": 0.4452563,
+        "prompt_tokens": 453,
+        "generated_tokens": 5,
+        "tokens_per_second": 68.99,
+        "prompt_tokens_per_second": 1290.18,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 17092493312,
+          "mean_system_ram_used_bytes": 17092493312.0,
+          "max_system_ram_percent": 49.9,
+          "mean_system_ram_percent": 49.9,
+          "max_cpu_percent": 23.9,
+          "mean_cpu_percent": 23.9,
+          "max_python_process_rss_bytes": 94769152,
+          "mean_python_process_rss_bytes": 94769152.0,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5306.0,
+          "mean_gpu_mem_mb": 5306.0,
+          "max_gpu_util_percent": 83.0,
+          "mean_gpu_util_percent": 83.0,
+          "max_gpu_temperature_c": 57.0,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 85.11,
+          "mean_gpu_power_w": 85.11
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "results",
+      "pages": [
+        11
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаточная точность и полнота существующих моделей распознавания именованных сущностей в русском языке.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 11,
+              "quote": "Точность рассчитывается по формуле (19). И получается, что точность нашей модели равна 0.67, то есть 67 %. Полнота рассчитывается по формуле Таким образом, для лучшего качества распознавания именованных сущностей в русском языке. И получается, что полнота нашей модели равна 0.7, то есть 70 %.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.9875670000001264,
+        "load_seconds": 0.0190344,
+        "prompt_eval_seconds": 0.532657,
+        "eval_seconds": 2.391138,
+        "total_server_seconds": 2.9505468,
+        "prompt_tokens": 838,
+        "generated_tokens": 140,
+        "tokens_per_second": 58.55,
+        "prompt_tokens_per_second": 1573.25,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17095995392,
+          "mean_system_ram_used_bytes": 17090434389.333334,
+          "max_system_ram_percent": 49.9,
+          "mean_system_ram_percent": 49.9,
+          "max_cpu_percent": 19.5,
+          "mean_cpu_percent": 12.700000000000001,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94780074.66666667,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5306.0,
+          "mean_gpu_mem_mb": 5306.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 87.66666666666667,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.26666666666667,
+          "max_gpu_power_w": 99.48,
+          "mean_gpu_power_w": 94.62,
+          "estimated_gpu_joules": 242.61620253801345
+        }
+      }
+    },
+    {
+      "chunk": "C0013",
+      "section": "results",
+      "pages": [
+        12
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Проблема заключается в недостаточной адаптации существующих моделей для задач классификации текста, требующая поиска более эффективных методов тонкой настройки.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0013",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7500921999999264,
+        "load_seconds": 0.0199981,
+        "prompt_eval_seconds": 0.614881,
+        "eval_seconds": 1.014244,
+        "total_server_seconds": 1.6886993,
+        "prompt_tokens": 957,
+        "generated_tokens": 55,
+        "tokens_per_second": 54.23,
+        "prompt_tokens_per_second": 1556.4,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17229078528,
+          "mean_system_ram_used_bytes": 17159147520.0,
+          "max_system_ram_percent": 50.3,
+          "mean_system_ram_percent": 50.099999999999994,
+          "max_cpu_percent": 24.0,
+          "mean_cpu_percent": 12.0,
+          "max_python_process_rss_bytes": 94785536,
+          "mean_python_process_rss_bytes": 94777344.0,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5308.0,
+          "mean_gpu_mem_mb": 5308.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 90.5,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 56.900000000000006,
+          "max_gpu_power_w": 86.51,
+          "mean_gpu_power_w": 70.915,
+          "estimated_gpu_joules": 68.47143608093262
+        }
+      }
+    },
+    {
+      "chunk": "C0014",
+      "section": "results",
+      "pages": [
+        13
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:C0014",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.537004199999501,
+        "load_seconds": 0.0192282,
+        "prompt_eval_seconds": 0.35815,
+        "eval_seconds": 0.065498,
+        "total_server_seconds": 0.4816065,
+        "prompt_tokens": 534,
+        "generated_tokens": 5,
+        "tokens_per_second": 76.34,
+        "prompt_tokens_per_second": 1491.0,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 17226915840,
+          "mean_system_ram_used_bytes": 17226915840.0,
+          "max_system_ram_percent": 50.3,
+          "mean_system_ram_percent": 50.3,
+          "max_cpu_percent": 24.2,
+          "mean_cpu_percent": 24.2,
+          "max_python_process_rss_bytes": 94769152,
+          "mean_python_process_rss_bytes": 94769152.0,
+          "max_ollama_process_rss_bytes": 222699520,
+          "mean_ollama_process_rss_bytes": 222699520.0,
+          "max_gpu_mem_mb": 5308.0,
+          "mean_gpu_mem_mb": 5308.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 93.0,
+          "max_gpu_temperature_c": 56.7,
+          "mean_gpu_temperature_c": 56.7,
+          "max_gpu_power_w": 82.54,
+          "mean_gpu_power_w": 82.54
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.646807999997691,
+      "load_seconds": 0.0167365,
+      "prompt_eval_seconds": 0.524386999,
+      "eval_seconds": 3.004776,
+      "total_server_seconds": 3.5839143,
+      "prompt_tokens": 793,
+      "generated_tokens": 181,
+      "tokens_per_second": 60.24,
+      "prompt_tokens_per_second": 1512.24,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17478152192,
+        "mean_system_ram_used_bytes": 17441596757.333332,
+        "max_system_ram_percent": 51.0,
+        "mean_system_ram_percent": 50.9,
+        "max_cpu_percent": 22.4,
+        "mean_cpu_percent": 14.133333333333333,
+        "max_python_process_rss_bytes": 94785536,
+        "mean_python_process_rss_bytes": 94780074.66666667,
+        "max_ollama_process_rss_bytes": 222826496,
+        "mean_ollama_process_rss_bytes": 222826496.0,
+        "max_gpu_mem_mb": 5308.0,
+        "mean_gpu_mem_mb": 5308.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 84.33333333333333,
+        "max_gpu_temperature_c": 57.6,
+        "mean_gpu_temperature_c": 57.26666666666667,
+        "max_gpu_power_w": 98.84,
+        "mean_gpu_power_w": 85.01333333333334,
+        "estimated_gpu_joules": 207.71963771343232
+      }
+    },
+    {
+      "request_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.617538799997419,
+      "load_seconds": 0.0181443,
+      "prompt_eval_seconds": 0.462415,
+      "eval_seconds": 6.95716,
+      "total_server_seconds": 7.4801416,
+      "prompt_tokens": 704,
+      "generated_tokens": 418,
+      "tokens_per_second": 60.08,
+      "prompt_tokens_per_second": 1522.44,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 17635983360,
+        "mean_system_ram_used_bytes": 17601659465.142857,
+        "max_system_ram_percent": 51.5,
+        "mean_system_ram_percent": 51.357142857142854,
+        "max_cpu_percent": 39.8,
+        "mean_cpu_percent": 23.942857142857143,
+        "max_python_process_rss_bytes": 94785536,
+        "mean_python_process_rss_bytes": 94783195.42857143,
+        "max_ollama_process_rss_bytes": 222609408,
+        "mean_ollama_process_rss_bytes": 222609408.0,
+        "max_gpu_mem_mb": 5308.0,
+        "mean_gpu_mem_mb": 5308.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 85.0,
+        "max_gpu_temperature_c": 57.8,
+        "mean_gpu_temperature_c": 57.271428571428565,
+        "max_gpu_power_w": 87.24,
+        "mean_gpu_power_w": 79.7942857142857,
+        "estimated_gpu_joules": 617.2820460605622
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "637e9e80b812b6be081eee0ec5e124dc43276df3791f6bf652623828d6d6f000"
+}

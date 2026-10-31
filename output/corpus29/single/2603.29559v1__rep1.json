@@ -1,0 +1,1534 @@
+{
+  "paper_id": "2603.29559v1",
+  "filename": "2603.29559v1.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Проблема недоверия к выводам LLM-оценщиков и некорректности автоматизации без калибровки уверенности",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 10,
+          "quote": "thresholds should be set relative to each model/method's observed scores rather than an intuitive midpoint",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Разработка методов калибровки уверенности больших языковых моделей для автоматической оценки.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 11,
+          "quote": "Calibrating LLM Confidence for Automated Assessment",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 61.109509800000524,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Проблема недоверия к выводам LLM-оценщиков и некорректности автоматизации без калибровки уверенности",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Rather than improving grading accuracy directly, we address a complementary problem: predicting when an LLM grader is likely to be correct.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.33398550000129,
+        "load_seconds": 3.3632137,
+        "prompt_eval_seconds": 0.5103,
+        "eval_seconds": 1.196842,
+        "total_server_seconds": 5.0768469,
+        "prompt_tokens": 700,
+        "generated_tokens": 85,
+        "tokens_per_second": 71.02,
+        "prompt_tokens_per_second": 1371.74,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 18128834560,
+          "mean_system_ram_used_bytes": 15891424051.2,
+          "max_system_ram_percent": 52.9,
+          "mean_system_ram_percent": 46.379999999999995,
+          "max_cpu_percent": 34.8,
+          "mean_cpu_percent": 19.8,
+          "max_python_process_rss_bytes": 90226688,
+          "mean_python_process_rss_bytes": 90223411.2,
+          "max_ollama_process_rss_bytes": 223342592,
+          "mean_ollama_process_rss_bytes": 223284428.8,
+          "max_gpu_mem_mb": 5268.0,
+          "mean_gpu_mem_mb": 3545.8,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 42.8,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 54.98,
+          "max_gpu_power_w": 112.51,
+          "mean_gpu_power_w": 66.35600000000001,
+          "estimated_gpu_joules": 353.26395194768907
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "LLMs демонстрируют низкую точность и несогласованность с человеческими оценщиками в автоматической проверке работ",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Studies have found that GPT-4 produces scores that differ from human evaluators [20] and makes common arithmetic errors that reduce accuracy to 20% on complex problems [12]",
+              "verified": true
+            },
+            {
+              "page": 1,
+              "quote": "While LLMs can match human agreement on some dimensions, they achieve only fair agreement on others [32]",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.189692699997977,
+        "load_seconds": 0.0187096,
+        "prompt_eval_seconds": 0.220969,
+        "eval_seconds": 1.845296,
+        "total_server_seconds": 2.1215813,
+        "prompt_tokens": 354,
+        "generated_tokens": 126,
+        "tokens_per_second": 68.28,
+        "prompt_tokens_per_second": 1602.03,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15686467584,
+          "mean_system_ram_used_bytes": 15616987136.0,
+          "max_system_ram_percent": 45.8,
+          "mean_system_ram_percent": 45.599999999999994,
+          "max_cpu_percent": 18.5,
+          "mean_cpu_percent": 9.25,
+          "max_python_process_rss_bytes": 90226688,
+          "mean_python_process_rss_bytes": 90218496.0,
+          "max_ollama_process_rss_bytes": 223342592,
+          "mean_ollama_process_rss_bytes": 223342592.0,
+          "max_gpu_mem_mb": 5268.0,
+          "mean_gpu_mem_mb": 5268.0,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 75.5,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 101.71,
+          "mean_gpu_power_w": 85.68,
+          "estimated_gpu_joules": 86.28380168676377
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Современные нейросети, включая языковые модели (LLM), демонстрируют систематическую завышенную уверенность и плохо калиброваны в своих оценках вероятности правильности решений.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Unfortunately, modern neural networks tend to be poorly calibrated, often exhibiting systematic overconfidence [14], and this problem persists in LLMs [35].",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.1715488999980153,
+        "load_seconds": 0.0177698,
+        "prompt_eval_seconds": 0.468635,
+        "eval_seconds": 1.612887,
+        "total_server_seconds": 2.1071082,
+        "prompt_tokens": 858,
+        "generated_tokens": 101,
+        "tokens_per_second": 62.62,
+        "prompt_tokens_per_second": 1830.85,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15698948096,
+          "mean_system_ram_used_bytes": 15697113088.0,
+          "max_system_ram_percent": 45.8,
+          "mean_system_ram_percent": 45.8,
+          "max_cpu_percent": 17.5,
+          "mean_cpu_percent": 8.75,
+          "max_python_process_rss_bytes": 90226688,
+          "mean_python_process_rss_bytes": 90218496.0,
+          "max_ollama_process_rss_bytes": 223186944,
+          "mean_ollama_process_rss_bytes": 223186944.0,
+          "max_gpu_mem_mb": 5268.0,
+          "mean_gpu_mem_mb": 5268.0,
+          "max_gpu_util_percent": 85.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 96.69,
+          "mean_gpu_power_w": 91.86500000000001,
+          "estimated_gpu_joules": 119.84207257032394
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5901336999995692,
+        "load_seconds": 0.0357195,
+        "prompt_eval_seconds": 0.20119,
+        "eval_seconds": 0.2475,
+        "total_server_seconds": 0.5210356,
+        "prompt_tokens": 263,
+        "generated_tokens": 16,
+        "tokens_per_second": 64.65,
+        "prompt_tokens_per_second": 1307.22,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15721734144,
+          "mean_system_ram_used_bytes": 15721734144.0,
+          "max_system_ram_percent": 45.9,
+          "mean_system_ram_percent": 45.9,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 223186944,
+          "mean_ollama_process_rss_bytes": 223186944.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 83.45,
+          "mean_gpu_power_w": 83.45
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "related_work",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Разработка методов калибровки уверенности для больших языковых моделей, которые не требуют множественных проходов или копий модели.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "However, these methods require multiple forward passes or model copies, which is prohibitive for large language models.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7783075000006647,
+        "load_seconds": 0.0304458,
+        "prompt_eval_seconds": 0.472705,
+        "eval_seconds": 1.203059,
+        "total_server_seconds": 1.7140282,
+        "prompt_tokens": 739,
+        "generated_tokens": 75,
+        "tokens_per_second": 62.34,
+        "prompt_tokens_per_second": 1563.34,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15850205184,
+          "mean_system_ram_used_bytes": 15850080256.0,
+          "max_system_ram_percent": 46.3,
+          "mean_system_ram_percent": 46.25,
+          "max_cpu_percent": 39.5,
+          "mean_cpu_percent": 32.0,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 223186944,
+          "mean_ollama_process_rss_bytes": 223186944.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 80.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 99.0,
+          "mean_gpu_power_w": 91.305,
+          "estimated_gpu_joules": 105.46114756822585
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "related_work",
+      "pages": [
+        4
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.4926734000000579,
+        "load_seconds": 0.0181126,
+        "prompt_eval_seconds": 0.202185,
+        "eval_seconds": 0.178643,
+        "total_server_seconds": 0.4346674,
+        "prompt_tokens": 273,
+        "generated_tokens": 12,
+        "tokens_per_second": 67.17,
+        "prompt_tokens_per_second": 1350.25,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15851184128,
+          "mean_system_ram_used_bytes": 15851184128.0,
+          "max_system_ram_percent": 46.3,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 92.0,
+          "max_gpu_temperature_c": 56.8,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 70.06,
+          "mean_gpu_power_w": 70.06
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "methods",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Проблема предсказания надежности автоматических оценок LLM в задачах оценки ответов на вопросы",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "our work addresses the complementary problem of predicting when automated grades are reliable",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5253407999989577,
+        "load_seconds": 0.0167623,
+        "prompt_eval_seconds": 0.421957,
+        "eval_seconds": 0.998617,
+        "total_server_seconds": 1.4440033,
+        "prompt_tokens": 656,
+        "generated_tokens": 63,
+        "tokens_per_second": 63.09,
+        "prompt_tokens_per_second": 1554.66,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16002838528,
+          "mean_system_ram_used_bytes": 15993864192.0,
+          "max_system_ram_percent": 46.7,
+          "mean_system_ram_percent": 46.650000000000006,
+          "max_cpu_percent": 17.9,
+          "mean_cpu_percent": 8.95,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 82.0,
+          "mean_gpu_util_percent": 80.5,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.05,
+          "max_gpu_power_w": 87.32,
+          "mean_gpu_power_w": 78.875,
+          "estimated_gpu_joules": 87.25617659091951
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "methods",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Отсутствие надежных методов оценки уверенности языковых моделей для автоматической проверки работ",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.1410412000004726,
+        "load_seconds": 0.0175806,
+        "prompt_eval_seconds": 0.470537,
+        "eval_seconds": 0.57453,
+        "total_server_seconds": 1.100152,
+        "prompt_tokens": 747,
+        "generated_tokens": 37,
+        "tokens_per_second": 64.4,
+        "prompt_tokens_per_second": 1587.55,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 15978688512,
+          "mean_system_ram_used_bytes": 15978688512.0,
+          "max_system_ram_percent": 46.6,
+          "mean_system_ram_percent": 46.6,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 82.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.4,
+          "max_gpu_power_w": 70.04,
+          "mean_gpu_power_w": 70.04
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "methods",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие единого стандарта для оценки калибровки и дискриминации моделей в задачах с человеческим участием.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Lower Brier scores indicate better calibration and discrimination combined. ECE measures the average difference between confidence and accuracy across confidence bins",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.7968982999991567,
+        "load_seconds": 0.0185432,
+        "prompt_eval_seconds": 0.470526,
+        "eval_seconds": 1.21285,
+        "total_server_seconds": 1.7404284,
+        "prompt_tokens": 727,
+        "generated_tokens": 76,
+        "tokens_per_second": 62.66,
+        "prompt_tokens_per_second": 1545.08,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16214306816,
+          "mean_system_ram_used_bytes": 16154187776.0,
+          "max_system_ram_percent": 47.3,
+          "mean_system_ram_percent": 47.15,
+          "max_cpu_percent": 19.7,
+          "mean_cpu_percent": 9.85,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5270.0,
+          "mean_gpu_mem_mb": 5270.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 86.0,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.05,
+          "max_gpu_power_w": 87.25,
+          "mean_gpu_power_w": 85.66,
+          "estimated_gpu_joules": 106.2795077562332
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "methods",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие надежных методов калибровки уверенности больших языковых моделей для автоматической оценки качества ответов студентов.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Finding 1: Self-reported confidence achieves the best calibration. Across all six conditions (3 datasets × 2 model sizes), self-reported confidence consistently achieves the lowest Expected Calibration Error (ECE).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.2578777000017,
+        "load_seconds": 0.0163416,
+        "prompt_eval_seconds": 0.652874,
+        "eval_seconds": 1.504389,
+        "total_server_seconds": 2.2128867,
+        "prompt_tokens": 1043,
+        "generated_tokens": 89,
+        "tokens_per_second": 59.16,
+        "prompt_tokens_per_second": 1597.55,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16413446144,
+          "mean_system_ram_used_bytes": 16318248960.0,
+          "max_system_ram_percent": 47.9,
+          "mean_system_ram_percent": 47.599999999999994,
+          "max_cpu_percent": 22.1,
+          "mean_cpu_percent": 11.05,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 90.5,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.05,
+          "max_gpu_power_w": 87.0,
+          "mean_gpu_power_w": 77.815,
+          "estimated_gpu_joules": 85.9422744679451
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "methods",
+      "pages": [
+        8
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.4550639000008232,
+        "load_seconds": 0.0185331,
+        "prompt_eval_seconds": 0.260103,
+        "eval_seconds": 0.065943,
+        "total_server_seconds": 0.3925721,
+        "prompt_tokens": 336,
+        "generated_tokens": 5,
+        "tokens_per_second": 75.82,
+        "prompt_tokens_per_second": 1291.8,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16410935296,
+          "mean_system_ram_used_bytes": 16410935296.0,
+          "max_system_ram_percent": 47.9,
+          "mean_system_ram_percent": 47.9,
+          "max_cpu_percent": 23.4,
+          "mean_cpu_percent": 23.4,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 69.0,
+          "mean_gpu_util_percent": 69.0,
+          "max_gpu_temperature_c": 56.2,
+          "mean_gpu_temperature_c": 56.2,
+          "max_gpu_power_w": 68.8,
+          "mean_gpu_power_w": 68.8
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "methods",
+      "pages": [
+        8
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.573660000001837,
+        "load_seconds": 0.0175999,
+        "prompt_eval_seconds": 0.423106,
+        "eval_seconds": 0.068195,
+        "total_server_seconds": 0.5137048,
+        "prompt_tokens": 637,
+        "generated_tokens": 5,
+        "tokens_per_second": 73.32,
+        "prompt_tokens_per_second": 1505.53,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16606420992,
+          "mean_system_ram_used_bytes": 16606420992.0,
+          "max_system_ram_percent": 48.5,
+          "mean_system_ram_percent": 48.5,
+          "max_cpu_percent": 23.9,
+          "mean_cpu_percent": 23.9,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 69.0,
+          "mean_gpu_util_percent": 69.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 68.11,
+          "mean_gpu_power_w": 68.11
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "methods",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существующие методы калибровки уверенности (например, self-consistency) значительно уступают методам на основе самоотчетов по метрике ECE, несмотря на более высокую вычислительную стоимость.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Self-consistency is 38% worse despite 5× inference cost.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.1208434000000125,
+        "load_seconds": 0.0322768,
+        "prompt_eval_seconds": 0.556846,
+        "eval_seconds": 1.416948,
+        "total_server_seconds": 2.0532378,
+        "prompt_tokens": 846,
+        "generated_tokens": 89,
+        "tokens_per_second": 62.81,
+        "prompt_tokens_per_second": 1519.27,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16775311360,
+          "mean_system_ram_used_bytes": 16686825472.0,
+          "max_system_ram_percent": 48.9,
+          "mean_system_ram_percent": 48.65,
+          "max_cpu_percent": 21.1,
+          "mean_cpu_percent": 10.55,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222793728,
+          "mean_ollama_process_rss_bytes": 222793728.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 93.0,
+          "mean_gpu_util_percent": 81.5,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 87.25,
+          "mean_gpu_power_w": 71.02,
+          "estimated_gpu_joules": 69.9384284210205
+        }
+      }
+    },
+    {
+      "chunk": "C0013",
+      "section": "methods",
+      "pages": [
+        9
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Отсутствие стандартизированных метрик для оценки калибровки LLM в задачах автоматической оценки",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0013",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.2219989000004716,
+        "load_seconds": 0.0181889,
+        "prompt_eval_seconds": 0.492476,
+        "eval_seconds": 0.646871,
+        "total_server_seconds": 1.2059239,
+        "prompt_tokens": 744,
+        "generated_tokens": 41,
+        "tokens_per_second": 63.38,
+        "prompt_tokens_per_second": 1510.73,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16766840832,
+          "mean_system_ram_used_bytes": 16766840832.0,
+          "max_system_ram_percent": 48.9,
+          "mean_system_ram_percent": 48.9,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 81.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.0,
+          "mean_gpu_temperature_c": 57.0,
+          "max_gpu_power_w": 69.5,
+          "mean_gpu_power_w": 69.5
+        }
+      }
+    },
+    {
+      "chunk": "C0014",
+      "section": "methods",
+      "pages": [
+        9
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Существенное снижение метрики ECE при использовании метода token-probability на некоторых наборах данных (RiceChem, Beetle), что указывает на недостаточную надежность данного метода в определенных условиях.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Counterexamples arise for token probability: ECE worsens with scale in RiceChem (0.212 →0.250) and Beetle (0.251 → 0.262).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие единого универсального метода, обеспечивающего одновременно низкую ошибку калибровки (ECE) и высокую точность классификации (AUC) для всех моделей и наборов данных.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Across all model–method pairs, GPT-OSS-120B self-reported delivers the lowest average ECE (0.100; Brier 0.180), while the highest AUC overall occurs for Qwen3-80B-Instruct token probability on SciEntsBank (AUC 0.728).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Высокая концентрация предсказаний в верхней части распределения уверенности (86% > 0.8) и искусственная дискретность метрики self-consistency создают практические ограничения для интерпретации уровня неопределенности.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "Pooling selfreported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2 (though a few model/dataset runs exceed 1%). Self-consistency is discrete by construction: 89.5% of outputs are 5/5 (1.0), 6.1% are 4/5 (0.8), and 4.5% are 3/5 (0.6).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0014",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 7.9196405000002414,
+        "load_seconds": 0.0177947,
+        "prompt_eval_seconds": 0.560684,
+        "eval_seconds": 7.233193,
+        "total_server_seconds": 7.8576204,
+        "prompt_tokens": 876,
+        "generated_tokens": 435,
+        "tokens_per_second": 60.14,
+        "prompt_tokens_per_second": 1562.38,
+        "hardware": {
+          "samples": 7,
+          "max_system_ram_used_bytes": 17136226304,
+          "mean_system_ram_used_bytes": 17104076214.857143,
+          "max_system_ram_percent": 50.0,
+          "mean_system_ram_percent": 49.92857142857143,
+          "max_cpu_percent": 46.7,
+          "mean_cpu_percent": 19.685714285714287,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90228443.42857143,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 87.14285714285714,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.371428571428574,
+          "max_gpu_power_w": 98.98,
+          "mean_gpu_power_w": 84.2,
+          "estimated_gpu_joules": 598.9539891886711
+        }
+      }
+    },
+    {
+      "chunk": "C0015",
+      "section": "methods",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Требование настройки порогов уверенности относительно наблюдаемых баллов модели, а не интуитивных значений",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "thresholds should be set relative to each model/method's observed scores rather than an intuitive midpoint",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0015",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5467577000017627,
+        "load_seconds": 0.0178562,
+        "prompt_eval_seconds": 0.289583,
+        "eval_seconds": 1.106703,
+        "total_server_seconds": 1.4838005,
+        "prompt_tokens": 420,
+        "generated_tokens": 70,
+        "tokens_per_second": 63.25,
+        "prompt_tokens_per_second": 1450.36,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17154846720,
+          "mean_system_ram_used_bytes": 17144983552.0,
+          "max_system_ram_percent": 50.1,
+          "mean_system_ram_percent": 50.05,
+          "max_cpu_percent": 18.8,
+          "mean_cpu_percent": 9.4,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 81.0,
+          "mean_gpu_util_percent": 79.5,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.15,
+          "max_gpu_power_w": 98.83,
+          "mean_gpu_power_w": 83.57499999999999,
+          "estimated_gpu_joules": 85.85201301574706
+        }
+      }
+    },
+    {
+      "chunk": "C0016",
+      "section": "methods",
+      "pages": [
+        11
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Разработка методов калибровки уверенности больших языковых моделей для автоматической оценки.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 11,
+              "quote": "Calibrating LLM Confidence for Automated Assessment",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0016",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.6918431999984023,
+        "load_seconds": 0.0344933,
+        "prompt_eval_seconds": 0.756194,
+        "eval_seconds": 0.854802,
+        "total_server_seconds": 1.6530235,
+        "prompt_tokens": 1227,
+        "generated_tokens": 54,
+        "tokens_per_second": 63.17,
+        "prompt_tokens_per_second": 1622.6,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17207943168,
+          "mean_system_ram_used_bytes": 17179295744.0,
+          "max_system_ram_percent": 50.2,
+          "mean_system_ram_percent": 50.1,
+          "max_cpu_percent": 18.2,
+          "mean_cpu_percent": 9.1,
+          "max_python_process_rss_bytes": 90230784,
+          "mean_python_process_rss_bytes": 90222592.0,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.75,
+          "max_gpu_power_w": 87.15,
+          "mean_gpu_power_w": 78.515,
+          "estimated_gpu_joules": 86.205860414505
+        }
+      }
+    },
+    {
+      "chunk": "C0017",
+      "section": "methods",
+      "pages": [
+        12
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "2603.29559v1__rep1:C0017",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.452983300001506,
+        "load_seconds": 0.017454,
+        "prompt_eval_seconds": 0.118948,
+        "eval_seconds": 0.20899,
+        "total_server_seconds": 0.3941532,
+        "prompt_tokens": 281,
+        "generated_tokens": 14,
+        "tokens_per_second": 66.99,
+        "prompt_tokens_per_second": 2362.38,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 17209597952,
+          "mean_system_ram_used_bytes": 17209597952.0,
+          "max_system_ram_percent": 50.2,
+          "mean_system_ram_percent": 50.2,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 90214400,
+          "mean_python_process_rss_bytes": 90214400.0,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5274.0,
+          "mean_gpu_mem_mb": 5274.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 92.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 55.14,
+          "mean_gpu_power_w": 55.14
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "2603.29559v1__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.9894926999986637,
+      "load_seconds": 0.0332424,
+      "prompt_eval_seconds": 0.471112,
+      "eval_seconds": 1.35172,
+      "total_server_seconds": 1.8990489,
+      "prompt_tokens": 731,
+      "generated_tokens": 85,
+      "tokens_per_second": 62.88,
+      "prompt_tokens_per_second": 1551.65,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17524064256,
+        "mean_system_ram_used_bytes": 17470320640.0,
+        "max_system_ram_percent": 51.1,
+        "mean_system_ram_percent": 50.95,
+        "max_cpu_percent": 17.0,
+        "mean_cpu_percent": 8.5,
+        "max_python_process_rss_bytes": 90230784,
+        "mean_python_process_rss_bytes": 90222592.0,
+        "max_ollama_process_rss_bytes": 222818304,
+        "mean_ollama_process_rss_bytes": 222818304.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 92.0,
+        "mean_gpu_util_percent": 91.0,
+        "max_gpu_temperature_c": 57.6,
+        "mean_gpu_temperature_c": 56.95,
+        "max_gpu_power_w": 87.04,
+        "mean_gpu_power_w": 77.81,
+        "estimated_gpu_joules": 85.77042237281799
+      }
+    },
+    {
+      "request_id": "2603.29559v1__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.769908999998734,
+      "load_seconds": 0.0179753,
+      "prompt_eval_seconds": 0.490414,
+      "eval_seconds": 8.082193,
+      "total_server_seconds": 8.6298772,
+      "prompt_tokens": 788,
+      "generated_tokens": 493,
+      "tokens_per_second": 61.0,
+      "prompt_tokens_per_second": 1606.81,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 17658888192,
+        "mean_system_ram_used_bytes": 17639806976.0,
+        "max_system_ram_percent": 51.5,
+        "mean_system_ram_percent": 51.45,
+        "max_cpu_percent": 36.9,
+        "mean_cpu_percent": 21.4,
+        "max_python_process_rss_bytes": 90230784,
+        "mean_python_process_rss_bytes": 90228736.0,
+        "max_ollama_process_rss_bytes": 222818304,
+        "mean_ollama_process_rss_bytes": 222814720.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 90.0,
+        "mean_gpu_util_percent": 87.125,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.4,
+        "max_gpu_power_w": 98.99,
+        "mean_gpu_power_w": 85.2425,
+        "estimated_gpu_joules": 747.9081965088844
+      }
+    },
+    {
+      "request_id": "2603.29559v1__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.315785700000561,
+      "load_seconds": 0.018889,
+      "prompt_eval_seconds": 0.391256,
+      "eval_seconds": 4.796927,
+      "total_server_seconds": 5.2496582,
+      "prompt_tokens": 582,
+      "generated_tokens": 301,
+      "tokens_per_second": 62.75,
+      "prompt_tokens_per_second": 1487.52,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 17812721664,
+        "mean_system_ram_used_bytes": 17776441753.6,
+        "max_system_ram_percent": 52.0,
+        "mean_system_ram_percent": 51.879999999999995,
+        "max_cpu_percent": 26.1,
+        "mean_cpu_percent": 21.740000000000002,
+        "max_python_process_rss_bytes": 90230784,
+        "mean_python_process_rss_bytes": 90227507.2,
+        "max_ollama_process_rss_bytes": 222818304,
+        "mean_ollama_process_rss_bytes": 222817484.8,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 84.0,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.48,
+        "max_gpu_power_w": 87.53,
+        "mean_gpu_power_w": 86.3,
+        "estimated_gpu_joules": 420.8271999192238
+      }
+    },
+    {
+      "request_id": "2603.29559v1__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.9199948999994376,
+      "load_seconds": 0.0189205,
+      "prompt_eval_seconds": 0.469994,
+      "eval_seconds": 1.350132,
+      "total_server_seconds": 1.8958395,
+      "prompt_tokens": 729,
+      "generated_tokens": 85,
+      "tokens_per_second": 62.96,
+      "prompt_tokens_per_second": 1551.08,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17810083840,
+        "mean_system_ram_used_bytes": 17808273408.0,
+        "max_system_ram_percent": 52.0,
+        "mean_system_ram_percent": 52.0,
+        "max_cpu_percent": 18.2,
+        "mean_cpu_percent": 9.1,
+        "max_python_process_rss_bytes": 90230784,
+        "mean_python_process_rss_bytes": 90222592.0,
+        "max_ollama_process_rss_bytes": 222818304,
+        "mean_ollama_process_rss_bytes": 222818304.0,
+        "max_gpu_mem_mb": 5274.0,
+        "mean_gpu_mem_mb": 5274.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 88.5,
+        "max_gpu_temperature_c": 57.8,
+        "mean_gpu_temperature_c": 57.55,
+        "max_gpu_power_w": 87.17,
+        "mean_gpu_power_w": 85.42500000000001,
+        "estimated_gpu_joules": 104.42070156097412
+      }
+    },
+    {
+      "request_id": "2603.29559v1__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.827145400002337,
+      "load_seconds": 0.0170623,
+      "prompt_eval_seconds": 0.470501,
+      "eval_seconds": 7.23436,
+      "total_server_seconds": 7.7622702,
+      "prompt_tokens": 729,
+      "generated_tokens": 440,
+      "tokens_per_second": 60.82,
+      "prompt_tokens_per_second": 1549.41,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 17950498816,
+        "mean_system_ram_used_bytes": 17926008246.857143,
+        "max_system_ram_percent": 52.4,
+        "mean_system_ram_percent": 52.32857142857143,
+        "max_cpu_percent": 33.3,
+        "mean_cpu_percent": 18.771428571428572,
+        "max_python_process_rss_bytes": 90230784,
+        "mean_python_process_rss_bytes": 90228443.42857143,
+        "max_ollama_process_rss_bytes": 222556160,
+        "mean_ollama_process_rss_bytes": 222556160.0,
+        "max_gpu_mem_mb": 5284.0,
+        "mean_gpu_mem_mb": 5284.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 85.71428571428571,
+        "max_gpu_temperature_c": 58.1,
+        "mean_gpu_temperature_c": 57.81428571428571,
+        "max_gpu_power_w": 99.12,
+        "mean_gpu_power_w": 88.31857142857143,
+        "estimated_gpu_joules": 664.5563053417206
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "fd1e7fbd641c287ee36c1c76675ca2f85269dab2245de4af21adf6cf971b457d"
+}

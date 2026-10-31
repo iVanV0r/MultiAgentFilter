@@ -1,0 +1,547 @@
+{
+  "paper_id": "2603.29541v1",
+  "filename": "2603.29541v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+      "status": "accepted",
+      "reason": "Явно обозначен пробел в знаниях: 'Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.' Это соответствует фокусу статьи.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+      "status": "rejected",
+      "reason": "Это описание проблемы, но оно слишком сфокусировано на ASR ошибках (PER 33.3%) и не формулирует научный пробел, который эта работа устраняет, а скорее описывает проблему, которую LLM может помочь решить.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+      "status": "rejected",
+      "reason": "Это описание экспериментального результата/сравнения, а не обозначение научного пробела. Это внутренняя деталь работы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "However, when the additional vowel & consonant and specialized features nodes are added to the setup, accuracy improves to 58% on average and 62.5% for the best run.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+      "status": "rejected",
+      "reason": "Это слишком общее утверждение о 'недостаточности' методов, а не конкретный, измеримый пробел, который эта работа заполняет. Это скорее вывод, чем проблема.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "it would need more supervision to show human-level capabilities",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+      "status": "rejected",
+      "reason": "Это ограничение эксперимента, а не научная проблема, которую статья решает.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "one could also increase the number of annotated test samples to perform a more comprehensive analysis of our system",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Область применения слишком широкая, не конкретна к статье.",
+            "source_page": 1,
+            "support_quote": "Performance of Large Language Models (LLMs) in low-resource and linguistically grounded tasks such as spoken dialect identification remains underexplored.",
+            "verified": true
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+            "reason": "Уточнение задачи до конкретного типа задач (spoken dialect identification) и метода ввода (phonetic transcriptions), что соответствует цитате на странице 1."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+            "reason": "Проблема соответствует определению: недостаток существующих методов/данных для достижения уровня владения человеческим уровнем."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+            "reason": "Проблема соответствует определению: недостаток существующих методов для достижения уровня владения человеческим уровнем."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+            "reason": "Проблема соответствует определению: недостаток существующих методов."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "keep",
+            "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+            "reason": "Проблема соответствует определению: недостаток данных."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "remove",
+            "statement": "",
+            "reason": "Упоминание «высококачественных мультимодальных моделей» (highly capable multimodal models) на странице 10 не является обозначенной проблемой или пробелом в знаниях, а скорее описанием существующих технологий без указания конкретного недостатка статьи."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Уточнение задачи до конкретного типа задач (spoken dialect identification) и метода ввода (phonetic transcriptions), что соответствует цитате на странице 1.",
+          "old_statement": "Performance of Large Language Models (LLMs) in low-resource and linguistically grounded tasks such as spoken dialect identification remains underexplored.",
+          "new_statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: недостаток существующих методов/данных для достижения уровня владения человеческим уровнем.",
+          "old_statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+          "new_statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: недостаток существующих методов для достижения уровня владения человеческим уровнем.",
+          "old_statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+          "new_statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: недостаток существующих методов.",
+          "old_statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+          "new_statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: недостаток данных.",
+          "old_statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+          "new_statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "remove",
+          "reason": "Упоминание «высококачественных мультимодальных моделей» (highly capable multimodal models) на странице 10 не является обозначенной проблемой или пробелом в знаниях, а скорее описанием существующих технологий без указания конкретного недостатка статьи.",
+          "old_statement": "Отсутствие методов для оценки способности языковых моделей к мультимодальному анализу и связыванию контекста."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 точно отражает пробел, упомянутый в контексте (under-explored performance of LLMs in low-resource spoken dialect identification using phonetic transcriptions), и это является фокусом работы.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Явно обозначен пробел в знаниях: 'Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.' Это соответствует фокусу статьи."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": false,
+            "reason": "Это описание проблемы, но оно слишком сфокусировано на ASR ошибках (PER 33.3%) и не формулирует научный пробел, который эта работа устраняет, а скорее описывает проблему, которую LLM может помочь решить."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Это описание экспериментального результата/сравнения, а не обозначение научного пробела. Это внутренняя деталь работы."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Это слишком общее утверждение о 'недостаточности' методов, а не конкретный, измеримый пробел, который эта работа заполняет. Это скорее вывод, чем проблема."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это ограничение эксперимента, а не научная проблема, которую статья решает."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "However, when the additional vowel & consonant and specialized features nodes are added to the setup, accuracy improves to 58% on average and 62.5% for the best run.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "it would need more supervision to show human-level capabilities",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "one could also increase the number of annotated test samples to perform a more comprehensive analysis of our system",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+          "status": "accepted",
+          "reason": "Явно обозначен пробел в знаниях: 'Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.' Это соответствует фокусу статьи.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие методы автоматического распознавания речи (ASR) демонстрируют высокую ошибку при транскрипции фонем без участия лингвиста, что требует использования LLM для интерпретации.",
+          "status": "rejected",
+          "reason": "Это описание проблемы, но оно слишком сфокусировано на ASR ошибках (PER 33.3%) и не формулирует научный пробел, который эта работа устраняет, а скорее описывает проблему, которую LLM может помочь решить.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Оценка влияния дополнительных узлов (анализ гласных/согласных и специализированных признаков) на точность классификации по сравнению с базовыми промптами.",
+          "status": "rejected",
+          "reason": "Это описание экспериментального результата/сравнения, а не обозначение научного пробела. Это внутренняя деталь работы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "However, when the additional vowel & consonant and specialized features nodes are added to the setup, accuracy improves to 58% on average and 62.5% for the best run.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Недостаточность существующих методов для достижения уровня владения человеческим уровнем в анализе диалектов из-за сложности задачи и качества моделей распознавания речи.",
+          "status": "rejected",
+          "reason": "Это слишком общее утверждение о 'недостаточности' методов, а не конкретный, измеримый пробел, который эта работа заполняет. Это скорее вывод, чем проблема.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "it would need more supervision to show human-level capabilities",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Недостаточное количество размеченных тестовых образцов для проведения всестороннего анализа системы.",
+          "status": "rejected",
+          "reason": "Это ограничение эксперимента, а не научная проблема, которую статья решает.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "one could also increase the number of annotated test samples to perform a more comprehensive analysis of our system",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Performance of Large Language Models (LLMs) in low-resource spoken dialect identification tasks using phonetic transcriptions remains underexplored.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29541v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.108402800000476,
+          "load_seconds": 2.6049521,
+          "prompt_eval_seconds": 0.517773,
+          "eval_seconds": 0.895472,
+          "total_server_seconds": 4.0337496,
+          "prompt_tokens": 1016,
+          "generated_tokens": 74,
+          "tokens_per_second": 82.64,
+          "prompt_tokens_per_second": 1962.25,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 18166464512,
+            "mean_system_ram_used_bytes": 15941805056.0,
+            "max_system_ram_percent": 53.0,
+            "mean_system_ram_percent": 46.525,
+            "max_cpu_percent": 31.9,
+            "mean_cpu_percent": 19.225,
+            "max_python_process_rss_bytes": 90152960,
+            "mean_python_process_rss_bytes": 90144768.0,
+            "max_ollama_process_rss_bytes": 455884800,
+            "mean_ollama_process_rss_bytes": 280886272.0,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3087.25,
+            "max_gpu_util_percent": 90.0,
+            "mean_gpu_util_percent": 56.5,
+            "max_gpu_temperature_c": 57.5,
+            "mean_gpu_temperature_c": 55.275,
+            "max_gpu_power_w": 113.77,
+            "mean_gpu_power_w": 69.6125,
+            "estimated_gpu_joules": 209.29777348518374
+          }
+        },
+        {
+          "request_id": "2603.29541v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.096825900000113,
+          "load_seconds": 3.2579546,
+          "prompt_eval_seconds": 1.001192,
+          "eval_seconds": 6.694961,
+          "total_server_seconds": 10.9711443,
+          "prompt_tokens": 1686,
+          "generated_tokens": 440,
+          "tokens_per_second": 65.72,
+          "prompt_tokens_per_second": 1683.99,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 15619362816,
+            "mean_system_ram_used_bytes": 15466431829.333334,
+            "max_system_ram_percent": 45.6,
+            "mean_system_ram_percent": 45.12222222222223,
+            "max_cpu_percent": 40.1,
+            "mean_cpu_percent": 20.866666666666667,
+            "max_python_process_rss_bytes": 90152960,
+            "mean_python_process_rss_bytes": 90151139.55555555,
+            "max_ollama_process_rss_bytes": 222859264,
+            "mean_ollama_process_rss_bytes": 222740935.1111111,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 4315.222222222223,
+            "max_gpu_util_percent": 93.0,
+            "mean_gpu_util_percent": 68.77777777777777,
+            "max_gpu_temperature_c": 58.4,
+            "mean_gpu_temperature_c": 56.98888888888889,
+            "max_gpu_power_w": 111.59,
+            "mean_gpu_power_w": 83.59777777777778,
+            "estimated_gpu_joules": 826.5937231612205
+          }
+        },
+        {
+          "request_id": "2603.29541v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.279863099996874,
+          "load_seconds": 5.6634062,
+          "prompt_eval_seconds": 0.883264,
+          "eval_seconds": 5.619717,
+          "total_server_seconds": 12.1813686,
+          "prompt_tokens": 1220,
+          "generated_tokens": 444,
+          "tokens_per_second": 79.01,
+          "prompt_tokens_per_second": 1381.24,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 18133970944,
+            "mean_system_ram_used_bytes": 17162011033.6,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 50.08,
+            "max_cpu_percent": 49.6,
+            "mean_cpu_percent": 23.630000000000003,
+            "max_python_process_rss_bytes": 90152960,
+            "mean_python_process_rss_bytes": 90151321.6,
+            "max_ollama_process_rss_bytes": 223547392,
+            "mean_ollama_process_rss_bytes": 223224627.2,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4824.7,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 51.9,
+            "max_gpu_temperature_c": 57.9,
+            "mean_gpu_temperature_c": 55.75,
+            "max_gpu_power_w": 112.75,
+            "mean_gpu_power_w": 77.007,
+            "estimated_gpu_joules": 833.9702511930466
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 27.50803050000104,
+  "seconds_end_to_end": 72.78670450000209,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "929f80ec6a8f491750b280ccd780239adc327080de8cb9dc3534036f86b1e62a"
+}

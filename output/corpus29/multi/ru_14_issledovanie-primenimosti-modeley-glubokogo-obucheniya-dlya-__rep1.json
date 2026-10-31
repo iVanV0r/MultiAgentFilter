@@ -1,0 +1,375 @@
+{
+  "paper_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-",
+  "filename": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M2",
+      "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+      "status": "accepted",
+      "reason": "Обозначен пробел (неверная нейтральная оценка при смешанных чувствах) и он связан с необходимостью перехода к ABSA, что является направлением исследования.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+      "status": "rejected",
+      "reason": "Это описание технического ограничения эксперимента, а не научный пробел, который данная работа систематизирует или решает.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "в процессе тестирования 3224 токена были абсолютно неизвестными для нейросетевой модели и имели случайным образом инициализированные векторные представления",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Представлена научная проблема, но отсутствует обсуждение отсутствующих методов для аспектного анализа тональности текстовых сообщений на естественном языке",
+            "source_page": 1,
+            "support_quote": "Рассмотрена задача аспектного анализа тональности текстовых сообщений на естественном языке",
+            "verified": true
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "remove",
+            "reason": "Проблема не соответствует определению: в тексте (страница 1) проблема обозначена как «Рассмотрена задача аспектного анализа тональности...», но отсутствует обсуждение отсутствующих методов для её решения, что делает формулировку описательной, а не научной проблемой."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "reason": "Уточнена формулировка проблемы с акцентом на практическое ограничение существующих систем (страница 2), чтобы избежать двусмысленности и четко обозначить пробел в методах обработки смешанных чувств."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "reason": "Формулировка корректно указывает на недостаток данных о работе моделей на неизвестных токенах (страница 9), что является обоснованной научной проблемой."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "remove",
+            "reason": "Утверждение о гибкости многослойных сетей не представляет собой пробел в знаниях или недостаток методов, а скорее констатацию факта/гипотезы без указания на конкретную проблему исследования."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "remove",
+          "reason": "Проблема не соответствует определению: в тексте (страница 1) проблема обозначена как «Рассмотрена задача аспектного анализа тональности...», но отсутствует обсуждение отсутствующих методов для её решения, что делает формулировку описательной, а не научной проблемой.",
+          "old_statement": "Недостаток существующих методов для аспектного анализа тональности текстовых сообщений на естественном языке"
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Уточнена формулировка проблемы с акцентом на практическое ограничение существующих систем (страница 2), чтобы избежать двусмысленности и четко обозначить пробел в методах обработки смешанных чувств.",
+          "old_statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+          "new_statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Формулировка корректно указывает на недостаток данных о работе моделей на неизвестных токенах (страница 9), что является обоснованной научной проблемой.",
+          "old_statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+          "new_statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели"
+        },
+        {
+          "candidate_id": "M4",
+          "action": "remove",
+          "reason": "Утверждение о гибкости многослойных сетей не представляет собой пробел в знаниях или недостаток методов, а скорее констатацию факта/гипотезы без указания на конкретную проблему исследования.",
+          "old_statement": "Многослойные нейросетевые модели могут быть более гибкими и показывать лучшие результаты по сравнению с однослойными."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M2 четко формулирует пробел (неверная нейтральная оценка при смешанных чувствах) и подкрепляет его цитатой, указывающей на проблему множественных тональных оценок. M3 описывает ограничение эксперимента (неизвестные токены), но это скорее техническое ограничение, а не научный пробел, который данная работа систематизирует или решает.",
+        "decisions": [
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначен пробел (неверная нейтральная оценка при смешанных чувствах) и он связан с необходимостью перехода к ABSA, что является направлением исследования."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Это описание технического ограничения эксперимента, а не научный пробел, который данная работа систематизирует или решает."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "в процессе тестирования 3224 токена были абсолютно неизвестными для нейросетевой модели и имели случайным образом инициализированные векторные представления",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M2",
+          "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+          "status": "accepted",
+          "reason": "Обозначен пробел (неверная нейтральная оценка при смешанных чувствах) и он связан с необходимостью перехода к ABSA, что является направлением исследования.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+          "status": "rejected",
+          "reason": "Это описание технического ограничения эксперимента, а не научный пробел, который данная работа систематизирует или решает.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "в процессе тестирования 3224 токена были абсолютно неизвестными для нейросетевой модели и имели случайным образом инициализированные векторные представления",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.235748799997964,
+          "load_seconds": 2.6311984,
+          "prompt_eval_seconds": 0.547795,
+          "eval_seconds": 0.953119,
+          "total_server_seconds": 4.1538386,
+          "prompt_tokens": 966,
+          "generated_tokens": 80,
+          "tokens_per_second": 83.93,
+          "prompt_tokens_per_second": 1763.43,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 18501107712,
+            "mean_system_ram_used_bytes": 16348843008.0,
+            "max_system_ram_percent": 54.0,
+            "mean_system_ram_percent": 47.7,
+            "max_cpu_percent": 39.5,
+            "mean_cpu_percent": 28.9,
+            "max_python_process_rss_bytes": 94855168,
+            "mean_python_process_rss_bytes": 94851072.0,
+            "max_ollama_process_rss_bytes": 222920704,
+            "mean_ollama_process_rss_bytes": 222819328.0,
+            "max_gpu_mem_mb": 4832.0,
+            "mean_gpu_mem_mb": 3149.25,
+            "max_gpu_util_percent": 90.0,
+            "mean_gpu_util_percent": 54.5,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 55.625,
+            "max_gpu_power_w": 113.73,
+            "mean_gpu_power_w": 69.3875,
+            "estimated_gpu_joules": 211.88541744947435
+          }
+        },
+        {
+          "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 8.50667009999961,
+          "load_seconds": 3.5354334,
+          "prompt_eval_seconds": 1.008887,
+          "eval_seconds": 3.877194,
+          "total_server_seconds": 8.4442647,
+          "prompt_tokens": 1590,
+          "generated_tokens": 256,
+          "tokens_per_second": 66.03,
+          "prompt_tokens_per_second": 1575.99,
+          "hardware": {
+            "samples": 7,
+            "max_system_ram_used_bytes": 16010059776,
+            "mean_system_ram_used_bytes": 15802049682.285715,
+            "max_system_ram_percent": 46.7,
+            "mean_system_ram_percent": 46.114285714285714,
+            "max_cpu_percent": 46.6,
+            "mean_cpu_percent": 31.857142857142858,
+            "max_python_process_rss_bytes": 94855168,
+            "mean_python_process_rss_bytes": 94852827.42857143,
+            "max_ollama_process_rss_bytes": 222994432,
+            "mean_ollama_process_rss_bytes": 222749842.2857143,
+            "max_gpu_mem_mb": 5334.0,
+            "mean_gpu_mem_mb": 4101.0,
+            "max_gpu_util_percent": 90.0,
+            "mean_gpu_util_percent": 64.57142857142857,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 56.75714285714286,
+            "max_gpu_power_w": 113.25,
+            "mean_gpu_power_w": 82.11428571428571,
+            "estimated_gpu_joules": 609.7797946929932
+          }
+        },
+        {
+          "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 10.187460799999826,
+          "load_seconds": 5.675506,
+          "prompt_eval_seconds": 0.755087,
+          "eval_seconds": 3.486091,
+          "total_server_seconds": 9.9287041,
+          "prompt_tokens": 1019,
+          "generated_tokens": 278,
+          "tokens_per_second": 79.75,
+          "prompt_tokens_per_second": 1349.51,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 18519711744,
+            "mean_system_ram_used_bytes": 17426752398.22222,
+            "max_system_ram_percent": 54.0,
+            "mean_system_ram_percent": 50.84444444444445,
+            "max_cpu_percent": 32.6,
+            "mean_cpu_percent": 25.155555555555555,
+            "max_python_process_rss_bytes": 94855168,
+            "mean_python_process_rss_bytes": 94853347.55555555,
+            "max_ollama_process_rss_bytes": 223674368,
+            "mean_ollama_process_rss_bytes": 223562410.66666666,
+            "max_gpu_mem_mb": 6190.0,
+            "mean_gpu_mem_mb": 4664.777777777777,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 44.888888888888886,
+            "max_gpu_temperature_c": 58.0,
+            "mean_gpu_temperature_c": 55.12222222222223,
+            "max_gpu_power_w": 112.96,
+            "mean_gpu_power_w": 68.06,
+            "estimated_gpu_joules": 693.9573190927506
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 22.969004999999015,
+  "seconds_end_to_end": 73.63227679999909,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "69f67b00972f0d04964aadef309a998c34902eadae56f8899affaf9595ca2be9"
+}

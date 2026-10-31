@@ -1,0 +1,1449 @@
+{
+  "description": "Human reference annotations: 30 scientific papers, 96 problems.",
+  "operational_definition": "Явно или косвенно обозначенный пробел в знаниях либо недостаток существующих методов, данных или инструментов, на устранение которого направлена работа.",
+  "annotation_scope": "full_text_all_pdf_pages",
+  "gold_version": "human_gold_v1",
+  "papers": [
+    {
+      "paper_id": "2603.30025v1(1)",
+      "filename": "2603.30025v1(1).pdf",
+      "language": "en",
+      "pdf_pages_examined": 13,
+      "problems": [
+        {
+          "id": "2603.30025v1(1)-P01",
+          "statement": "Существующие подходы к обнаружению проверяемых утверждений оценивают только текст самого утверждения и не используют внешний контекст об упомянутых сущностях и событиях, хотя именно такой контекст может быть необходим для определения проверяемости.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "However, across both check-worthiness and verifiable claim detection, existing approaches share a common limitation in that they rely solely on the claim text itself, whether through linguistic heuristics and surface-level features or, more recently, large language models (LLMs) using in-context learning and fine-tuning. For verifiable claim detection specifically, this leaves a notable gap.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.30025v1(1)-P02",
+          "statement": "Критерии check-worthiness являются субъективными: важность, вредность и общественная значимость утверждений зависят от институционального, регионального, культурного и временного контекста, что ограничивает обобщаемость моделей.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "However, these criteria are inherently subjective, as what counts as important, harmful, or attention-worthy varies across institutions, regions, and cultural contexts, and shifts over time as events evolve and public priorities change, limiting the generalizability of models trained under such criteria.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.30025v1(1)-P03",
+          "statement": "Неясно, при каких условиях контекстная аугментация действительно улучшает обнаружение проверяемых утверждений, поскольку её эффект зависит от домена, архитектуры модели, режима обучения и качества извлечённой информации.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "A central question guiding our analysis is whether and under what conditions such context augmentation improves verifiable claim detection, as its effectiveness may vary depending on factors such as domain characteristics, model architecture, and the quality of retrieved information.",
+              "section_hint_from_protocol": "введение",
+              "page": 2,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29997v1(2)",
+      "filename": "2603.29997v1(2).pdf",
+      "language": "en",
+      "pdf_pages_examined": 24,
+      "problems": [
+        {
+          "id": "2603.29997v1(2)-P01",
+          "statement": "Машинное аналогическое рассуждение по нарративам остаётся сложной задачей, потому что когнитивные движки структурного маппинга требуют заранее извлечённых структурированных сущностей, а напрямую работать с неструктурированными историями не могут.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Yet, analogies between narrative structures remain challenging for machines. Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities",
+              "section_hint_from_protocol": "аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29997v1(2)-P02",
+          "statement": "LLM и существующие модели аналогического рассуждения по нарративам плохо справляются с дальними аналогиями: они чувствительны к формату промпта и поверхностному сходству историй, поэтому могут выбирать лексически близкую дизаналогию вместо структурно правильной аналогии.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives. Analogies between narratives, as in Figure 1, have only recently gained interest in AI and NLP, revealing human-level performance on near analogies (high surface similarity), but low, and often below-random, performance on far analogies (across two domains with low surface similarity).",
+              "section_hint_from_protocol": "аннотация",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29997v1(2)-P03",
+          "statement": "Отсутствует единый концептуальный и вычислительный способ абстрагировать поверхностные формы нарративов так, чтобы сохранить их структурную и функциональную организацию для последующего аналогического маппинга.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "we note the lack of a unified conceptual and computational method for abstracting surface forms while preserving narrative structure.",
+              "section_hint_from_protocol": "обзор литературы, стр. 4",
+              "page": 4,
+              "page_hint_from_protocol": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29846v1",
+      "filename": "2603.29846v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 24,
+      "problems": [
+        {
+          "id": "2603.29846v1-P01",
+          "statement": "LLM в многоагентных средах должны уметь передавать полезную информацию союзнику, одновременно ограничивая раскрытие чувствительных деталей для наблюдателя или противника, однако такая стратегическая коммуникация при асимметричной информации остаётся сложной и недостаточно развитой способностью текущих моделей.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Large language models (LLMs) are increasingly deployed in multi-agent settings where communication must balance informativeness and secrecy. In such settings, an agent may need to signal information to collaborators while preventing an adversary from inferring sensitive details.",
+              "section_hint_from_protocol": "аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29846v1-P02",
+          "statement": "Существующие бенчмарки LLM не измеряют стратегическую коммуникацию при асимметричной информации и не дают объективной воспроизводимой схемы, которая одновременно разделяет полезность сообщения для союзника и утечку информации для противника.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "However, existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information. This yields two complementary metrics: utility, measuring how well the message communicates to collaborators, and leakage, measuring how much information it reveals to an adversary.",
+              "section_hint_from_protocol": "аннотация",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29846v1-P03",
+          "statement": "Современные LLM часто достигают высокой полезности сообщений ценой высокой утечки информации, то есть не умеют стабильно находить хороший баланс между информативностью и секретностью.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+              "section_hint_from_protocol": "Main results, стр. 6",
+              "page": 6,
+              "page_hint_from_protocol": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29801v1",
+      "filename": "2603.29801v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 11,
+      "problems": [
+        {
+          "id": "2603.29801v1-P01",
+          "statement": "Современные системы Named Entity Recognition и Entity Linking заметно деградируют на исторических документах из-за языковой вариативности, OCR-шума и слабой представленности исторических вариантов языка в обучающих корпусах современных моделей.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "State-of-The-Art (SoTA) systems for Named Entity Recognition (NER) and Entity Linking (EL) (together NERL) demonstrate significant performance degradation when applied to historical documents. This degradation stems from multiple factors: the linguistic complexity and variation of historical texts, the presence of noise introduced by Optical Character Recognition (OCR), and the scarce representation of historical...",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29801v1-P02",
+          "statement": "Для исторического итальянского языка не хватает публичных многодоменных NERL-датасетов с train/dev/test разбиением, пригодных не только для оценки, но и для обучения моделей.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Historical Italian exemplifies this challenge: currently, only one dataset, i.e., MHERCL, provides NERL annotations for historical Italian texts. However, this resource is domain-specific (music periodicals from the 20th century), contains only a test split, and therefore offers limited utility for training purposes.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29801v1-P03",
+          "statement": "Создание исторических NERL-ресурсов затруднено отсутствием общепринятых стандартов аннотации и высокой стоимостью ручной экспертной разметки, что ограничивает интероперабельность, переиспользование и масштабирование корпусов.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "First, the field lacks widely adopted community standards for annotation schemas and guidelines, limiting interoperability and reusability across projects. Second, the time and cost required for expert human annotation create a significant bottleneck, leaving many historical language varieties severely under-resourced.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29801v1-P04",
+          "statement": "Научные цифровые издания содержат качественные экспертные аннотации сущностей, но остаются недостаточно использованным ресурсом для NLP, поскольку требуется методология систематического извлечения и преобразования SDE-аннотаций в переиспользуемые NERL-датасеты.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "In this landscape, Scholarly Digital Editions (SDEs) emerge as a promising yet underutilized resource. SDEs are digital resources that provide manually curated annotations of named entities in TEI/XML format, created by domain experts. ... However, the systematic extraction and transformation of SDE annotations into reusable datasets remains an open methodological challenge.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29801v1-P05",
+          "statement": "В исторических текстах часть сущностей отсутствует в Wikidata и других графах знаний, поэтому NERL-системам требуется поддержка NIL prediction для обнаружения сущностей, не сопоставимых с существующими идентификаторами.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Moreover, some entities do not exist in Wikidata. This last category requires NIL prediction: the ability to identify entities that cannot be mapped to any KG entry.",
+              "section_hint_from_protocol": "Dataset",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29665v1",
+      "filename": "2603.29665v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 12,
+      "problems": [
+        {
+          "id": "2603.29665v1-P01",
+          "statement": "Reference-based оценка policy adherence в LLM-агентных workflow сравнивает только финальное состояние системы с эталоном и поэтому пропускает latent policy failures / near-misses: случаи, когда агент пришёл к правильному результату, но обошёл обязательные проверки политики; для их обнаружения нужна trajectory-level метрика, оценивающая decision process, а не только final outcome.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Evaluation of policy adherence in LLM-based agentic workflows is typically performed by comparing the final system state against a predefined ground truth. While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances. We propose and evaluate a novel metric for detecting...",
+              "section_hint_from_protocol": "аннотация",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29665v1-P02",
+          "statement": "LLM-агенты могут систематически пропускать обязательные шаги верификации перед вызовом mutating tools, особенно когда пользователь сам сообщает нужные данные, из-за чего обычная оценка считает сценарий успешным.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "the following request causes virtually all LLM-based agents to bypass retrieving customer details required to verify their membership prior to computing the payment amount",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29665v1-P03",
+          "statement": "Латентные сбои создают риск adversarial exploitation: ошибка, незаметная в обычном неатакующем сценарии, может привести к серьёзному нарушению политики, если пользователь намеренно предоставляет ложные данные.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "However, it may lead to significant harm in adversarial cases, where a customer falsely claims to be a Gold member while actually holding a lower membership tier.",
+              "section_hint_from_protocol": "введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29559v1",
+      "filename": "2603.29559v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 14,
+      "problems": [
+        {
+          "id": "2603.29559v1-P01",
+          "statement": "LLM всё чаще применяются для автоматического оценивания учебных ответов, но их решения остаются ненадёжными: они могут расходиться с человеческими оценками, ошибаться на сложных задачах и ухудшаться на низкокачественных студенческих работах, поэтому неясно, когда такому оцениванию можно доверять.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Large Language Models (LLMs) are increasingly used for automated grading, but their reliability remains questionable. Studies have found that GPT-4 produces scores that differ from human evaluators and makes common arithmetic errors that reduce accuracy to 20% on complex problems. While LLMs can match human agreement on some dimensions, they achieve only fair agreement on others, and performance degrades substanti...",
+              "section_hint_from_protocol": "введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29559v1-P02",
+          "statement": "Для selective automation в автоматическом оценивании нужна хорошо откалиброванная уверенность LLM, но современные нейросети и LLM часто плохо калиброваны и проявляют систематическую overconfidence, из-за чего заявленная уверенность не соответствует реальной точности.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "The key to effective selective automation is confidence calibration: a confidence score of 0.8 should correspond to 80% accuracy among predictions at that confidence level. Well-calibrated confidence enables principled decisions about when to trust automated grading. Unfortunately, modern neural networks tend to be poorly calibrated, often exhibiting systematic overconfidence, and this problem persists in LLMs.",
+              "section_hint_from_protocol": "введение",
+              "page": 2,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29559v1-P03",
+          "statement": "Существующие способы оценки уверенности LLM-grader имеют неясное соотношение качества и стоимости: self-consistency требует многократного инференса, но может давать худшую калибровку, чем простой self-reported confidence.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Surprisingly, self-consistency remains 38% worse despite requiring 5× the inference cost.",
+              "section_hint_from_protocol": "аннотация / Results",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29559v1-P04",
+          "statement": "Уверенность LLM-grader сильно смещена к высоким значениям, создавая confidence floor: большинство predictions получают высокую confidence, поэтому пороги доверия нельзя задавать интуитивно и нужно калибровать относительно распределения конкретной модели и метода.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Confidence is strongly top-skewed across methods, creating a 'confidence floor' that practitioners must account for when setting thresholds. Pooling self-reported and token-probability outputs, 86% of predictions exceed 0.8; only 0.62% fall below 0.2.",
+              "section_hint_from_protocol": "аннотация / Results",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29541v1",
+      "filename": "2603.29541v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 10,
+      "problems": [
+        {
+          "id": "2603.29541v1-P01",
+          "statement": "Классификация разговорных диалектов по аудио остаётся сложной задачей из-за дефицита размеченной диалектной речи, особенно для языковых вариантов вроде швейцарского немецкого.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Due to the scarcity of labeled dialectal speech, audio dialect classification is a challenging task for most languages, including Swiss German.",
+              "section_hint_from_protocol": "аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29541v1-P02",
+          "statement": "Способность LLM решать низкоресурсные и лингвистически grounded задачи, такие как spoken dialect identification по фонетическим представлениям, остаётся недостаточно изученной; базовые LLM без дополнительной лингвистической информации показывают около случайного уровня, что указывает на недостаточность их предварительных знаний для этой специализированной задачи.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "However, their performance in low-resource and linguistically grounded tasks, such as spoken dialect identification, remains underexplored. ... whether modern LLMs can differentiate between dialects using phonetic representations is under-explored. The LLM baseline shows results around 50%, suggesting it does not have adequate previous knowledge for this task.",
+              "section_hint_from_protocol": "введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29541v1-P03",
+          "statement": "Неясно, насколько добавление лингвистических ресурсов — карт диалектных признаков, истории гласных и правил — помогает LLM использовать фонетические транскрипции для классификации диалектов.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Our findings indicate that, when linguistic information is provided, the LLM predictions improve. ... we provide the model with linguistic information to enable it to go beyond its pretrained knowledge.",
+              "section_hint_from_protocol": "аннотация / методология, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29541v1-P04",
+          "statement": "Качество автоматических фонетических транскрипций ограничивает последующую диалектную классификацию: высокий phone error rate и ошибки ASR снижают надёжность как LLM-агентов, так и человеческой классификации по транскриптам.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "The reported phone error rate (PER) for zero-shot transcription without an LLM is 33.3%. ... The dialect recognition with linguistic resources was likely affected by ASR performance.",
+              "section_hint_from_protocol": "методология / обсуждение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29497v1",
+      "filename": "2603.29497v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 9,
+      "problems": [
+        {
+          "id": "2603.29497v1-P01",
+          "statement": "нет точного и практичного метода оценки приватности текста, потому что приватность контекстуальна и не имеет единого определения.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy (Bambauer et al., 2022; Tesfay et al., 2016).",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29497v1-P02",
+          "statement": "использование больших внешних LLM для оценки чувствительных данных дорого и само создаёт privacy risk.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Second, evaluating sensitive text through third-party APIs introduces additional privacy concerns, as the very data being assessed may not be shareable. This creates a paradox: using powerful external LLMs to evaluate privacy may itself compromise privacy constraints.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29497v1-P03",
+          "statement": "существующие privacy metrics не отражают человеческое восприятие чувствительности текста.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "In privacy-preserving NLP, evaluation commonly relies on proxy metrics such as re-identification success rates, simulated attacks, plausible deniability, or semantic similarity measures (Shahriar et al., 2025). While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+              "section_hint_from_protocol": "обзор литературы",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29403v1",
+      "filename": "2603.29403v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 31,
+      "problems": [
+        {
+          "id": "2603.29403v1-P01",
+          "statement": "нет систематизированного фреймворка безопасности для LLM-as-a-Judge; литература фрагментирована.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Despite the growing number of studies addressing these aspects, the literature remains fragmented, with contributions scattered across different research communities such as natural language processing, software security, and AI safety. As a result, there is currently a lack of a structured framework that systematically organizes the emerging research on the security implications of the LaaJ paradigm.",
+              "section_hint_from_protocol": "введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "2603.29403v1-P02",
+          "statement": "LaaJ уязвим к poisoning/backdoor атакам на этапе обучения.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Tong et al. [50] demonstrate that poisoning as little as 1% of a judge's training data is sufficient to dramatically inflate adversary scores and corrupt safety-critical downstream applications. [...] Even under the weakest assumption of web poisoning, the attack induces a 20% score inflation, while under full weight poisoning assumptions, adversary scores are inflated from 1.5/5 to 4.9/5.",
+              "section_hint_from_protocol": "раздел 5.1.1 — Training-Time Attacks",
+              "page": 9,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29403v1-P03",
+          "statement": "rubric manipulation может смещать предпочтения судьи через естественно-языковые правки критериев.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "RIPD describes a fundamentally different and more dangerous failure mode where an adversary operating purely through natural-language rubric edits, without any access to model parameters, training data, or evaluation inputs, can systematically steer an LLM judge's preferences away from a trusted human reference on target domains, while the judge continues to perform reliably on benchmark validation sets.",
+              "section_hint_from_protocol": "раздел 5.1.1 — Rubric/Protocol Manipulation Attacks, стр. 10",
+              "page": 10,
+              "page_hint_from_protocol": 10
+            }
+          ]
+        },
+        {
+          "id": "2603.29403v1-P04",
+          "statement": "inference-time prompt injection/adversarial strings могут обходить защиту и менять оценки.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Our study highlights several limitations of existing approaches, including the vulnerability of LLM-based judges to adversarial manipulation, the lack of standardized evaluation methodologies, and the limited availability of robust benchmarks for assessing the security and reliability of LaaJ frameworks.",
+              "section_hint_from_protocol": "раздел 9 — заключение, стр. 26",
+              "page": 26,
+              "page_hint_from_protocol": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29399v1",
+      "filename": "2603.29399v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 13,
+      "problems": [
+        {
+          "id": "2603.29399v1-P01",
+          "statement": "ошибки в benchmark'е существенно недооценивают возможности AI agents.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "We revisit these results and identify two factors that led to a substantial underestimation of agent capabilities. First, re-evaluating ELT-Bench with the same agent framework but upgrading only the underlying large language model reveals that the extraction and loading stage is largely solved, while transformation performance improves dramatically. Second, we develop an Auditor-Corrector methodology... to systema...",
+              "section_hint_from_protocol": "аннотация",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29399v1-P02",
+          "statement": "устаревшая LLM в исходной оценке привела к преждевременным выводам о непригодности агентов.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Yet, the initial baseline results were stark: SWE-Agent with Claude Sonnet 3.5 achieved only a 37% success rate on data extraction and loading and a mere 1% on data transformation. These figures suggested that current AI agents are far from practical utility in real-world data engineering tasks.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29399v1-P03",
+          "statement": "annotation errors в data-engineering benchmarks системно искажают оценку прогресса.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "More broadly, our findings echo recent observations of pervasive annotation errors in text-to-SQL benchmarks, suggesting that benchmark quality issues are a systemic problem across data engineering evaluation. Systematic quality auditing should become standard practice, especially for benchmarks that evaluate complex, multi-step agentic tasks.",
+              "section_hint_from_protocol": "аннотация",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29346v1",
+      "filename": "2603.29346v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 5,
+      "problems": [
+        {
+          "id": "2603.29346v1-P01",
+          "statement": "low-resource languages не имеют стандартизированных структурированных lexical resources, что мешает NLP и knowledge equity.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "The selected books, while authoritative, used different linguistic methodologies and internal structures. Some sources provided long descriptive text for word explanations, while others offered only simple translations or tables. Key lexical fields, such as etymology and grammatical gender, were an integral part of some sources, but completely absent in others. This required a unified consolidation approach and a...",
+              "section_hint_from_protocol": "III. методология — B",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29346v1-P02",
+          "statement": "цифровое доминирование high-resource languages усиливает языковое неравенство.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "The digital age has amplified the academic and technological dominance of high-resource languages, notably English, creating a significant linguistic disparity that hinders global knowledge equity [1, 2]. This challenge is particularly acute for underrepresented, unstandardized languages, which often lack the formal, structured lexical resources necessary to articulate modern scientific and technical concepts [3].",
+              "section_hint_from_protocol": "I. введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29346v1-P03",
+          "statement": "редакторы Wikipedia используют ad-hoc терминологию, что ведёт к inconsistency и edit conflicts.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies, frustrating edit conflicts, and ultimately, hampering the development of comprehensive and trustworthy knowledge bases. An additional complexity comes from the fact that most editors are volunteer non-subject matter experts, who do not hav...",
+              "section_hint_from_protocol": "I. введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29244v1",
+      "filename": "2603.29244v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 6,
+      "problems": [
+        {
+          "id": "2603.29244v1-P01",
+          "statement": "критически мало NLP-ресурсов для африканских языков при большом числе носителей.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications. African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+              "section_hint_from_protocol": "1. введение",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29244v1-P02",
+          "statement": "носители этих языков исключаются из преимуществ ASR, MT, TTS и других NLP-технологий.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Automated speech recognition, machine translation, and text-to-speech systems are deployed at scale for European and Asian languages, but speakers of African languages are largely excluded from the benefits of modern NLP.",
+              "section_hint_from_protocol": "1. введение",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29244v1-P03",
+          "statement": "evaluation benchmarks растут быстрее, чем реальные training data.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Recent efforts including FLORES-200, FLEURS, MasakhaNER, and AfricaNLP workshops have begun addressing this gap, but progress is uneven. Evaluation benchmarks have grown faster than training data, and many existing datasets cover only text modalities or focus on languages already well-served by international NLP programs.",
+              "section_hint_from_protocol": "1. введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29112v1",
+      "filename": "2603.29112v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 29,
+      "problems": [
+        {
+          "id": "2603.29112v1-P01",
+          "statement": "нет benchmark'ов для оценки способности LLM извлекать interests пользователя из behavioral history.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Despite rapid growth in LLM benchmarks for reasoning, coding, and knowledge retrieval, none evaluate whether LLMs can accurately extract user interests from behavioral interaction histories.",
+              "section_hint_from_protocol": "введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29112v1-P02",
+          "statement": "recommender metrics оценивают item prediction, а не качество user understanding.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Traditional RecSys evaluation typically measures single-item engagement prediction (e.g., click-through rate, next-item ranking). Such evaluations conflate user interest with confounding factors like positional bias in ranked lists, temporal context such as time of day, and variation in content production quality.",
+              "section_hint_from_protocol": "введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29112v1-P03",
+          "statement": "текстовые профили пользователей не проверяются на factual grounding в истории поведения.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "No existing metric verifies textual explanations against behavioral data. We introduce IG to fill this role: it checks whether a predicted interest is supported by specific engagement signals in the User Interaction History (UIH), separating plausible hallucinations from grounded inferences.",
+              "section_hint_from_protocol": "обзор литературы, стр. 3",
+              "page": 3,
+              "page_hint_from_protocol": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.29025v1",
+      "filename": "2603.29025v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 26,
+      "problems": [
+        {
+          "id": "2603.29025v1-P01",
+          "statement": "LLM систематически следуют surface heuristic и игнорируют implicit feasibility constraint.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint. [...] Every model recommended walking; the correct answer is to drive, because you cannot wash a car that is not at the car wash.",
+              "section_hint_from_protocol": "аннотация / введение",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.29025v1-P02",
+          "statement": "existing literature измеряет эвристики только через accuracy, но не объясняет механизм сбоя.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Yet this literature overwhelmingly measures shortcut reliance through accuracy—a binary signal that reveals that the model fails but not why.",
+              "section_hint_from_protocol": "введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2603.29025v1-P03",
+          "statement": "нет систематического анализа, какие surface cues запускают heuristic override.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "However, no prior study has provided a systematic analysis that (i) identifies which surface features trigger the heuristic, (ii) measures how robustly it persists under controlled perturbation, or (iii) characterises the reasoning traces that distinguish correct from incorrect responses.",
+              "section_hint_from_protocol": "введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.28643v1",
+      "filename": "2603.28643v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 38,
+      "problems": [
+        {
+          "id": "2603.28643v1-P01",
+          "statement": "традиционная разработка psychological scales дорогая и трудоёмкая.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Traditional scale development typically requires a team of content experts to draft items, multiple rounds of review and revision, and large-scale pilot testing before psychometric evaluation can even begin — a process that can span months or years and cost tens of thousands of dollars (Fenn et al., 2020).",
+              "section_hint_from_protocol": "обсуждение, стр. 34",
+              "page": 34,
+              "page_hint_from_protocol": 34
+            }
+          ]
+        },
+        {
+          "id": "2603.28643v1-P02",
+          "statement": "нет автоматизированного pipeline, объединяющего LLM item generation и psychometric structural validation.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "In AIGENIE, item content produced by LLMs (or by humans) is subjected to rigorous quantitative evaluation prior to any human data collection, enabling the development and structural validation of entire scales in silico.",
+              "section_hint_from_protocol": "введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "2603.28643v1-P03",
+          "statement": "сгенерированные item pools страдают redundancy.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "UVA is used iteratively to detect and remove items with excessive semantic overlap. UVA identifies redundant item pairs or sets based on weighted topological overlap (wTO) within the network, retaining only the most unique representative from each redundant cluster.",
+              "section_hint_from_protocol": "введение (Step 3 of pipeline), стр. 4",
+              "page": 4,
+              "page_hint_from_protocol": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.28537v2",
+      "filename": "2603.28537v2.pdf",
+      "language": "en",
+      "pdf_pages_examined": 7,
+      "problems": [
+        {
+          "id": "2603.28537v2-P01",
+          "statement": "нет доступа к качественным domain-specific данным для ASAG из-за privacy/IP restrictions.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Access to high-quality domain-specific data is commonly one of the biggest obstacles in natural language research, especially for under-explored tasks. [...] certain potentially highly scientifically valuable tasks and domains are heavily restricted due to privacy regulations and intellectual property protections. The lack of access to these data restricts the research on it to specific institutions, and also limi...",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28537v2-P02",
+          "statement": "ценный PISA/OECD dataset нельзя публиковать из-за NDA.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "our research team was granted privileged access to a closed-source dataset containing the relevant information from previous iterations of the Programme for International Student Assessment (PISA) test by OECD. However, because access to this dataset is bound by a non-disclosure agreement, it cannot be published or shared directly.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28537v2-P03",
+          "statement": "открытые datasets ограничены доменом, часто без rubrics или только с правильными ответами.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Most openly available datasets fail to meet our criteria. They are typically restricted to a single domain, contain only correct answers, or lack grading rubrics.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.28351v1",
+      "filename": "2603.28351v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 17,
+      "problems": [
+        {
+          "id": "2603.28351v1-P01",
+          "statement": "существующие evaluation practices не отвечают, какие аспекты subjectivity должна захватывать метрика.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "It remains a question whether our evaluation practices align with these models' objectives. This position paper proposes seven evaluation desiderata for subjectivity-sensitive models... To this end, we address the following question: which aspects of subjectivity should evaluation metrics capture?",
+              "section_hint_from_protocol": "аннотация / введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28351v1-P02",
+          "statement": "LMs collapse к dominant viewpoint и подавляют minority voices из-за preference alignment.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Yet, such models have been shown to collapse to a specific view (Hayati et al., 2024), typically as a consequence of how labels are presented (aggregated to a single majority label) or due to prevalent preference-tuning paradigms (such as RLHF (Ouyang et al., 2022) and DPO (Rafailov et al., 2023)) that optimize for the majority vote or general preference (Casper et al., 2023). Obfuscating minority or diverging vie...",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28351v1-P03",
+          "statement": "ambiguity и polyphony смешиваются, хотя это разные типы subjective input.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "These two have been studied in isolation. As illustrated in Section 3, the two types of subjectivity can co-occur and understanding how a model handles this interplay can help in gaining broader insights into the model's sensitivity to subjective input... We characterize model behavior when dealing with different sources of subjectivity on two dimensions: ambiguity and polyphony... an aspect that has not yet been...",
+              "section_hint_from_protocol": "раздел 3 / раздел 7",
+              "page": 3,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2603.28304v1",
+      "filename": "2603.28304v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 15,
+      "problems": [
+        {
+          "id": "2603.28304v1-P01",
+          "statement": "выбор temperature в LLM-as-a-Judge обычно эмпирический и не имеет принципиального обоснования.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "researchers commonly employ fixed temperature configurations during the evaluation process — with values of 0.1 and 1.0 being the most prevalent choices — a convention that is largely empirical rather than principled.",
+              "section_hint_from_protocol": "аннотация",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28304v1-P02",
+          "statement": "неизвестно, влияет ли temperature на judge quality и нужны ли разные значения для разных задач.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Does the temperature setting influence the evaluative performance of LLM judges, and is it necessary to configure different temperatures for evaluation?",
+              "section_hint_from_protocol": "введение / Research Question",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2603.28304v1-P03",
+          "statement": "temperature снижает reproducibility: вызывает volatility, positional bias и inconsistency.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "existing research reveals that LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency, thus undermining the interpretability and reliability of the assessments.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2604.02209v1",
+      "filename": "2604.02209v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 10,
+      "problems": [
+        {
+          "id": "2604.02209v1-P01",
+          "statement": "Arabic speech NER remains underexplored because there are few annotated datasets and standardized benchmarks for morphologically complex Arabic speech.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "section_hint_from_protocol": "аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2604.02209v1-P02",
+          "statement": "Cascaded ASR-to-NER pipelines propagate transcription errors into downstream entity recognition.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "However, this pipeline suffers from error propagation, where transcription errors negatively impact downstream entity recognition.",
+              "section_hint_from_protocol": "введение, стр. 1-2",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "2604.02209v1-P03",
+          "statement": "End-to-end named entity recognition from Arabic speech is insufficiently studied compared with high-resource languages.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "These studies demonstrate the viability of joint speech-to-entity learning, and motivate extending this paradigm to morphologically rich languages such as Arabic, which remain underexplored due to the limited availability of annotated datasets and standardized benchmarks.",
+              "section_hint_from_protocol": "введение, стр. 2",
+              "page": 1,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "2604.02209v1-P04",
+          "statement": "NER performance degrades on rare entity classes because the Arabic speech dataset has a strongly imbalanced class distribution.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "CV-18 NER dataset exhibits a highly imbalanced class distribution, with the PERS category dominating all splits, while several entity types such as LAW, CURR, PERCENT, and PRODUCT are only sparsely represented.",
+              "section_hint_from_protocol": "Dataset / обсуждение, стр. 4-8",
+              "page": null,
+              "page_hint_from_protocol": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "2604.02171v1",
+      "filename": "2604.02171v1.pdf",
+      "language": "en",
+      "pdf_pages_examined": 11,
+      "problems": [
+        {
+          "id": "2604.02171v1-P01",
+          "statement": "software mentions — отдельный тип сущностей, но для них нет dedicated cross-document coreference treatment/benchmark.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Software mentions, with their particular mix of proper names, versioned identifiers, and abbreviations, constitute a distinct entity type that has received no dedicated coreference treatment. SOMD 2026 thus serves as the first standardised benchmark for this task.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2604.02171v1-P02",
+          "statement": "неясно, может ли simple fuzzy matching конкурировать с contextual embeddings.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "RQ1 Can a simple, unsupervised lexical baseline compete with a contextual embedding approach on cross-document software coreference? Given the high surface regularity of software names, we hypothesize that fuzzy string matching may constitute a strong baseline that is difficult to surpass without task-specific supervision.",
+              "section_hint_from_protocol": "введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "2604.02171v1-P03",
+          "statement": "lexical и contextual systems по-разному деградируют под mention boundary/substitution noise.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Subtask 2 operates over automatically predicted mentions, reflecting real-world conditions where upstream mention detection is imperfect and introduces noise into the coreference input [...] the noise level introduced by the automatic mention detector in Subtasks 2 and 3 is inherent to the upstream pipeline and cannot be directly quantified.",
+              "section_hint_from_protocol": "Task and Corpus / Experimental Setup",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)",
+      "filename": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1).pdf",
+      "language": "ru",
+      "pdf_pages_examined": 5,
+      "problems": [
+        {
+          "id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)-P01",
+          "statement": "нужна систематизация neural network approaches для NLP.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Одним из наиболее перспективных и развивающихся подходов к обработке естественного языка являются нейронные сети. [...] В данной статье мы рассмотрим основные достижения в этой области и примеры применения нейронных сетей.",
+              "section_hint_from_protocol": "Аннотация / Введение",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)-P02",
+          "statement": "MT плохо работает со specialized texts, slang, idioms.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Однако автоматический перевод также имеет свои ограничения, особенно при переводе текста с высокой степенью специализации или с использованием сленга и идиом. Некоторые переводы могут также содержать ошибки или быть непонятными для носителей языка, что делает их менее эффективными в коммуникации.",
+              "section_hint_from_protocol": "Раздел 1. Автоматический перевод",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)-P03",
+          "statement": "speech recognition страдает от accents, dialects и noise.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Несмотря на значительный прогресс в области распознавания речи, существуют некоторые проблемы, связанные с точностью и производительностью. Одной из основных проблем является различие в произношении слов в зависимости от акцента и диалекта говорящего. Также влияют на точность распознавания шумы и другие искажения в звуковом сигнале.",
+              "section_hint_from_protocol": "Раздел 2. Распознавание речи",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey",
+      "filename": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 9,
+      "problems": [
+        {
+          "id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey-P01",
+          "statement": "генерация осмысленного текста на основе корпуса остаётся нетривиальной задачей.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Проблема генерации текста является актуальной, поскольку языковые модели нейронных сетей входят в нашу жизнь очень активно. Это и поисковики, отвечающие на запросы пользователей, и автоматическое перефразирование текста в помощь копирайтерам.",
+              "section_hint_from_protocol": "Аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey-P02",
+          "statement": "естественный язык не задаёт строго детерминированный алгоритм анализа.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Отличие естественного языка от формального (формулы, язык программирования и т.д.) заключается в том, что ошибки не сильно влияют на понимание. Поэтому строго детерминированный процесс анализа текста машинными алгоритмами отсутствует.",
+              "section_hint_from_protocol": "Введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey-P03",
+          "statement": "neural text generation изучена недостаточно по сравнению с другими методами.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Это перспективное направление является самым малоизученным во всей линейке инструментов генерации текста.",
+              "section_hint_from_protocol": "Аннотация, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta",
+      "filename": "ru_05_metody-izvlecheniya-informatsii-iz-teksta.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 8,
+      "problems": [
+        {
+          "id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta-P01",
+          "statement": "нужно извлекать structured information из unstructured text.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Наибольшие трудности возникают при извлечении знаний из открытых областей, а также при обработке \"временных\" знаний.",
+              "section_hint_from_protocol": "Введение",
+              "page": 1,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta-P02",
+          "statement": "open IE требует масштабируемости и работы с heterogeneous web data.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Большинство проблем, возникающих при автоматическом построении базы знаний по вебу, связано с количеством и неоднородностью данных. На сегодняшний день в вебе можно найти миллионы сущностей, сотни тысяч классов, сотни типов отношений и сотни тысяч фактов.",
+              "section_hint_from_protocol": "Введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta-P03",
+          "statement": "есть trade-off precision/recall при relation extraction.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Извлечение информации (information extraction) – это разновидность информационного поиска, при которой из неструктурированного текста выделяется структурированная информация.",
+              "section_hint_from_protocol": "Введение",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley",
+      "filename": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 12,
+      "problems": [
+        {
+          "id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley-P01",
+          "statement": "supervised IE требует трудоёмкой ручной разметки.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Алгоритмы с учителем имеют недостаток сродни системам на основе правил: для их обучения требуется достаточно трудоемкий процесс подготовки обучающих данных.",
+              "section_hint_from_protocol": "Обзор методов извлечения информации",
+              "page": 3,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley-P02",
+          "statement": "возможности embedding models для IE в узких доменах без разметки изучены недостаточно.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Однако не до конца исследованы возможности качественного решения задач извлечения информации в отдельных предметных областях с применением нейросетевых моделей, таких как word2vec, fasttext, paragraph2vec, а также других вариантов распределенных представлений слов, например, GloVe, обучаемых без учителя на больших текстовых корпусах.",
+              "section_hint_from_protocol": "Введение",
+              "page": 2,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley-P03",
+          "statement": "нужно определять тип именованной сущности во фрагментах вакансий без rules/manual labels.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Новизна исследования заключается в применении подходов на основе использования нейросетевых моделей языка в задаче извлечения сущностей из текста, не требующей трудоемкой ручной разметки корпуса для обучения классификаторов или написания сложной системы правил (без применения rule-based подходов).",
+              "section_hint_from_protocol": "Введение",
+              "page": 2,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya",
+      "filename": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 8,
+      "problems": [
+        {
+          "id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya-P01",
+          "statement": "нужно автоматически классифицировать большие массивы текстов по эмоциональной окраске.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Из-за необходимости анализа больших массивов текстовых данных получило развитие направление обработки текста на естественном языке (NLP – Natural Language Processing). Анализ тональности в тексте является одним из основных направлений раздела обработки текста на естественном языке.",
+              "section_hint_from_protocol": "Аннотация / Введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya-P02",
+          "statement": "dictionary/linguistic approach трудоёмок и плохо масштабируется.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Основной недостаток данного подхода в большой сложности подготовки словарей, надо хорошо знать предметную область, для которой составляется словарь. Второй недостаток — это плохая масштабируемость, нельзя использовать один и тот же словарь для разных предметных областей. Одинаковые термины в различных областях могут вносить разный вес в степень эмоциональной окраски.",
+              "section_hint_from_protocol": "Введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya-P03",
+          "statement": "Naive Bayes нарушает independence assumption на текстах.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Но обычно в текстовых документах, предположение о независимости не подтверждается, что делает его слабоэффективным.",
+              "section_hint_from_protocol": "Основная часть, стр. 3",
+              "page": 3,
+              "page_hint_from_protocol": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy",
+      "filename": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 13,
+      "problems": [
+        {
+          "id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy-P01",
+          "statement": "нужен эффективный метод NER для русского языка.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Цель данной работы - разработать эффективный метод для решения задачи распознавания именованных сущностей в русском языке.",
+              "section_hint_from_protocol": "Введение, стр. 1",
+              "page": 1,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        },
+        {
+          "id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy-P02",
+          "statement": "русский язык морфологически и грамматически богат, что усложняет NER.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Русский язык весьма богат как грамматически, так и морфологически. Исходя из этого, для более точного распознавания именованных сущностей, добавим к двунаправленной рекуррентной нейронной сети CRF-модель с выходными весами этой нейронной сети.",
+              "section_hint_from_protocol": "Условные случайные поля, стр. 3",
+              "page": 3,
+              "page_hint_from_protocol": 3
+            }
+          ]
+        },
+        {
+          "id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy-P03",
+          "statement": "RNN страдают от vanishing gradients при долгих зависимостях.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Данного вида сети очень неэффективны в ситуациях, когда необходимо учитывать предыдущую информацию из последовательности для расчёта текущего выхода. Это происходит из-за влияния скрытого состояния или входа с шага t на последующие состояния рекуррентной сети. Сеть экспоненциально затухает.",
+              "section_hint_from_protocol": "Рекуррентная нейронная сеть, стр. 1",
+              "page": null,
+              "page_hint_from_protocol": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov",
+      "filename": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 10,
+      "problems": [
+        {
+          "id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov-P01",
+          "statement": "нужно формально и численно оценивать semantic similarity пар предложений.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "В число наиболее актуальных задач обработки ЕЯ входит разработка методов и алгоритмов установления и формального описания смысла сущностей ЕЯ и последующей численной оценки их попарной семантической близости. Под мерой семантической близости пары текстов или предложений понимается числовая оценка семантической близости этой пары, от точности которой зависит полнота использования потенциальных возможностей семантич...",
+              "section_hint_from_protocol": "Введение / основной текст, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov-P02",
+          "statement": "нужно понять применимость и ограничения BERT для этой задачи.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Целью работы является анализ модели BERT как инструмента определения меры смысловой близости предложений ЕЯ.",
+              "section_hint_from_protocol": "Введение / постановка цели, стр. 3",
+              "page": 3,
+              "page_hint_from_protocol": 3
+            }
+          ]
+        },
+        {
+          "id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov-P03",
+          "statement": "BERT теряет информацию о взаимосвязях между masked tokens.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "BERT является автоэнкодером, что обуславливает недостатки модели, в том числе индивидуальное предсказание каждого скрытого слова, приводящее к потере информации о возможных связях между замаскированными словами. При попытке самостоятельного предсказания таких слов в контексте не будут учитываться взаимосвязи между ними.",
+              "section_hint_from_protocol": "Анализ недостатков BERT, стр. 6",
+              "page": 6,
+              "page_hint_from_protocol": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-",
+      "filename": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 11,
+      "problems": [
+        {
+          "id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya--P01",
+          "statement": "классический sentiment analysis недостаточен, когда один объект имеет несколько аспектов с разной тональностью.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки. [...] Система, осуществляющая тернарный анализ тональности, даст нейтральную оценку данному отзыву, взаимно компенсируя положительную и негативную составляющие.",
+              "section_hint_from_protocol": "Введение / постановка задачи, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya--P02",
+          "statement": "нужно проверить применимость deep learning models для aspect sentiment in Russian.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "В рамках данной статьи будет исследовано несколько моделей машинного обучения, основанных на современных нейросетевых алгоритмах, а также проведена их экспериментальная проверка на русскоязычных текстовых данных.",
+              "section_hint_from_protocol": "Введение, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        },
+        {
+          "id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya--P03",
+          "statement": "variable-length text inputs требуют специальных neural representations.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "Особенностью обработки текстовой информации (в отличие, например, от обработки изображений) является нефиксированная размерность обрабатываемых данных. [...] ряд моделей машинного обучения, для которых фиксированное количество входных признаков является критически важным, попросту неприменимы к подобной задаче.",
+              "section_hint_from_protocol": "Методы решения, стр. 2",
+              "page": 2,
+              "page_hint_from_protocol": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen",
+      "filename": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen.pdf",
+      "language": "ru",
+      "pdf_pages_examined": 12,
+      "problems": [
+        {
+          "id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen-P01",
+          "statement": "непонятно, какие implicit/internalized knowledge реально содержатся в параметрах PLM.",
+          "problem_role": "main",
+          "evidence": [
+            {
+              "quote": "несмотря на то, как предобучение языковых моделей позволяет захватывать значительное количество знаний о мире, эти знания имплицитно содержатся в параметрах нейронной сети, что затрудняет установление того, какие знания хранятся в сети и где они хранятся.",
+              "section_hint_from_protocol": "IV. АУГМЕНТАЦИЯ ЯЗЫКОВЫХ МОДЕЛЕЙ ЗНАНИЯМИ",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen-P02",
+          "statement": "локализация знаний в параметрах непрозрачна.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "С 2019  активно изучаемым вопросом стало содержание в предобученных языковых моделях интернализированных знаний, извлечённых из текстовых корпусов, использовавшихся для предобучения (pretraining) или переноса обучения (transfer learning).",
+              "section_hint_from_protocol": "I. ВВЕДЕНИЕ",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        },
+        {
+          "id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen-P03",
+          "statement": "capacity и compute ограничивают хранение world knowledge.",
+          "problem_role": "auxiliary",
+          "evidence": [
+            {
+              "quote": "объём «памяти» для хранения таких знаний ограничен размером нейронной сети, из чего следует, что для захвата большего количества знаний о мире, потребуется обучить ещё большую сеть, что может оказаться чрезмерно медленным или затратным.",
+              "section_hint_from_protocol": "IV. АУГМЕНТАЦИЯ ЯЗЫКОВЫХ МОДЕЛЕЙ ЗНАНИЯМИ",
+              "page": null,
+              "page_hint_from_protocol": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "paper_id": "2603.29112v1",
+  "filename": "2603.29112v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Unlike traditional RecSys benchmarks that focus on item prediction accuracy, our benchmark evaluates how well LLMs can extract and verify user interests from engagement data.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 9,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+      "status": "accepted",
+      "reason": "Работа вводит новый бенчмарк (GISTBench), который прямо направлен на устранение пробела в оценке способности LLM извлекать и верифицировать интересы пользователей, что соответствует цели статьи.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Unlike traditional RecSys benchmarks that focus on item prediction accuracy, our benchmark evaluates how well LLMs can extract and verify user interests from engagement data.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цитата не подтверждает, что понимание интересов пользователей остается недостаточно оцененным в бенчмарках для рекомендательных систем, а только то, что бенчмарки фокусируются на точности предсказания предметов.",
+            "source_page": 1,
+            "support_quote": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как понимание интересов пользователей через историю взаимодействий остается недостаточно оцененным.",
+            "verified": false
+          }
+        ],
+        "{ ": "missing_problems"
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+            "reason": "Исходная формулировка не подтверждается цитатой; исправленная версия точно отражает утверждение источника о том, что нет бенчмарков, оценивающих извлечение интересов из поведенческих историй."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Исходная формулировка не подтверждается цитатой; исправленная версия точно отражает утверждение источника о том, что нет бенчмарков, оценивающих извлечение интересов из поведенческих историй.",
+          "old_statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как понимание интересов пользователей через историю взаимодействий остается недостаточно оцененным.",
+          "new_statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 2,
+          "precision": 2
+        },
+        "score": 9,
+        "reason": "Проблема четко обозначена (недостаточная оценка извлечения/верификации интересов LLM в RecSys бенчмарках), и она напрямую решается представленной работой (введение GISTBench). Однако критика указывает на то, что цитата не полностью подтверждает формулировку о 'недостаточно развитой' оценке, а лишь о фокусе на точности предсказания.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Работа вводит новый бенчмарк (GISTBench), который прямо направлен на устранение пробела в оценке способности LLM извлекать и верифицировать интересы пользователей, что соответствует цели статьи."
+          }
+        ]
+      },
+      "score": 9,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Unlike traditional RecSys benchmarks that focus on item prediction accuracy, our benchmark evaluates how well LLMs can extract and verify user interests from engagement data.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+          "status": "accepted",
+          "reason": "Работа вводит новый бенчмарк (GISTBench), который прямо направлен на устранение пробела в оценке способности LLM извлекать и верифицировать интересы пользователей, что соответствует цели статьи.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Unlike traditional RecSys benchmarks that focus on item prediction accuracy, our benchmark evaluates how well LLMs can extract and verify user interests from engagement data.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие бенчмарки для рекомендательных систем фокусируются на точности предсказания предметов, в то время как оценка способности моделей извлекать и верифицировать интересы пользователей через историю взаимодействий остается недостаточно развитой.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Unlike traditional RecSys benchmarks that focus on item prediction accuracy, our benchmark evaluates how well LLMs can extract and verify user interests from engagement data.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29112v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 21.006283099999564,
+          "load_seconds": 18.3497736,
+          "prompt_eval_seconds": 0.682668,
+          "eval_seconds": 1.919185,
+          "total_server_seconds": 20.9671246,
+          "prompt_tokens": 1094,
+          "generated_tokens": 130,
+          "tokens_per_second": 67.74,
+          "prompt_tokens_per_second": 1602.54,
+          "hardware": {
+            "samples": 17,
+            "max_system_ram_used_bytes": 24059838464,
+            "mean_system_ram_used_bytes": 15714949963.294117,
+            "max_system_ram_percent": 70.2,
+            "mean_system_ram_percent": 45.858823529411765,
+            "max_cpu_percent": 43.3,
+            "mean_cpu_percent": 13.799999999999999,
+            "max_python_process_rss_bytes": 94887936,
+            "mean_python_process_rss_bytes": 94886972.23529412,
+            "max_ollama_process_rss_bytes": 222703616,
+            "mean_ollama_process_rss_bytes": 222570375.52941176,
+            "max_gpu_mem_mb": 4842.0,
+            "mean_gpu_mem_mb": 3713.176470588235,
+            "max_gpu_util_percent": 87.0,
+            "mean_gpu_util_percent": 12.588235294117647,
+            "max_gpu_temperature_c": 57.3,
+            "mean_gpu_temperature_c": 54.10588235294117,
+            "max_gpu_power_w": 101.69,
+            "mean_gpu_power_w": 59.35941176470588,
+            "estimated_gpu_joules": 1123.750194413662
+          }
+        },
+        {
+          "request_id": "2603.29112v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.945847399998456,
+          "load_seconds": 3.2705483,
+          "prompt_eval_seconds": 0.805648,
+          "eval_seconds": 1.724337,
+          "total_server_seconds": 5.8150914,
+          "prompt_tokens": 1283,
+          "generated_tokens": 122,
+          "tokens_per_second": 70.75,
+          "prompt_tokens_per_second": 1592.51,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 15452213248,
+            "mean_system_ram_used_bytes": 15217473945.6,
+            "max_system_ram_percent": 45.1,
+            "mean_system_ram_percent": 44.4,
+            "max_cpu_percent": 32.3,
+            "mean_cpu_percent": 19.22,
+            "max_python_process_rss_bytes": 94887936,
+            "mean_python_process_rss_bytes": 94884659.2,
+            "max_ollama_process_rss_bytes": 222449664,
+            "mean_ollama_process_rss_bytes": 222411161.6,
+            "max_gpu_mem_mb": 5346.0,
+            "mean_gpu_mem_mb": 3620.2,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 46.6,
+            "max_gpu_temperature_c": 57.8,
+            "mean_gpu_temperature_c": 55.1,
+            "max_gpu_power_w": 111.64,
+            "mean_gpu_power_w": 75.48400000000001,
+            "estimated_gpu_joules": 342.29734434366225
+          }
+        },
+        {
+          "request_id": "2603.29112v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 17.271589399999357,
+          "load_seconds": 13.3229194,
+          "prompt_eval_seconds": 0.847261,
+          "eval_seconds": 3.034204,
+          "total_server_seconds": 17.2165795,
+          "prompt_tokens": 958,
+          "generated_tokens": 231,
+          "tokens_per_second": 76.13,
+          "prompt_tokens_per_second": 1130.7,
+          "hardware": {
+            "samples": 14,
+            "max_system_ram_used_bytes": 18007371776,
+            "mean_system_ram_used_bytes": 17099557449.142857,
+            "max_system_ram_percent": 52.5,
+            "mean_system_ram_percent": 49.9,
+            "max_cpu_percent": 34.0,
+            "mean_cpu_percent": 16.785714285714285,
+            "max_python_process_rss_bytes": 94900224,
+            "mean_python_process_rss_bytes": 94889398.85714285,
+            "max_ollama_process_rss_bytes": 370651136,
+            "mean_ollama_process_rss_bytes": 233588443.42857143,
+            "max_gpu_mem_mb": 6200.0,
+            "mean_gpu_mem_mb": 4557.642857142857,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 25.928571428571427,
+            "max_gpu_temperature_c": 56.3,
+            "mean_gpu_temperature_c": 53.628571428571426,
+            "max_gpu_power_w": 98.72,
+            "mean_gpu_power_w": 63.146428571428565,
+            "estimated_gpu_joules": 988.7698652601242
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 44.25332150000031,
+  "seconds_end_to_end": 192.72135490000073,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "f25b8f5523c8ba381a28bd6f9a367a847aa6244a1ba3715d7f97709c07e3d0e5"
+}

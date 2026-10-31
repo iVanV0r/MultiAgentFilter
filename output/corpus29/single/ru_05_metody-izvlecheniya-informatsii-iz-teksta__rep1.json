@@ -1,0 +1,924 @@
+{
+  "paper_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta",
+  "filename": "ru_05_metody-izvlecheniya-informatsii-iz-teksta.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Существенные трудности при извлечении знаний из открытых областей и обработке временных знаний",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Наибольшие трудности возникают при извлечении знаний из открытых областей, а также при обработке \"временных\" знаний.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие методов для обработки неявных временных маркеров в текстах",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Если конструкции типа \"во время Великой Отечественной войны\" или \"в прошлом году\" достаточно четко очерчены, то такие обороты, как \"в детстве\", \"в зрелом возрасте\", \"затем\" не имеют однозначных границ.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаток методов для извлечения именованных сущностей в условиях отсутствия размеченных данных",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "В случае неразмеченных данных проводят кластеризацию, а номер кластера используется в качестве классифицирующего признака",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Метод точного соответствия для оценки методов выделения именованных сущностей сильно зависит от ошибок, допущенных аннотаторами.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "Данный метод подвергается критике, т.к. сильно зависит от ошибок, допущенных аннотаторами.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточная эффективность методов извлечения информации из открытых областей и поиск фактов, локализованных во времени",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "Наименее разработанными являются такие области, как извлечение знаний из открытых областей, поиск фактов, локализованных во времени",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие надежных методов оценки систем извлечения информации из-за зависимости от эталонной разметки",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "Методы оценки систем извлечения информации также нуждаются в доработке, т.к. опираются на сравнение с эталонной разметкой корпуса",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Проблема автоматического определения временных границ фактов при нечетком указании дат",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "В реальных текстах временные границы часто задаются нечетко (\"в детстве\", \"в старости\" и т.д.)",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 38.01941280000028,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Существенные трудности при извлечении знаний из открытых областей и обработке временных знаний",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Наибольшие трудности возникают при извлечении знаний из открытых областей, а также при обработке \"временных\" знаний.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.346177999999782,
+        "load_seconds": 3.4196153,
+        "prompt_eval_seconds": 0.625776,
+        "eval_seconds": 1.018953,
+        "total_server_seconds": 5.0749264,
+        "prompt_tokens": 945,
+        "generated_tokens": 73,
+        "tokens_per_second": 71.64,
+        "prompt_tokens_per_second": 1510.13,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 18059530240,
+          "mean_system_ram_used_bytes": 15851640422.4,
+          "max_system_ram_percent": 52.7,
+          "mean_system_ram_percent": 46.260000000000005,
+          "max_cpu_percent": 52.8,
+          "mean_cpu_percent": 29.860000000000003,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93586227.2,
+          "max_ollama_process_rss_bytes": 224006144,
+          "mean_ollama_process_rss_bytes": 223467929.6,
+          "max_gpu_mem_mb": 5297.0,
+          "mean_gpu_mem_mb": 3573.6,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 51.4,
+          "max_gpu_temperature_c": 56.9,
+          "mean_gpu_temperature_c": 55.42,
+          "max_gpu_power_w": 99.89,
+          "mean_gpu_power_w": 64.42999999999999,
+          "estimated_gpu_joules": 337.2928992891311
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "front_matter",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для автоматического различения концептуальных и тематических категорий в Википедии",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Для того чтобы отличить концептуальные категории от тематических, используют поверхностный лингвистический парсинг имен категорий",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9421824000019114,
+        "load_seconds": 0.0175762,
+        "prompt_eval_seconds": 0.654209,
+        "eval_seconds": 1.164919,
+        "total_server_seconds": 1.8855714,
+        "prompt_tokens": 1154,
+        "generated_tokens": 80,
+        "tokens_per_second": 68.67,
+        "prompt_tokens_per_second": 1763.96,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15715950592,
+          "mean_system_ram_used_bytes": 15615363072.0,
+          "max_system_ram_percent": 45.9,
+          "mean_system_ram_percent": 45.599999999999994,
+          "max_cpu_percent": 26.7,
+          "mean_cpu_percent": 25.15,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 76.0,
+          "max_gpu_temperature_c": 58.4,
+          "mean_gpu_temperature_c": 56.95,
+          "max_gpu_power_w": 112.56,
+          "mean_gpu_power_w": 98.625,
+          "estimated_gpu_joules": 106.2503617787361
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "front_matter",
+      "pages": [
+        3
+      ],
+      "generated": 2,
+      "grounded": 2,
+      "raw": [
+        {
+          "statement": "Существующие методы вычисления семантического расстояния трудоемки, требуют ручного создания тезаурусов или огромных корпусов и плохо адаптируются для новых предметных областей.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Основной недостаток подходов, основанных на тезаурусах, в том, что тезаурусы создаются вручную. Это трудоемкий и дорогостоящий процесс, слабо адаптируемый для новой предметной области",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "При извлечении отношений между сущностями остро встает вопрос о соотношении полноты и точности.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "При извлечении отношений между сущностями остро встает вопрос о соотношении полноты и точности.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.903569999998581,
+        "load_seconds": 0.0135916,
+        "prompt_eval_seconds": 0.538644,
+        "eval_seconds": 3.126962,
+        "total_server_seconds": 3.7386863,
+        "prompt_tokens": 1033,
+        "generated_tokens": 189,
+        "tokens_per_second": 60.44,
+        "prompt_tokens_per_second": 1917.78,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 15928086528,
+          "mean_system_ram_used_bytes": 15868717056.0,
+          "max_system_ram_percent": 46.5,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 24.9,
+          "mean_cpu_percent": 20.575,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93585408.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 86.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.1,
+          "max_gpu_power_w": 87.26,
+          "mean_gpu_power_w": 71.3525,
+          "estimated_gpu_joules": 281.8889732146263
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "front_matter",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Сложности моделирования распределений с большими зависимостями в задачах логического вывода",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "При таком подходе возникает проблема моделирования распределения , которое может иметь сложные зависимости.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5956121999988682,
+        "load_seconds": 0.0164948,
+        "prompt_eval_seconds": 0.316477,
+        "eval_seconds": 1.146582,
+        "total_server_seconds": 1.5295054,
+        "prompt_tokens": 557,
+        "generated_tokens": 67,
+        "tokens_per_second": 58.43,
+        "prompt_tokens_per_second": 1760.0,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16122875904,
+          "mean_system_ram_used_bytes": 16022960128.0,
+          "max_system_ram_percent": 47.0,
+          "mean_system_ram_percent": 46.75,
+          "max_cpu_percent": 20.0,
+          "mean_cpu_percent": 10.0,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 78.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 56.7,
+          "max_gpu_power_w": 87.19,
+          "mean_gpu_power_w": 77.78,
+          "estimated_gpu_joules": 84.40336343050004
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "limitations",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для извлечения знаний из открытых областей (непредметно-ориентированных данных), где факты представлены утверждениями, а не тройками.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Извлечение знаний из открытых областей Нерешенными проблемами является временные знания (temporal knowledge) и извлечение знаний из открытых областей",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.079961399998865,
+        "load_seconds": 0.0144589,
+        "prompt_eval_seconds": 0.495212,
+        "eval_seconds": 1.480059,
+        "total_server_seconds": 2.0374446,
+        "prompt_tokens": 855,
+        "generated_tokens": 91,
+        "tokens_per_second": 61.48,
+        "prompt_tokens_per_second": 1726.53,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16305999872,
+          "mean_system_ram_used_bytes": 16222222336.0,
+          "max_system_ram_percent": 47.6,
+          "mean_system_ram_percent": 47.35,
+          "max_cpu_percent": 18.1,
+          "mean_cpu_percent": 9.05,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 89.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.650000000000006,
+          "max_gpu_power_w": 87.24,
+          "mean_gpu_power_w": 78.775,
+          "estimated_gpu_joules": 86.4371973347664
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "limitations",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие методов для обработки неявных временных маркеров в текстах",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Если конструкции типа \"во время Великой Отечественной войны\" или \"в прошлом году\" достаточно четко очерчены, то такие обороты, как \"в детстве\", \"в зрелом возрасте\", \"затем\" не имеют однозначных границ.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.3011714999993274,
+        "load_seconds": 0.017419,
+        "prompt_eval_seconds": 0.665761,
+        "eval_seconds": 1.518877,
+        "total_server_seconds": 2.2603039,
+        "prompt_tokens": 1162,
+        "generated_tokens": 94,
+        "tokens_per_second": 61.89,
+        "prompt_tokens_per_second": 1745.37,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16531738624,
+          "mean_system_ram_used_bytes": 16421670912.0,
+          "max_system_ram_percent": 48.2,
+          "mean_system_ram_percent": 47.900000000000006,
+          "max_cpu_percent": 19.1,
+          "mean_cpu_percent": 9.55,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 85.5,
+          "max_gpu_temperature_c": 57.6,
+          "mean_gpu_temperature_c": 57.25,
+          "max_gpu_power_w": 99.07,
+          "mean_gpu_power_w": 91.715,
+          "estimated_gpu_joules": 106.40882652282714
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "limitations",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для извлечения именованных сущностей в условиях отсутствия размеченных данных",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "В случае неразмеченных данных проводят кластеризацию, а номер кластера используется в качестве классифицирующего признака",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.0904745000007097,
+        "load_seconds": 0.0159613,
+        "prompt_eval_seconds": 0.67686,
+        "eval_seconds": 1.304046,
+        "total_server_seconds": 2.0693134,
+        "prompt_tokens": 1192,
+        "generated_tokens": 79,
+        "tokens_per_second": 60.58,
+        "prompt_tokens_per_second": 1761.07,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16847220736,
+          "mean_system_ram_used_bytes": 16691406848.0,
+          "max_system_ram_percent": 49.2,
+          "mean_system_ram_percent": 48.75,
+          "max_cpu_percent": 22.5,
+          "mean_cpu_percent": 11.25,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.35,
+          "max_gpu_power_w": 87.35,
+          "mean_gpu_power_w": 85.455,
+          "estimated_gpu_joules": 106.29990104675294
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "limitations",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Метод точного соответствия для оценки методов выделения именованных сущностей сильно зависит от ошибок, допущенных аннотаторами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Данный метод подвергается критике, т.к. сильно зависит от ошибок, допущенных аннотаторами.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.8654504000005545,
+        "load_seconds": 0.0175933,
+        "prompt_eval_seconds": 0.256748,
+        "eval_seconds": 1.433095,
+        "total_server_seconds": 1.7786441,
+        "prompt_tokens": 465,
+        "generated_tokens": 89,
+        "tokens_per_second": 62.1,
+        "prompt_tokens_per_second": 1811.11,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17146249216,
+          "mean_system_ram_used_bytes": 16993474560.0,
+          "max_system_ram_percent": 50.0,
+          "mean_system_ram_percent": 49.55,
+          "max_cpu_percent": 23.7,
+          "mean_cpu_percent": 21.75,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93581312.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 56.849999999999994,
+          "max_gpu_power_w": 87.04,
+          "mean_gpu_power_w": 70.995,
+          "estimated_gpu_joules": 68.64315277338028
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "conclusion",
+      "pages": [
+        7
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Недостаточная эффективность методов извлечения информации из открытых областей и поиск фактов, локализованных во времени",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Наименее разработанными являются такие области, как извлечение знаний из открытых областей, поиск фактов, локализованных во времени",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие надежных методов оценки систем извлечения информации из-за зависимости от эталонной разметки",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Методы оценки систем извлечения информации также нуждаются в доработке, т.к. опираются на сравнение с эталонной разметкой корпуса",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема автоматического определения временных границ фактов при нечетком указании дат",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "В реальных текстах временные границы часто задаются нечетко (\"в детстве\", \"в старости\" и т.д.)",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.361588599997049,
+        "load_seconds": 0.0205894,
+        "prompt_eval_seconds": 0.40254,
+        "eval_seconds": 3.824243,
+        "total_server_seconds": 4.3137352,
+        "prompt_tokens": 690,
+        "generated_tokens": 235,
+        "tokens_per_second": 61.45,
+        "prompt_tokens_per_second": 1714.12,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 17427021824,
+          "mean_system_ram_used_bytes": 17357404160.0,
+          "max_system_ram_percent": 50.9,
+          "mean_system_ram_percent": 50.65,
+          "max_cpu_percent": 20.5,
+          "mean_cpu_percent": 14.9,
+          "max_python_process_rss_bytes": 93589504,
+          "mean_python_process_rss_bytes": 93585408.0,
+          "max_ollama_process_rss_bytes": 223191040,
+          "mean_ollama_process_rss_bytes": 223191040.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5302.5,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.5,
+          "max_gpu_power_w": 98.75,
+          "mean_gpu_power_w": 85.325,
+          "estimated_gpu_joules": 315.19074275732044
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.819392900000821,
+      "load_seconds": 0.0157048,
+      "prompt_eval_seconds": 0.469353,
+      "eval_seconds": 1.214555,
+      "total_server_seconds": 1.7698884,
+      "prompt_tokens": 689,
+      "generated_tokens": 73,
+      "tokens_per_second": 60.1,
+      "prompt_tokens_per_second": 1467.98,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 17563033600,
+        "mean_system_ram_used_bytes": 17492252672.0,
+        "max_system_ram_percent": 51.2,
+        "mean_system_ram_percent": 51.0,
+        "max_cpu_percent": 21.0,
+        "mean_cpu_percent": 10.5,
+        "max_python_process_rss_bytes": 93589504,
+        "mean_python_process_rss_bytes": 93581312.0,
+        "max_ollama_process_rss_bytes": 223191040,
+        "mean_ollama_process_rss_bytes": 223191040.0,
+        "max_gpu_mem_mb": 5304.0,
+        "mean_gpu_mem_mb": 5304.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 88.5,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.400000000000006,
+        "max_gpu_power_w": 98.91,
+        "mean_gpu_power_w": 77.32,
+        "estimated_gpu_joules": 70.77058827400207
+      }
+    },
+    {
+      "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 7.591159100000368,
+      "load_seconds": 0.0160038,
+      "prompt_eval_seconds": 0.465717,
+      "eval_seconds": 6.907897,
+      "total_server_seconds": 7.4288941,
+      "prompt_tokens": 715,
+      "generated_tokens": 418,
+      "tokens_per_second": 60.51,
+      "prompt_tokens_per_second": 1535.27,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 17712779264,
+        "mean_system_ram_used_bytes": 17679467666.285713,
+        "max_system_ram_percent": 51.7,
+        "mean_system_ram_percent": 51.57142857142857,
+        "max_cpu_percent": 43.7,
+        "mean_cpu_percent": 20.771428571428572,
+        "max_python_process_rss_bytes": 93589504,
+        "mean_python_process_rss_bytes": 93587163.42857143,
+        "max_ollama_process_rss_bytes": 223191040,
+        "mean_ollama_process_rss_bytes": 223191040.0,
+        "max_gpu_mem_mb": 5304.0,
+        "mean_gpu_mem_mb": 5303.571428571428,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 86.28571428571429,
+        "max_gpu_temperature_c": 57.9,
+        "mean_gpu_temperature_c": 57.5,
+        "max_gpu_power_w": 98.8,
+        "mean_gpu_power_w": 85.74571428571429,
+        "estimated_gpu_joules": 615.2337536787986
+      }
+    },
+    {
+      "request_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.1053088000007847,
+      "load_seconds": 0.0213119,
+      "prompt_eval_seconds": 0.301311,
+      "eval_seconds": 2.653088,
+      "total_server_seconds": 3.0172112,
+      "prompt_tokens": 431,
+      "generated_tokens": 160,
+      "tokens_per_second": 60.31,
+      "prompt_tokens_per_second": 1430.42,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17867243520,
+        "mean_system_ram_used_bytes": 17820002986.666668,
+        "max_system_ram_percent": 52.1,
+        "mean_system_ram_percent": 51.96666666666667,
+        "max_cpu_percent": 25.4,
+        "mean_cpu_percent": 20.966666666666665,
+        "max_python_process_rss_bytes": 93589504,
+        "mean_python_process_rss_bytes": 93584042.66666667,
+        "max_ollama_process_rss_bytes": 223129600,
+        "mean_ollama_process_rss_bytes": 223124138.66666666,
+        "max_gpu_mem_mb": 5301.0,
+        "mean_gpu_mem_mb": 5301.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 83.33333333333333,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.666666666666664,
+        "max_gpu_power_w": 98.94,
+        "mean_gpu_power_w": 85.53666666666668,
+        "estimated_gpu_joules": 207.25310244798658
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "47d59c27d7ac3ccd697ee78ef69bb03b15e25059aad9d49cc796c957695a574f"
+}

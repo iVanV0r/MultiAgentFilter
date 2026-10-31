@@ -1,0 +1,303 @@
+{
+  "paper_id": "2603.29997v1(2)",
+  "filename": "2603.29997v1(2).pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities, whereas LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+      "status": "accepted",
+      "reason": "Проблема (неприменимость когнитивных движков из-за предположений о сущностях и чувствительности LLM к промпту) явно обозначена и является пробелом, который работа, судя по контексту, направлена на устранение.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities, whereas LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цель статьи не указана явно, что затрудняет понимание конкретной научной проблемы, которую пытается решить кандидат.",
+            "source_page": 1
+          },
+          {
+            "target": "M1",
+            "criticism": "Формулировка проблемы слишком широкая и не конкретна, не указывая, как именно улучшить когнитивные движки или LLMs для структурного сопоставления.",
+            "source_page": 1
+          },
+          {
+            "target": "M1",
+            "criticism": "Предложение экспериментов не указано, что затрудняет оценку эффективности предложенного решения.",
+            "source_page": 3
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+            "reason": "Цель статьи указана явно на странице 1: «What is the impact of enhancing structural mapping with LLM-derived abstractions on their analogical reasoning ability in narratives?» (стр. 1). Проблема формулируется как конкретный пробел в знаниях о том, как улучшить структурное сопоставление с помощью абстракций от LLM для повышения способности к аналогичному рассуждению в нарративах."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цель статьи указана явно на странице 1: «What is the impact of enhancing structural mapping with LLM-derived abstractions on their analogical reasoning ability in narratives?» (стр. 1). Проблема формулируется как конкретный пробел в знаниях о том, как улучшить структурное сопоставление с помощью абстракций от LLM для повышения способности к аналогичному рассуждению в нарративах.",
+          "old_statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+          "new_statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "Кандидат четко идентифицирует пробел: существующие когнитивные движки не подходят для структурного сопоставления в LLM из-за их предположения о предварительно извлеченных сущностях и чувствительности LLM к формату промпта. Это напрямую связано с темой статьи (улучшение структурного сопоставления с помощью LLM-производных абстракций).",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Проблема (неприменимость когнитивных движков из-за предположений о сущностях и чувствительности LLM к промпту) явно обозначена и является пробелом, который работа, судя по контексту, направлена на устранение."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities, whereas LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+          "status": "accepted",
+          "reason": "Проблема (неприменимость когнитивных движков из-за предположений о сущностях и чувствительности LLM к промпту) явно обозначена и является пробелом, который работа, судя по контексту, направлена на устранение.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities, whereas LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Машинные аналоги не могут эффективно использовать когнитивные движки для структурного сопоставления из-за их зависимости от предварительно извлеченных сущностей и чувствительности к формату промпта.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Cognitive engines for structural mapping are not directly applicable, as they assume pre-extracted entities, whereas LLMs' performance is sensitive to prompt format and the degree of surface similarity between narratives.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29997v1(2)__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.374035099997855,
+          "load_seconds": 6.8050336,
+          "prompt_eval_seconds": 0.635317,
+          "eval_seconds": 1.855075,
+          "total_server_seconds": 9.313592,
+          "prompt_tokens": 1230,
+          "generated_tokens": 139,
+          "tokens_per_second": 74.93,
+          "prompt_tokens_per_second": 1936.04,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 21395451904,
+            "mean_system_ram_used_bytes": 15993358848.0,
+            "max_system_ram_percent": 62.4,
+            "mean_system_ram_percent": 46.6625,
+            "max_cpu_percent": 29.5,
+            "mean_cpu_percent": 20.3375,
+            "max_python_process_rss_bytes": 91471872,
+            "mean_python_process_rss_bytes": 91469824.0,
+            "max_ollama_process_rss_bytes": 223469568,
+            "mean_ollama_process_rss_bytes": 223054848.0,
+            "max_gpu_mem_mb": 4772.0,
+            "mean_gpu_mem_mb": 3453.375,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 36.25,
+            "max_gpu_temperature_c": 58.6,
+            "mean_gpu_temperature_c": 55.8625,
+            "max_gpu_power_w": 114.39,
+            "mean_gpu_power_w": 68.2075,
+            "estimated_gpu_joules": 557.3260754776
+          }
+        },
+        {
+          "request_id": "2603.29997v1(2)__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 6.46311280000009,
+          "load_seconds": 3.2720972,
+          "prompt_eval_seconds": 0.815483,
+          "eval_seconds": 2.302994,
+          "total_server_seconds": 6.4060567,
+          "prompt_tokens": 1298,
+          "generated_tokens": 162,
+          "tokens_per_second": 70.34,
+          "prompt_tokens_per_second": 1591.69,
+          "hardware": {
+            "samples": 6,
+            "max_system_ram_used_bytes": 15618576384,
+            "mean_system_ram_used_bytes": 15416087210.666666,
+            "max_system_ram_percent": 45.6,
+            "mean_system_ram_percent": 44.98333333333333,
+            "max_cpu_percent": 29.3,
+            "mean_cpu_percent": 23.25,
+            "max_python_process_rss_bytes": 91471872,
+            "mean_python_process_rss_bytes": 91469141.33333333,
+            "max_ollama_process_rss_bytes": 223641600,
+            "mean_ollama_process_rss_bytes": 223382186.66666666,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 3943.5,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 51.833333333333336,
+            "max_gpu_temperature_c": 58.9,
+            "mean_gpu_temperature_c": 56.666666666666664,
+            "max_gpu_power_w": 111.41,
+            "mean_gpu_power_w": 79.91833333333334,
+            "estimated_gpu_joules": 465.5332370328903
+          }
+        },
+        {
+          "request_id": "2603.29997v1(2)__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.681551000001491,
+          "load_seconds": 6.0252346,
+          "prompt_eval_seconds": 0.749808,
+          "eval_seconds": 2.806816,
+          "total_server_seconds": 9.5943195,
+          "prompt_tokens": 963,
+          "generated_tokens": 243,
+          "tokens_per_second": 86.57,
+          "prompt_tokens_per_second": 1284.33,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 18188881920,
+            "mean_system_ram_used_bytes": 16937739776.0,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 49.425,
+            "max_cpu_percent": 100.0,
+            "mean_cpu_percent": 35.2875,
+            "max_python_process_rss_bytes": 91471872,
+            "mean_python_process_rss_bytes": 91469824.0,
+            "max_ollama_process_rss_bytes": 223342592,
+            "mean_ollama_process_rss_bytes": 222785024.0,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4411.875,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 37.25,
+            "max_gpu_temperature_c": 58.9,
+            "mean_gpu_temperature_c": 56.075,
+            "max_gpu_power_w": 112.1,
+            "mean_gpu_power_w": 72.94875,
+            "estimated_gpu_joules": 627.1540322995186
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 25.547942000001058,
+  "seconds_end_to_end": 205.0873636000033,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "85f0bf8bfc83d0973f55d2a987443a6d037850f463bff29a0e3d56d179e3aa33"
+}

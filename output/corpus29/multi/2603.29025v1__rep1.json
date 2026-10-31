@@ -1,0 +1,475 @@
+{
+  "paper_id": "2603.29025v1",
+  "filename": "2603.29025v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+      "status": "accepted",
+      "reason": "Формулирует пробел в знаниях о том, как LLM обрабатывают конфликт между поверхностными подсказками и неявными ограничениями, что является центральной темой статьи.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам.",
+      "status": "rejected",
+      "reason": "Слишком общее утверждение. Цитата 'All six models consistently answer incorrectly' не описывает конкретный пробел в знаниях, а лишь констатирует ошибку в конкретном тесте.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 17,
+          "quote": "All six models consistently answer incorrectly.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений.",
+      "status": "rejected",
+      "reason": "Утверждение о 'пробеле в понимании контекстуальной зависимости' слишком расплывчато. Цитата описывает наблюдаемый паттерн (сигмоидальные кривые), а не сам пробел в знаниях, который эта работа устраняет.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 18,
+          "quote": "Every model produces sigmoid conflict curves that track the control curve.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность.",
+      "status": "rejected",
+      "reason": "Похоже на M3, но менее конкретно. Указывает на 'пробел в понимании контекста или недостаточную точность', что является слишком общим выводом, а не четко обозначенным научным пробелом, который решается публикацией.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 19,
+          "quote": "Ideal: flat (Drive at all d)",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Объяснение неверно связывает проблему с ограничениями surface cues и unstated constraints, не уточняя, является ли это пробелом в знаниях или инструментах.",
+            "source_page": 1,
+            "support_quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+            "verified": true
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+            "reason": "Критика указывает на отсутствие связи с пробелом в знаниях/инструментах; исправление формулировки делает проблему явной, не меняя сути."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам.",
+            "reason": "Проблема соответствует определению: пробел в понимании обработки конфликтов сигналов."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений.",
+            "reason": "Проблема соответствует определению: выявлен пробел в понимании контекстуальной зависимости."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность.",
+            "reason": "Проблема соответствует определению: выявлен пробел в понимании контекста."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Критика указывает на отсутствие связи с пробелом в знаниях/инструментах; исправление формулировки делает проблему явной, не меняя сути.",
+          "old_statement": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+          "new_statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: пробел в понимании обработки конфликтов сигналов.",
+          "old_statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам.",
+          "new_statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: выявлен пробел в понимании контекстуальной зависимости.",
+          "old_statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений.",
+          "new_statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: выявлен пробел в понимании контекста.",
+          "old_statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность.",
+          "new_statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко формулирует научную проблему: LLM систематически следуют эвристикам, когда явные поверхностные подсказки конфликтуют с неявными ограничениями. Это пробел в понимании механизмов принятия решений LLM, что подтверждается цитатой. Связь с целью (понимание поведения LLM) сильная.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Формулирует пробел в знаниях о том, как LLM обрабатывают конфликт между поверхностными подсказками и неявными ограничениями, что является центральной темой статьи."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": false,
+            "reason": "Слишком общее утверждение. Цитата 'All six models consistently answer incorrectly' не описывает конкретный пробел в знаниях, а лишь констатирует ошибку в конкретном тесте."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Утверждение о 'пробеле в понимании контекстуальной зависимости' слишком расплывчато. Цитата описывает наблюдаемый паттерн (сигмоидальные кривые), а не сам пробел в знаниях, который эта работа устраняет."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Похоже на M3, но менее конкретно. Указывает на 'пробел в понимании контекста или недостаточную точность', что является слишком общим выводом, а не четко обозначенным научным пробелом, который решается публикацией."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 17,
+              "quote": "All six models consistently answer incorrectly.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 18,
+              "quote": "Every model produces sigmoid conflict curves that track the control curve.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 19,
+              "quote": "Ideal: flat (Drive at all d)",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+          "status": "accepted",
+          "reason": "Формулирует пробел в знаниях о том, как LLM обрабатывают конфликт между поверхностными подсказками и неявными ограничениями, что является центральной темой статьи.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Модели не способны корректно обрабатывать противоречивые сигналы в задачах принятия решений (например, выбор между ходьбой и едой), что приводит к систематическим ошибкам.",
+          "status": "rejected",
+          "reason": "Слишком общее утверждение. Цитата 'All six models consistently answer incorrectly' не описывает конкретный пробел в знаниях, а лишь констатирует ошибку в конкретном тесте.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 17,
+              "quote": "All six models consistently answer incorrectly.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Существующие модели не демонстрируют идеального монотонного поведения в зависимости от расстояния, что указывает на пробел в понимании контекстуальной зависимости решений.",
+          "status": "rejected",
+          "reason": "Утверждение о 'пробеле в понимании контекстуальной зависимости' слишком расплывчато. Цитата описывает наблюдаемый паттерн (сигмоидальные кривые), а не сам пробел в знаниях, который эта работа устраняет.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 18,
+              "quote": "Every model produces sigmoid conflict curves that track the control curve.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Модели не демонстрируют идеальную монотонность (постоянную вероятность выбора машины на всех расстояниях), что указывает на пробел в понимании контекста или недостаточную точность.",
+          "status": "rejected",
+          "reason": "Похоже на M3, но менее конкретно. Указывает на 'пробел в понимании контекста или недостаточную точность', что является слишком общим выводом, а не четко обозначенным научным пробелом, который решается публикацией.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 19,
+              "quote": "Ideal: flat (Drive at all d)",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Large language models systematically follow heuristics when salient surface cues conflict with unstated feasibility constraints.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29025v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 15.13590490000206,
+          "load_seconds": 13.1486931,
+          "prompt_eval_seconds": 0.682896,
+          "eval_seconds": 1.22553,
+          "total_server_seconds": 15.0726585,
+          "prompt_tokens": 1196,
+          "generated_tokens": 86,
+          "tokens_per_second": 70.17,
+          "prompt_tokens_per_second": 1751.36,
+          "hardware": {
+            "samples": 13,
+            "max_system_ram_used_bytes": 22044065792,
+            "mean_system_ram_used_bytes": 15716229435.076923,
+            "max_system_ram_percent": 64.3,
+            "mean_system_ram_percent": 45.861538461538466,
+            "max_cpu_percent": 28.0,
+            "mean_cpu_percent": 14.123076923076923,
+            "max_python_process_rss_bytes": 94666752,
+            "mean_python_process_rss_bytes": 94665491.6923077,
+            "max_ollama_process_rss_bytes": 222941184,
+            "mean_ollama_process_rss_bytes": 222886675.69230768,
+            "max_gpu_mem_mb": 4842.0,
+            "mean_gpu_mem_mb": 3659.4615384615386,
+            "max_gpu_util_percent": 96.0,
+            "mean_gpu_util_percent": 21.692307692307693,
+            "max_gpu_temperature_c": 56.4,
+            "mean_gpu_temperature_c": 54.15384615384615,
+            "max_gpu_power_w": 113.28,
+            "mean_gpu_power_w": 61.69923076923077,
+            "estimated_gpu_joules": 849.3887911891937
+          }
+        },
+        {
+          "request_id": "2603.29025v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 8.86432269999932,
+          "load_seconds": 3.2688431,
+          "prompt_eval_seconds": 0.916224,
+          "eval_seconds": 4.573004,
+          "total_server_seconds": 8.7740317,
+          "prompt_tokens": 1522,
+          "generated_tokens": 303,
+          "tokens_per_second": 66.26,
+          "prompt_tokens_per_second": 1661.17,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 15503228928,
+            "mean_system_ram_used_bytes": 15339819008.0,
+            "max_system_ram_percent": 45.2,
+            "mean_system_ram_percent": 44.75,
+            "max_cpu_percent": 36.1,
+            "mean_cpu_percent": 21.8375,
+            "max_python_process_rss_bytes": 94666752,
+            "mean_python_process_rss_bytes": 94664704.0,
+            "max_ollama_process_rss_bytes": 222982144,
+            "mean_ollama_process_rss_bytes": 222741504.0,
+            "max_gpu_mem_mb": 5344.0,
+            "mean_gpu_mem_mb": 4266.125,
+            "max_gpu_util_percent": 96.0,
+            "mean_gpu_util_percent": 66.625,
+            "max_gpu_temperature_c": 57.8,
+            "mean_gpu_temperature_c": 56.2375,
+            "max_gpu_power_w": 113.07,
+            "mean_gpu_power_w": 84.9325,
+            "estimated_gpu_joules": 725.6244609856606
+          }
+        },
+        {
+          "request_id": "2603.29025v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.713000499999907,
+          "load_seconds": 5.6727981,
+          "prompt_eval_seconds": 0.816002,
+          "eval_seconds": 5.961987,
+          "total_server_seconds": 12.4652387,
+          "prompt_tokens": 1067,
+          "generated_tokens": 462,
+          "tokens_per_second": 77.49,
+          "prompt_tokens_per_second": 1307.59,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 18038611968,
+            "mean_system_ram_used_bytes": 17137126679.272728,
+            "max_system_ram_percent": 52.6,
+            "mean_system_ram_percent": 50.00909090909091,
+            "max_cpu_percent": 59.8,
+            "mean_cpu_percent": 22.80909090909091,
+            "max_python_process_rss_bytes": 94666752,
+            "mean_python_process_rss_bytes": 94665262.54545455,
+            "max_ollama_process_rss_bytes": 223240192,
+            "mean_ollama_process_rss_bytes": 222895755.63636363,
+            "max_gpu_mem_mb": 6200.0,
+            "mean_gpu_mem_mb": 5022.818181818182,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 55.0,
+            "max_gpu_temperature_c": 57.5,
+            "mean_gpu_temperature_c": 55.48181818181818,
+            "max_gpu_power_w": 112.53,
+            "mean_gpu_power_w": 75.96636363636364,
+            "estimated_gpu_joules": 966.3059000754356
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 36.74415360000057,
+  "seconds_end_to_end": 127.68655860000217,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "09a840fd750819b799a7ef81cfa15d5ccfe9f77d56e83da73fed60ca1f8b4a7c"
+}

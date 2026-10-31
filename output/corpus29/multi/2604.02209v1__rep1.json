@@ -1,0 +1,988 @@
+{
+  "paper_id": "2604.02209v1",
+  "filename": "2604.02209v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 2,
+  "best_score": 10,
+  "best_round": 2,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+      "status": "accepted",
+      "reason": "Обозначен пробел в знаниях/ресурсах, связанный с морфологической сложностью и отсутствием аннотированных ресурсов для арабского языка.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+      "status": "accepted",
+      "reason": "Обозначен пробел в понимании/поведении существующих моделей (Whisper) при работе с арабским языком (генерация перевода вместо транскрипции).",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+      "status": "accepted",
+      "reason": "Обозначен пробел в понимании взаимосвязи между метриками (WER) и конечной задачей (NER), что является научным вопросом.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+      "status": "accepted",
+      "reason": "Обозначен пробел в методах/данных, связанный с недостатком обучающих примеров для редких классов и отсутствием стабильных карт.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 8,
+          "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Объяснение проблемы не является строго научной, а касается более широкого вопроса о недостатке ресурсов для арабского языка.",
+            "source_page": 1,
+            "support_quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+            "verified": true
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+            "reason": "Уточнено формулировку проблемы как конкретного научного пробела, вызванного лингвистическими факторами, а не общего отсутствия ресурсов."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+            "reason": "Уточнено описание проблемы как недостатка данных о поведении моделей в специфических режимах работы."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+            "reason": "Формулировка соответствует определению научной проблемы как недостатка существующих методов оценки производительности."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+            "reason": "Уточнено причинно-следственную связь как научную проблему."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "remove",
+            "statement": "",
+            "reason": "Проблема не соответствует определению: это утверждение о факте создания нового датасета (CV-18 NER), а не о пробеле в знаниях или недостатке методов, на устранение которого направлена работа."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "remove",
+            "statement": "",
+            "reason": "Проблема не соответствует определению: это конкретные статистические данные об ошибках по категориям дат и событий, а не формулировка научного пробела."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Уточнено формулировку проблемы как конкретного научного пробела, вызванного лингвистическими факторами, а не общего отсутствия ресурсов.",
+          "old_statement": "Недостаток аннотированных данных и ресурсов для задач распознавания названий сущностей в арабском языке из-за морфологической сложности и отсутствия коротких гласных.",
+          "new_statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Уточнено описание проблемы как недостатка данных о поведении моделей в специфических режимах работы.",
+          "old_statement": "Существующие модели Whisper показывают низкую производительность на арабском языке, особенно в режиме zero-shot, и требуют дальнейшего исследования их поведения (например, генерации переводов вместо транскрипции).",
+          "new_statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Формулировка соответствует определению научной проблемы как недостатка существующих методов оценки производительности.",
+          "old_statement": "Существующие методы ASR и NER не всегда обеспечивают оптимальную производительность в пайплайнах, так как низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей.",
+          "new_statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Уточнено причинно-следственную связь как научную проблему.",
+          "old_statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) из-за крайне малого количества обучающих примеров и отсутствия стабильных акусто-семантических карт.",
+          "new_statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "remove",
+          "reason": "Проблема не соответствует определению: это утверждение о факте создания нового датасета (CV-18 NER), а не о пробеле в знаниях или недостатке методов, на устранение которого направлена работа.",
+          "old_statement": "Отсутствие аннотированного датасета для задачи распознавания названий сущностей в речи на арабском языке."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "remove",
+          "reason": "Проблема не соответствует определению: это конкретные статистические данные об ошибках по категориям дат и событий, а не формулировка научного пробела.",
+          "old_statement": "Существующие системы распознавания сущностей (NER) из речи демонстрируют высокую ошибку в определении дат и событий, что указывает на пробел в знаниях о семантическом понимании временных контекстов."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 2,
+          "relevance": 2,
+          "evidence": 2,
+          "precision": 1
+        },
+        "score": 7,
+        "reason": "M1 описывает общий недостаток ресурсов, а не конкретный пробел, который данная работа устраняет или систематизирует. M2, M3 и M4 более сфокусированы на проблемах, которые могут быть связаны с методологией или результатами, представленными в статье.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": false,
+            "reason": "Описание проблемы слишком общее и не фокусируется на конкретном пробеле, который данная работа решает, а скорее констатирует недостаток ресурсов."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Указывает на конкретную проблему поведения модели Whisper (генерация переводов вместо транскрипции) при работе с арабским языком, что является пробелом в понимании/применении модели в данном контексте."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Формулирует научный пробел: корреляция между низким WER и качеством NER не является прямой, что требует дальнейшего исследования в контексте ASR/NER пайплайнов."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Обозначает конкретный пробел в знаниях/методах: как обучать модели стабильным акусто-семантическим картам для редких классов сущностей при малом объеме данных."
+          }
+        ]
+      },
+      "score": 7,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "status": "rejected",
+          "reason": "Описание проблемы слишком общее и не фокусируется на конкретном пробеле, который данная работа решает, а скорее констатирует недостаток ресурсов.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "status": "accepted",
+          "reason": "Указывает на конкретную проблему поведения модели Whisper (генерация переводов вместо транскрипции) при работе с арабским языком, что является пробелом в понимании/применении модели в данном контексте.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "status": "accepted",
+          "reason": "Формулирует научный пробел: корреляция между низким WER и качеством NER не является прямой, что требует дальнейшего исследования в контексте ASR/NER пайплайнов.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "status": "accepted",
+          "reason": "Обозначает конкретный пробел в знаниях/методах: как обучать модели стабильным акусто-семантическим картам для редких классов сущностей при малом объеме данных.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2604.02209v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.655699699997058,
+          "load_seconds": 2.9334618,
+          "prompt_eval_seconds": 0.588906,
+          "eval_seconds": 1.047238,
+          "total_server_seconds": 4.5943235,
+          "prompt_tokens": 1207,
+          "generated_tokens": 83,
+          "tokens_per_second": 79.26,
+          "prompt_tokens_per_second": 2049.56,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 18072809472,
+            "mean_system_ram_used_bytes": 15891869696.0,
+            "max_system_ram_percent": 52.7,
+            "mean_system_ram_percent": 46.35,
+            "max_cpu_percent": 46.2,
+            "mean_cpu_percent": 26.325,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92430336.0,
+            "max_ollama_process_rss_bytes": 223268864,
+            "mean_ollama_process_rss_bytes": 222959616.0,
+            "max_gpu_mem_mb": 4796.0,
+            "mean_gpu_mem_mb": 3112.75,
+            "max_gpu_util_percent": 88.0,
+            "mean_gpu_util_percent": 49.75,
+            "max_gpu_temperature_c": 59.1,
+            "mean_gpu_temperature_c": 56.05,
+            "max_gpu_power_w": 114.71,
+            "mean_gpu_power_w": 69.8725,
+            "estimated_gpu_joules": 209.3101181268692
+          }
+        },
+        {
+          "request_id": "2604.02209v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.567705199999182,
+          "load_seconds": 3.3271626,
+          "prompt_eval_seconds": 1.286627,
+          "eval_seconds": 6.83912,
+          "total_server_seconds": 11.4760531,
+          "prompt_tokens": 2216,
+          "generated_tokens": 445,
+          "tokens_per_second": 65.07,
+          "prompt_tokens_per_second": 1722.33,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 15687897088,
+            "mean_system_ram_used_bytes": 15529840230.4,
+            "max_system_ram_percent": 45.8,
+            "mean_system_ram_percent": 45.33,
+            "max_cpu_percent": 45.3,
+            "mean_cpu_percent": 20.47,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92432793.6,
+            "max_ollama_process_rss_bytes": 223887360,
+            "mean_ollama_process_rss_bytes": 222933401.6,
+            "max_gpu_mem_mb": 5300.0,
+            "mean_gpu_mem_mb": 4436.9,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 65.5,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 57.14,
+            "max_gpu_power_w": 101.73,
+            "mean_gpu_power_w": 82.912,
+            "estimated_gpu_joules": 916.5812104701996
+          }
+        },
+        {
+          "request_id": "2604.02209v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.794271200000367,
+          "load_seconds": 5.7040848,
+          "prompt_eval_seconds": 0.937433,
+          "eval_seconds": 5.034384,
+          "total_server_seconds": 11.6919009,
+          "prompt_tokens": 1249,
+          "generated_tokens": 414,
+          "tokens_per_second": 82.23,
+          "prompt_tokens_per_second": 1332.36,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 18194456576,
+            "mean_system_ram_used_bytes": 17216351436.8,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 50.25,
+            "max_cpu_percent": 43.1,
+            "mean_cpu_percent": 22.31,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92432793.6,
+            "max_ollama_process_rss_bytes": 223608832,
+            "mean_ollama_process_rss_bytes": 223007539.2,
+            "max_gpu_mem_mb": 6158.0,
+            "mean_gpu_mem_mb": 4858.3,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 50.7,
+            "max_gpu_temperature_c": 58.3,
+            "mean_gpu_temperature_c": 56.239999999999995,
+            "max_gpu_power_w": 112.24,
+            "mean_gpu_power_w": 76.76,
+            "estimated_gpu_joules": 829.4690915727615
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Фраза 'absence of short vowels' не является научной проблемой, а скорее характеристикой языка, а не пробелом в знаниях или методах.",
+            "source_page": 1,
+            "support_quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+            "verified": false
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+            "reason": "Характеристика языка не является научной проблемой; проблема заключается в ограниченности существующих методов и данных."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+            "reason": "Проблема не соответствует определению, так как речь идет о характеристике модели, а не о пробеле в знаниях или методах."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+            "reason": "Проблема не соответствует определению, так как это утверждение о взаимосвязи метрик, а не о пробеле в знаниях."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+            "reason": "Проблема не соответствует определению, так как это описание наблюдаемого явления, а не пробел в знаниях."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Характеристика языка не является научной проблемой; проблема заключается в ограниченности существующих методов и данных.",
+          "old_statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "new_statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Проблема не соответствует определению, так как речь идет о характеристике модели, а не о пробеле в знаниях или методах.",
+          "old_statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "new_statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Проблема не соответствует определению, так как это утверждение о взаимосвязи метрик, а не о пробеле в знаниях.",
+          "old_statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "new_statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Проблема не соответствует определению, так как это описание наблюдаемого явления, а не пробел в знаниях.",
+          "old_statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "new_statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко указывает на пробел в знаниях/ресурсах, связанный с особенностями языка, что соответствует критериям. M2, M3 и M4 также описывают проблемы, связанные с недостатками существующих методов/данных.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Обозначен пробел в знаниях/ресурсах, связанный с морфологической сложностью и отсутствием аннотированных ресурсов для арабского языка."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначен пробел в понимании/поведении существующих моделей (Whisper) при работе с арабским языком (генерация перевода вместо транскрипции)."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Обозначен пробел в понимании взаимосвязи между метриками (WER) и конечной задачей (NER), что является научным вопросом."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Обозначен пробел в методах/данных, связанный с недостатком обучающих примеров для редких классов и отсутствием стабильных карт."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "status": "accepted",
+          "reason": "Обозначен пробел в знаниях/ресурсах, связанный с морфологической сложностью и отсутствием аннотированных ресурсов для арабского языка.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "status": "accepted",
+          "reason": "Обозначен пробел в понимании/поведении существующих моделей (Whisper) при работе с арабским языком (генерация перевода вместо транскрипции).",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "status": "accepted",
+          "reason": "Обозначен пробел в понимании взаимосвязи между метриками (WER) и конечной задачей (NER), что является научным вопросом.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "status": "accepted",
+          "reason": "Обозначен пробел в методах/данных, связанный с недостатком обучающих примеров для редких классов и отсутствием стабильных карт.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Морфологическая сложность арабского языка и отсутствие коротких гласных создают пробел в знаниях, ограничивающий создание аннотированных ресурсов для задач распознавания названий сущностей.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие модели Whisper показывают низкую производительность на арабском языке в режиме zero-shot и требуют исследования их поведения при генерации переводов вместо транскрипции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Preliminary analysis of its outputs indicates that Whisper-large-v3 sometimes produces English translations instead of Arabic transcriptions or transliterations into Latin script, which warrants further investigation.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Низкий уровень ошибок транскрибации (WER) не гарантирует лучшее извлечение сущностей в пайплайнах ASR и NER.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "While transcription quality generally influences downstream performance, the results show that lower WER does not necessarily lead to better entity extraction.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существенное падение производительности моделей на редкие классы сущностей (LAW, PRODUCT, QUANTITY) обусловлено малым количеством обучающих примеров и отсутствием стабильных акусто-семантических карт.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "Given the extremely small number of training examples (e.g., LAW and CURR), the models are unable to learn stable acoustic-semantic mappings.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2604.02209v1__rep1:r2:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.298534600002313,
+          "load_seconds": 2.6115787,
+          "prompt_eval_seconds": 0.516823999,
+          "eval_seconds": 1.034851,
+          "total_server_seconds": 4.1808196,
+          "prompt_tokens": 1019,
+          "generated_tokens": 84,
+          "tokens_per_second": 81.17,
+          "prompt_tokens_per_second": 1971.66,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 18193981440,
+            "mean_system_ram_used_bytes": 16039994368.0,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 46.825,
+            "max_cpu_percent": 36.6,
+            "mean_cpu_percent": 23.0,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92430336.0,
+            "max_ollama_process_rss_bytes": 222756864,
+            "mean_ollama_process_rss_bytes": 222627840.0,
+            "max_gpu_mem_mb": 4799.0,
+            "mean_gpu_mem_mb": 3114.75,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 57.25,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 55.575,
+            "max_gpu_power_w": 114.21,
+            "mean_gpu_power_w": 73.05499999999999,
+            "estimated_gpu_joules": 226.5854986476898
+          }
+        },
+        {
+          "request_id": "2604.02209v1__rep1:r2:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.591728100000182,
+          "load_seconds": 3.312654,
+          "prompt_eval_seconds": 1.004412,
+          "eval_seconds": 5.202381,
+          "total_server_seconds": 9.5363947,
+          "prompt_tokens": 1639,
+          "generated_tokens": 349,
+          "tokens_per_second": 67.08,
+          "prompt_tokens_per_second": 1631.8,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 15666315264,
+            "mean_system_ram_used_bytes": 15501918720.0,
+            "max_system_ram_percent": 45.7,
+            "mean_system_ram_percent": 45.225,
+            "max_cpu_percent": 30.7,
+            "mean_cpu_percent": 20.1375,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92432384.0,
+            "max_ollama_process_rss_bytes": 223707136,
+            "mean_ollama_process_rss_bytes": 222916608.0,
+            "max_gpu_mem_mb": 5302.0,
+            "mean_gpu_mem_mb": 4222.5,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 61.75,
+            "max_gpu_temperature_c": 58.6,
+            "mean_gpu_temperature_c": 56.7375,
+            "max_gpu_power_w": 113.37,
+            "mean_gpu_power_w": 86.4525,
+            "estimated_gpu_joules": 744.818256649971
+          }
+        },
+        {
+          "request_id": "2604.02209v1__rep1:r2:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.104723899999954,
+          "load_seconds": 5.6755612,
+          "prompt_eval_seconds": 0.92617,
+          "eval_seconds": 4.430038,
+          "total_server_seconds": 11.0473662,
+          "prompt_tokens": 1254,
+          "generated_tokens": 389,
+          "tokens_per_second": 87.81,
+          "prompt_tokens_per_second": 1353.96,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 18276630528,
+            "mean_system_ram_used_bytes": 17101154076.444445,
+            "max_system_ram_percent": 53.3,
+            "mean_system_ram_percent": 49.91111111111111,
+            "max_cpu_percent": 44.0,
+            "mean_cpu_percent": 26.177777777777777,
+            "max_python_process_rss_bytes": 92434432,
+            "mean_python_process_rss_bytes": 92432611.55555555,
+            "max_ollama_process_rss_bytes": 223375360,
+            "mean_ollama_process_rss_bytes": 223150990.2222222,
+            "max_gpu_mem_mb": 6158.0,
+            "mean_gpu_mem_mb": 4721.666666666667,
+            "max_gpu_util_percent": 91.0,
+            "mean_gpu_util_percent": 47.77777777777778,
+            "max_gpu_temperature_c": 57.5,
+            "mean_gpu_temperature_c": 55.666666666666664,
+            "max_gpu_power_w": 100.83,
+            "mean_gpu_power_w": 73.10888888888888,
+            "estimated_gpu_joules": 717.2302487111092
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 53.058006999999634,
+  "seconds_end_to_end": 100.28339309999865,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "8921704fc771d8c8edafd1c167c23d3aa2c0a15373ad5fcb56d749f21d3f4d64"
+}

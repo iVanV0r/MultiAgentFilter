@@ -1,0 +1,1050 @@
+{
+  "paper_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-",
+  "filename": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток существующих методов для аспектного анализа тональности текстовых сообщений на естественном языке",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Рассмотрена задача аспектного анализа тональности текстовых сообщений на естественном языке",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+      "type": "data",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 9,
+          "quote": "в процессе тестирования 3224 токена были абсолютно неизвестными для нейросетевой модели и имели случайным образом инициализированные векторные представления",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Многослойные нейросетевые модели могут быть более гибкими и показывать лучшие результаты по сравнению с однослойными.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 10,
+          "quote": "Многослойные нейросетевые модели являются более гибкими и могут показать лучшие результаты.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 50.663271800000075,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток существующих методов для аспектного анализа тональности текстовых сообщений на естественном языке",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Рассмотрена задача аспектного анализа тональности текстовых сообщений на естественном языке",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.542541399998299,
+        "load_seconds": 3.6946674,
+        "prompt_eval_seconds": 0.742949,
+        "eval_seconds": 0.983128,
+        "total_server_seconds": 5.4362837,
+        "prompt_tokens": 1142,
+        "generated_tokens": 70,
+        "tokens_per_second": 71.2,
+        "prompt_tokens_per_second": 1537.12,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 18549907456,
+          "mean_system_ram_used_bytes": 16316429926.4,
+          "max_system_ram_percent": 54.1,
+          "mean_system_ram_percent": 47.62,
+          "max_cpu_percent": 47.5,
+          "mean_cpu_percent": 30.660000000000004,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94851891.2,
+          "max_ollama_process_rss_bytes": 223260672,
+          "mean_ollama_process_rss_bytes": 222826496.0,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 3626.4,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 42.6,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 55.06,
+          "max_gpu_power_w": 110.88,
+          "mean_gpu_power_w": 74.97,
+          "estimated_gpu_joules": 360.25721849918364
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "front_matter",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Системы анализа тональности дают неверную нейтральную оценку отзывам с смешанными чувствами, так как не учитывают разные аспекты сообщения.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Серьезным практическим ограничением данной задачи является тот факт, что тексты на естественном языке зачастую содержат более одной тональной оценки.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.05289890000131,
+        "load_seconds": 0.0178079,
+        "prompt_eval_seconds": 0.550934,
+        "eval_seconds": 1.356327,
+        "total_server_seconds": 1.9848,
+        "prompt_tokens": 1104,
+        "generated_tokens": 93,
+        "tokens_per_second": 68.57,
+        "prompt_tokens_per_second": 2003.87,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16214315008,
+          "mean_system_ram_used_bytes": 16121884672.0,
+          "max_system_ram_percent": 47.3,
+          "mean_system_ram_percent": 47.05,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 22.9,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94846976.0,
+          "max_ollama_process_rss_bytes": 222720000,
+          "mean_ollama_process_rss_bytes": 222720000.0,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 5334.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 81.5,
+          "max_gpu_temperature_c": 58.0,
+          "mean_gpu_temperature_c": 57.3,
+          "max_gpu_power_w": 100.87,
+          "mean_gpu_power_w": 77.935,
+          "estimated_gpu_joules": 69.8522675037384
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "front_matter",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для решения задачи аспектного анализа тональности текстовых данных на русском языке",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Четыре описанные модели (простая рекуррентная нейронная сеть, GRU, LSTM, сверточная нейронная сеть) необходимо проверить на практике, оценив их возможность решать задачу аспектного анализа тональности текстовых данных на русском языке.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.2665949000002,
+        "load_seconds": 0.0329721,
+        "prompt_eval_seconds": 0.371905,
+        "eval_seconds": 1.739853,
+        "total_server_seconds": 2.1988319,
+        "prompt_tokens": 713,
+        "generated_tokens": 106,
+        "tokens_per_second": 60.92,
+        "prompt_tokens_per_second": 1917.16,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16336343040,
+          "mean_system_ram_used_bytes": 16252540928.0,
+          "max_system_ram_percent": 47.7,
+          "mean_system_ram_percent": 47.45,
+          "max_cpu_percent": 24.3,
+          "mean_cpu_percent": 21.8,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94846976.0,
+          "max_ollama_process_rss_bytes": 222720000,
+          "mean_ollama_process_rss_bytes": 222720000.0,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 5334.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 81.0,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 86.85,
+          "mean_gpu_power_w": 78.75,
+          "estimated_gpu_joules": 89.93328959941864
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "front_matter",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток данных для обучения и тестирования моделей аспектного анализа тональности на русском языке.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Фокус экспериментальных исследований конференции «Диалог-2015», имеющих общее название SentiRuEval, был направлен на анализ тональности характеристик (аспектов) объектов.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.146461000000272,
+        "load_seconds": 0.0332533,
+        "prompt_eval_seconds": 0.553562,
+        "eval_seconds": 1.441589,
+        "total_server_seconds": 2.082649,
+        "prompt_tokens": 940,
+        "generated_tokens": 87,
+        "tokens_per_second": 60.35,
+        "prompt_tokens_per_second": 1698.09,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16522862592,
+          "mean_system_ram_used_bytes": 16425394176.0,
+          "max_system_ram_percent": 48.2,
+          "mean_system_ram_percent": 47.900000000000006,
+          "max_cpu_percent": 18.4,
+          "mean_cpu_percent": 9.2,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94846976.0,
+          "max_ollama_process_rss_bytes": 222720000,
+          "mean_ollama_process_rss_bytes": 222720000.0,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 5334.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 89.0,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 98.29,
+          "mean_gpu_power_w": 76.525,
+          "estimated_gpu_joules": 68.595193567276
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "front_matter",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Отсутствие четких закономерностей в зависимости параметров w и c от качества модели.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Представленные распределения точности в зависимости от w и c не демонстрируют каких-либо четко выраженных закономерностей.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5749843000012334,
+        "load_seconds": 0.017119,
+        "prompt_eval_seconds": 0.386486,
+        "eval_seconds": 1.07491,
+        "total_server_seconds": 1.5280345,
+        "prompt_tokens": 676,
+        "generated_tokens": 68,
+        "tokens_per_second": 63.26,
+        "prompt_tokens_per_second": 1749.09,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16707641344,
+          "mean_system_ram_used_bytes": 16615079936.0,
+          "max_system_ram_percent": 48.8,
+          "mean_system_ram_percent": 48.5,
+          "max_cpu_percent": 24.5,
+          "mean_cpu_percent": 21.6,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94846976.0,
+          "max_ollama_process_rss_bytes": 222720000,
+          "mean_ollama_process_rss_bytes": 222720000.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 98.62,
+          "mean_gpu_power_w": 76.81,
+          "estimated_gpu_joules": 69.19413805007935
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "front_matter",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток данных о влиянии количества эпох обучения на эффективность рекуррентных моделей при отсутствии возрастания ошибки на тестовой выборке.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Тем не менее даже при отсутствии возрастания ошибки на тестовой выборке большое количество эпох обучения не всегда рационально.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9339532000012696,
+        "load_seconds": 0.0182387,
+        "prompt_eval_seconds": 0.451138,
+        "eval_seconds": 1.357103,
+        "total_server_seconds": 1.8747796,
+        "prompt_tokens": 791,
+        "generated_tokens": 83,
+        "tokens_per_second": 61.16,
+        "prompt_tokens_per_second": 1753.34,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16887947264,
+          "mean_system_ram_used_bytes": 16799811584.0,
+          "max_system_ram_percent": 49.3,
+          "mean_system_ram_percent": 49.05,
+          "max_cpu_percent": 17.5,
+          "mean_cpu_percent": 8.75,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94846976.0,
+          "max_ollama_process_rss_bytes": 222769152,
+          "mean_ollama_process_rss_bytes": 222769152.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 84.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 57.25,
+          "max_gpu_power_w": 98.4,
+          "mean_gpu_power_w": 83.28,
+          "estimated_gpu_joules": 86.41460311889648
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "front_matter",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость анализа динамики градиентов для выявления причин преждевременной остановки обучения нейросети",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "На графике представлены первые 900 мини-батчей, для остальных 3200 график не меняется (усредненное значение градиента близко к нулю). Таким образом, можно говорить о том, что после 900 мини-батчей нейросеть практически не обучается.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.769330799997988,
+        "load_seconds": 0.0181872,
+        "prompt_eval_seconds": 0.328216,
+        "eval_seconds": 2.120284,
+        "total_server_seconds": 2.5160817,
+        "prompt_tokens": 560,
+        "generated_tokens": 114,
+        "tokens_per_second": 53.77,
+        "prompt_tokens_per_second": 1706.19,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17134546944,
+          "mean_system_ram_used_bytes": 17039796906.666666,
+          "max_system_ram_percent": 50.0,
+          "mean_system_ram_percent": 49.73333333333333,
+          "max_cpu_percent": 44.0,
+          "mean_cpu_percent": 33.266666666666666,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94849706.66666667,
+          "max_ollama_process_rss_bytes": 222769152,
+          "mean_ollama_process_rss_bytes": 222769152.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 77.66666666666667,
+          "max_gpu_temperature_c": 56.8,
+          "mean_gpu_temperature_c": 55.86666666666667,
+          "max_gpu_power_w": 86.29,
+          "mean_gpu_power_w": 65.45333333333333,
+          "estimated_gpu_joules": 179.82695627212524
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "front_matter",
+      "pages": [
+        8
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Риск переобучения модели (overfitting) при достижении стопроцентной точности на обучающей выборке, что приводит к некорректному распространению градиента и снижению качества на тестовой выборке.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "На 22-й эпохе обучения модель полностью подстроилась под обучающую выборку, выдавая стопроцентную точность для всех аспектов. Следовательно, значения функции ошибки для каждого из аспектных классов стали близки к нулю, что повлияло на представленное выше среднее значение градиента",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.8241243999982544,
+        "load_seconds": 0.0354246,
+        "prompt_eval_seconds": 0.313858,
+        "eval_seconds": 2.358621,
+        "total_server_seconds": 2.7547436,
+        "prompt_tokens": 536,
+        "generated_tokens": 142,
+        "tokens_per_second": 60.2,
+        "prompt_tokens_per_second": 1707.78,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17296531456,
+          "mean_system_ram_used_bytes": 17232628394.666668,
+          "max_system_ram_percent": 50.5,
+          "mean_system_ram_percent": 50.300000000000004,
+          "max_cpu_percent": 19.9,
+          "mean_cpu_percent": 13.033333333333331,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94849706.66666667,
+          "max_ollama_process_rss_bytes": 222769152,
+          "mean_ollama_process_rss_bytes": 222769152.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 76.33333333333333,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 56.333333333333336,
+          "max_gpu_power_w": 98.67,
+          "mean_gpu_power_w": 84.47666666666667,
+          "estimated_gpu_joules": 194.21015426635742
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "front_matter",
+      "pages": [
+        9
+      ],
+      "generated": 3,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для обработки текстов на малых выборках без предварительной лингвистической настройки",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "модель машинного обучения, располагающий всего 201 примером в обучающей выборке и не имеющий никаких семантических либо синтаксических настроек для работы с русским языком",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Отсутствие данных о том, как методы машинного обучения работают на токенах, неизвестных модели",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "в процессе тестирования 3224 токена были абсолютно неизвестными для нейросетевой модели и имели случайным образом инициализированные векторные представления",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Необходимость использования методов, обученных на больших объемах данных, для улучшения точности",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "одним из направлений является использование векторных представлений, предварительно обученных с помощью методов word2vec или GloVe",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.164059099999577,
+        "load_seconds": 0.0168721,
+        "prompt_eval_seconds": 0.893779,
+        "eval_seconds": 3.961661,
+        "total_server_seconds": 4.9278856,
+        "prompt_tokens": 1563,
+        "generated_tokens": 243,
+        "tokens_per_second": 61.34,
+        "prompt_tokens_per_second": 1748.75,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 17521713152,
+          "mean_system_ram_used_bytes": 17472545587.2,
+          "max_system_ram_percent": 51.1,
+          "mean_system_ram_percent": 50.96,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 19.619999999999997,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94851891.2,
+          "max_ollama_process_rss_bytes": 222756864,
+          "mean_ollama_process_rss_bytes": 222756864.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 96.0,
+          "mean_gpu_util_percent": 87.2,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 98.85,
+          "mean_gpu_power_w": 79.556,
+          "estimated_gpu_joules": 424.80110287189484
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "front_matter",
+      "pages": [
+        10
+      ],
+      "generated": 2,
+      "grounded": 2,
+      "raw": [
+        {
+          "statement": "Многослойные нейросетевые модели могут быть более гибкими и показывать лучшие результаты по сравнению с однослойными.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "Многослойные нейросетевые модели являются более гибкими и могут показать лучшие результаты.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Увеличение объема обучающих данных может привести к увеличению показателей точности распознавания семантических и синтаксических взаимосвязей.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 10,
+              "quote": "И вполне естественным является предположение, что увеличение объемов обучающих данных приведет к увеличению показателей точности.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.3105163000000175,
+        "load_seconds": 0.0334793,
+        "prompt_eval_seconds": 0.312586,
+        "eval_seconds": 2.830512,
+        "total_server_seconds": 3.2434284,
+        "prompt_tokens": 523,
+        "generated_tokens": 158,
+        "tokens_per_second": 55.82,
+        "prompt_tokens_per_second": 1673.14,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 17743441920,
+          "mean_system_ram_used_bytes": 17663700992.0,
+          "max_system_ram_percent": 51.8,
+          "mean_system_ram_percent": 51.53333333333333,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 20.833333333333332,
+          "max_python_process_rss_bytes": 94855168,
+          "mean_python_process_rss_bytes": 94849706.66666667,
+          "max_ollama_process_rss_bytes": 222814208,
+          "mean_ollama_process_rss_bytes": 222814208.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 77.66666666666667,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.46666666666667,
+          "max_gpu_power_w": 98.32,
+          "mean_gpu_power_w": 83.54,
+          "estimated_gpu_joules": 189.22494853019714
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.599587699998665,
+      "load_seconds": 0.0328197,
+      "prompt_eval_seconds": 0.518967999,
+      "eval_seconds": 2.924628,
+      "total_server_seconds": 3.5306363,
+      "prompt_tokens": 699,
+      "generated_tokens": 161,
+      "tokens_per_second": 55.05,
+      "prompt_tokens_per_second": 1346.9,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 17942487040,
+        "mean_system_ram_used_bytes": 17874944000.0,
+        "max_system_ram_percent": 52.4,
+        "mean_system_ram_percent": 52.166666666666664,
+        "max_cpu_percent": 61.6,
+        "mean_cpu_percent": 31.8,
+        "max_python_process_rss_bytes": 94855168,
+        "mean_python_process_rss_bytes": 94849706.66666667,
+        "max_ollama_process_rss_bytes": 222830592,
+        "mean_ollama_process_rss_bytes": 222830592.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 89.0,
+        "mean_gpu_util_percent": 83.66666666666667,
+        "max_gpu_temperature_c": 57.5,
+        "mean_gpu_temperature_c": 56.86666666666667,
+        "max_gpu_power_w": 86.82,
+        "mean_gpu_power_w": 81.28666666666668,
+        "estimated_gpu_joules": 201.7445617413521
+      }
+    },
+    {
+      "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 9.33436200000142,
+      "load_seconds": 0.0167215,
+      "prompt_eval_seconds": 0.448211,
+      "eval_seconds": 8.735079,
+      "total_server_seconds": 9.2489944,
+      "prompt_tokens": 777,
+      "generated_tokens": 483,
+      "tokens_per_second": 55.29,
+      "prompt_tokens_per_second": 1733.56,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 18130345984,
+        "mean_system_ram_used_bytes": 18101601280.0,
+        "max_system_ram_percent": 52.9,
+        "mean_system_ram_percent": 52.8375,
+        "max_cpu_percent": 34.1,
+        "mean_cpu_percent": 26.3,
+        "max_python_process_rss_bytes": 94855168,
+        "mean_python_process_rss_bytes": 94853120.0,
+        "max_ollama_process_rss_bytes": 222834688,
+        "mean_ollama_process_rss_bytes": 222834688.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 86.5,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.15,
+        "max_gpu_power_w": 98.73,
+        "mean_gpu_power_w": 84.1225,
+        "estimated_gpu_joules": 720.1731847190857
+      }
+    },
+    {
+      "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 1.6897738999978174,
+      "load_seconds": 0.0192615,
+      "prompt_eval_seconds": 0.199986,
+      "eval_seconds": 1.353428,
+      "total_server_seconds": 1.6219322,
+      "prompt_tokens": 346,
+      "generated_tokens": 82,
+      "tokens_per_second": 60.59,
+      "prompt_tokens_per_second": 1730.12,
+      "hardware": {
+        "samples": 2,
+        "max_system_ram_used_bytes": 18342162432,
+        "mean_system_ram_used_bytes": 18231177216.0,
+        "max_system_ram_percent": 53.5,
+        "mean_system_ram_percent": 53.2,
+        "max_cpu_percent": 27.0,
+        "mean_cpu_percent": 13.5,
+        "max_python_process_rss_bytes": 94855168,
+        "mean_python_process_rss_bytes": 94846976.0,
+        "max_ollama_process_rss_bytes": 222834688,
+        "mean_ollama_process_rss_bytes": 222834688.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 78.0,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.0,
+        "max_gpu_power_w": 87.06,
+        "mean_gpu_power_w": 78.055,
+        "estimated_gpu_joules": 86.58482768535613
+      }
+    },
+    {
+      "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:merge:1:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.302556300001015,
+      "load_seconds": 0.0174788,
+      "prompt_eval_seconds": 0.450438,
+      "eval_seconds": 2.761691,
+      "total_server_seconds": 3.2383384,
+      "prompt_tokens": 778,
+      "generated_tokens": 161,
+      "tokens_per_second": 58.3,
+      "prompt_tokens_per_second": 1727.21,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18331488256,
+        "mean_system_ram_used_bytes": 18327273472.0,
+        "max_system_ram_percent": 53.5,
+        "mean_system_ram_percent": 53.5,
+        "max_cpu_percent": 33.0,
+        "mean_cpu_percent": 26.133333333333336,
+        "max_python_process_rss_bytes": 94855168,
+        "mean_python_process_rss_bytes": 94849706.66666667,
+        "max_ollama_process_rss_bytes": 222511104,
+        "mean_ollama_process_rss_bytes": 222511104.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 85.66666666666667,
+        "max_gpu_temperature_c": 57.7,
+        "mean_gpu_temperature_c": 57.333333333333336,
+        "max_gpu_power_w": 98.71,
+        "mean_gpu_power_w": 93.71666666666665,
+        "estimated_gpu_joules": 225.44336357355115
+      }
+    },
+    {
+      "request_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-__rep1:merge:1:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 3.130806900000607,
+      "load_seconds": 0.0171953,
+      "prompt_eval_seconds": 0.317868,
+      "eval_seconds": 2.69019,
+      "total_server_seconds": 3.074355,
+      "prompt_tokens": 515,
+      "generated_tokens": 160,
+      "tokens_per_second": 59.48,
+      "prompt_tokens_per_second": 1620.17,
+      "hardware": {
+        "samples": 3,
+        "max_system_ram_used_bytes": 18517221376,
+        "mean_system_ram_used_bytes": 18448826368.0,
+        "max_system_ram_percent": 54.0,
+        "mean_system_ram_percent": 53.833333333333336,
+        "max_cpu_percent": 20.7,
+        "mean_cpu_percent": 13.6,
+        "max_python_process_rss_bytes": 94855168,
+        "mean_python_process_rss_bytes": 94849706.66666667,
+        "max_ollama_process_rss_bytes": 222511104,
+        "mean_ollama_process_rss_bytes": 222511104.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 80.33333333333333,
+        "max_gpu_temperature_c": 57.6,
+        "mean_gpu_temperature_c": 57.26666666666667,
+        "max_gpu_power_w": 97.46,
+        "mean_gpu_power_w": 89.30333333333333,
+        "estimated_gpu_joules": 213.22800770998003
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "69f67b00972f0d04964aadef309a998c34902eadae56f8899affaf9595ca2be9"
+}

@@ -1,0 +1,758 @@
+{
+  "paper_id": "2603.28304v1",
+  "filename": "2603.28304v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "a convention that is largely empirical rather than principled",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+      "type": "knowledge",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+      "type": "data",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+      "type": "data",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+      "status": "accepted",
+      "reason": "Указывает на отсутствие принципов выбора конфигураций температуры, что является пробелом, который статья пытается заполнить.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "a convention that is largely empirical rather than principled",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+      "status": "accepted",
+      "reason": "Обозначает, что влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов LLM-as-a-judge недостаточно изучено, что является фокусом статьи.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе.",
+      "status": "rejected",
+      "reason": "Критика указывает, что проблема 'механизмов влияния' не является основной темой статьи, которая фокусируется на причинно-следственном эффекте, а не на механизмах.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "its underlying mechanisms on the \"judging behavior\" remain underexplored through a systematic analysis",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+      "status": "accepted",
+      "reason": "Четко формулирует отсутствие причинно-следственной доказательной базы, которую статья намерена предоставить.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+      "status": "accepted",
+      "reason": "Отражает пробел в наличии статистических доказательств о необходимости дифференцированных настроек температуры, что является целью исследования.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+      "status": "accepted",
+      "reason": "Формулирует открытый вопрос о необходимости различных настроек температуры для оптимизации, что соответствует заявленной цели.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью.",
+      "status": "rejected",
+      "reason": "Утверждение о неспособности 'интуитивных статистических анализов' не является достаточным научным пробелом, так как статья сама предлагает более строгий анализ.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Intuitive statistical analyses cannot fully capture the direct causal influence of temperature on the judge.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M3",
+            "criticism": "проблема не этой статьи",
+            "source_page": 2,
+            "support_quote": "its underlying mechanisms on the \"judging behavior\" remain underexplored through a systematic analysis",
+            "verified": true
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+            "reason": "Исходная формулировка содержит фактическую ошибку: статья утверждает, что эмпирические настройки (например, 0.01) являются общепринятым стандартом, а не отсутствием принципов."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+            "reason": "Проблема точно отражена в тексте: 'there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability'."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе.",
+            "reason": "Исходная формулировка содержит грамматическую ошибку и некорректное использование термина 'механизмы' в контексте отсутствия данных. Статья говорит о том, что механизмы остаются подопросленными (underexplored), а не изученными."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+            "reason": "Проблема полностью соответствует тексту: 'there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability'."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "keep",
+            "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+            "reason": "Проблема точно отражена: 'thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems'."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "keep",
+            "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+            "reason": "Проблема точно отражена: 'whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question'."
+          },
+          {
+            "candidate_id": "M7",
+            "action": "keep",
+            "statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью.",
+            "reason": "Проблема точно отражена: 'Intuitive statistical analyses cannot fully capture the direct causal influence of temperature on the judge'."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Исходная формулировка содержит фактическую ошибку: статья утверждает, что эмпирические настройки (например, 0.01) являются общепринятым стандартом, а не отсутствием принципов.",
+          "old_statement": "Недостаток принципов выбора конфигураций температуры при оценке с помощью LLM",
+          "new_statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM"
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Проблема точно отражена в тексте: 'there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability'.",
+          "old_statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+          "new_statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Исходная формулировка содержит грамматическую ошибку и некорректное использование термина 'механизмы' в контексте отсутствия данных. Статья говорит о том, что механизмы остаются подопросленными (underexplored), а не изученными.",
+          "old_statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе.",
+          "new_statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Проблема полностью соответствует тексту: 'there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability'.",
+          "old_statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+          "new_statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "keep",
+          "reason": "Проблема точно отражена: 'thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems'.",
+          "old_statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+          "new_statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "keep",
+          "reason": "Проблема точно отражена: 'whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question'.",
+          "old_statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+          "new_statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях."
+        },
+        {
+          "candidate_id": "M7",
+          "action": "keep",
+          "reason": "Проблема точно отражена: 'Intuitive statistical analyses cannot fully capture the direct causal influence of temperature on the judge'.",
+          "old_statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью.",
+          "new_statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "Все кандидаты четко формулируют пробел в знаниях, который данная работа стремится устранить, используя контролируемые эксперименты и причинно-следственный анализ.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Указывает на отсутствие принципов выбора конфигураций температуры, что является пробелом, который статья пытается заполнить."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначает, что влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов LLM-as-a-judge недостаточно изучено, что является фокусом статьи."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Критика указывает, что проблема 'механизмов влияния' не является основной темой статьи, которая фокусируется на причинно-следственном эффекте, а не на механизмах."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Четко формулирует отсутствие причинно-следственной доказательной базы, которую статья намерена предоставить."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": true,
+            "reason": "Отражает пробел в наличии статистических доказательств о необходимости дифференцированных настроек температуры, что является целью исследования."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": true,
+            "reason": "Формулирует открытый вопрос о необходимости различных настроек температуры для оптимизации, что соответствует заявленной цели."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": false,
+            "reason": "Утверждение о неспособности 'интуитивных статистических анализов' не является достаточным научным пробелом, так как статья сама предлагает более строгий анализ."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "a convention that is largely empirical rather than principled",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "its underlying mechanisms on the \"judging behavior\" remain underexplored through a systematic analysis",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Intuitive statistical analyses cannot fully capture the direct causal influence of temperature on the judge.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+          "status": "accepted",
+          "reason": "Указывает на отсутствие принципов выбора конфигураций температуры, что является пробелом, который статья пытается заполнить.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "a convention that is largely empirical rather than principled",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+          "status": "accepted",
+          "reason": "Обозначает, что влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов LLM-as-a-judge недостаточно изучено, что является фокусом статьи.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Механизмы влияния температуры на поведение судей (judging behavior) остаются недостаточно изученными в систематическом анализе.",
+          "status": "rejected",
+          "reason": "Критика указывает, что проблема 'механизмов влияния' не является основной темой статьи, которая фокусируется на причинно-следственном эффекте, а не на механизмах.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "its underlying mechanisms on the \"judging behavior\" remain underexplored through a systematic analysis",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+          "status": "accepted",
+          "reason": "Четко формулирует отсутствие причинно-следственной доказательной базы, которую статья намерена предоставить.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+          "status": "accepted",
+          "reason": "Отражает пробел в наличии статистических доказательств о необходимости дифференцированных настроек температуры, что является целью исследования.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+          "status": "accepted",
+          "reason": "Формулирует открытый вопрос о необходимости различных настроек температуры для оптимизации, что соответствует заявленной цели.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "Интуитивные статистические анализы не способны полностью охватить прямое причинно-следственное влияние температуры на судью.",
+          "status": "rejected",
+          "reason": "Утверждение о неспособности 'интуитивных статистических анализов' не является достаточным научным пробелом, так как статья сама предлагает более строгий анализ.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Intuitive statistical analyses cannot fully capture the direct causal influence of temperature on the judge.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Отсутствуют принципы выбора конфигураций температуры при оценке с помощью LLM",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "a convention that is largely empirical rather than principled",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Влияние параметров генерации (температуры) на стабильность и интерпретируемость результатов оценки LLM-as-a-judge",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "LLM-based evaluation outcomes are susceptible to influences from generation parameters, such as sampling temperature (Du et al., 2025), which can induce score volatility, positional bias and decreased consistency",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствует причинно-следственная доказательная база о том, что температура последовательно влияет на решения судей, согласие с аннотациями людей и стабильность оценки.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "there is little causal evidence showing whether temperature consistently affects judging decisions, agreement with human annotations, and evaluation stability",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаточно данных о том, следует ли применять дифференцированные настройки температуры в системах LLM-as-a-judge.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "thereby robust statistical evidence and practical insights on whether differentiated temperature settings should be adopted in LLM-as-a-judge systems",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаток данных о влиянии различных настроек температуры на эффективность LLM-as-a-Judge в разных сценариях.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "whether distinct temperature settings are required for LLMs-as-a-Judge to optimize judgment outcomes remains an open question",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.28304v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 20.31890420000127,
+          "load_seconds": 18.7677305,
+          "prompt_eval_seconds": 0.712962,
+          "eval_seconds": 0.769145,
+          "total_server_seconds": 20.2741192,
+          "prompt_tokens": 1216,
+          "generated_tokens": 53,
+          "tokens_per_second": 68.91,
+          "prompt_tokens_per_second": 1705.56,
+          "hardware": {
+            "samples": 17,
+            "max_system_ram_used_bytes": 21526204416,
+            "mean_system_ram_used_bytes": 15920173537.882353,
+            "max_system_ram_percent": 62.8,
+            "mean_system_ram_percent": 46.45294117647059,
+            "max_cpu_percent": 46.2,
+            "mean_cpu_percent": 13.776470588235295,
+            "max_python_process_rss_bytes": 94466048,
+            "mean_python_process_rss_bytes": 94464361.41176471,
+            "max_ollama_process_rss_bytes": 222699520,
+            "mean_ollama_process_rss_bytes": 222654464.0,
+            "max_gpu_mem_mb": 4842.0,
+            "mean_gpu_mem_mb": 3712.5882352941176,
+            "max_gpu_util_percent": 87.0,
+            "mean_gpu_util_percent": 10.529411764705882,
+            "max_gpu_temperature_c": 58.3,
+            "mean_gpu_temperature_c": 54.05294117647059,
+            "max_gpu_power_w": 113.37,
+            "mean_gpu_power_w": 59.21588235294117,
+            "estimated_gpu_joules": 1099.0982807850837
+          }
+        },
+        {
+          "request_id": "2603.28304v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 13.395186900001136,
+          "load_seconds": 3.3358769,
+          "prompt_eval_seconds": 0.967608,
+          "eval_seconds": 8.900388,
+          "total_server_seconds": 13.2204805,
+          "prompt_tokens": 1648,
+          "generated_tokens": 574,
+          "tokens_per_second": 64.49,
+          "prompt_tokens_per_second": 1703.17,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 15858655232,
+            "mean_system_ram_used_bytes": 15759271005.09091,
+            "max_system_ram_percent": 46.3,
+            "mean_system_ram_percent": 46.00909090909091,
+            "max_cpu_percent": 39.9,
+            "mean_cpu_percent": 22.009090909090908,
+            "max_python_process_rss_bytes": 94466048,
+            "mean_python_process_rss_bytes": 94464558.54545455,
+            "max_ollama_process_rss_bytes": 223084544,
+            "mean_ollama_process_rss_bytes": 223007092.36363637,
+            "max_gpu_mem_mb": 5344.0,
+            "mean_gpu_mem_mb": 4565.909090909091,
+            "max_gpu_util_percent": 88.0,
+            "mean_gpu_util_percent": 69.63636363636364,
+            "max_gpu_temperature_c": 58.0,
+            "mean_gpu_temperature_c": 56.27272727272727,
+            "max_gpu_power_w": 111.36,
+            "mean_gpu_power_w": 83.2890909090909,
+            "estimated_gpu_joules": 1032.847770898342
+          }
+        },
+        {
+          "request_id": "2603.28304v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 56.825111500002095,
+          "load_seconds": 49.3606571,
+          "prompt_eval_seconds": 1.023066,
+          "eval_seconds": 6.30096,
+          "total_server_seconds": 56.7006646,
+          "prompt_tokens": 1229,
+          "generated_tokens": 531,
+          "tokens_per_second": 84.27,
+          "prompt_tokens_per_second": 1201.29,
+          "hardware": {
+            "samples": 46,
+            "max_system_ram_used_bytes": 18330685440,
+            "mean_system_ram_used_bytes": 17818248592.695652,
+            "max_system_ram_percent": 53.5,
+            "mean_system_ram_percent": 51.99347826086956,
+            "max_cpu_percent": 56.8,
+            "mean_cpu_percent": 13.671739130434782,
+            "max_python_process_rss_bytes": 94474240,
+            "mean_python_process_rss_bytes": 94469164.52173913,
+            "max_ollama_process_rss_bytes": 223522816,
+            "mean_ollama_process_rss_bytes": 223040289.39130434,
+            "max_gpu_mem_mb": 6200.0,
+            "mean_gpu_mem_mb": 4594.739130434783,
+            "max_gpu_util_percent": 91.0,
+            "mean_gpu_util_percent": 14.195652173913043,
+            "max_gpu_temperature_c": 55.2,
+            "mean_gpu_temperature_c": 52.36304347826086,
+            "max_gpu_power_w": 98.82,
+            "mean_gpu_power_w": 59.81304347826087,
+            "estimated_gpu_joules": 3304.1315731716154
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 90.5685416999986,
+  "seconds_end_to_end": 273.9915546000011,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "377d2331bb2949538e66c1b933ba43656d0ac407db97289f353d219002272f49"
+}

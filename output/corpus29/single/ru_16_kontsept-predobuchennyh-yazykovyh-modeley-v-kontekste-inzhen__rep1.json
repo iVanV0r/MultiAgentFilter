@@ -1,0 +1,2359 @@
+{
+  "paper_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen",
+  "filename": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток методов для извлечения и формализации знаний из предобученных языковых моделей",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "С 2019 г. активно изучаемым вопросом стало содержание в предобученных языковых моделях интернализированных знаний, извлеченных из текстовых корпусов, использовавшихся для предобучения (pretraining) или переноса обучения (transfer learning).",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Большинство методов глубокого обучения требуют существенного количества вручную размеченных данных, что ограничивает их применимость в сферах с недостатком таких данных",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "большинство методов глубокого обучения требуют существенного количества вручную размеченных данных, что ограничивает применимость таких методов во множестве сфер, испытывающих недостаток размеченных данных",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Извлечение более глубокой лингвистической информации является нетривиальной задачей",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "авторы утверждают о том, что извлечение более глубокой (за пределами словестного уровня) информации является нетривиальной задачей",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существенные расхождения между предобучением на специальных символах и тонкой настройкой на реальных данных в моделях типа BERT",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "эти символы не встречаются в реальных данных во время тонкой настройки, что приводит к возникновению расхождений в результатах",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существенное падение производительности трансформерных моделей при решении задач с глубокой таксономией",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "производительность таких моделей существенно падает с увеличением глубины таксономии (т.е. в случаях с гипонимами)",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие общепризнанного и исчерпывающего определения понятия «граф знаний»",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "понятие «граф знаний» страдало от полного отсутствия какого-либо общепризнанного и исчерпывающего определения",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Способность нейронных языковых моделей обобщать на неизвестные или редко встречающиеся объекты",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "не способны к обобщению на неизвестные или редко встречающиеся объекты",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 179.82270029999927,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток методов для интерпретации имплицитных знаний в предобученных языковых моделях",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.794015600000421,
+        "load_seconds": 3.5555575,
+        "prompt_eval_seconds": 0.515782,
+        "eval_seconds": 0.656055,
+        "total_server_seconds": 4.7369846,
+        "prompt_tokens": 753,
+        "generated_tokens": 47,
+        "tokens_per_second": 71.64,
+        "prompt_tokens_per_second": 1459.92,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18473443328,
+          "mean_system_ram_used_bytes": 16366799872.0,
+          "max_system_ram_percent": 53.9,
+          "mean_system_ram_percent": 47.75,
+          "max_cpu_percent": 56.9,
+          "mean_cpu_percent": 30.225,
+          "max_python_process_rss_bytes": 94912512,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 223850496,
+          "mean_ollama_process_rss_bytes": 223121408.0,
+          "max_gpu_mem_mb": 5330.0,
+          "mean_gpu_mem_mb": 3191.5,
+          "max_gpu_util_percent": 79.0,
+          "mean_gpu_util_percent": 31.25,
+          "max_gpu_temperature_c": 56.9,
+          "mean_gpu_temperature_c": 54.75,
+          "max_gpu_power_w": 110.59,
+          "mean_gpu_power_w": 68.7525,
+          "estimated_gpu_joules": 212.91149967193604
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "introduction",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для извлечения и формализации знаний из предобученных языковых моделей",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "С 2019 г. активно изучаемым вопросом стало содержание в предобученных языковых моделях интернализированных знаний, извлеченных из текстовых корпусов, использовавшихся для предобучения (pretraining) или переноса обучения (transfer learning).",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.3326734000002034,
+        "load_seconds": 0.0180666,
+        "prompt_eval_seconds": 0.519722,
+        "eval_seconds": 1.684419,
+        "total_server_seconds": 2.2692787,
+        "prompt_tokens": 968,
+        "generated_tokens": 116,
+        "tokens_per_second": 68.87,
+        "prompt_tokens_per_second": 1862.53,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16084676608,
+          "mean_system_ram_used_bytes": 16014573568.0,
+          "max_system_ram_percent": 46.9,
+          "mean_system_ram_percent": 46.7,
+          "max_cpu_percent": 21.8,
+          "mean_cpu_percent": 10.9,
+          "max_python_process_rss_bytes": 94912512,
+          "mean_python_process_rss_bytes": 94904320.0,
+          "max_ollama_process_rss_bytes": 223006720,
+          "mean_ollama_process_rss_bytes": 223006720.0,
+          "max_gpu_mem_mb": 5332.0,
+          "mean_gpu_mem_mb": 5332.0,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.45,
+          "max_gpu_power_w": 100.61,
+          "mean_gpu_power_w": 85.64500000000001,
+          "estimated_gpu_joules": 88.42894892692567
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 3,
+      "grounded": 2,
+      "raw": [
+        {
+          "statement": "Существующие методы предобучения языковых моделей требуют значительных вычислительных ресурсов и часто используют частные наборы данных, что затрудняет объективное сравнение различных подходов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "предобучение языковых моделей вычислительно затратно, такое обучение зачастую осуществляется на частных (приватных) наборах данных, а гиперпараметры оказывают значительное влияние на конечные результаты, из- чего объективное сравнение различных подходов оказывается весьма затруднительным",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Большинство методов глубокого обучения требуют существенного количества вручную размеченных данных, что ограничивает их применимость в сферах с недостатком таких данных.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "большинство методов глубокого обучения требуют существенного количества вручную размеченных данных, что ограничивает применимость таких методов во множестве сфер, испытывающих недостаток размеченных данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Извлечение более глубокой лингвистической информации является нетривиальной задачей.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "авторы утверждают о том, что извлечение более глубокой (за пределами словестного уровня) информации является нетривиальной задачей",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.86505169999873,
+        "load_seconds": 0.018315,
+        "prompt_eval_seconds": 0.853764,
+        "eval_seconds": 4.889806,
+        "total_server_seconds": 5.8170959,
+        "prompt_tokens": 1530,
+        "generated_tokens": 297,
+        "tokens_per_second": 60.74,
+        "prompt_tokens_per_second": 1792.06,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 16306737152,
+          "mean_system_ram_used_bytes": 16245749350.4,
+          "max_system_ram_percent": 47.6,
+          "mean_system_ram_percent": 47.4,
+          "max_cpu_percent": 20.2,
+          "mean_cpu_percent": 14.780000000000001,
+          "max_python_process_rss_bytes": 94912512,
+          "mean_python_process_rss_bytes": 94909235.2,
+          "max_ollama_process_rss_bytes": 223502336,
+          "mean_ollama_process_rss_bytes": 223479398.4,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 5333.6,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 86.8,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.32000000000001,
+          "max_gpu_power_w": 97.99,
+          "mean_gpu_power_w": 85.67,
+          "estimated_gpu_joules": 403.42368093967434
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "introduction",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов обучения языковых моделей без учителя или с неразмеченными данными для выполнения множества задач обработки текста",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "обучаясь на неразмеченных наборах данных и без учителя",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.6228324999974575,
+        "load_seconds": 0.0175914,
+        "prompt_eval_seconds": 0.32431,
+        "eval_seconds": 1.165781,
+        "total_server_seconds": 1.56385,
+        "prompt_tokens": 486,
+        "generated_tokens": 69,
+        "tokens_per_second": 59.19,
+        "prompt_tokens_per_second": 1498.57,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16467283968,
+          "mean_system_ram_used_bytes": 16383907840.0,
+          "max_system_ram_percent": 48.1,
+          "mean_system_ram_percent": 47.85,
+          "max_cpu_percent": 20.3,
+          "mean_cpu_percent": 10.15,
+          "max_python_process_rss_bytes": 94912512,
+          "mean_python_process_rss_bytes": 94904320.0,
+          "max_ollama_process_rss_bytes": 223596544,
+          "mean_ollama_process_rss_bytes": 223588352.0,
+          "max_gpu_mem_mb": 5334.0,
+          "mean_gpu_mem_mb": 5334.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 83.5,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 56.9,
+          "max_gpu_power_w": 86.85,
+          "mean_gpu_power_w": 85.22,
+          "estimated_gpu_joules": 104.04277523756028
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 6,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Существенные расхождения между предобучением на специальных символах и тонкой настройкой на реальных данных в моделях типа BERT.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "эти символы не встречаются в реальных данных во время тонкой настройки, что приводит к возникновению расхождений в результатах",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существенное падение производительности трансформерных моделей при решении задач с глубокой таксономией.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "производительность таких моделей существенно падает с увеличением глубины таксономии (т.е. в случаях с гипонимами)",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие общепризнанного и исчерпывающего определения понятия «граф знаний».",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "понятие «граф знаний» страдало от полного отсутствия какого-либо общепризнанного и исчерпывающего определения",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Ограниченная способность языковых моделей к генерации фактически корректных предложений и обобщению на неизвестные объекты.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "их способность генерировать фактически корректные предложения является весьма скромной... они, в лучшем случае, могут запоминать только факты, наблюдаемые во время обучения",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Недостаточная интеграция знаний из внешних источников для улучшения языковых моделей.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "основное ограничение существующих языковых моделей является то, что они... не способны к обобщению на неизвестные или редко встречающиеся объекты",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Необходимость создания нейронной языковой модели, аугментированной механизмами выбора и копирования информации из внешнего графа знаний.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "основным ограничением существующих языковых моделей является то, что они... не способны к обобщению на неизвестные или редко встречающиеся объекты",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 9.050945900002262,
+        "load_seconds": 0.0325172,
+        "prompt_eval_seconds": 1.017856,
+        "eval_seconds": 7.902078,
+        "total_server_seconds": 9.0061307,
+        "prompt_tokens": 1683,
+        "generated_tokens": 480,
+        "tokens_per_second": 60.74,
+        "prompt_tokens_per_second": 1653.48,
+        "hardware": {
+          "samples": 8,
+          "max_system_ram_used_bytes": 16632274944,
+          "mean_system_ram_used_bytes": 16609119744.0,
+          "max_system_ram_percent": 48.5,
+          "mean_system_ram_percent": 48.4375,
+          "max_cpu_percent": 38.5,
+          "mean_cpu_percent": 19.7625,
+          "max_python_process_rss_bytes": 94912512,
+          "mean_python_process_rss_bytes": 94910464.0,
+          "max_ollama_process_rss_bytes": 222851072,
+          "mean_ollama_process_rss_bytes": 222842880.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 95.0,
+          "mean_gpu_util_percent": 86.875,
+          "max_gpu_temperature_c": 57.7,
+          "mean_gpu_temperature_c": 57.525,
+          "max_gpu_power_w": 98.52,
+          "mean_gpu_power_w": 87.91499999999999,
+          "estimated_gpu_joules": 759.2434442329406
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "introduction",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Способность нейронных языковых моделей обобщать на неизвестные или редко встречающиеся объекты",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "не способны к обобщению на неизвестные или редко встречающиеся объекты",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.4550034999992931,
+        "load_seconds": 0.0168159,
+        "prompt_eval_seconds": 0.286313,
+        "eval_seconds": 0.97936,
+        "total_server_seconds": 1.3460216,
+        "prompt_tokens": 399,
+        "generated_tokens": 62,
+        "tokens_per_second": 63.31,
+        "prompt_tokens_per_second": 1393.58,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16828223488,
+          "mean_system_ram_used_bytes": 16728000512.0,
+          "max_system_ram_percent": 49.1,
+          "mean_system_ram_percent": 48.8,
+          "max_cpu_percent": 20.4,
+          "mean_cpu_percent": 10.2,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222834688,
+          "mean_ollama_process_rss_bytes": 222834688.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 56.7,
+          "mean_gpu_temperature_c": 56.6,
+          "max_gpu_power_w": 85.82,
+          "mean_gpu_power_w": 84.19999999999999,
+          "estimated_gpu_joules": 103.6137909078598
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "results",
+      "pages": [
+        3
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.40910230000008596,
+        "load_seconds": 0.0331774,
+        "prompt_eval_seconds": 0.23087,
+        "eval_seconds": 0.070668,
+        "total_server_seconds": 0.339778,
+        "prompt_tokens": 293,
+        "generated_tokens": 5,
+        "tokens_per_second": 70.75,
+        "prompt_tokens_per_second": 1269.11,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 16827273216,
+          "mean_system_ram_used_bytes": 16827273216.0,
+          "max_system_ram_percent": 49.1,
+          "mean_system_ram_percent": 49.1,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94900224,
+          "mean_python_process_rss_bytes": 94900224.0,
+          "max_ollama_process_rss_bytes": 222343168,
+          "mean_ollama_process_rss_bytes": 222343168.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 87.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 56.5,
+          "mean_gpu_temperature_c": 56.5,
+          "max_gpu_power_w": 69.4,
+          "mean_gpu_power_w": 69.4
+        }
+      }
+    },
+    {
+      "chunk": "C0007",
+      "section": "results",
+      "pages": [
+        4
+      ],
+      "generated": 13,
+      "grounded": 11,
+      "raw": [
+        {
+          "statement": "Необходимость решения проблемы имплицитного хранения знаний в параметрах нейронных сетей и ограничения их объема памяти.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "эти знания имплицитно содержатся в параметрах нейронной сети, что затрудняет установление того, какие знания хранятся в сети и где они хранятся",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема риска катастрофического забывания при попытке внедрения обширного количества знаний в единую предобученную модель.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "не справляются с захватом обширного количества знаний. Кроме того, авторы подчеркивают трудности, связанные с «внедрением» многообразных знаний в единую предобученную модель с помощью изменения исходных параметров таких моделей, в частности, риск катастрофического забывчивости",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Недостаточная способность традиционных методов задействования баз знаний к обобщению признаков.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "ссылаясь на низкую способность к обобщению признаков и на то, что, для достижения высокой производительности в каждой отдельной задаче, требуется конструирование признаков",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Необходимость повышения производительности языковых моделей в условиях относительной недостаточности обучающих данных.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "«обогащение» языковой модели BERT внешними знаниями из Wikidata и ряда других источников повышает производительность модели в задачах классификации в условиях относительной недостаточности (немногочисленности) обучающих данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема медленной и затратной тренировки нейронных сетей для захвата большего количества знаний.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "для захвата большего количества знаний о мире, потребуется обучить еще большую сеть, что может оказаться чрезмерно медленным или затратным",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Необходимость решения проблемы низкой способности традиционных методов к обобщению признаков.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "ссылаясь на низкую способность к обобщению признаков и на то, что, для достижения высокой производительности в каждой отдельной задаче, требуется конструирование признаков",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема недостаточного объема памяти нейронных сетей для хранения знаний.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "объем «памяти» для хранения таких знаний ограничен размером нейронной сети",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема имплицитного хранения знаний в параметрах нейронной сети.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "эти знания имплицитно содержатся в параметрах нейронной сети, что затрудняет установление того, какие знания хранятся в сети и где они хранятся",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема риска катастрофического забывания при внедрении знаний.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "в частности, риск катастрофического забывчивости",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Проблема низкой способности традиционных методов к обобщению признаков.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "ссылаясь на низкую способность к обобщению признаков и на то, что, для достижения высокой производительности в каждой отдельной задаче, требуется конструирование признаков",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема недостаточного объема памяти нейронных сетей.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "объем «памяти» для хранения таких знаний ограничен размером нейронной сети",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема медленной и затратной тренировки больших сетей.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "для захвата большего количества знаний о мире, потребуется обучить еще большую сеть, что может оказаться чрезмерно медленным или затратным",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема недостаточности обучающих данных в задачах классификации.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "в условиях относительной недостаточности (немногочисленности) обучающих данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0007",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 17.43086140000014,
+        "load_seconds": 0.0322844,
+        "prompt_eval_seconds": 0.992782,
+        "eval_seconds": 16.30494,
+        "total_server_seconds": 17.3522304,
+        "prompt_tokens": 1558,
+        "generated_tokens": 962,
+        "tokens_per_second": 59.0,
+        "prompt_tokens_per_second": 1569.33,
+        "hardware": {
+          "samples": 14,
+          "max_system_ram_used_bytes": 16899346432,
+          "mean_system_ram_used_bytes": 16875718070.857143,
+          "max_system_ram_percent": 49.3,
+          "mean_system_ram_percent": 49.25714285714286,
+          "max_cpu_percent": 42.7,
+          "mean_cpu_percent": 25.49285714285714,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94915437.71428572,
+          "max_ollama_process_rss_bytes": 222343168,
+          "mean_ollama_process_rss_bytes": 222177572.57142857,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 89.0,
+          "mean_gpu_util_percent": 85.14285714285714,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.57142857142857,
+          "max_gpu_power_w": 98.82,
+          "mean_gpu_power_w": 87.09642857142856,
+          "estimated_gpu_joules": 1418.823193666935
+        }
+      }
+    },
+    {
+      "chunk": "C0008",
+      "section": "results",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость повышения производительности языковых моделей при недостаточности обучающих данных",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "«обогащение» языковой модели BERT внешними знаниями из Wikidata и ряда других источников повышает производительность модели в задачах классификации в условиях относительной недостаточности (немногочисленности) обучающих данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0008",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.015382599998702,
+        "load_seconds": 0.0179071,
+        "prompt_eval_seconds": 0.327627,
+        "eval_seconds": 1.541087,
+        "total_server_seconds": 1.9475529,
+        "prompt_tokens": 504,
+        "generated_tokens": 97,
+        "tokens_per_second": 62.94,
+        "prompt_tokens_per_second": 1538.33,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17063657472,
+          "mean_system_ram_used_bytes": 16962166784.0,
+          "max_system_ram_percent": 49.8,
+          "mean_system_ram_percent": 49.5,
+          "max_cpu_percent": 26.5,
+          "mean_cpu_percent": 22.15,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222175232,
+          "mean_ollama_process_rss_bytes": 222175232.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 90.0,
+          "mean_gpu_util_percent": 82.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.349999999999994,
+          "max_gpu_power_w": 98.84,
+          "mean_gpu_power_w": 76.675,
+          "estimated_gpu_joules": 67.57311416387557
+        }
+      }
+    },
+    {
+      "chunk": "C0009",
+      "section": "results",
+      "pages": [
+        5
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Модификация вопросов способна существенно снизить показатели модели BERT, не влияя на таковые у людей.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "незначительная модификация вопросов способна существенно снизить показатели модели BERT, не влияя на таковые у людей",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Традиционные методы обучения на представлениях знаний ограничены триплетами и пренебрегают контекстуализированной информацией вершин графов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "традиционные методы обучения на представлениях знаний (knowledge representation learning, KRL) ограничиваются триплетами, пренебрегая контекстуализированной информацией, содержащейся в вершинах графов знаний",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Предобученные языковые модели недостаточно способны к захвату фактов о мире.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "предобученные языковые модели вроде BERT и RoBERTa, несмотря на блестящие результаты в задачах обработки текста на естественном языке и способности к извлечению лингвистических знаний из неразмеченных текстовых корпусов, как правило, недостаточно способны к захвату фактов о мире",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0009",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 5.99637740000253,
+        "load_seconds": 0.0181237,
+        "prompt_eval_seconds": 0.884619,
+        "eval_seconds": 4.978368,
+        "total_server_seconds": 5.9297352,
+        "prompt_tokens": 1401,
+        "generated_tokens": 293,
+        "tokens_per_second": 58.85,
+        "prompt_tokens_per_second": 1583.73,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 17237848064,
+          "mean_system_ram_used_bytes": 17199498854.4,
+          "max_system_ram_percent": 50.3,
+          "mean_system_ram_percent": 50.2,
+          "max_cpu_percent": 48.5,
+          "mean_cpu_percent": 26.939999999999998,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94913331.2,
+          "max_ollama_process_rss_bytes": 221917184,
+          "mean_ollama_process_rss_bytes": 221917184.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 96.0,
+          "mean_gpu_util_percent": 85.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.7,
+          "max_gpu_power_w": 98.75,
+          "mean_gpu_power_w": 88.534,
+          "estimated_gpu_joules": 441.0581335043907
+        }
+      }
+    },
+    {
+      "chunk": "C0010",
+      "section": "results",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Ограниченность масштаба и размера существующих графов знаний для некоторых языков и неспособность работать с неологизмами",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "их масштаб и размер для некоторых языков весьма ограничен, а также то, что они неспособны работать с неологизмами",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0010",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.8614024000016798,
+        "load_seconds": 0.0032005,
+        "prompt_eval_seconds": 0.39193,
+        "eval_seconds": 1.311717,
+        "total_server_seconds": 1.7629313,
+        "prompt_tokens": 565,
+        "generated_tokens": 83,
+        "tokens_per_second": 63.28,
+        "prompt_tokens_per_second": 1441.58,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17407877120,
+          "mean_system_ram_used_bytes": 17318121472.0,
+          "max_system_ram_percent": 50.8,
+          "mean_system_ram_percent": 50.55,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 22.7,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 221995008,
+          "mean_ollama_process_rss_bytes": 221995008.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 79.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.2,
+          "max_gpu_power_w": 86.98,
+          "mean_gpu_power_w": 70.875,
+          "estimated_gpu_joules": 67.98295119285584
+        }
+      }
+    },
+    {
+      "chunk": "C0011",
+      "section": "results",
+      "pages": [
+        6
+      ],
+      "generated": 4,
+      "grounded": 4,
+      "raw": [
+        {
+          "statement": "Недостаток размеченных данных для обучения методов поиска и извлечения знаний, основанных на здравом смысле.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "в связи с немногочисленностью размеченных данных для обучения, методы поиска и извлечения знаний, основанных на здравомсмысле, подразумевающие обучение сучителем, демонстрируют низкую производительность на новых данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Дальность графов знаний от завершения и необходимость оценки правдоподобности новых триплетов.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "насколько далеки графы знаний от того, чтобы быть завершенными",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Сложность точного установления лексических отношений между сущностями из-за немногочисленности паттернов.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "в поиске и извлечении знаний одной из наиболее сложных задач является точное установление лексических отношений между сущностями, ссылаясь на немногочисленность паттернов, указывающих на существование таких отношений",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Необходимость непрерывного дополнения, обогащения и курирования крупных публично доступных баз знаний.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "крупные публично доступные базы знаний, такие, как DBpedia, Wikidata и Yago, содержащие миллионы фактов об объектах, представленных в виде триплетов «субъект – предикат – объект», весьма далеки от завершения и требуют непрерывного дополнения, обогащения и курирования",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0011",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 1,
+        "success": true,
+        "retried": true,
+        "num_predict": 2600,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": "invalid_json",
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 7.3893346000004385,
+        "load_seconds": 0.0186634,
+        "prompt_eval_seconds": 1.039244999,
+        "eval_seconds": 6.185254,
+        "total_server_seconds": 7.3253731,
+        "prompt_tokens": 1625,
+        "generated_tokens": 380,
+        "tokens_per_second": 61.44,
+        "prompt_tokens_per_second": 1563.64,
+        "hardware": {
+          "samples": 6,
+          "max_system_ram_used_bytes": 17851158528,
+          "mean_system_ram_used_bytes": 17807597568.0,
+          "max_system_ram_percent": 52.1,
+          "mean_system_ram_percent": 51.98333333333333,
+          "max_cpu_percent": 25.8,
+          "mean_cpu_percent": 19.2,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94913877.33333333,
+          "max_ollama_process_rss_bytes": 222150656,
+          "mean_ollama_process_rss_bytes": 222150656.0,
+          "max_gpu_mem_mb": 5360.0,
+          "mean_gpu_mem_mb": 5360.0,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 74.16666666666667,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.61666666666667,
+          "max_gpu_power_w": 99.99,
+          "mean_gpu_power_w": 90.13666666666667,
+          "estimated_gpu_joules": 561.1612273049354
+        }
+      }
+    },
+    {
+      "chunk": "C0012",
+      "section": "results",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток существующих методов извлечения отношений из текстовых данных",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "предложенная ими комплексная модель значительно и последовательно опережает существующие методы извлечения отношений из текстовых данных",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0012",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.6571836000002804,
+        "load_seconds": 0.0340982,
+        "prompt_eval_seconds": 0.341344,
+        "eval_seconds": 1.120785,
+        "total_server_seconds": 1.5751337,
+        "prompt_tokens": 460,
+        "generated_tokens": 70,
+        "tokens_per_second": 62.46,
+        "prompt_tokens_per_second": 1347.61,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 17865584640,
+          "mean_system_ram_used_bytes": 17844375552.0,
+          "max_system_ram_percent": 52.1,
+          "mean_system_ram_percent": 52.05,
+          "max_cpu_percent": 15.9,
+          "mean_cpu_percent": 7.95,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222224384,
+          "mean_ollama_process_rss_bytes": 222191616.0,
+          "max_gpu_mem_mb": 5360.0,
+          "mean_gpu_mem_mb": 5360.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.400000000000006,
+          "max_gpu_power_w": 86.71,
+          "mean_gpu_power_w": 70.66,
+          "estimated_gpu_joules": 68.37671177864074
+        }
+      }
+    },
+    {
+      "chunk": "C0013",
+      "section": "results",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Оценка способности предобученных языковых моделей (например, BERT) содержать знания об отношениях и сравнивать их производительность с традиционными базами знаний.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "Ф. Петрони и др. предложили оценить с этой точки зрения готовые двунаправленные языковые модели, вроде ELMo [7] и BERT [1]. В частности, авторы задают вопросы о том, сколько же знаний об отношениях такие модели содержат, насколько отличается их производительность от таковой у баз знаний, и насколько разнятся такие показатели для других типов знаний.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0013",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.3703655999997864,
+        "load_seconds": 0.0161788,
+        "prompt_eval_seconds": 0.949987,
+        "eval_seconds": 2.303735,
+        "total_server_seconds": 3.3195921,
+        "prompt_tokens": 1558,
+        "generated_tokens": 140,
+        "tokens_per_second": 60.77,
+        "prompt_tokens_per_second": 1640.02,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 18041110528,
+          "mean_system_ram_used_bytes": 17981400405.333332,
+          "max_system_ram_percent": 52.6,
+          "mean_system_ram_percent": 52.43333333333334,
+          "max_cpu_percent": 20.3,
+          "mean_cpu_percent": 12.4,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94911146.66666667,
+          "max_ollama_process_rss_bytes": 222224384,
+          "mean_ollama_process_rss_bytes": 222224384.0,
+          "max_gpu_mem_mb": 5360.0,
+          "mean_gpu_mem_mb": 5360.0,
+          "max_gpu_util_percent": 94.0,
+          "mean_gpu_util_percent": 87.33333333333333,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.86666666666667,
+          "max_gpu_power_w": 98.41,
+          "mean_gpu_power_w": 89.63999999999999,
+          "estimated_gpu_joules": 212.79697728872299
+        }
+      }
+    },
+    {
+      "chunk": "C0014",
+      "section": "results",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для оценки способности языковых моделей без доступа к внешним данным предоставлять ответы на вопросы.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "такие показатели были достигнуты лишь на самой крупной из рассмотренных моделей (Text-to-Text Transfer Transformer [3], 11 млрд. параметров)",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0014",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9050655999999435,
+        "load_seconds": 0.0201467,
+        "prompt_eval_seconds": 0.371199,
+        "eval_seconds": 1.392193,
+        "total_server_seconds": 1.8386937,
+        "prompt_tokens": 548,
+        "generated_tokens": 83,
+        "tokens_per_second": 59.62,
+        "prompt_tokens_per_second": 1476.3,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 18190893056,
+          "mean_system_ram_used_bytes": 18112079872.0,
+          "max_system_ram_percent": 53.1,
+          "mean_system_ram_percent": 52.85,
+          "max_cpu_percent": 47.9,
+          "mean_cpu_percent": 23.95,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222236672,
+          "mean_ollama_process_rss_bytes": 222236672.0,
+          "max_gpu_mem_mb": 5364.0,
+          "mean_gpu_mem_mb": 5364.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 81.5,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 57.6,
+          "max_gpu_power_w": 86.73,
+          "mean_gpu_power_w": 77.44,
+          "estimated_gpu_joules": 84.65923767089845
+        }
+      }
+    },
+    {
+      "chunk": "C0015",
+      "section": "results",
+      "pages": [
+        8
+      ],
+      "generated": 3,
+      "grounded": 3,
+      "raw": [
+        {
+          "statement": "Языковые модели, такие как BERT, демонстрируют поверхностные рассуждения на основе названий объектов, а не фактических знаний.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "впечатляющие результаты, показанные BERT, объясняются поверхностными рассуждениями (выводом) на основе названий объектов",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существует пробел в понимании способности языковых моделей к абстрактным рассуждениям и сравнительным операциям.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "языковые модели не способны к абстрактным рассуждениям и они опираются на контекст",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаточно изучены способности крупных предобученных языковых моделей к выполнению задач, требующих операций сравнения и конъюнкции.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "недостаточной изученности способностей крупных предобученных языковых моделей к рассуждениям",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0015",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.4600776999977825,
+        "load_seconds": 0.018092,
+        "prompt_eval_seconds": 0.530484,
+        "eval_seconds": 3.827589,
+        "total_server_seconds": 4.4147429,
+        "prompt_tokens": 831,
+        "generated_tokens": 236,
+        "tokens_per_second": 61.66,
+        "prompt_tokens_per_second": 1566.49,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18275151872,
+          "mean_system_ram_used_bytes": 18252946432.0,
+          "max_system_ram_percent": 53.3,
+          "mean_system_ram_percent": 53.25,
+          "max_cpu_percent": 21.6,
+          "mean_cpu_percent": 14.35,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94912512.0,
+          "max_ollama_process_rss_bytes": 222244864,
+          "mean_ollama_process_rss_bytes": 222244864.0,
+          "max_gpu_mem_mb": 5364.0,
+          "mean_gpu_mem_mb": 5364.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 86.25,
+          "max_gpu_temperature_c": 58.4,
+          "mean_gpu_temperature_c": 58.075,
+          "max_gpu_power_w": 98.38,
+          "mean_gpu_power_w": 88.655,
+          "estimated_gpu_joules": 329.6433893156052
+        }
+      }
+    },
+    {
+      "chunk": "C0016",
+      "section": "conclusion",
+      "pages": [
+        8
+      ],
+      "generated": 8,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаточное раскрытие потенциала предобученных языковых моделей в конкретных узких задачах",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 194,
+              "quote": "потенциал предобученной языковой модели BERT остается преимущественно нераскрытым, что объясняется немногочисленностью исследований методов улучшения (тонкой настройки) показателей в конкретных узких задачах",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Вычислительная неэффективность и невозможность развертывания моделей на местах",
+          "type": "tool",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "предобучение языковых моделей вроде BERT требует слишком значительных вычислительных ресурсов, таким образом, эти инструменты не всегда могут использоваться (развертываться) непосредственно на местах для решения реальных задач",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Недостаточное развитие методов поддержания актуальности языковых моделей в реальных условиях",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "следует отметить недостаточное развитие вопроса применения таких, в настоящий момент непрерывно развивающихся, методов, моделей и инструментов для решения практических задач в реальных условиях",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Проблема противоречивых результатов при обучении на частных наборах данных",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "они часто обучаются на частных (приватных) наборах данных различных размеров, что может приводить к противоречивым результатам",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Необходимость разработки методов непрерывной тонкой настройки для минимизации временных затрат",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "особый интерес представляет вопрос модификации и разработки методов непрерывной тонкой настройки и аугментации внешними данными предобученных языковых моделей для поддержания их актуальности в релевантных задачах с наименьшими временными затратами",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Конкуренция между языковыми моделями и традиционными базами знаний",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "языковые модели, обученные на постоянно пополняющихся корпусах, в будущем могут стать конкурентоспособной альтернативой традиционным базам знаний, извлеченных из текста",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Недостаточное развитие методов взаимной аугментации предобученных языковых моделей и баз знаний",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 15,
+              "quote": "исследования в области взаимной аугментации предобученных языковых моделей и баз знаний (представленных, в том числе, в виде графов знаний) дают основания считать о чрезвычайной перспективности дальнейшего развития этой темы",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "Проблема использования частных наборов данных при обучении языковых моделей",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "они часто обучаются на частных (приватных) наборах данных различных размеров, что может приводить к противоречивым результатам",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0016",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 12.059000599998399,
+        "load_seconds": 0.0178164,
+        "prompt_eval_seconds": 0.688905,
+        "eval_seconds": 11.241179,
+        "total_server_seconds": 11.9970496,
+        "prompt_tokens": 1072,
+        "generated_tokens": 683,
+        "tokens_per_second": 60.76,
+        "prompt_tokens_per_second": 1556.09,
+        "hardware": {
+          "samples": 10,
+          "max_system_ram_used_bytes": 18488205312,
+          "mean_system_ram_used_bytes": 18438764953.6,
+          "max_system_ram_percent": 53.9,
+          "mean_system_ram_percent": 53.8,
+          "max_cpu_percent": 40.2,
+          "mean_cpu_percent": 20.67,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94914969.6,
+          "max_ollama_process_rss_bytes": 222244864,
+          "mean_ollama_process_rss_bytes": 222244864.0,
+          "max_gpu_mem_mb": 5364.0,
+          "mean_gpu_mem_mb": 5355.6,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 86.8,
+          "max_gpu_temperature_c": 58.4,
+          "mean_gpu_temperature_c": 58.17,
+          "max_gpu_power_w": 98.82,
+          "mean_gpu_power_w": 88.497,
+          "estimated_gpu_joules": 983.1608956742286
+        }
+      }
+    },
+    {
+      "chunk": "C0017",
+      "section": "conclusion",
+      "pages": [
+        9
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Ограниченность знаний о том, насколько эффективно трансферное обучение с использованием единой текстовой модели может быть расширено.",
+          "type": "knowledge",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 15,
+              "quote": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0017",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.682340400002431,
+        "load_seconds": 0.0189861,
+        "prompt_eval_seconds": 1.391852,
+        "eval_seconds": 1.115788,
+        "total_server_seconds": 2.5901813,
+        "prompt_tokens": 2266,
+        "generated_tokens": 70,
+        "tokens_per_second": 62.74,
+        "prompt_tokens_per_second": 1628.05,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 18753290240,
+          "mean_system_ram_used_bytes": 18663414442.666668,
+          "max_system_ram_percent": 54.7,
+          "mean_system_ram_percent": 54.43333333333334,
+          "max_cpu_percent": 25.5,
+          "mean_cpu_percent": 21.233333333333334,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94911146.66666667,
+          "max_ollama_process_rss_bytes": 222248960,
+          "mean_ollama_process_rss_bytes": 222248960.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 99.0,
+          "mean_gpu_util_percent": 91.66666666666667,
+          "max_gpu_temperature_c": 58.1,
+          "mean_gpu_temperature_c": 57.666666666666664,
+          "max_gpu_power_w": 86.13,
+          "mean_gpu_power_w": 75.32666666666667,
+          "estimated_gpu_joules": 172.96660226106644
+        }
+      }
+    },
+    {
+      "chunk": "C0018",
+      "section": "conclusion",
+      "pages": [
+        9
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0018",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 0.5744312000024365,
+        "load_seconds": 0.0185266,
+        "prompt_eval_seconds": 0.345766,
+        "eval_seconds": 0.066193,
+        "total_server_seconds": 0.4980028,
+        "prompt_tokens": 513,
+        "generated_tokens": 5,
+        "tokens_per_second": 75.54,
+        "prompt_tokens_per_second": 1483.66,
+        "hardware": {
+          "samples": 1,
+          "max_system_ram_used_bytes": 18745012224,
+          "mean_system_ram_used_bytes": 18745012224.0,
+          "max_system_ram_percent": 54.7,
+          "mean_system_ram_percent": 54.7,
+          "max_cpu_percent": 0.0,
+          "mean_cpu_percent": 0.0,
+          "max_python_process_rss_bytes": 94900224,
+          "mean_python_process_rss_bytes": 94900224.0,
+          "max_ollama_process_rss_bytes": 222248960,
+          "mean_ollama_process_rss_bytes": 222248960.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 89.0,
+          "mean_gpu_util_percent": 89.0,
+          "max_gpu_temperature_c": 57.8,
+          "mean_gpu_temperature_c": 57.8,
+          "max_gpu_power_w": 54.82,
+          "mean_gpu_power_w": 54.82
+        }
+      }
+    },
+    {
+      "chunk": "C0019",
+      "section": "conclusion",
+      "pages": [
+        10
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаточность существующих методов для классификации лексических отношений в контексте обогащения знаний",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0019",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.5269823000016913,
+        "load_seconds": 0.0186682,
+        "prompt_eval_seconds": 0.677474,
+        "eval_seconds": 0.735914,
+        "total_server_seconds": 1.4788461,
+        "prompt_tokens": 1131,
+        "generated_tokens": 45,
+        "tokens_per_second": 61.15,
+        "prompt_tokens_per_second": 1669.44,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 19213783040,
+          "mean_system_ram_used_bytes": 19101313024.0,
+          "max_system_ram_percent": 56.1,
+          "mean_system_ram_percent": 55.75,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 22.7,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222261248,
+          "mean_ollama_process_rss_bytes": 222261248.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 94.0,
+          "mean_gpu_util_percent": 79.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 57.75,
+          "max_gpu_power_w": 86.6,
+          "mean_gpu_power_w": 85.215,
+          "estimated_gpu_joules": 105.1485584616661
+        }
+      }
+    },
+    {
+      "chunk": "C0020",
+      "section": "conclusion",
+      "pages": [
+        11
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток методов для интерпретации внутренней и явной знаний, извлеченных из корпусов текстов при предобучении или переносе обучения в моделях предобученных языковых моделей.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "The author substantiates the relevance of the issue of the existence of internalized and implicit knowledge, extracted from text corpora used for pre-training or transfer learning in pre-trained language models.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:C0020",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.383608100000856,
+        "load_seconds": 0.0330158,
+        "prompt_eval_seconds": 0.398851,
+        "eval_seconds": 1.78947,
+        "total_server_seconds": 2.2819227,
+        "prompt_tokens": 657,
+        "generated_tokens": 113,
+        "tokens_per_second": 63.15,
+        "prompt_tokens_per_second": 1647.23,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 19482062848,
+          "mean_system_ram_used_bytes": 19350032384.0,
+          "max_system_ram_percent": 56.8,
+          "mean_system_ram_percent": 56.45,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 23.65,
+          "max_python_process_rss_bytes": 94916608,
+          "mean_python_process_rss_bytes": 94908416.0,
+          "max_ollama_process_rss_bytes": 222318592,
+          "mean_ollama_process_rss_bytes": 222316544.0,
+          "max_gpu_mem_mb": 5336.0,
+          "mean_gpu_mem_mb": 5336.0,
+          "max_gpu_util_percent": 94.0,
+          "mean_gpu_util_percent": 84.0,
+          "max_gpu_temperature_c": 58.2,
+          "mean_gpu_temperature_c": 58.2,
+          "max_gpu_power_w": 86.97,
+          "mean_gpu_power_w": 70.865,
+          "estimated_gpu_joules": 68.95978987693786
+        }
+      }
+    }
+  ],
+  "merge_metrics": [
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:0",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.721371500003443,
+      "load_seconds": 0.033935,
+      "prompt_eval_seconds": 0.420531,
+      "eval_seconds": 8.097636,
+      "total_server_seconds": 8.6087456,
+      "prompt_tokens": 728,
+      "generated_tokens": 431,
+      "tokens_per_second": 53.23,
+      "prompt_tokens_per_second": 1731.14,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 19731390464,
+        "mean_system_ram_used_bytes": 19688304054.857143,
+        "max_system_ram_percent": 57.6,
+        "mean_system_ram_percent": 57.457142857142856,
+        "max_cpu_percent": 35.2,
+        "mean_cpu_percent": 26.400000000000002,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914267.42857143,
+        "max_ollama_process_rss_bytes": 222318592,
+        "mean_ollama_process_rss_bytes": 222318592.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 89.42857142857143,
+        "max_gpu_temperature_c": 58.2,
+        "mean_gpu_temperature_c": 57.614285714285714,
+        "max_gpu_power_w": 98.35,
+        "mean_gpu_power_w": 88.60428571428572,
+        "estimated_gpu_joules": 651.2257696700096
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:1",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.144566299997678,
+      "load_seconds": 0.0179325,
+      "prompt_eval_seconds": 0.506972,
+      "eval_seconds": 7.401794,
+      "total_server_seconds": 7.9860058,
+      "prompt_tokens": 674,
+      "generated_tokens": 378,
+      "tokens_per_second": 51.07,
+      "prompt_tokens_per_second": 1329.46,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 19933990912,
+        "mean_system_ram_used_bytes": 19897189522.285713,
+        "max_system_ram_percent": 58.2,
+        "mean_system_ram_percent": 58.08571428571429,
+        "max_cpu_percent": 27.9,
+        "mean_cpu_percent": 22.328571428571426,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914267.42857143,
+        "max_ollama_process_rss_bytes": 222318592,
+        "mean_ollama_process_rss_bytes": 222318592.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 87.85714285714286,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.542857142857144,
+        "max_gpu_power_w": 98.09,
+        "mean_gpu_power_w": 88.47285714285715,
+        "estimated_gpu_joules": 645.6042105340958
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:2",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.139670299999125,
+      "load_seconds": 0.0197479,
+      "prompt_eval_seconds": 0.522760999,
+      "eval_seconds": 7.467209,
+      "total_server_seconds": 8.0720198,
+      "prompt_tokens": 680,
+      "generated_tokens": 383,
+      "tokens_per_second": 51.29,
+      "prompt_tokens_per_second": 1300.79,
+      "hardware": {
+        "samples": 7,
+        "max_system_ram_used_bytes": 20200050688,
+        "mean_system_ram_used_bytes": 20146510116.57143,
+        "max_system_ram_percent": 58.9,
+        "mean_system_ram_percent": 58.800000000000004,
+        "max_cpu_percent": 54.5,
+        "mean_cpu_percent": 29.185714285714287,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914267.42857143,
+        "max_ollama_process_rss_bytes": 222318592,
+        "mean_ollama_process_rss_bytes": 222318592.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 88.14285714285714,
+        "max_gpu_temperature_c": 58.0,
+        "mean_gpu_temperature_c": 57.771428571428565,
+        "max_gpu_power_w": 98.13,
+        "mean_gpu_power_w": 85.10571428571428,
+        "estimated_gpu_joules": 623.6127972722054
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:3",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 6.956046100000094,
+      "load_seconds": 0.0190978,
+      "prompt_eval_seconds": 0.493422,
+      "eval_seconds": 6.289162,
+      "total_server_seconds": 6.874734,
+      "prompt_tokens": 646,
+      "generated_tokens": 351,
+      "tokens_per_second": 55.81,
+      "prompt_tokens_per_second": 1309.22,
+      "hardware": {
+        "samples": 6,
+        "max_system_ram_used_bytes": 20429316096,
+        "mean_system_ram_used_bytes": 20379699200.0,
+        "max_system_ram_percent": 59.6,
+        "mean_system_ram_percent": 59.48333333333333,
+        "max_cpu_percent": 36.0,
+        "mean_cpu_percent": 26.516666666666666,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94913877.33333333,
+        "max_ollama_process_rss_bytes": 222318592,
+        "mean_ollama_process_rss_bytes": 222318592.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 88.83333333333333,
+        "max_gpu_temperature_c": 58.3,
+        "mean_gpu_temperature_c": 57.916666666666664,
+        "max_gpu_power_w": 99.02,
+        "mean_gpu_power_w": 89.85666666666667,
+        "estimated_gpu_joules": 542.1037249684333
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:4",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.910526700001355,
+      "load_seconds": 0.0190095,
+      "prompt_eval_seconds": 0.49834,
+      "eval_seconds": 8.160691,
+      "total_server_seconds": 8.7361195,
+      "prompt_tokens": 767,
+      "generated_tokens": 472,
+      "tokens_per_second": 57.84,
+      "prompt_tokens_per_second": 1539.11,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 20661637120,
+        "mean_system_ram_used_bytes": 20616635392.0,
+        "max_system_ram_percent": 60.3,
+        "mean_system_ram_percent": 60.175,
+        "max_cpu_percent": 56.8,
+        "mean_cpu_percent": 24.0625,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914560.0,
+        "max_ollama_process_rss_bytes": 222371840,
+        "mean_ollama_process_rss_bytes": 222368768.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 91.0,
+        "mean_gpu_util_percent": 88.25,
+        "max_gpu_temperature_c": 58.4,
+        "mean_gpu_temperature_c": 57.625,
+        "max_gpu_power_w": 99.44,
+        "mean_gpu_power_w": 81.9175,
+        "estimated_gpu_joules": 725.6956135249138
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:5",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 8.749906900000497,
+      "load_seconds": 0.0163321,
+      "prompt_eval_seconds": 0.487248,
+      "eval_seconds": 7.969952,
+      "total_server_seconds": 8.5371262,
+      "prompt_tokens": 778,
+      "generated_tokens": 484,
+      "tokens_per_second": 60.73,
+      "prompt_tokens_per_second": 1596.72,
+      "hardware": {
+        "samples": 8,
+        "max_system_ram_used_bytes": 20792508416,
+        "mean_system_ram_used_bytes": 20754328064.0,
+        "max_system_ram_percent": 60.7,
+        "mean_system_ram_percent": 60.550000000000004,
+        "max_cpu_percent": 20.9,
+        "mean_cpu_percent": 16.2375,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914560.0,
+        "max_ollama_process_rss_bytes": 222347264,
+        "mean_ollama_process_rss_bytes": 222347264.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 88.0,
+        "mean_gpu_util_percent": 83.5,
+        "max_gpu_temperature_c": 58.6,
+        "mean_gpu_temperature_c": 57.925,
+        "max_gpu_power_w": 98.71,
+        "mean_gpu_power_w": 81.8275,
+        "estimated_gpu_joules": 730.1492403650284
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:merge:0:6",
+      "role": "proposer_merge",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 5.626799800000299,
+      "load_seconds": 0.0185765,
+      "prompt_eval_seconds": 0.377969,
+      "eval_seconds": 5.112619,
+      "total_server_seconds": 5.5758414,
+      "prompt_tokens": 603,
+      "generated_tokens": 315,
+      "tokens_per_second": 61.61,
+      "prompt_tokens_per_second": 1595.37,
+      "hardware": {
+        "samples": 5,
+        "max_system_ram_used_bytes": 21055381504,
+        "mean_system_ram_used_bytes": 20991865651.2,
+        "max_system_ram_percent": 61.4,
+        "mean_system_ram_percent": 61.239999999999995,
+        "max_cpu_percent": 49.9,
+        "mean_cpu_percent": 23.380000000000003,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94913331.2,
+        "max_ollama_process_rss_bytes": 222347264,
+        "mean_ollama_process_rss_bytes": 222347264.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 87.0,
+        "mean_gpu_util_percent": 81.4,
+        "max_gpu_temperature_c": 58.7,
+        "mean_gpu_temperature_c": 57.96,
+        "max_gpu_power_w": 98.15,
+        "mean_gpu_power_w": 82.952,
+        "estimated_gpu_joules": 406.0621154356003
+      }
+    },
+    {
+      "request_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen__rep1:final",
+      "role": "proposer_final",
+      "model": "qwen3.5:4b",
+      "attempt": 0,
+      "success": true,
+      "retried": false,
+      "num_predict": 1800,
+      "num_ctx": 6144,
+      "temperature": 0,
+      "repeat_penalty": null,
+      "repeat_last_n": null,
+      "recovery_mode": null,
+      "seed": 42,
+      "done_reason": "stop",
+      "wall_seconds": 12.261030999998184,
+      "load_seconds": 0.0190477,
+      "prompt_eval_seconds": 1.923476,
+      "eval_seconds": 10.143604,
+      "total_server_seconds": 12.1871978,
+      "prompt_tokens": 3319,
+      "generated_tokens": 575,
+      "tokens_per_second": 56.69,
+      "prompt_tokens_per_second": 1725.52,
+      "hardware": {
+        "samples": 10,
+        "max_system_ram_used_bytes": 21375995904,
+        "mean_system_ram_used_bytes": 21323105484.8,
+        "max_system_ram_percent": 62.4,
+        "mean_system_ram_percent": 62.21,
+        "max_cpu_percent": 36.3,
+        "mean_cpu_percent": 24.23,
+        "max_python_process_rss_bytes": 94916608,
+        "mean_python_process_rss_bytes": 94914969.6,
+        "max_ollama_process_rss_bytes": 222445568,
+        "mean_ollama_process_rss_bytes": 222445568.0,
+        "max_gpu_mem_mb": 5336.0,
+        "mean_gpu_mem_mb": 5336.0,
+        "max_gpu_util_percent": 100.0,
+        "mean_gpu_util_percent": 90.2,
+        "max_gpu_temperature_c": 58.5,
+        "mean_gpu_temperature_c": 58.21,
+        "max_gpu_power_w": 98.89,
+        "mean_gpu_power_w": 88.186,
+        "estimated_gpu_joules": 984.2476841974258
+      }
+    }
+  ],
+  "repetition": 1,
+  "paper_sha256": "2c296a56e08a6c39b7b7472fba997a8f391da50b625a58c93c2185f6c500ae62"
+}

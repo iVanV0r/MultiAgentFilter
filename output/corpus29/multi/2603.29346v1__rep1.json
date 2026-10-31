@@ -1,0 +1,852 @@
+{
+  "paper_id": "2603.29346v1",
+  "filename": "2603.29346v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+      "type": "tool",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+      "status": "accepted",
+      "reason": "Проблема (отсутствие стандартизации терминологии) явно обозначена и является фокусом, который L-ReLF методология призвана решить, обеспечивая создание структурированных данных.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках.",
+      "status": "rejected",
+      "reason": "Хотя это похоже на M1, формулировка слишком общая ('формализованные лексические ресурсы') и не так конкретно связана с методологическим пробелом, который устраняет статья.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "underrepresented, unstandardized languages, which often lack the formal, structured lexical resources necessary to articulate modern scientific and technical concepts",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы.",
+      "status": "rejected",
+      "reason": "Это описывает проблему пользователей, а не фундаментальный научный пробел в методологии или данных, который устраняет статья. Статья предлагает инструменты, а не просто констатирует отсутствие экспертизы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "most editors are volunteer non-subject matter experts, who do not have the necessary tools in terms of linguistics to conduct such complex tasks",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+      "status": "accepted",
+      "reason": "Эта проблема (субъективность/фрагментарность из-за отсутствия методологии) является прямым обоснованием необходимости L-ReLF, что делает ее сильной научной проблемой, решаемой публикацией.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+      "status": "accepted",
+      "reason": "Это очень сильная формулировка, охватывающая как отсутствие стандартизации, так и институциональный пробел, что является ключевым для обоснования необходимости создания стандартизированного набора данных.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+      "status": "accepted",
+      "reason": "Это четкий технический пробел (отсутствие вычислительных инструментов), который L-ReLF, будучи методологией для создания данных, помогает преодолеть, предоставляя основу для таких инструментов.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+      "status": "rejected",
+      "reason": "Это описание проблемы, связанной с OCR и предвзятостью, а не с фундаментальным пробелом в создании лексических ресурсов, который является основной темой статьи (L-ReLF). Это скорее техническое ограничение, которое статья *обходит*, а не *решает* в своей основе.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Crucially, 59% of these errors were attributed to MSA bias, where the engine incorrectly 'corrected' Darija-specific graphemes to match Standard Arabic morphology.",
+          "verified": true
+        },
+        {
+          "page": 4,
+          "quote": "This quantitative finding validates our assertion in Section II that fully automated extraction is currently unfeasible for dialectal Arabic and necessitates the Human-in-the-Loop (HITL) approach described in this framework.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цитата слишком широкая и не конкретна относительно проблемы статьи. Неясно, как отсутствие стандартизированной терминологии влияет на платформу типа Википедия.",
+            "source_page": 1,
+            "support_quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia.",
+            "verified": true
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Разработка и внедрение методологий для стандартизации терминологии в малоизученных языках, что может помочь в устранении проблем с равенством знаний на платформах типа Википедия.",
+            "type": "method",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+                "verified": true
+              }
+            ]
+          },
+          {
+            "statement": "Создание совместимых лингвистических ресурсов, которые могут быть использованы волонтерами, не имеющими лингвистической экспертизы, для создания терминологии в малоизученных языках.",
+            "type": "method",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "most editors are volunteer non-subject matter experts, who do not have the necessary tools in terms of linguistics to conduct such complex tasks",
+                "verified": true
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+            "reason": "Уточнено влияние на платформу: 'frustrating edit conflicts, and ultimately, hampering the development of comprehensive and trustworthy knowledge' заменено на 'препятствует обеспечению равенства знаний'. Убрана неконкретная фраза 'стандартизированные методы', так как в тексте речь идет о 'ad-hoc methods'.",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies, frustrating edit conflicts, and ultimately, hampering the development of comprehensive and trustworthy knowledge"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках.",
+            "reason": "Уточнено влияние на платформы: 'Within the Wikimedia ecosystem, this deficiency directly impedes the growth and quality of projects like Wikipedia'.",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "This challenge is particularly acute for underrepresented, unstandardized languages, which often lack the formal, structured lexical resources necessary to articulate modern scientific and technical concepts"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы.",
+            "reason": "Уточнено влияние: 'leading to widespread inconsistencies, frustrating edit conflicts'.",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "most editors are volunteer non-subject matter experts, who do not have the necessary tools in terms of linguistics to conduct such complex tasks"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+            "reason": "Уточнено влияние: 'leading to widespread inconsistencies, frustrating edit conflicts'.",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+            "reason": "Уточнено влияние: 'resulting in significant dialectal variation and spelling inconsistency within available text'.",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M6",
+            "action": "rewrite",
+            "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+            "reason": "Уточнено влияние: 'The resulting structured dataset is fully compatible with Wikidata Lexemes, serving as a vital technical resource'.",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M7",
+            "action": "rewrite",
+            "statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+            "reason": "Уточнено влияние: 'necessitates the Human-in-the-Loop (HITL) approach described in this framework'.",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "Crucially, 59% of these errors were attributed to MSA bias, where the engine incorrectly 'corrected' Darija-specific graphemes to match Standard Arabic morphology"
+              }
+            ]
+          },
+          {
+            "candidate_id": "M7",
+            "action": "rewrite",
+            "statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+            "reason": "Дополнено обоснование необходимости ручного вмешательства: 'First, a visual sanity check corrects OCR diglossic bias, before a manual mapping of grammatical gender and etymology is performed if this data is missing in the original sources'.",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "First, a visual sanity check corrects OCR diglossic bias, before a manual mapping of grammatical gender and etymology is performed if this data is missing in the original sources"
+              }
+            ]
+          }
+        ],
+        "additions": [
+          {
+            "statement": "Разработка и внедрение методологий для стандартизации терминологии в малоизученных языках, что может помочь в устранении проблем с равенством знаний на платформах типа Википедия.",
+            "type": "method",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "The L-ReLF methodology is designed for generalizability, offering other language communities a clear path to build foundational lexical data for downstream NLP applications"
+              }
+            ],
+            "source_page": 1
+          },
+          {
+            "statement": "Создание совместимых лингвистических ресурсов, которые могут быть использованы волонтерами, не имеющими лингвистической экспертизы, для создания терминологии в малоизученных языках.",
+            "type": "method",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "The resulting structured dataset is fully compatible with Wikidata Lexemes, serving as a vital technical resource"
+              }
+            ],
+            "source_page": 1
+          }
+        ]
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Уточнено влияние на платформу: 'frustrating edit conflicts, and ultimately, hampering the development of comprehensive and trustworthy knowledge' заменено на 'препятствует обеспечению равенства знаний'. Убрана неконкретная фраза 'стандартизированные методы', так как в тексте речь идет о 'ad-hoc methods'.",
+          "old_statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+          "new_statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Уточнено влияние на платформы: 'Within the Wikimedia ecosystem, this deficiency directly impedes the growth and quality of projects like Wikipedia'.",
+          "old_statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках.",
+          "new_statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Уточнено влияние: 'leading to widespread inconsistencies, frustrating edit conflicts'.",
+          "old_statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы.",
+          "new_statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Уточнено влияние: 'leading to widespread inconsistencies, frustrating edit conflicts'.",
+          "old_statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+          "new_statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Уточнено влияние: 'resulting in significant dialectal variation and spelling inconsistency within available text'.",
+          "old_statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+          "new_statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "rewrite",
+          "reason": "Уточнено влияние: 'The resulting structured dataset is fully compatible with Wikidata Lexemes, serving as a vital technical resource'.",
+          "old_statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+          "new_statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества."
+        },
+        {
+          "candidate_id": "M7",
+          "action": "rewrite",
+          "reason": "Уточнено влияние: 'necessitates the Human-in-the-Loop (HITL) approach described in this framework'.",
+          "old_statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+          "new_statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 четко формулирует пробел (отсутствие стандартизации терминологии) и связывает его с проблемой, которую решает статья (создание структурированных лексических данных для малоресурсных языков, что косвенно решает проблему равенства знаний).",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Проблема (отсутствие стандартизации терминологии) явно обозначена и является фокусом, который L-ReLF методология призвана решить, обеспечивая создание структурированных данных."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": false,
+            "reason": "Хотя это похоже на M1, формулировка слишком общая ('формализованные лексические ресурсы') и не так конкретно связана с методологическим пробелом, который устраняет статья."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Это описывает проблему пользователей, а не фундаментальный научный пробел в методологии или данных, который устраняет статья. Статья предлагает инструменты, а не просто констатирует отсутствие экспертизы."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Эта проблема (субъективность/фрагментарность из-за отсутствия методологии) является прямым обоснованием необходимости L-ReLF, что делает ее сильной научной проблемой, решаемой публикацией."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": true,
+            "reason": "Это очень сильная формулировка, охватывающая как отсутствие стандартизации, так и институциональный пробел, что является ключевым для обоснования необходимости создания стандартизированного набора данных."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": true,
+            "reason": "Это четкий технический пробел (отсутствие вычислительных инструментов), который L-ReLF, будучи методологией для создания данных, помогает преодолеть, предоставляя основу для таких инструментов."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": false,
+            "reason": "Это описание проблемы, связанной с OCR и предвзятостью, а не с фундаментальным пробелом в создании лексических ресурсов, который является основной темой статьи (L-ReLF). Это скорее техническое ограничение, которое статья *обходит*, а не *решает* в своей основе."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "underrepresented, unstandardized languages, which often lack the formal, structured lexical resources necessary to articulate modern scientific and technical concepts",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы.",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "most editors are volunteer non-subject matter experts, who do not have the necessary tools in terms of linguistics to conduct such complex tasks",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+          "type": "tool",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Crucially, 59% of these errors were attributed to MSA bias, where the engine incorrectly 'corrected' Darija-specific graphemes to match Standard Arabic morphology.",
+              "verified": true
+            },
+            {
+              "page": 4,
+              "quote": "This quantitative finding validates our assertion in Section II that fully automated extraction is currently unfeasible for dialectal Arabic and necessitates the Human-in-the-Loop (HITL) approach described in this framework.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+          "status": "accepted",
+          "reason": "Проблема (отсутствие стандартизации терминологии) явно обозначена и является фокусом, который L-ReLF методология призвана решить, обеспечивая создание структурированных данных.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Отсутствие формализованных лексических ресурсов для современных научных и технических концепций в малообеспеченных языках.",
+          "status": "rejected",
+          "reason": "Хотя это похоже на M1, формулировка слишком общая ('формализованные лексические ресурсы') и не так конкретно связана с методологическим пробелом, который устраняет статья.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "underrepresented, unstandardized languages, which often lack the formal, structured lexical resources necessary to articulate modern scientific and technical concepts",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Недостаток инструментов для создания терминологии в сообществах волонтеров без лингвистической экспертизы.",
+          "status": "rejected",
+          "reason": "Это описывает проблему пользователей, а не фундаментальный научный пробел в методологии или данных, который устраняет статья. Статья предлагает инструменты, а не просто констатирует отсутствие экспертизы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "most editors are volunteer non-subject matter experts, who do not have the necessary tools in terms of linguistics to conduct such complex tasks",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+          "status": "accepted",
+          "reason": "Эта проблема (субъективность/фрагментарность из-за отсутствия методологии) является прямым обоснованием необходимости L-ReLF, что делает ее сильной научной проблемой, решаемой публикацией.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+          "status": "accepted",
+          "reason": "Это очень сильная формулировка, охватывающая как отсутствие стандартизации, так и институциональный пробел, что является ключевым для обоснования необходимости создания стандартизированного набора данных.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+          "status": "accepted",
+          "reason": "Это четкий технический пробел (отсутствие вычислительных инструментов), который L-ReLF, будучи методологией для создания данных, помогает преодолеть, предоставляя основу для таких инструментов.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "OCR-системы демонстрируют высокий уровень ошибок (CER=17%) и систематическую предвзятость в сторону стандартного арабского языка (MSA bias) при обработке диалектных текстов, делая полностью автоматизированную извлечение невозможным.",
+          "status": "rejected",
+          "reason": "Это описание проблемы, связанной с OCR и предвзятостью, а не с фундаментальным пробелом в создании лексических ресурсов, который является основной темой статьи (L-ReLF). Это скорее техническое ограничение, которое статья *обходит*, а не *решает* в своей основе.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Crucially, 59% of these errors were attributed to MSA bias, where the engine incorrectly 'corrected' Darija-specific graphemes to match Standard Arabic morphology.",
+              "verified": true
+            },
+            {
+              "page": 4,
+              "quote": "This quantitative finding validates our assertion in Section II that fully automated extraction is currently unfeasible for dialectal Arabic and necessitates the Human-in-the-Loop (HITL) approach described in this framework.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Отсутствие стандартизированной терминологии и методов создания словарей для малоизученных языков (например, марокканского дарицы), что препятствует обеспечению равенства знаний на платформах типа Википедия.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "The lack of standardized terminology, exemplified by Moroccan Darija, poses a critical barrier to knowledge equity in platforms like Wikipedia",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Проблема субъективности и фрагментарности в создании терминов без единого методологического подхода.",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Editors working in languages such as Moroccan Darija—our paper's case study—are forced to rely on ad-hoc methods for terminology creation, leading to widespread inconsistencies",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие стандартизированной орфографии и формальных лингвистических институтов для языков с ограниченными ресурсами (например, марокканского дарджи), что приводит к значительным диалектным вариациям и несовместимости данных.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Many underserved languages, including Moroccan Darija, lack standardized orthography and formal linguistic bodies to regulate term creation, resulting in significant dialectal variation and spelling inconsistency within available text",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Недостаток вычислительных инструментов (например, морфологических анализаторов и электронных словарей) для языков с ограниченными ресурсами, часто из-за их отсутствия или плохого качества.",
+          "type": "tool",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Computational tools like part-of-speech taggers, parsers, and comprehensive electronic dictionaries are often non-existent or of poor quality.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29346v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 6.75665399999707,
+          "load_seconds": 2.6107244,
+          "prompt_eval_seconds": 0.644026,
+          "eval_seconds": 3.415595,
+          "total_server_seconds": 6.6991026,
+          "prompt_tokens": 1317,
+          "generated_tokens": 283,
+          "tokens_per_second": 82.86,
+          "prompt_tokens_per_second": 2044.95,
+          "hardware": {
+            "samples": 6,
+            "max_system_ram_used_bytes": 17999679488,
+            "mean_system_ram_used_bytes": 15636606293.333334,
+            "max_system_ram_percent": 52.5,
+            "mean_system_ram_percent": 45.63333333333333,
+            "max_cpu_percent": 29.5,
+            "mean_cpu_percent": 18.45,
+            "max_python_process_rss_bytes": 95006720,
+            "mean_python_process_rss_bytes": 95003989.33333333,
+            "max_ollama_process_rss_bytes": 222646272,
+            "mean_ollama_process_rss_bytes": 222618965.33333334,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3647.1666666666665,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 52.166666666666664,
+            "max_gpu_temperature_c": 59.3,
+            "mean_gpu_temperature_c": 56.73333333333333,
+            "max_gpu_power_w": 126.03,
+            "mean_gpu_power_w": 86.395,
+            "estimated_gpu_joules": 495.9998438334465
+          }
+        },
+        {
+          "request_id": "2603.29346v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 25.51091500000257,
+          "load_seconds": 3.290105,
+          "prompt_eval_seconds": 1.144353,
+          "eval_seconds": 20.992434,
+          "total_server_seconds": 25.4489228,
+          "prompt_tokens": 2005,
+          "generated_tokens": 1292,
+          "tokens_per_second": 61.55,
+          "prompt_tokens_per_second": 1752.08,
+          "hardware": {
+            "samples": 21,
+            "max_system_ram_used_bytes": 15489175552,
+            "mean_system_ram_used_bytes": 15405026547.809525,
+            "max_system_ram_percent": 45.2,
+            "mean_system_ram_percent": 44.96190476190476,
+            "max_cpu_percent": 43.5,
+            "mean_cpu_percent": 21.052380952380954,
+            "max_python_process_rss_bytes": 95006720,
+            "mean_python_process_rss_bytes": 95005939.8095238,
+            "max_ollama_process_rss_bytes": 357871616,
+            "mean_ollama_process_rss_bytes": 228975957.33333334,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 4861.285714285715,
+            "max_gpu_util_percent": 98.0,
+            "mean_gpu_util_percent": 77.19047619047619,
+            "max_gpu_temperature_c": 58.4,
+            "mean_gpu_temperature_c": 57.328571428571436,
+            "max_gpu_power_w": 111.57,
+            "mean_gpu_power_w": 86.55047619047619,
+            "estimated_gpu_joules": 2145.063700258732
+          }
+        },
+        {
+          "request_id": "2603.29346v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 15.504193000000669,
+          "load_seconds": 5.6336837,
+          "prompt_eval_seconds": 1.003176,
+          "eval_seconds": 8.697651,
+          "total_server_seconds": 15.3529728,
+          "prompt_tokens": 1467,
+          "generated_tokens": 665,
+          "tokens_per_second": 76.46,
+          "prompt_tokens_per_second": 1462.36,
+          "hardware": {
+            "samples": 13,
+            "max_system_ram_used_bytes": 18033106944,
+            "mean_system_ram_used_bytes": 17239050082.46154,
+            "max_system_ram_percent": 52.6,
+            "mean_system_ram_percent": 50.3,
+            "max_cpu_percent": 34.1,
+            "mean_cpu_percent": 21.638461538461538,
+            "max_python_process_rss_bytes": 95006720,
+            "mean_python_process_rss_bytes": 95005459.6923077,
+            "max_ollama_process_rss_bytes": 222736384,
+            "mean_ollama_process_rss_bytes": 222705506.46153846,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 5080.384615384615,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 59.46153846153846,
+            "max_gpu_temperature_c": 58.0,
+            "mean_gpu_temperature_c": 56.276923076923076,
+            "max_gpu_power_w": 112.42,
+            "mean_gpu_power_w": 83.71153846153847,
+            "estimated_gpu_joules": 1224.1062380623816
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 47.798447600001964,
+  "seconds_end_to_end": 93.26519280000139,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "41962f642e239027578db8da5890bbafeba0f86fb15cdbe3ada148b34cce7c04"
+}

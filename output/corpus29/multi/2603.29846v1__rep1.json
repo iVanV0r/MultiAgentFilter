@@ -1,0 +1,785 @@
+{
+  "paper_id": "2603.29846v1",
+  "filename": "2603.29846v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+      "status": "accepted",
+      "reason": "Четко указывает на пробел: существующие бенчмарки не измеряют стратегическую коммуникацию при асимметричной информации, что является основной проблемой, которую решает SNEAK.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+      "status": "accepted",
+      "reason": "Конкретизирует пробел, фокусируясь на контроле раскрытия информации, что является ядром задачи селективной коммуникации.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+      "status": "accepted",
+      "reason": "Формулирует проблему отсутствия стандартизированных метрик для селективного обмена информацией, что является недостатком, который статья устраняет.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+      "status": "accepted",
+      "reason": "Обозначает пробел в методах оценки компромисса между информативностью и скрытностью, что является ключевым аспектом, измеряемым в SNEAK.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+      "status": "rejected",
+      "reason": "Упоминание 'SNEAK dataset' в качестве пробела не является формулировкой проблемы, а скорее констатацией факта о наличии/отсутствии ресурса, хотя это связано с темой.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Summary of the SNEAK dataset",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+      "status": "accepted",
+      "reason": "Обозначает пробел в объективных и воспроизводимых метриках, предлагая решение (behavioral evaluation framework), которое соответствует цели статьи.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+      "status": "accepted",
+      "reason": "Описывает текущее состояние (высокая полезность, но большая утечка), что является следствием обозначенного научного пробела в контроле раскрытия информации.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цель слишком широкая, не конкретна для статьи.",
+            "source_page": 1,
+            "support_quote": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+            "verified": false
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+            "reason": "Цель слишком широкая, не конкретна для статьи. Статья фокусируется на оценке селективного обмена информацией через метрики полезности и утечки в условиях атаки."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "rewrite",
+            "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+            "reason": "Формулировка близка к сути, но можно уточнить контекст асимметричной информации и двух агентов (союзник/хамелеон), что является ключевым элементом статьи."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+            "reason": "Статья не только указывает на отсутствие метрик, но и предлагает конкретный подход (SNEAK) с двумя дополняющими друг друга метриками: полезностью и утечкой."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+            "reason": "Статья не только констатирует проблему, но и демонстрирует её на примере современных языковых моделей, показывая их высокую полезность при значительной утечке."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+            "reason": "Статья не только указывает на отсутствие датасета, но и представляет новый бенчмарк SNEAK, который включает в себя такой набор данных."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "rewrite",
+            "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+            "reason": "Статья не только констатирует проблему, но и предлагает решение через использование симулированных агентов вместо субъективной оценки LLM-as-judge."
+          },
+          {
+            "candidate_id": "M7",
+            "action": "rewrite",
+            "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+            "reason": "Формулировка точна и отражает ключевой вывод статьи о том, что люди превосходят все оцененные модели на 4 раза."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цель слишком широкая, не конкретна для статьи. Статья фокусируется на оценке селективного обмена информацией через метрики полезности и утечки в условиях атаки.",
+          "old_statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+          "new_statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "rewrite",
+          "reason": "Формулировка близка к сути, но можно уточнить контекст асимметричной информации и двух агентов (союзник/хамелеон), что является ключевым элементом статьи.",
+          "old_statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+          "new_statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Статья не только указывает на отсутствие метрик, но и предлагает конкретный подход (SNEAK) с двумя дополняющими друг друга метриками: полезностью и утечкой.",
+          "old_statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM",
+          "new_statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Статья не только констатирует проблему, но и демонстрирует её на примере современных языковых моделей, показывая их высокую полезность при значительной утечке.",
+          "old_statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+          "new_statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Статья не только указывает на отсутствие датасета, но и представляет новый бенчмарк SNEAK, который включает в себя такой набор данных.",
+          "old_statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+          "new_statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "rewrite",
+          "reason": "Статья не только констатирует проблему, но и предлагает решение через использование симулированных агентов вместо субъективной оценки LLM-as-judge.",
+          "old_statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+          "new_statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации."
+        },
+        {
+          "candidate_id": "M7",
+          "action": "rewrite",
+          "reason": "Формулировка точна и отражает ключевой вывод статьи о том, что люди превосходят все оцененные модели на 4 раза.",
+          "old_statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+          "new_statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "Все кандидаты четко формулируют пробел в знаниях/методах (отсутствие оценки стратегической коммуникации/селективного обмена информацией) и напрямую связаны с целью статьи (введение SNEAK).",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Четко указывает на пробел: существующие бенчмарки не измеряют стратегическую коммуникацию при асимметричной информации, что является основной проблемой, которую решает SNEAK."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Конкретизирует пробел, фокусируясь на контроле раскрытия информации, что является ядром задачи селективной коммуникации."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Формулирует проблему отсутствия стандартизированных метрик для селективного обмена информацией, что является недостатком, который статья устраняет."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Обозначает пробел в методах оценки компромисса между информативностью и скрытностью, что является ключевым аспектом, измеряемым в SNEAK."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Упоминание 'SNEAK dataset' в качестве пробела не является формулировкой проблемы, а скорее констатацией факта о наличии/отсутствии ресурса, хотя это связано с темой."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": true,
+            "reason": "Обозначает пробел в объективных и воспроизводимых метриках, предлагая решение (behavioral evaluation framework), которое соответствует цели статьи."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": true,
+            "reason": "Описывает текущее состояние (высокая полезность, но большая утечка), что является следствием обозначенного научного пробела в контроле раскрытия информации."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Summary of the SNEAK dataset",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+          "status": "accepted",
+          "reason": "Четко указывает на пробел: существующие бенчмарки не измеряют стратегическую коммуникацию при асимметричной информации, что является основной проблемой, которую решает SNEAK.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+          "status": "accepted",
+          "reason": "Конкретизирует пробел, фокусируясь на контроле раскрытия информации, что является ядром задачи селективной коммуникации.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+          "status": "accepted",
+          "reason": "Формулирует проблему отсутствия стандартизированных метрик для селективного обмена информацией, что является недостатком, который статья устраняет.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+          "status": "accepted",
+          "reason": "Обозначает пробел в методах оценки компромисса между информативностью и скрытностью, что является ключевым аспектом, измеряемым в SNEAK.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Отсутствие публичного датасета для оценки методов обнаружения секретных сообщений.",
+          "status": "rejected",
+          "reason": "Упоминание 'SNEAK dataset' в качестве пробела не является формулировкой проблемы, а скорее констатацией факта о наличии/отсутствии ресурса, хотя это связано с темой.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Summary of the SNEAK dataset",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+          "status": "accepted",
+          "reason": "Обозначает пробел в объективных и воспроизводимых метриках, предлагая решение (behavioral evaluation framework), которое соответствует цели статьи.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+          "status": "accepted",
+          "reason": "Описывает текущее состояние (высокая полезность, но большая утечка), что является следствием обозначенного научного пробела в контроле раскрытия информации.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не измеряют стратегическую коммуникацию при асимметричной информации.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "existing LLM benchmarks primarily evaluate capabilities such as reasoning, factual knowledge, or instruction following, and do not directly measure strategic communication under asymmetric information.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие бенчмарки для языковых моделей не оценивают способность контролировать степень раскрытия информации при коммуникации с другими агентами.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "They do not test whether models can control how much information they reveal when communicating with other agents.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие стандартизированных метрик для оценки селективного обмена информацией в LLM.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Selective communication requires balancing two competing objectives: a message should be recognizable to collaborators who know the secret, but difficult for an uninformed observer to decode.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие методов оценки полезности сообщений в условиях компромисса между информативностью и скрытностью.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "The message rabbit (as in a rabbit in a hat) achieves high utility while maintaining low leakage.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Отсутствие объективных и воспроизводимых метрик оценки для сообщений, сгенерированных языковыми моделями в задачах безопасности информации.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We estimate utility and leakage using a behavioral evaluation framework based on simulated agents, framing evaluation as a constrained prediction task rather than subjective LLM-as-judge ratings",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие языковые модели демонстрируют высокую полезность, но при этом значительное утечку информации, не достигая уровня селективной коммуникации человека.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Overall, modern language models achieve high utility but also incur substantial leakage, indicating a persistent inability to control what information is revealed.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29846v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.166986799998995,
+          "load_seconds": 2.5264561,
+          "prompt_eval_seconds": 0.575678,
+          "eval_seconds": 0.905497,
+          "total_server_seconds": 4.0332502,
+          "prompt_tokens": 1154,
+          "generated_tokens": 72,
+          "tokens_per_second": 79.51,
+          "prompt_tokens_per_second": 2004.59,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 17312878592,
+            "mean_system_ram_used_bytes": 15711739904.0,
+            "max_system_ram_percent": 50.5,
+            "mean_system_ram_percent": 45.85,
+            "max_cpu_percent": 27.9,
+            "mean_cpu_percent": 17.775,
+            "max_python_process_rss_bytes": 90906624,
+            "mean_python_process_rss_bytes": 90902528.0,
+            "max_ollama_process_rss_bytes": 223277056,
+            "mean_ollama_process_rss_bytes": 223115264.0,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3085.75,
+            "max_gpu_util_percent": 96.0,
+            "mean_gpu_util_percent": 50.25,
+            "max_gpu_temperature_c": 59.7,
+            "mean_gpu_temperature_c": 56.15,
+            "max_gpu_power_w": 114.43,
+            "mean_gpu_power_w": 69.5575,
+            "estimated_gpu_joules": 206.16102494716645
+          }
+        },
+        {
+          "request_id": "2603.29846v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.612028800002008,
+          "load_seconds": 3.3629403,
+          "prompt_eval_seconds": 0.964659,
+          "eval_seconds": 8.172021,
+          "total_server_seconds": 12.5173503,
+          "prompt_tokens": 1618,
+          "generated_tokens": 534,
+          "tokens_per_second": 65.34,
+          "prompt_tokens_per_second": 1677.28,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 15587606528,
+            "mean_system_ram_used_bytes": 15466378333.09091,
+            "max_system_ram_percent": 45.5,
+            "mean_system_ram_percent": 45.14545454545455,
+            "max_cpu_percent": 55.9,
+            "mean_cpu_percent": 21.490909090909092,
+            "max_python_process_rss_bytes": 90906624,
+            "mean_python_process_rss_bytes": 90905134.54545455,
+            "max_ollama_process_rss_bytes": 223080448,
+            "mean_ollama_process_rss_bytes": 222521902.54545453,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 4495.818181818182,
+            "max_gpu_util_percent": 96.0,
+            "mean_gpu_util_percent": 69.27272727272727,
+            "max_gpu_temperature_c": 59.7,
+            "mean_gpu_temperature_c": 57.809090909090905,
+            "max_gpu_power_w": 113.5,
+            "mean_gpu_power_w": 83.21909090909092,
+            "estimated_gpu_joules": 1022.0106426334381
+          }
+        },
+        {
+          "request_id": "2603.29846v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 14.082591300000786,
+          "load_seconds": 5.9089841,
+          "prompt_eval_seconds": 0.895332,
+          "eval_seconds": 7.119928,
+          "total_server_seconds": 13.9406381,
+          "prompt_tokens": 1272,
+          "generated_tokens": 581,
+          "tokens_per_second": 81.6,
+          "prompt_tokens_per_second": 1420.7,
+          "hardware": {
+            "samples": 12,
+            "max_system_ram_used_bytes": 18228117504,
+            "mean_system_ram_used_bytes": 17308328960.0,
+            "max_system_ram_percent": 53.2,
+            "mean_system_ram_percent": 50.5,
+            "max_cpu_percent": 50.6,
+            "mean_cpu_percent": 21.033333333333335,
+            "max_python_process_rss_bytes": 90906624,
+            "mean_python_process_rss_bytes": 90905258.66666667,
+            "max_ollama_process_rss_bytes": 223678464,
+            "mean_ollama_process_rss_bytes": 223354538.66666666,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4952.083333333333,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 54.75,
+            "max_gpu_temperature_c": 58.4,
+            "mean_gpu_temperature_c": 56.65833333333333,
+            "max_gpu_power_w": 100.84,
+            "mean_gpu_power_w": 79.35333333333334,
+            "estimated_gpu_joules": 1049.1279528379441
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 30.886791000000812,
+  "seconds_end_to_end": 102.3259575000011,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "16ae32f100aa4720cae3acbc04ba2e87ea42bbde017f8a6ee2808537675b3507"
+}

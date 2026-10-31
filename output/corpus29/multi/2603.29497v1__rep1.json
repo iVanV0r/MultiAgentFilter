@@ -1,0 +1,1827 @@
+{
+  "paper_id": "2603.29497v1",
+  "filename": "2603.29497v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+      "type": "knowledge",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 3,
+  "best_score": 7,
+  "best_round": 1,
+  "stopping_reason": "max_rounds",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+      "status": "rejected",
+      "reason": "Слишком общая формулировка, которая, согласно критике, не является новым пробелом, а скорее констатацией известной проблемы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+      "status": "accepted",
+      "reason": "Четко обозначает научный пробел: отсутствие унифицированного определения и контекстуальная природа конфиденциальности в текстовых данных, что является фоном для их работы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+      "status": "accepted",
+      "reason": "Обозначает конкретные, решаемые проблемы (стоимость LLM и риски сторонних API) в контексте оценки конфиденциальности.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+      "status": "rejected",
+      "reason": "Это описание вклада/решения, а не обозначение пробела в знаниях.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+      "status": "rejected",
+      "reason": "Это ограничение, а не научная проблема, которую статья решает.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M6",
+      "statement": "primarily focusing on entity-level redaction quality",
+      "status": "rejected",
+      "reason": "Это ограничение фокуса, а не научная проблема.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "primarily focusing on entity-level redaction quality",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M7",
+      "statement": "All data is in English; extending the approach to other languages remains future work.",
+      "status": "rejected",
+      "reason": "Это оговорка о будущей работе, а не обозначение текущей научной проблемы.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 2,
+          "quote": "All data is in English; extending the approach to other languages remains future work.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Неверный пробел, так как проблема уже указана в статье, не является научной проблемой.",
+            "source_page": 1,
+            "support_quote": "фрагмент или пусто"
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+                "verified": true
+              }
+            ]
+          },
+          {
+            "statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": []
+          },
+          {
+            "statement": "primarily focusing on entity-level redaction quality",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "primarily focusing on entity-level redaction quality",
+                "verified": true
+              }
+            ]
+          },
+          {
+            "statement": "All data is in English; extending the approach to other languages remains future work.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 8,
+                "quote": "All data is in English; extending the approach to other languages remains future work.",
+                "verified": true
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "keep",
+            "reason": "Проблема соответствует определению: это пробел в знаниях (отсутствие единого определения и контекстуальной природы приватности), на устранение которого направлена работа."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "reason": "Дубликат M1, но формулировка также указывает на научную проблему (отсутствие единого определения)."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "keep",
+          "reason": "Проблема соответствует определению: это пробел в знаниях (отсутствие единого определения и контекстуальной природы приватности), на устранение которого направлена работа.",
+          "old_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "new_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Дубликат M1, но формулировка также указывает на научную проблему (отсутствие единого определения).",
+          "old_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "new_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "new_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns"
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "new_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "new_statement": "they do not directly reflect how humans perceive the sensitivity of a text"
+        },
+        {
+          "candidate_id": "M6",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "primarily focusing on entity-level redaction quality",
+          "new_statement": "primarily focusing on entity-level redaction quality"
+        },
+        {
+          "candidate_id": "M7",
+          "action": "keep",
+          "reason": "Пропущено действие — сохранено",
+          "old_statement": "All data is in English; extending the approach to other languages remains future work.",
+          "new_statement": "All data is in English; extending the approach to other languages remains future work."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 2,
+          "relevance": 2,
+          "evidence": 2,
+          "precision": 1
+        },
+        "score": 7,
+        "reason": "M1 описывает общую проблему, которая, согласно критике, уже известна, но в контексте статьи она может быть сформулирована как пробел, который авторы решают (переход от 'critical challenge' к 'our solution'). M2 более точно формулирует пробел, связанный с отсутствием унифицированной метрики. M3 описывает ограничения, которые являются частью проблемы, которую они решают (масштабируемость/безопасность API). M4 описывает вклад, а не пробел. M5, M6, M7 — это ограничения/оговорки.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": false,
+            "reason": "Слишком общая формулировка, которая, согласно критике, не является новым пробелом, а скорее констатацией известной проблемы."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Четко обозначает научный пробел: отсутствие унифицированного определения и контекстуальная природа конфиденциальности в текстовых данных, что является фоном для их работы."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Обозначает конкретные, решаемые проблемы (стоимость LLM и риски сторонних API) в контексте оценки конфиденциальности."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Это описание вклада/решения, а не обозначение пробела в знаниях."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это ограничение, а не научная проблема, которую статья решает."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": false,
+            "reason": "Это ограничение фокуса, а не научная проблема."
+          },
+          {
+            "candidate_id": "M7",
+            "accept": false,
+            "reason": "Это оговорка о будущей работе, а не обозначение текущей научной проблемы."
+          }
+        ]
+      },
+      "score": 7,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "primarily focusing on entity-level redaction quality",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        },
+        {
+          "statement": "All data is in English; extending the approach to other languages remains future work.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "All data is in English; extending the approach to other languages remains future work.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M7"
+        }
+      ],
+      "invalid_evidence_candidates": [
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [],
+          "grounded": false
+        },
+        {
+          "statement": "primarily focusing on entity-level redaction quality",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "All data is in English; extending the approach to other languages remains future work.",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 8,
+              "quote": "All data is in English; extending the approach to other languages remains future work.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "status": "rejected",
+          "reason": "Слишком общая формулировка, которая, согласно критике, не является новым пробелом, а скорее констатацией известной проблемы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "status": "accepted",
+          "reason": "Четко обозначает научный пробел: отсутствие унифицированного определения и контекстуальная природа конфиденциальности в текстовых данных, что является фоном для их работы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "status": "accepted",
+          "reason": "Обозначает конкретные, решаемые проблемы (стоимость LLM и риски сторонних API) в контексте оценки конфиденциальности.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "status": "rejected",
+          "reason": "Это описание вклада/решения, а не обозначение пробела в знаниях.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "status": "rejected",
+          "reason": "Это ограничение, а не научная проблема, которую статья решает.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "primarily focusing on entity-level redaction quality",
+          "status": "rejected",
+          "reason": "Это ограничение фокуса, а не научная проблема.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M7",
+          "statement": "All data is in English; extending the approach to other languages remains future work.",
+          "status": "rejected",
+          "reason": "Это оговорка о будущей работе, а не обозначение текущей научной проблемы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "All data is in English; extending the approach to other languages remains future work.",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29497v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.671214699999837,
+          "load_seconds": 5.1126315,
+          "prompt_eval_seconds": 0.506087,
+          "eval_seconds": 3.969692,
+          "total_server_seconds": 9.603747,
+          "prompt_tokens": 942,
+          "generated_tokens": 300,
+          "tokens_per_second": 75.57,
+          "prompt_tokens_per_second": 1861.34,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 19605291008,
+            "mean_system_ram_used_bytes": 16202684928.0,
+            "max_system_ram_percent": 57.2,
+            "mean_system_ram_percent": 47.275,
+            "max_cpu_percent": 37.3,
+            "mean_cpu_percent": 20.675,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95266816.0,
+            "max_ollama_process_rss_bytes": 222466048,
+            "mean_ollama_process_rss_bytes": 221758464.0,
+            "max_gpu_mem_mb": 4690.0,
+            "mean_gpu_mem_mb": 3036.625,
+            "max_gpu_util_percent": 90.0,
+            "mean_gpu_util_percent": 45.875,
+            "max_gpu_temperature_c": 59.5,
+            "mean_gpu_temperature_c": 56.3,
+            "max_gpu_power_w": 113.7,
+            "mean_gpu_power_w": 73.435,
+            "estimated_gpu_joules": 596.2101229667663
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 5.7642010999989,
+          "load_seconds": 3.2770408,
+          "prompt_eval_seconds": 0.941334,
+          "eval_seconds": 1.368889,
+          "total_server_seconds": 5.6033596,
+          "prompt_tokens": 1568,
+          "generated_tokens": 95,
+          "tokens_per_second": 69.4,
+          "prompt_tokens_per_second": 1665.72,
+          "hardware": {
+            "samples": 5,
+            "max_system_ram_used_bytes": 16579371008,
+            "mean_system_ram_used_bytes": 16240402432.0,
+            "max_system_ram_percent": 48.4,
+            "mean_system_ram_percent": 47.42,
+            "max_cpu_percent": 48.9,
+            "mean_cpu_percent": 31.939999999999998,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95265587.2,
+            "max_ollama_process_rss_bytes": 223219712,
+            "mean_ollama_process_rss_bytes": 222426726.4,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 3548.2,
+            "max_gpu_util_percent": 93.0,
+            "mean_gpu_util_percent": 45.0,
+            "max_gpu_temperature_c": 58.5,
+            "mean_gpu_temperature_c": 56.120000000000005,
+            "max_gpu_power_w": 111.46,
+            "mean_gpu_power_w": 75.524,
+            "estimated_gpu_joules": 347.475376021862
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 16.52185079999981,
+          "load_seconds": 8.0223873,
+          "prompt_eval_seconds": 1.019264,
+          "eval_seconds": 7.406879,
+          "total_server_seconds": 16.4696465,
+          "prompt_tokens": 1207,
+          "generated_tokens": 568,
+          "tokens_per_second": 76.69,
+          "prompt_tokens_per_second": 1184.19,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 18357960704,
+            "mean_system_ram_used_bytes": 17342280135.11111,
+            "max_system_ram_percent": 53.6,
+            "mean_system_ram_percent": 50.62222222222223,
+            "max_cpu_percent": 26.7,
+            "mean_cpu_percent": 20.466666666666665,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95267043.55555555,
+            "max_ollama_process_rss_bytes": 222949376,
+            "mean_ollama_process_rss_bytes": 222854712.8888889,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 5076.777777777777,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 68.55555555555556,
+            "max_gpu_temperature_c": 57.5,
+            "mean_gpu_temperature_c": 56.44444444444444,
+            "max_gpu_power_w": 98.53,
+            "mean_gpu_power_w": 84.34666666666666,
+            "estimated_gpu_joules": 1206.9561686635018
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цель слишком широкая, не конкретна научная проблема",
+            "source_page": 1,
+            "support_quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+            "verified": true
+          }
+        ],
+        "missed_problems": []
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+            "reason": "Цель слишком широкая, не конкретна научная проблема (согласно критике)."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+            "reason": "Соответствует определению научной проблемы."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "rewrite",
+            "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+            "reason": "Улучшение читаемости и грамматики (исправление 'thirdparty' на 'third-party')."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+            "reason": "Описывает достижение/методологию, не является проблемой."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+            "reason": "Формулировка как научная проблема (ограниченность текущих метрик)."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "keep",
+            "statement": "primarily focusing on entity-level redaction quality",
+            "reason": "Описывает ограничение существующих методов, что является научной проблемой."
+          },
+          {
+            "candidate_id": "M7",
+            "action": "remove",
+            "statement": "All data is in English; extending the approach to other languages remains future work.",
+            "reason": "Это не научная проблема, а просто объявление о будущих работах без указания пробела в знаниях или недостатка инструментов."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цель слишком широкая, не конкретна научная проблема (согласно критике).",
+          "old_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "new_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Соответствует определению научной проблемы.",
+          "old_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "new_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "rewrite",
+          "reason": "Улучшение читаемости и грамматики (исправление 'thirdparty' на 'third-party').",
+          "old_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+          "new_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Описывает достижение/методологию, не является проблемой.",
+          "old_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "new_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Формулировка как научная проблема (ограниченность текущих метрик).",
+          "old_statement": "they do not directly reflect how humans perceive the sensitivity of a text",
+          "new_statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "keep",
+          "reason": "Описывает ограничение существующих методов, что является научной проблемой.",
+          "old_statement": "primarily focusing on entity-level redaction quality",
+          "new_statement": "primarily focusing on entity-level redaction quality"
+        },
+        {
+          "candidate_id": "M7",
+          "action": "remove",
+          "reason": "Это не научная проблема, а просто объявление о будущих работах без указания пробела в знаниях или недостатка инструментов.",
+          "old_statement": "All data is in English; extending the approach to other languages remains future work."
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 2,
+          "relevance": 2,
+          "evidence": 2,
+          "precision": 1
+        },
+        "score": 7,
+        "reason": "M1 обозначает общую проблему (критика подтверждает, что она слишком широка), но она является заявлением о пробеле, которое работа, вероятно, пытается решить, фокусируясь на 'accurate privacy evaluation'.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Обозначает критический пробел в оценке конфиденциальности текстовых данных, что является фокусом работы."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Четко формулирует научный пробел: отсутствие единого определения и контекстуальная природа конфиденциальности при ее количественной оценке."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Обозначает конкретные, решаемые проблемы (стоимость LLM и риски сторонних API) при оценке конфиденциальности."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Не является проблемой, а скорее заявлением о вкладе/решении. Однако, если интерпретировать это как 'недостаток существующих масштабируемых метрик', то это проблема, которую они решают."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": true,
+            "reason": "Обозначает пробел: существующие метрики не отражают человеческое восприятие чувствительности."
+          },
+          {
+            "candidate_id": "M6",
+            "accept": false,
+            "reason": "Это описание фокуса, а не обозначение пробела в знаниях или методах."
+          }
+        ]
+      },
+      "score": 7,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "primarily focusing on entity-level redaction quality",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M6"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "status": "accepted",
+          "reason": "Обозначает критический пробел в оценке конфиденциальности текстовых данных, что является фокусом работы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "status": "accepted",
+          "reason": "Четко формулирует научный пробел: отсутствие единого определения и контекстуальная природа конфиденциальности при ее количественной оценке.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "status": "accepted",
+          "reason": "Обозначает конкретные, решаемые проблемы (стоимость LLM и риски сторонних API) при оценке конфиденциальности.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "status": "accepted",
+          "reason": "Не является проблемой, а скорее заявлением о вкладе/решении. Однако, если интерпретировать это как 'недостаток существующих масштабируемых метрик', то это проблема, которую они решают.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "status": "accepted",
+          "reason": "Обозначает пробел: существующие метрики не отражают человеческое восприятие чувствительности.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M6",
+          "statement": "primarily focusing on entity-level redaction quality",
+          "status": "rejected",
+          "reason": "Это описание фокуса, а не обозначение пробела в знаниях или методах.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29497v1__rep1:r2:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 4.295377099999314,
+          "load_seconds": 2.9347633,
+          "prompt_eval_seconds": 0.509025,
+          "eval_seconds": 0.783522,
+          "total_server_seconds": 4.241691,
+          "prompt_tokens": 942,
+          "generated_tokens": 65,
+          "tokens_per_second": 82.96,
+          "prompt_tokens_per_second": 1850.6,
+          "hardware": {
+            "samples": 4,
+            "max_system_ram_used_bytes": 18349740032,
+            "mean_system_ram_used_bytes": 16189424640.0,
+            "max_system_ram_percent": 53.5,
+            "mean_system_ram_percent": 47.225,
+            "max_cpu_percent": 35.7,
+            "mean_cpu_percent": 21.700000000000003,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95264768.0,
+            "max_ollama_process_rss_bytes": 222773248,
+            "mean_ollama_process_rss_bytes": 222672896.0,
+            "max_gpu_mem_mb": 4770.0,
+            "mean_gpu_mem_mb": 3085.25,
+            "max_gpu_util_percent": 67.0,
+            "mean_gpu_util_percent": 29.25,
+            "max_gpu_temperature_c": 58.7,
+            "mean_gpu_temperature_c": 55.375,
+            "max_gpu_power_w": 114.27,
+            "mean_gpu_power_w": 73.43,
+            "estimated_gpu_joules": 230.1757514739037
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r2:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 10.740937300000951,
+          "load_seconds": 3.6152994,
+          "prompt_eval_seconds": 0.940657,
+          "eval_seconds": 6.123324,
+          "total_server_seconds": 10.6961412,
+          "prompt_tokens": 1578,
+          "generated_tokens": 407,
+          "tokens_per_second": 66.47,
+          "prompt_tokens_per_second": 1677.55,
+          "hardware": {
+            "samples": 9,
+            "max_system_ram_used_bytes": 15856623616,
+            "mean_system_ram_used_bytes": 15693946424.88889,
+            "max_system_ram_percent": 46.3,
+            "mean_system_ram_percent": 45.78888888888889,
+            "max_cpu_percent": 69.5,
+            "mean_cpu_percent": 38.733333333333334,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95267043.55555555,
+            "max_ollama_process_rss_bytes": 222351360,
+            "mean_ollama_process_rss_bytes": 222158392.8888889,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 4314.111111111111,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 64.11111111111111,
+            "max_gpu_temperature_c": 58.2,
+            "mean_gpu_temperature_c": 56.46666666666667,
+            "max_gpu_power_w": 113.29,
+            "mean_gpu_power_w": 84.80111111111111,
+            "estimated_gpu_joules": 829.2032878732681
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r2:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.343820300000516,
+          "load_seconds": 5.6164122,
+          "prompt_eval_seconds": 0.847919,
+          "eval_seconds": 5.756235,
+          "total_server_seconds": 12.2352175,
+          "prompt_tokens": 1157,
+          "generated_tokens": 466,
+          "tokens_per_second": 80.96,
+          "prompt_tokens_per_second": 1364.52,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 18190295040,
+            "mean_system_ram_used_bytes": 17273858867.2,
+            "max_system_ram_percent": 53.1,
+            "mean_system_ram_percent": 50.43,
+            "max_cpu_percent": 43.3,
+            "mean_cpu_percent": 22.2,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95267225.6,
+            "max_ollama_process_rss_bytes": 513355776,
+            "mean_ollama_process_rss_bytes": 251483340.8,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4824.7,
+            "max_gpu_util_percent": 93.0,
+            "mean_gpu_util_percent": 54.0,
+            "max_gpu_temperature_c": 57.2,
+            "mean_gpu_temperature_c": 55.42999999999999,
+            "max_gpu_power_w": 110.14,
+            "mean_gpu_power_w": 76.619,
+            "estimated_gpu_joules": 831.3465525436401
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Цель слишком широкая, не конкретизирует пробел в знаниях или методах",
+            "source_page": 1,
+            "support_quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+            "verified": true
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+                "verified": true
+              }
+            ]
+          },
+          {
+            "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+                "verified": true
+              }
+            ]
+          },
+          {
+            "statement": "primarily focusing on entity-level redaction quality",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 7,
+                "quote": "primarily focusing on entity-level redaction quality",
+                "verified": true
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "rewrite",
+            "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing due to the absence of a unified definition and the inherently contextual nature of privacy.",
+            "reason": "Цель слишком широкая; добавлено обоснование из контекста о нехватке единого определения и контекстуальности (страница 1)."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+            "reason": "Проблема соответствует определению научной проблемы, критика некорректна."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+            "reason": "Проблема соответствует определению научной проблемы (недостаток методов/инструментов), критика некорректна."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "keep",
+            "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+            "reason": "Это описание достижения, но в контексте статьи оно обосновывает методологию решения проблемы оценки приватности, что допустимо как научная проблема (нехватка масштабируемых инструментов). Критика не указывает на отсутствие связи с целью."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+            "reason": "Фраза неполная в контексте предложения (пропущено начало), исправлено для связности. Проблема заключается в несоответствии автоматических метрик человеческому восприятию чувствительности текста."
+          },
+          {
+            "candidate_id": "M6",
+            "action": "remove",
+            "statement": "primarily focusing on entity-level redaction quality",
+            "reason": "Это описание существующих методов, а не научная проблема (пробел в знаниях или недостаток инструментов). Критика обоснована: это не указывает на пробел в знаниях."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "rewrite",
+          "reason": "Цель слишком широкая; добавлено обоснование из контекста о нехватке единого определения и контекстуальности (страница 1).",
+          "old_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+          "new_statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing due to the absence of a unified definition and the inherently contextual nature of privacy."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Проблема соответствует определению научной проблемы, критика некорректна.",
+          "old_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "new_statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy"
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Проблема соответствует определению научной проблемы (недостаток методов/инструментов), критика некорректна.",
+          "old_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "new_statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "keep",
+          "reason": "Это описание достижения, но в контексте статьи оно обосновывает методологию решения проблемы оценки приватности, что допустимо как научная проблема (нехватка масштабируемых инструментов). Критика не указывает на отсутствие связи с целью.",
+          "old_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "new_statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems"
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Фраза неполная в контексте предложения (пропущено начало), исправлено для связности. Проблема заключается в несоответствии автоматических метрик человеческому восприятию чувствительности текста.",
+          "old_statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "new_statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text."
+        },
+        {
+          "candidate_id": "M6",
+          "action": "remove",
+          "reason": "Это описание существующих методов, а не научная проблема (пробел в знаниях или недостаток инструментов). Критика обоснована: это не указывает на пробел в знаниях.",
+          "old_statement": "primarily focusing on entity-level redaction quality"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 2,
+          "relevance": 2,
+          "evidence": 2,
+          "precision": 1
+        },
+        "score": 7,
+        "reason": "M1 описывает общий пробел (отсутствие унифицированного определения и контекстуальность), что является проблемой, но не фокусируется на конкретном методологическом пробеле, который, вероятно, решается статьей. Это слишком широко.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": false,
+            "reason": "Слишком общий пробел, не фокусируется на конкретном методологическом недостатке, который решается публикацией."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначает пробел в количественной оценке конфиденциальности из-за отсутствия унифицированного определения и контекстуальности, что является фундаментальной проблемой, которую работа, вероятно, пытается решить или систематизировать."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": true,
+            "reason": "Четко обозначает два конкретных методологических/практических пробела (стоимость LLM и риски сторонних API) в оценке конфиденциальности, что является конкретной проблемой, которую работа может адресовать."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": true,
+            "reason": "Описывает, что существующие методы (бенчмарки) недостаточны, и предлагает решение (дистиллированные оценщики) для масштабируемой автоматической метрики, что является четким научным вкладом/решением проблемы."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это ограничение, а не научная проблема, которую публикация решает. Это указывает на недостаток текущих метрик, но не формулирует пробел в знаниях, который эта работа устраняет."
+          }
+        ]
+      },
+      "score": 7,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing due to the absence of a unified definition and the inherently contextual nature of privacy.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        }
+      ],
+      "invalid_evidence_candidates": [
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        },
+        {
+          "statement": "primarily focusing on entity-level redaction quality",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "primarily focusing on entity-level redaction quality",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing due to the absence of a unified definition and the inherently contextual nature of privacy.",
+          "status": "rejected",
+          "reason": "Слишком общий пробел, не фокусируется на конкретном методологическом недостатке, который решается публикацией.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "status": "accepted",
+          "reason": "Обозначает пробел в количественной оценке конфиденциальности из-за отсутствия унифицированного определения и контекстуальности, что является фундаментальной проблемой, которую работа, вероятно, пытается решить или систематизировать.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "status": "accepted",
+          "reason": "Четко обозначает два конкретных методологических/практических пробела (стоимость LLM и риски сторонних API) в оценке конфиденциальности, что является конкретной проблемой, которую работа может адресовать.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "status": "accepted",
+          "reason": "Описывает, что существующие методы (бенчмарки) недостаточны, и предлагает решение (дистиллированные оценщики) для масштабируемой автоматической метрики, что является четким научным вкладом/решением проблемы.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "While these metrics capture specific threat models, they do not directly reflect how humans perceive the sensitivity of a text.",
+          "status": "rejected",
+          "reason": "Это ограничение, а не научная проблема, которую публикация решает. Это указывает на недостаток текущих метрик, но не формулирует пробел в знаниях, который эта работа устраняет.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "they do not directly reflect how humans perceive the sensitivity of a text",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+          "type": "knowledge",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Quantifying privacy in textual data remains an open challenge due to the absence of a unified definition and the inherently contextual nature of privacy",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges: first, their computational and financial costs limit large-scale use; second, evaluating sensitive text through third-party APIs introduces additional privacy concerns.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Yet, deploying frontier LLMs for privacy assessment poses two central challenges. First, their computational and financial costs limit large-scale use. Second, evaluating sensitive text through thirdparty APIs introduces additional privacy concerns",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Beyond benchmark validation, we demonstrate that distilled privacy evaluators can serve as scalable automatic metrics for quantifying privacy reduction in text deidentification systems",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29497v1__rep1:r3:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 6.6225491000004695,
+          "load_seconds": 2.6126109,
+          "prompt_eval_seconds": 0.468119,
+          "eval_seconds": 3.415359,
+          "total_server_seconds": 6.5098274,
+          "prompt_tokens": 895,
+          "generated_tokens": 288,
+          "tokens_per_second": 84.32,
+          "prompt_tokens_per_second": 1911.91,
+          "hardware": {
+            "samples": 6,
+            "max_system_ram_used_bytes": 18138079232,
+            "mean_system_ram_used_bytes": 15800859989.333334,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 46.083333333333336,
+            "max_cpu_percent": 32.3,
+            "mean_cpu_percent": 20.266666666666666,
+            "max_python_process_rss_bytes": 95268864,
+            "mean_python_process_rss_bytes": 95266133.33333333,
+            "max_ollama_process_rss_bytes": 223117312,
+            "mean_ollama_process_rss_bytes": 222994432.0,
+            "max_gpu_mem_mb": 4766.0,
+            "mean_gpu_mem_mb": 3645.8333333333335,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 65.0,
+            "max_gpu_temperature_c": 59.1,
+            "mean_gpu_temperature_c": 56.18333333333334,
+            "max_gpu_power_w": 114.11,
+            "mean_gpu_power_w": 82.10166666666667,
+            "estimated_gpu_joules": 475.0140071988106
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r3:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 11.898666799999774,
+          "load_seconds": 3.3011894,
+          "prompt_eval_seconds": 0.918421,
+          "eval_seconds": 7.606982,
+          "total_server_seconds": 11.8556341,
+          "prompt_tokens": 1522,
+          "generated_tokens": 498,
+          "tokens_per_second": 65.47,
+          "prompt_tokens_per_second": 1657.19,
+          "hardware": {
+            "samples": 10,
+            "max_system_ram_used_bytes": 15612067840,
+            "mean_system_ram_used_bytes": 15491305472.0,
+            "max_system_ram_percent": 45.6,
+            "mean_system_ram_percent": 45.21,
+            "max_cpu_percent": 52.1,
+            "mean_cpu_percent": 22.69,
+            "max_python_process_rss_bytes": 89100288,
+            "mean_python_process_rss_bytes": 89045401.6,
+            "max_ollama_process_rss_bytes": 223113216,
+            "mean_ollama_process_rss_bytes": 222854348.8,
+            "max_gpu_mem_mb": 5272.0,
+            "mean_gpu_mem_mb": 4474.3,
+            "max_gpu_util_percent": 91.0,
+            "mean_gpu_util_percent": 66.1,
+            "max_gpu_temperature_c": 59.1,
+            "mean_gpu_temperature_c": 57.14,
+            "max_gpu_power_w": 101.72,
+            "mean_gpu_power_w": 84.176,
+            "estimated_gpu_joules": 917.475480723381
+          }
+        },
+        {
+          "request_id": "2603.29497v1__rep1:r3:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 12.84334569999919,
+          "load_seconds": 5.6513154,
+          "prompt_eval_seconds": 0.869878,
+          "eval_seconds": 6.238623,
+          "total_server_seconds": 12.7749529,
+          "prompt_tokens": 1137,
+          "generated_tokens": 489,
+          "tokens_per_second": 78.38,
+          "prompt_tokens_per_second": 1307.08,
+          "hardware": {
+            "samples": 11,
+            "max_system_ram_used_bytes": 18142760960,
+            "mean_system_ram_used_bytes": 17246063895.272728,
+            "max_system_ram_percent": 52.9,
+            "mean_system_ram_percent": 50.309090909090905,
+            "max_cpu_percent": 33.4,
+            "mean_cpu_percent": 20.945454545454545,
+            "max_python_process_rss_bytes": 89104384,
+            "mean_python_process_rss_bytes": 89102894.54545455,
+            "max_ollama_process_rss_bytes": 223637504,
+            "mean_ollama_process_rss_bytes": 223166836.36363637,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 4944.636363636364,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 62.18181818181818,
+            "max_gpu_temperature_c": 57.3,
+            "mean_gpu_temperature_c": 55.59090909090909,
+            "max_gpu_power_w": 98.83,
+            "mean_gpu_power_w": 76.34636363636363,
+            "estimated_gpu_joules": 942.1711987066269
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 90.77980390000084,
+  "seconds_end_to_end": 220.17553039999984,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "88ee699b08da6e6eb8c690c9ac6449cb5f4678bdf3fc412f01d2c1e2b7c2b6d2"
+}

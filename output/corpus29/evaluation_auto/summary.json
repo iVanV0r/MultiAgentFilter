@@ -1,0 +1,289 @@
+{
+  "basis": "automatic_multilingual_embedding_similarity_only",
+  "by_mode": {
+    "single": {
+      "articles_x_repetitions": 29,
+      "tp": 22,
+      "fp": 122,
+      "fn": 74,
+      "precision": 0.1527777777777778,
+      "recall": 0.22916666666666666,
+      "micro_f1": 0.18333333333333332,
+      "macro_f1": 0.17674603174603173
+    },
+    "multi": {
+      "articles_x_repetitions": 29,
+      "tp": 17,
+      "fp": 50,
+      "fn": 79,
+      "precision": 0.2537313432835821,
+      "recall": 0.17708333333333334,
+      "micro_f1": 0.2085889570552147,
+      "macro_f1": 0.2082010582010582
+    }
+  },
+  "by_language": {
+    "single": {
+      "ru": {
+        "articles_x_repetitions": 10,
+        "tp": 2,
+        "fp": 51,
+        "fn": 28,
+        "precision": 0.03773584905660377,
+        "recall": 0.06666666666666667,
+        "micro_f1": 0.04819277108433735,
+        "macro_f1": 0.04857142857142857
+      },
+      "en": {
+        "articles_x_repetitions": 20,
+        "tp": 20,
+        "fp": 71,
+        "fn": 46,
+        "precision": 0.21978021978021978,
+        "recall": 0.30303030303030304,
+        "micro_f1": 0.25477707006369427,
+        "macro_f1": 0.24083333333333337
+      }
+    },
+    "multi": {
+      "ru": {
+        "articles_x_repetitions": 10,
+        "tp": 1,
+        "fp": 22,
+        "fn": 29,
+        "precision": 0.043478260869565216,
+        "recall": 0.03333333333333333,
+        "micro_f1": 0.03773584905660377,
+        "macro_f1": 0.05
+      },
+      "en": {
+        "articles_x_repetitions": 20,
+        "tp": 16,
+        "fp": 28,
+        "fn": 50,
+        "precision": 0.36363636363636365,
+        "recall": 0.24242424242424243,
+        "micro_f1": 0.2909090909090909,
+        "macro_f1": 0.2873015873015873
+      }
+    }
+  },
+  "paired_difference": {
+    "n_independent_articles": 29,
+    "mean_multi_minus_single_f1": 0.03145502645502646,
+    "bootstrap_95_ci": [
+      -0.013558201058201061,
+      0.0840019841269841
+    ],
+    "wilcoxon_p_exploratory": 0.3457785861511603
+  },
+  "paired_runs": [
+    {
+      "paper_id": "2603.28304v1",
+      "repetition": 1,
+      "single_f1": 0.4,
+      "multi_f1": 0.5,
+      "delta_f1": 0.09999999999999998
+    },
+    {
+      "paper_id": "2603.28351v1",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.28537v2",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.28643v1",
+      "repetition": 1,
+      "single_f1": 0.2222222222222222,
+      "multi_f1": 0.3333333333333333,
+      "delta_f1": 0.1111111111111111
+    },
+    {
+      "paper_id": "2603.29025v1",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.5,
+      "delta_f1": 0.5
+    },
+    {
+      "paper_id": "2603.29112v1",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.29244v1",
+      "repetition": 1,
+      "single_f1": 0.25,
+      "multi_f1": 0.4,
+      "delta_f1": 0.15000000000000002
+    },
+    {
+      "paper_id": "2603.29346v1",
+      "repetition": 1,
+      "single_f1": 0.2,
+      "multi_f1": 0.0,
+      "delta_f1": -0.2
+    },
+    {
+      "paper_id": "2603.29399v1",
+      "repetition": 1,
+      "single_f1": 0.3333333333333333,
+      "multi_f1": 0.5,
+      "delta_f1": 0.16666666666666669
+    },
+    {
+      "paper_id": "2603.29403v1",
+      "repetition": 1,
+      "single_f1": 0.4,
+      "multi_f1": 0.4,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.29497v1",
+      "repetition": 1,
+      "single_f1": 0.6,
+      "multi_f1": 0.8,
+      "delta_f1": 0.20000000000000007
+    },
+    {
+      "paper_id": "2603.29541v1",
+      "repetition": 1,
+      "single_f1": 0.4,
+      "multi_f1": 0.4,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.29559v1",
+      "repetition": 1,
+      "single_f1": 0.4444444444444444,
+      "multi_f1": 0.5714285714285714,
+      "delta_f1": 0.12698412698412698
+    },
+    {
+      "paper_id": "2603.29665v1",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.29801v1",
+      "repetition": 1,
+      "single_f1": 0.16666666666666666,
+      "multi_f1": 0.2857142857142857,
+      "delta_f1": 0.11904761904761904
+    },
+    {
+      "paper_id": "2603.29846v1",
+      "repetition": 1,
+      "single_f1": 0.2,
+      "multi_f1": 0.2222222222222222,
+      "delta_f1": 0.0222222222222222
+    },
+    {
+      "paper_id": "2603.29997v1(2)",
+      "repetition": 1,
+      "single_f1": 0.5,
+      "multi_f1": 0.5,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2603.30025v1(1)",
+      "repetition": 1,
+      "single_f1": 0.5,
+      "multi_f1": 0.3333333333333333,
+      "delta_f1": -0.16666666666666669
+    },
+    {
+      "paper_id": "2604.02171v1",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "2604.02209v1",
+      "repetition": 1,
+      "single_f1": 0.2,
+      "multi_f1": 0.0,
+      "delta_f1": -0.2
+    },
+    {
+      "paper_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_03_generatsiya-teksta-s-pomoschyu-neyronnyh-setey",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_05_metody-izvlecheniya-informatsii-iz-teksta",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_06_izvlechenie-informatsii-s-ispolzovaniem-neyrosetevyh-modeley",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_08_analiz-tonalnosti-teksta-metodami-mashinnogo-obucheniya",
+      "repetition": 1,
+      "single_f1": 0.2,
+      "multi_f1": 0.0,
+      "delta_f1": -0.2
+    },
+    {
+      "paper_id": "ru_09_metody-raspoznavaniya-imenovannyh-suschnostey-v-russkom-yazy",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "paper_id": "ru_14_issledovanie-primenimosti-modeley-glubokogo-obucheniya-dlya-",
+      "repetition": 1,
+      "single_f1": 0.2857142857142857,
+      "multi_f1": 0.5,
+      "delta_f1": 0.2142857142857143
+    },
+    {
+      "paper_id": "ru_16_kontsept-predobuchennyh-yazykovyh-modeley-v-kontekste-inzhen",
+      "repetition": 1,
+      "single_f1": 0.0,
+      "multi_f1": 0.0,
+      "delta_f1": 0.0
+    }
+  ],
+  "matching_method": "semantic",
+  "embedding_model": "bge-m3",
+  "matching_threshold": 0.7,
+  "caution": "Семантические embeddings позволяют сравнивать смысл, но не подтверждают истинность TP. Для научного вывода проверьте пары в review.csv."
+}

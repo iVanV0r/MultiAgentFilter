@@ -1,0 +1,309 @@
+{
+  "paper_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)",
+  "filename": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1).pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток точности при анализе сленговых выражений, иронии и сарказма в задачах анализа тональности.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "он может быть затруднен при анализе сленговых выражений, иронических высказываний, сарказма и т.д.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость преодоления ограничений генерации текста (несвязность, ошибки, подделка информации) при использовании моделей максимального правдоподобия и автокодировщиков.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 4,
+          "quote": "Однако генерация текста имеет некоторые ограничения. Во-первых, сгенерированный текст может быть несвязным и не иметь логической структуры. Во-вторых, некоторые генерированные тексты могут содержать неправильные или ошибочные данные. В-третьих, существует проблема подделки текстовых данных, когда созданный компьютером текст может быть использован для распространения ложной информации или манипуляции общественным мнением.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 11.61728199999925,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 0,
+      "grounded": 0,
+      "raw": [],
+      "metrics": {
+        "request_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.105061900001601,
+        "load_seconds": 3.394512,
+        "prompt_eval_seconds": 0.578527,
+        "eval_seconds": 0.061045,
+        "total_server_seconds": 4.0425479,
+        "prompt_tokens": 885,
+        "generated_tokens": 5,
+        "tokens_per_second": 81.91,
+        "prompt_tokens_per_second": 1529.75,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18152456192,
+          "mean_system_ram_used_bytes": 16003024896.0,
+          "max_system_ram_percent": 53.0,
+          "mean_system_ram_percent": 46.725,
+          "max_cpu_percent": 33.6,
+          "mean_cpu_percent": 26.65,
+          "max_python_process_rss_bytes": 92897280,
+          "mean_python_process_rss_bytes": 92893184.0,
+          "max_ollama_process_rss_bytes": 223047680,
+          "mean_ollama_process_rss_bytes": 222863360.0,
+          "max_gpu_mem_mb": 5298.0,
+          "mean_gpu_mem_mb": 3145.25,
+          "max_gpu_util_percent": 92.0,
+          "mean_gpu_util_percent": 39.0,
+          "max_gpu_temperature_c": 57.1,
+          "mean_gpu_temperature_c": 54.85,
+          "max_gpu_power_w": 85.14,
+          "mean_gpu_power_w": 62.5,
+          "estimated_gpu_joules": 211.16416407346725
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "front_matter",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаточная точность автоматического перевода при работе с высоко специализированными текстами, сленгом и идиоматическими выражениями.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Однако автоматический перевод также имеет свои ограничения, особенно при переводе текста с высокой степенью специализации или с использованием сленга и идиом.",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.2504447999999684,
+        "load_seconds": 0.0159764,
+        "prompt_eval_seconds": 0.665313,
+        "eval_seconds": 1.462034,
+        "total_server_seconds": 2.1936775,
+        "prompt_tokens": 1182,
+        "generated_tokens": 98,
+        "tokens_per_second": 67.03,
+        "prompt_tokens_per_second": 1776.61,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15777107968,
+          "mean_system_ram_used_bytes": 15682992128.0,
+          "max_system_ram_percent": 46.0,
+          "mean_system_ram_percent": 45.75,
+          "max_cpu_percent": 19.1,
+          "mean_cpu_percent": 9.55,
+          "max_python_process_rss_bytes": 92897280,
+          "mean_python_process_rss_bytes": 92889088.0,
+          "max_ollama_process_rss_bytes": 222801920,
+          "mean_ollama_process_rss_bytes": 222801920.0,
+          "max_gpu_mem_mb": 5304.0,
+          "mean_gpu_mem_mb": 5304.0,
+          "max_gpu_util_percent": 82.0,
+          "mean_gpu_util_percent": 62.5,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 57.5,
+          "max_gpu_power_w": 113.39,
+          "mean_gpu_power_w": 91.10499999999999,
+          "estimated_gpu_joules": 86.13755865097045
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "front_matter",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток точности при анализе сленговых выражений, иронии и сарказма в задачах анализа тональности.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "он может быть затруднен при анализе сленговых выражений, иронических высказываний, сарказма и т.д.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.117358100000274,
+        "load_seconds": 0.0213375,
+        "prompt_eval_seconds": 0.553589,
+        "eval_seconds": 1.39867,
+        "total_server_seconds": 2.0461209,
+        "prompt_tokens": 1166,
+        "generated_tokens": 88,
+        "tokens_per_second": 62.92,
+        "prompt_tokens_per_second": 2106.26,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 15974596608,
+          "mean_system_ram_used_bytes": 15874344960.0,
+          "max_system_ram_percent": 46.6,
+          "mean_system_ram_percent": 46.3,
+          "max_cpu_percent": 23.5,
+          "mean_cpu_percent": 21.85,
+          "max_python_process_rss_bytes": 92897280,
+          "mean_python_process_rss_bytes": 92889088.0,
+          "max_ollama_process_rss_bytes": 222867456,
+          "mean_ollama_process_rss_bytes": 222867456.0,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 82.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.099999999999994,
+          "max_gpu_power_w": 86.4,
+          "mean_gpu_power_w": 78.38,
+          "estimated_gpu_joules": 87.44734996795654
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "front_matter",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость преодоления ограничений генерации текста (несвязность, ошибки, подделка информации) при использовании моделей максимального правдоподобия и автокодировщиков.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "Однако генерация текста имеет некоторые ограничения. Во-первых, сгенерированный текст может быть несвязным и не иметь логической структуры. Во-вторых, некоторые генерированные тексты могут содержать неправильные или ошибочные данные. В-третьих, существует проблема подделки текстовых данных, когда созданный компьютером текст может быть использован для распространения ложной информации или манипуляции общественным мнением.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_01_primenenie-neyronnyh-setey-v-obrabotke-estestvennogo-yazyka(1)__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 3.138863500000298,
+        "load_seconds": 0.0265348,
+        "prompt_eval_seconds": 0.419485,
+        "eval_seconds": 2.595311,
+        "total_server_seconds": 3.0948383,
+        "prompt_tokens": 687,
+        "generated_tokens": 160,
+        "tokens_per_second": 61.65,
+        "prompt_tokens_per_second": 1637.72,
+        "hardware": {
+          "samples": 3,
+          "max_system_ram_used_bytes": 16193949696,
+          "mean_system_ram_used_bytes": 16115856725.333334,
+          "max_system_ram_percent": 47.3,
+          "mean_system_ram_percent": 47.03333333333333,
+          "max_cpu_percent": 23.8,
+          "mean_cpu_percent": 21.166666666666668,
+          "max_python_process_rss_bytes": 92897280,
+          "mean_python_process_rss_bytes": 92891818.66666667,
+          "max_ollama_process_rss_bytes": 222990336,
+          "mean_ollama_process_rss_bytes": 222952106.66666666,
+          "max_gpu_mem_mb": 5301.0,
+          "mean_gpu_mem_mb": 5301.0,
+          "max_gpu_util_percent": 88.0,
+          "mean_gpu_util_percent": 87.66666666666667,
+          "max_gpu_temperature_c": 57.5,
+          "mean_gpu_temperature_c": 57.03333333333333,
+          "max_gpu_power_w": 98.84,
+          "mean_gpu_power_w": 85.20333333333333,
+          "estimated_gpu_joules": 209.00969087600708
+        }
+      }
+    }
+  ],
+  "merge_metrics": [],
+  "repetition": 1,
+  "paper_sha256": "a194beb7c53bb3689bf04926db342f2a3af992b92f4a6cb86be51ab5ae87199f"
+}

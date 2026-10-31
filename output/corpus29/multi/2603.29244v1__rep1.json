@@ -1,0 +1,752 @@
+{
+  "paper_id": "2603.29244v1",
+  "filename": "2603.29244v1.pdf",
+  "mode": "multi",
+  "problems": [
+    {
+      "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+          "verified": true
+        },
+        {
+          "page": 1,
+          "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "rounds": 1,
+  "best_score": 10,
+  "best_round": 1,
+  "stopping_reason": "threshold",
+  "final_decisions": [
+    {
+      "candidate_id": "M1",
+      "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+      "status": "accepted",
+      "reason": "Явно обозначен пробел (отсутствие крупных мультимодальных корпусов для африканских языков), и работа (презентация Thiomi Dataset) направлена на его устранение, что подтверждается цитатой.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M2",
+      "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+      "status": "accepted",
+      "reason": "Обозначает общий, но сильный пробел (крайняя ограниченность NLP-ресурсов для африканских языков), который решается созданием такого ресурса, как Thiomi.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+          "verified": true
+        },
+        {
+          "page": 1,
+          "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M3",
+      "statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров.",
+      "status": "rejected",
+      "reason": "Утверждение о недостатке регистров (литературных, юридических и т.д.) не подтверждается явным пробелом в контексте, и это не является центральной проблемой, которую решает публикация в целом.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Literary, legal, journalistic, and scientific registers are not represented.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M4",
+      "statement": "Отсутствие крупных мультимодальных корпусов данных для языков Африки не является проблемой, так как Thiomi Dataset представляет собой крупномасштабный мультимодальный корпус.",
+      "status": "rejected",
+      "reason": "Это не формулировка научной проблемы, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "M5",
+      "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон) не является проблемой, так как данные по тонности уже включены в Thiomi Dataset.",
+      "status": "rejected",
+      "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Key areas for future work include tone annotation",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "P1_6",
+      "statement": "Недостаток крупных мультимодальных корпусов данных для языков Африки",
+      "status": "rejected",
+      "reason": "Это не проблема, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "P1_7",
+      "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон)",
+      "status": "rejected",
+      "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'.",
+      "grounded": true,
+      "evidence": [
+        {
+          "page": 5,
+          "quote": "Key areas for future work include tone annotation",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "critic": {
+        "objections": [
+          {
+            "target": "M1",
+            "criticism": "Неверный пробел",
+            "source_page": 1,
+            "support_quote": "None"
+          }
+        ],
+        "missed_problems": [
+          {
+            "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+                "candidate_id": "M1"
+              }
+            ]
+          },
+          {
+            "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+                "candidate_id": "M2"
+              },
+              {
+                "page": 1,
+                "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+                "candidate_id": "M2"
+              }
+            ]
+          },
+          {
+            "statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров.",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Literary, legal, journalistic, and scientific registers are not represented.",
+                "candidate_id": "M3"
+              }
+            ]
+          },
+          {
+            "statement": "Недостаток крупных мультимодальных корпусов данных для языков Африки",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+                "candidate_id": "M4"
+              }
+            ]
+          },
+          {
+            "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон)",
+            "type": "problem",
+            "explicitness": "explicit",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Key areas for future work include tone annotation",
+                "candidate_id": "M5"
+              }
+            ]
+          }
+        ]
+      },
+      "defense": {
+        "actions": [
+          {
+            "candidate_id": "M1",
+            "action": "keep",
+            "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения."
+          },
+          {
+            "candidate_id": "M2",
+            "action": "keep",
+            "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения."
+          },
+          {
+            "candidate_id": "M3",
+            "action": "keep",
+            "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения."
+          },
+          {
+            "candidate_id": "M4",
+            "action": "rewrite",
+            "statement": "Отсутствие крупных мультимодальных корпусов данных для языков Африки не является проблемой, так как Thiomi Dataset представляет собой крупномасштабный мультимодальный корпус.",
+            "reason": "Проблема решена созданным ресурсом."
+          },
+          {
+            "candidate_id": "M5",
+            "action": "rewrite",
+            "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон) не является проблемой, так как данные по тонности уже включены в Thiomi Dataset.",
+            "reason": "Проблема решена созданным ресурсом."
+          }
+        ],
+        "additions": []
+      },
+      "defense_actions": [
+        {
+          "candidate_id": "M1",
+          "action": "keep",
+          "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения.",
+          "old_statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+          "new_statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода."
+        },
+        {
+          "candidate_id": "M2",
+          "action": "keep",
+          "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения.",
+          "old_statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+          "new_statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка."
+        },
+        {
+          "candidate_id": "M3",
+          "action": "keep",
+          "reason": "Проблема явным образом обозначена в тексте как пробел знаний, требующий решения.",
+          "old_statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров.",
+          "new_statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров."
+        },
+        {
+          "candidate_id": "M4",
+          "action": "rewrite",
+          "reason": "Проблема решена созданным ресурсом.",
+          "old_statement": "Недостаток крупных мультимодальных корпусов данных для языков Африки",
+          "new_statement": "Отсутствие крупных мультимодальных корпусов данных для языков Африки не является проблемой, так как Thiomi Dataset представляет собой крупномасштабный мультимодальный корпус."
+        },
+        {
+          "candidate_id": "M5",
+          "action": "rewrite",
+          "reason": "Проблема решена созданным ресурсом.",
+          "old_statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон)",
+          "new_statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон) не является проблемой, так как данные по тонности уже включены в Thiomi Dataset."
+        },
+        {
+          "candidate_id": "P1_6",
+          "action": "critic_addition",
+          "reason": "Новая проблема Phi с подтверждённой цитатой"
+        },
+        {
+          "candidate_id": "P1_7",
+          "action": "critic_addition",
+          "reason": "Новая проблема Phi с подтверждённой цитатой"
+        }
+      ],
+      "referee": {
+        "rubric": {
+          "gap": 3,
+          "relevance": 2,
+          "evidence": 3,
+          "precision": 2
+        },
+        "score": 10,
+        "reason": "M1 точно описывает пробел (отсутствие крупных мультимодальных корпусов для африканских языков), и это напрямую решается представлением Thiomi Dataset, что подтверждается цитатой.",
+        "decisions": [
+          {
+            "candidate_id": "M1",
+            "accept": true,
+            "reason": "Явно обозначен пробел (отсутствие крупных мультимодальных корпусов для африканских языков), и работа (презентация Thiomi Dataset) направлена на его устранение, что подтверждается цитатой."
+          },
+          {
+            "candidate_id": "M2",
+            "accept": true,
+            "reason": "Обозначает общий, но сильный пробел (крайняя ограниченность NLP-ресурсов для африканских языков), который решается созданием такого ресурса, как Thiomi."
+          },
+          {
+            "candidate_id": "M3",
+            "accept": false,
+            "reason": "Утверждение о недостатке регистров (литературных, юридических и т.д.) не подтверждается явным пробелом в контексте, и это не является центральной проблемой, которую решает публикация в целом."
+          },
+          {
+            "candidate_id": "M4",
+            "accept": false,
+            "reason": "Это не формулировка научной проблемы, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'."
+          },
+          {
+            "candidate_id": "M5",
+            "accept": false,
+            "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'."
+          },
+          {
+            "candidate_id": "P1_6",
+            "accept": false,
+            "reason": "Это не проблема, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'."
+          },
+          {
+            "candidate_id": "P1_7",
+            "accept": false,
+            "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'."
+          }
+        ]
+      },
+      "score": 10,
+      "score_source": "rubric_sum",
+      "judge_decisions_complete": true,
+      "missing_judge_ids": [],
+      "judge_consistency_warning": false,
+      "candidates": [
+        {
+          "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M1"
+        },
+        {
+          "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+              "verified": true
+            },
+            {
+              "page": 1,
+              "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M2"
+        },
+        {
+          "statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Literary, legal, journalistic, and scientific registers are not represented.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M3"
+        },
+        {
+          "statement": "Отсутствие крупных мультимодальных корпусов данных для языков Африки не является проблемой, так как Thiomi Dataset представляет собой крупномасштабный мультимодальный корпус.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M4"
+        },
+        {
+          "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон) не является проблемой, так как данные по тонности уже включены в Thiomi Dataset.",
+          "type": "data",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Key areas for future work include tone annotation",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "M5"
+        },
+        {
+          "statement": "Недостаток крупных мультимодальных корпусов данных для языков Африки",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "P1_6"
+        },
+        {
+          "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон)",
+          "type": "problem",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Key areas for future work include tone annotation",
+              "verified": true
+            }
+          ],
+          "grounded": true,
+          "candidate_id": "P1_7"
+        }
+      ],
+      "invalid_evidence_candidates": [],
+      "decisions": [
+        {
+          "candidate_id": "M1",
+          "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+          "status": "accepted",
+          "reason": "Явно обозначен пробел (отсутствие крупных мультимодальных корпусов для африканских языков), и работа (презентация Thiomi Dataset) направлена на его устранение, что подтверждается цитатой.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M2",
+          "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+          "status": "accepted",
+          "reason": "Обозначает общий, но сильный пробел (крайняя ограниченность NLP-ресурсов для африканских языков), который решается созданием такого ресурса, как Thiomi.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+              "verified": true
+            },
+            {
+              "page": 1,
+              "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M3",
+          "statement": "Отсутствие в обучающих данных литературных, юридических, журналистских и научных регистров.",
+          "status": "rejected",
+          "reason": "Утверждение о недостатке регистров (литературных, юридических и т.д.) не подтверждается явным пробелом в контексте, и это не является центральной проблемой, которую решает публикация в целом.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Literary, legal, journalistic, and scientific registers are not represented.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M4",
+          "statement": "Отсутствие крупных мультимодальных корпусов данных для языков Африки не является проблемой, так как Thiomi Dataset представляет собой крупномасштабный мультимодальный корпус.",
+          "status": "rejected",
+          "reason": "Это не формулировка научной проблемы, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "M5",
+          "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон) не является проблемой, так как данные по тонности уже включены в Thiomi Dataset.",
+          "status": "rejected",
+          "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Key areas for future work include tone annotation",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "P1_6",
+          "statement": "Недостаток крупных мультимодальных корпусов данных для языков Африки",
+          "status": "rejected",
+          "reason": "Это не проблема, а контр-аргумент, отрицающий проблему, что противоречит критерию 'направлена работа на устранение пробела'.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "We have presented the Thiomi Dataset, a large-scale multimodal corpus of 601,000+ approved text sentences and 385,000+ audio recordings across nine African languages.",
+              "verified": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "P1_7",
+          "statement": "Недостаток данных для улучшения качества распознавания речи в языке суахили (тон)",
+          "status": "rejected",
+          "reason": "Это не проблема, а указание на будущую работу ('Key areas for future work include tone annotation'), что не соответствует критерию 'проблема, на которую направлена работа'.",
+          "grounded": true,
+          "evidence": [
+            {
+              "page": 5,
+              "quote": "Key areas for future work include tone annotation",
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "accepted": [
+        {
+          "statement": "Отсутствие крупных мультимодальных корпусов для африканских языков, что ограничивает развитие технологий распознавания речи и машинного перевода.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "We present the Thiomi Dataset, a large-scale multimodal corpus spanning ten African languages across four language families",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        },
+        {
+          "statement": "Существующие NLP-ресурсы для африканских языков крайне ограничены по сравнению с европейскими и азиатскими языками, что приводит к исключению носителей из современных систем автоматической обработки естественного языка.",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Of the world's approximately 7,000 languages, fewer than 100 have substantial NLP resources: labeled corpora, pre-trained models, benchmark evaluation sets, and deployed applications.",
+              "verified": true
+            },
+            {
+              "page": 1,
+              "quote": "African languages — spoken by over 1.4 billion people across more than 2,000 distinct languages — are dramatically underrepresented.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": [
+        {
+          "request_id": "2603.29244v1__rep1:r1:critic",
+          "role": "critic",
+          "model": "phi4-mini:3.8b-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1600,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 9.172815599999012,
+          "load_seconds": 2.5988097,
+          "prompt_eval_seconds": 0.462741,
+          "eval_seconds": 6.053064,
+          "total_server_seconds": 9.1275192,
+          "prompt_tokens": 835,
+          "generated_tokens": 500,
+          "tokens_per_second": 82.6,
+          "prompt_tokens_per_second": 1804.47,
+          "hardware": {
+            "samples": 8,
+            "max_system_ram_used_bytes": 16937037824,
+            "mean_system_ram_used_bytes": 15395709440.0,
+            "max_system_ram_percent": 49.4,
+            "mean_system_ram_percent": 44.9,
+            "max_cpu_percent": 27.4,
+            "mean_cpu_percent": 18.35,
+            "max_python_process_rss_bytes": 94900224,
+            "mean_python_process_rss_bytes": 94898176.0,
+            "max_ollama_process_rss_bytes": 222679040,
+            "mean_ollama_process_rss_bytes": 222678528.0,
+            "max_gpu_mem_mb": 4766.0,
+            "mean_gpu_mem_mb": 3925.875,
+            "max_gpu_util_percent": 96.0,
+            "mean_gpu_util_percent": 71.125,
+            "max_gpu_temperature_c": 59.0,
+            "mean_gpu_temperature_c": 56.975,
+            "max_gpu_power_w": 114.28,
+            "mean_gpu_power_w": 90.17,
+            "estimated_gpu_joules": 750.2492834043503
+          }
+        },
+        {
+          "request_id": "2603.29244v1__rep1:r1:defense",
+          "role": "proposer_defense",
+          "model": "qwen3.5:4b",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 2200,
+          "num_ctx": 6144,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 8.370859099999507,
+          "load_seconds": 3.2918861,
+          "prompt_eval_seconds": 1.22071,
+          "eval_seconds": 3.766515,
+          "total_server_seconds": 8.2985422,
+          "prompt_tokens": 2111,
+          "generated_tokens": 249,
+          "tokens_per_second": 66.11,
+          "prompt_tokens_per_second": 1729.32,
+          "hardware": {
+            "samples": 7,
+            "max_system_ram_used_bytes": 15473217536,
+            "mean_system_ram_used_bytes": 15253713481.142857,
+            "max_system_ram_percent": 45.2,
+            "mean_system_ram_percent": 44.51428571428572,
+            "max_cpu_percent": 36.2,
+            "mean_cpu_percent": 22.614285714285717,
+            "max_python_process_rss_bytes": 94900224,
+            "mean_python_process_rss_bytes": 94897883.42857143,
+            "max_ollama_process_rss_bytes": 222818304,
+            "mean_ollama_process_rss_bytes": 222341997.7142857,
+            "max_gpu_mem_mb": 5274.0,
+            "mean_gpu_mem_mb": 4041.0,
+            "max_gpu_util_percent": 95.0,
+            "mean_gpu_util_percent": 63.285714285714285,
+            "max_gpu_temperature_c": 58.2,
+            "mean_gpu_temperature_c": 56.15714285714286,
+            "max_gpu_power_w": 113.35,
+            "mean_gpu_power_w": 84.34285714285714,
+            "estimated_gpu_joules": 602.6172098398208
+          }
+        },
+        {
+          "request_id": "2603.29244v1__rep1:r1:referee",
+          "role": "referee",
+          "model": "gemma4:e4b-it-q4_K_M",
+          "attempt": 0,
+          "success": true,
+          "retried": false,
+          "num_predict": 1700,
+          "num_ctx": 4096,
+          "temperature": 0,
+          "repeat_penalty": null,
+          "repeat_last_n": null,
+          "recovery_mode": null,
+          "seed": 42,
+          "done_reason": "stop",
+          "wall_seconds": 14.011725799999112,
+          "load_seconds": 5.681008,
+          "prompt_eval_seconds": 0.971102,
+          "eval_seconds": 7.26022,
+          "total_server_seconds": 13.9282759,
+          "prompt_tokens": 1379,
+          "generated_tokens": 609,
+          "tokens_per_second": 83.88,
+          "prompt_tokens_per_second": 1420.04,
+          "hardware": {
+            "samples": 12,
+            "max_system_ram_used_bytes": 17976463360,
+            "mean_system_ram_used_bytes": 17150011733.333334,
+            "max_system_ram_percent": 52.5,
+            "mean_system_ram_percent": 50.03333333333333,
+            "max_cpu_percent": 35.9,
+            "mean_cpu_percent": 20.891666666666666,
+            "max_python_process_rss_bytes": 94900224,
+            "mean_python_process_rss_bytes": 94898858.66666667,
+            "max_ollama_process_rss_bytes": 223842304,
+            "mean_ollama_process_rss_bytes": 222577322.66666666,
+            "max_gpu_mem_mb": 6128.0,
+            "mean_gpu_mem_mb": 5041.916666666667,
+            "max_gpu_util_percent": 92.0,
+            "mean_gpu_util_percent": 59.25,
+            "max_gpu_temperature_c": 57.7,
+            "mean_gpu_temperature_c": 55.61666666666667,
+            "max_gpu_power_w": 112.92,
+            "mean_gpu_power_w": 80.23583333333333,
+            "estimated_gpu_joules": 1080.166657371521
+          }
+        }
+      ]
+    }
+  ],
+  "seconds_debate": 31.576178100000106,
+  "seconds_end_to_end": 64.30726470000081,
+  "resumed_from_saved_single": false,
+  "repetition": 1,
+  "paper_sha256": "cb7395d6581149cf1dcf7ce2cd3aa2409903a63dcd1f9982c673cfecc6fbd0c9"
+}

@@ -1,0 +1,543 @@
+{
+  "paper_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov",
+  "filename": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov.pdf",
+  "mode": "single",
+  "problems": [
+    {
+      "statement": "Недостаток данных о точности определения меры смысловой близости предложений ЕЯ для повышения полноты использования семантического ресурса",
+      "type": "data",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "от точности которой зависит полнота использования потенциальных возможностей семантического ресурса",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Необходимость преодоления недостатков модели BERT, связанных с потерей информации о связях между замаскированными словами при индивидуальном предсказании и несоответствием фаз обучения и применения.",
+      "type": "method",
+      "explicitness": "explicit",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "Ключевой особенностью BERT является возможность рассмотрения в ходе обучения отдельного слова в контексте слов, окружающих его [11]. Предобучение BERT на большом объёме текстов даёт возможность сформировать контекстуализированные векторные представления слов для некоторого ЕЯ, которые в дальнейшем могут быть использованы для определения меры смысловой близости предложений. BERT является автоэнкодером, что обуславливает недостатки модели, в том числе индивидуальное предсказание каждого скрытого слова, приводящее к потере информации о возможных связях между замаскированными словами [12]. При попытке самостоятельного предсказания таких слов в контексте не будут учитываться взаимосвязи между ними. Другим недостатком является несоответствие между фазами обучения модели BERT и использованием предварительно обученной системы. Так, при обучении модели используются скрытые токены, а при применении предобученной модели такие токены уже не подаются на вход.",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    },
+    {
+      "statement": "Недостаток методов для эффективного обнаружения закономерностей в значительных выборках неразмеченных текстов",
+      "type": "method",
+      "explicitness": "implicit",
+      "evidence": [
+        {
+          "page": 7,
+          "quote": "возможность эффективно обнаруживать закономерности между использованием слов в значительной обучающей выборке неразмеченных текстов",
+          "verified": true
+        }
+      ],
+      "grounded": true
+    }
+  ],
+  "seconds_to_single": 19.58489980000013,
+  "chunk_events": [
+    {
+      "chunk": "C0000",
+      "section": "front_matter",
+      "pages": [
+        1
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток инструментов для точного определения семантической близости предложений естественного языка",
+          "type": "tool",
+          "explicitness": "implicit",
+          "evidence": [],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0000",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 4.5080721999984235,
+        "load_seconds": 3.4150383,
+        "prompt_eval_seconds": 0.45232,
+        "eval_seconds": 0.560603,
+        "total_server_seconds": 4.4387134,
+        "prompt_tokens": 597,
+        "generated_tokens": 40,
+        "tokens_per_second": 71.35,
+        "prompt_tokens_per_second": 1319.86,
+        "hardware": {
+          "samples": 4,
+          "max_system_ram_used_bytes": 18525925376,
+          "mean_system_ram_used_bytes": 16372979712.0,
+          "max_system_ram_percent": 54.1,
+          "mean_system_ram_percent": 47.8,
+          "max_cpu_percent": 55.2,
+          "mean_cpu_percent": 36.15,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94797824.0,
+          "max_ollama_process_rss_bytes": 223260672,
+          "mean_ollama_process_rss_bytes": 223122432.0,
+          "max_gpu_mem_mb": 5388.0,
+          "mean_gpu_mem_mb": 3238.25,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 37.75,
+          "max_gpu_temperature_c": 57.3,
+          "mean_gpu_temperature_c": 54.8,
+          "max_gpu_power_w": 112.46,
+          "mean_gpu_power_w": 69.0425,
+          "estimated_gpu_joules": 213.1623563313484
+        }
+      }
+    },
+    {
+      "chunk": "C0001",
+      "section": "front_matter",
+      "pages": [
+        2
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Разработка методов и алгоритмов установления и формального описания смысла сущностей естественного языка и последующей численной оценки их попарной семантической близости",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "В число наиболее актуальных задач обработки ЕЯ входит разработка методов и алгоритмов установления и формального описания смысла сущностей ЕЯ и последующей численной оценки их попарной семантической близости",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0001",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 2.1673792000001413,
+        "load_seconds": 0.0167123,
+        "prompt_eval_seconds": 0.370089,
+        "eval_seconds": 1.601651,
+        "total_server_seconds": 2.0290175,
+        "prompt_tokens": 666,
+        "generated_tokens": 112,
+        "tokens_per_second": 69.93,
+        "prompt_tokens_per_second": 1799.57,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16087969792,
+          "mean_system_ram_used_bytes": 16022353920.0,
+          "max_system_ram_percent": 46.9,
+          "mean_system_ram_percent": 46.75,
+          "max_cpu_percent": 24.4,
+          "mean_cpu_percent": 22.75,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94793728.0,
+          "max_ollama_process_rss_bytes": 223289344,
+          "mean_ollama_process_rss_bytes": 223272960.0,
+          "max_gpu_mem_mb": 5394.0,
+          "mean_gpu_mem_mb": 5394.0,
+          "max_gpu_util_percent": 73.0,
+          "mean_gpu_util_percent": 61.0,
+          "max_gpu_temperature_c": 57.9,
+          "mean_gpu_temperature_c": 56.55,
+          "max_gpu_power_w": 101.79,
+          "mean_gpu_power_w": 78.29,
+          "estimated_gpu_joules": 67.49146282434464
+        }
+      }
+    },
+    {
+      "chunk": "C0002",
+      "section": "front_matter",
+      "pages": [
+        3
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток данных о точности определения меры смысловой близости предложений ЕЯ для повышения полноты использования семантического ресурса",
+          "type": "data",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "от точности которой зависит полнота использования потенциальных возможностей семантического ресурса",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0002",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.541614000001573,
+        "load_seconds": 0.0132732,
+        "prompt_eval_seconds": 0.398612,
+        "eval_seconds": 1.056628999,
+        "total_server_seconds": 1.5076024,
+        "prompt_tokens": 684,
+        "generated_tokens": 75,
+        "tokens_per_second": 70.98,
+        "prompt_tokens_per_second": 1715.95,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16229109760,
+          "mean_system_ram_used_bytes": 16157104128.0,
+          "max_system_ram_percent": 47.4,
+          "mean_system_ram_percent": 47.15,
+          "max_cpu_percent": 25.3,
+          "mean_cpu_percent": 22.15,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94793728.0,
+          "max_ollama_process_rss_bytes": 223297536,
+          "mean_ollama_process_rss_bytes": 223297536.0,
+          "max_gpu_mem_mb": 5394.0,
+          "mean_gpu_mem_mb": 5394.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 85.5,
+          "max_gpu_temperature_c": 58.3,
+          "mean_gpu_temperature_c": 57.95,
+          "max_gpu_power_w": 101.49,
+          "mean_gpu_power_w": 99.865,
+          "estimated_gpu_joules": 123.16199073791503
+        }
+      }
+    },
+    {
+      "chunk": "C0003",
+      "section": "front_matter",
+      "pages": [
+        4
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Недостаток методов для обработки редких или маскированных слов в задачах классификации семантических отношений",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 4,
+              "quote": "улучшенные алгоритмы токенизации, используемые для обработки редких или маскированных слов",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0003",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.604185200001666,
+        "load_seconds": 0.0189907,
+        "prompt_eval_seconds": 0.387468,
+        "eval_seconds": 1.127093,
+        "total_server_seconds": 1.5733715,
+        "prompt_tokens": 644,
+        "generated_tokens": 71,
+        "tokens_per_second": 62.99,
+        "prompt_tokens_per_second": 1662.07,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16327745536,
+          "mean_system_ram_used_bytes": 16275580928.0,
+          "max_system_ram_percent": 47.6,
+          "mean_system_ram_percent": 47.45,
+          "max_cpu_percent": 22.7,
+          "mean_cpu_percent": 11.35,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94793728.0,
+          "max_ollama_process_rss_bytes": 223309824,
+          "mean_ollama_process_rss_bytes": 223303680.0,
+          "max_gpu_mem_mb": 5394.0,
+          "mean_gpu_mem_mb": 5394.0,
+          "max_gpu_util_percent": 86.0,
+          "mean_gpu_util_percent": 84.5,
+          "max_gpu_temperature_c": 58.3,
+          "mean_gpu_temperature_c": 57.849999999999994,
+          "max_gpu_power_w": 98.2,
+          "mean_gpu_power_w": 92.65,
+          "estimated_gpu_joules": 121.81611404418946
+        }
+      }
+    },
+    {
+      "chunk": "C0004",
+      "section": "front_matter",
+      "pages": [
+        5
+      ],
+      "generated": 1,
+      "grounded": 0,
+      "raw": [
+        {
+          "statement": "Необходимость ускорения процесса обучения и настройки языковых моделей для практического применения",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 3513,
+              "quote": "параллелизируемые архитектуры, которые ускоряют точную настройку и обучение",
+              "verified": false
+            }
+          ],
+          "grounded": false
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0004",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.732593500000803,
+        "load_seconds": 0.020988,
+        "prompt_eval_seconds": 0.460873,
+        "eval_seconds": 1.124244,
+        "total_server_seconds": 1.6445441,
+        "prompt_tokens": 692,
+        "generated_tokens": 66,
+        "tokens_per_second": 58.71,
+        "prompt_tokens_per_second": 1501.5,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16511508480,
+          "mean_system_ram_used_bytes": 16422832128.0,
+          "max_system_ram_percent": 48.2,
+          "mean_system_ram_percent": 47.95,
+          "max_cpu_percent": 29.4,
+          "mean_cpu_percent": 14.7,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94793728.0,
+          "max_ollama_process_rss_bytes": 223215616,
+          "mean_ollama_process_rss_bytes": 223207424.0,
+          "max_gpu_mem_mb": 5394.0,
+          "mean_gpu_mem_mb": 5365.5,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 87.0,
+          "max_gpu_temperature_c": 57.4,
+          "mean_gpu_temperature_c": 57.25,
+          "max_gpu_power_w": 86.27,
+          "mean_gpu_power_w": 77.995,
+          "estimated_gpu_joules": 86.31671190261841
+        }
+      }
+    },
+    {
+      "chunk": "C0005",
+      "section": "front_matter",
+      "pages": [
+        6
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Необходимость преодоления недостатков модели BERT, связанных с потерей информации о связях между замаскированными словами при индивидуальном предсказании и несоответствием фаз обучения и применения.",
+          "type": "method",
+          "explicitness": "explicit",
+          "evidence": [
+            {
+              "page": 6,
+              "quote": "Ключевой особенностью BERT является возможность рассмотрения в ходе обучения отдельного слова в контексте слов, окружающих его [11]. Предобучение BERT на большом объёме текстов даёт возможность сформировать контекстуализированные векторные представления слов для некоторого ЕЯ, которые в дальнейшем могут быть использованы для определения меры смысловой близости предложений. BERT является автоэнкодером, что обуславливает недостатки модели, в том числе индивидуальное предсказание каждого скрытого слова, приводящее к потере информации о возможных связях между замаскированными словами [12]. При попытке самостоятельного предсказания таких слов в контексте не будут учитываться взаимосвязи между ними. Другим недостатком является несоответствие между фазами обучения модели BERT и использованием предварительно обученной системы. Так, при обучении модели используются скрытые токены, а при применении предобученной модели такие токены уже не подаются на вход.",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0005",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 6.086667299998226,
+        "load_seconds": 0.0281012,
+        "prompt_eval_seconds": 0.49058,
+        "eval_seconds": 5.477731,
+        "total_server_seconds": 6.0434014,
+        "prompt_tokens": 681,
+        "generated_tokens": 283,
+        "tokens_per_second": 51.66,
+        "prompt_tokens_per_second": 1388.15,
+        "hardware": {
+          "samples": 5,
+          "max_system_ram_used_bytes": 16653103104,
+          "mean_system_ram_used_bytes": 16596775731.2,
+          "max_system_ram_percent": 48.6,
+          "mean_system_ram_percent": 48.44,
+          "max_cpu_percent": 41.8,
+          "mean_cpu_percent": 28.8,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94798643.2,
+          "max_ollama_process_rss_bytes": 223391744,
+          "mean_ollama_process_rss_bytes": 223389286.4,
+          "max_gpu_mem_mb": 5337.0,
+          "mean_gpu_mem_mb": 5334.8,
+          "max_gpu_util_percent": 91.0,
+          "mean_gpu_util_percent": 88.4,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 56.8,
+          "max_gpu_power_w": 97.29,
+          "mean_gpu_power_w": 85.014,
+          "estimated_gpu_joules": 436.20813794374465
+        }
+      }
+    },
+    {
+      "chunk": "C0006",
+      "section": "front_matter",
+      "pages": [
+        7
+      ],
+      "generated": 1,
+      "grounded": 1,
+      "raw": [
+        {
+          "statement": "Недостаток методов для эффективного обнаружения закономерностей в значительных выборках неразмеченных текстов",
+          "type": "method",
+          "explicitness": "implicit",
+          "evidence": [
+            {
+              "page": 7,
+              "quote": "возможность эффективно обнаруживать закономерности между использованием слов в значительной обучающей выборке неразмеченных текстов",
+              "verified": true
+            }
+          ],
+          "grounded": true
+        }
+      ],
+      "metrics": {
+        "request_id": "ru_10_analiz-modeli-bert-kak-instrumenta-opredeleniya-mery-smyslov__rep1:C0006",
+        "role": "proposer_chunk",
+        "model": "qwen3.5:4b",
+        "attempt": 0,
+        "success": true,
+        "retried": false,
+        "num_predict": 1100,
+        "num_ctx": 6144,
+        "temperature": 0,
+        "repeat_penalty": null,
+        "repeat_last_n": null,
+        "recovery_mode": null,
+        "seed": 42,
+        "done_reason": "stop",
+        "wall_seconds": 1.9363099000001966,
+        "load_seconds": 0.0203944,
+        "prompt_eval_seconds": 0.290253,
+        "eval_seconds": 1.483301,
+        "total_server_seconds": 1.8404004,
+        "prompt_tokens": 424,
+        "generated_tokens": 79,
+        "tokens_per_second": 53.26,
+        "prompt_tokens_per_second": 1460.79,
+        "hardware": {
+          "samples": 2,
+          "max_system_ram_used_bytes": 16700727296,
+          "mean_system_ram_used_bytes": 16634327040.0,
+          "max_system_ram_percent": 48.7,
+          "mean_system_ram_percent": 48.5,
+          "max_cpu_percent": 29.9,
+          "mean_cpu_percent": 14.95,
+          "max_python_process_rss_bytes": 94801920,
+          "mean_python_process_rss_bytes": 94793728.0,
+          "max_ollama_process_rss_bytes": 223408128,
+          "mean_ollama_process_rss_bytes": 223019008.0,
+          "max_gpu_mem_mb": 5332.0,
+          "mean_gpu_mem_mb": 5332.0,
+          "max_gpu_util_percent": 84.0,
+          "mean_gpu_util_percent": 76.5,
+          "max_gpu_temperature_c": 57.2,
+          "mean_gpu_temperature_c": 56.6,
+          "max_gpu_power_w": 99.54,
+          "mean_gpu_power_w": 77.095,
+          "estimated_gpu_joules": 67.66326231956482
+        }
+      }
+    }
+  ],
+  "merge_metrics": [],
+  "repetition": 1,
+  "paper_sha256": "6a5d743a14fe4e7a4ce6b59808acc1462b70691791b6f7bc9e97532d3799c7dc"
+}
